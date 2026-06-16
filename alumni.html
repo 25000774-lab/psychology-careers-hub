@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alumni Profiles — Psychology Careers Hub | Liverpool Hope University</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
+  .site-nav { background: #1a3a5c; padding: 0 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+  .site-nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; height: 48px; }
+  .site-nav-home { color: white; text-decoration: none; font-weight: 600; font-size: 14px; margin-right: auto; }
+  .site-nav-link { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 13px; padding: 0 14px; height: 48px; display: flex; align-items: center; transition: background 0.15s; }
+  .site-nav-link:hover { background: rgba(255,255,255,0.1); color: white; }
+  .site-nav-dropdown { position: relative; }
+  .site-nav-menu { display: none; position: absolute; right: 0; top: 48px; background: white; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); min-width: 280px; padding: 6px 0; z-index: 1001; }
+  .site-nav-menu a { display: block; padding: 9px 16px; font-size: 13px; color: #1a3a5c; text-decoration: none; }
+  .site-nav-menu a:hover { background: #f0f4ff; }
+  .site-nav-dropdown:hover .site-nav-menu { display: block; }
+  .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+  .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .breadcrumb a { color: #1a5fa8; text-decoration: none; }
+  .page-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+  .page-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
+  .alumni-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 2rem; }
+  .alumni-card { background: white; border: 1px solid #e0e0e0; border-radius: 12px; overflow: hidden; }
+  .alumni-card-header { background: #1a3a5c; color: white; padding: 1.25rem; }
+  .alumni-role { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.75; margin-bottom: 4px; }
+  .alumni-name { font-size: 18px; font-weight: 600; }
+  .alumni-card-body { padding: 1.25rem; }
+  .alumni-meta { font-size: 13px; color: #666; margin-bottom: 12px; line-height: 1.6; }
+  .alumni-meta span { display: block; }
+  .alumni-story { font-size: 14px; color: #333; line-height: 1.7; margin-bottom: 12px; }
+  .alumni-advice { background: #e8f0fb; border-radius: 8px; padding: 0.85rem 1rem; margin-top: 12px; }
+  .alumni-advice-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 6px; }
+  .alumni-advice p { font-size: 13px; color: #1a3a5c; line-height: 1.6; }
+  .alumni-placeholder { background: #f5f5f3; border-radius: 8px; padding: 1rem; text-align: center; }
+  .alumni-placeholder p { font-size: 13px; color: #888; font-style: italic; }
+  .divider { border: none; border-top: 1px solid #e8e8e8; margin: 2rem 0; }
+  .note-box { background: #fff8e1; border: 1px solid #ffe082; border-radius: 8px; padding: 0.9rem 1.1rem; margin-bottom: 2rem; font-size: 13px; color: #5a4000; }
+</style>
+</head>
+<body>
+<div class="site-nav">
+  <div class="site-nav-inner">
+    <a class="site-nav-home" href="index.html">&#127968; Psychology Careers Hub</a>
+    <a class="site-nav-link" href="index.html">All Pathways</a>
+    <a class="site-nav-link" href="roadmap.html">Roadmap</a>
+    <a class="site-nav-link" href="employer-trends.html">Employer Trends</a>
+    <a class="site-nav-link" href="alumni.html">Alumni</a>
+    <div class="site-nav-dropdown">
+      <span class="site-nav-link">Themes &#9662;</span>
+      <div class="site-nav-menu">
+        <a href="poc.html">People, Organisations &amp; Consultancy</a>
+        <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
+        <a href="education.html">Education</a>
+        <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
+        <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
+        <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
+        <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
+        <a href="sport-exercise.html">Sport &amp; Exercise</a>
+        <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
+        <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
+        <a href="mental-health.html">Mental Health</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="breadcrumb"><a href="index.html">Psychology Careers Hub</a><span>›</span><span>Alumni Profiles</span></div>
+  <h1 class="page-title">&#127891; Alumni Profiles</h1>
+  <p class="page-intro">Hear from Liverpool Hope University psychology graduates about the careers they have built, the routes they took, and their advice for current students.</p>
+
+  <div class="note-box">More alumni profiles will be added to this page as case studies are collected. If you are a Liverpool Hope psychology graduate and would like to share your story, contact the School of Psychology.</div>
+
+  <div class="alumni-grid">
+
+    <div class="alumni-card">
+      <div class="alumni-card-header">
+        <div class="alumni-role">Sport and Exercise Psychologist</div>
+        <div class="alumni-name">Dr Alexander Smith</div>
+      </div>
+      <div class="alumni-card-body">
+        <div class="alumni-meta">
+          <span><strong>Degree:</strong> BSc Sports Psychology</span>
+          <span><strong>Graduated:</strong> 2016</span>
+          <span><strong>Current role:</strong> Sport and Exercise Psychologist, Liverpool F.C.</span>
+        </div>
+        <div class="alumni-story">
+          <p>After graduating from Liverpool Hope University, I gained experience volunteering with local sports clubs before completing further training in Sport and Exercise Psychology. This helped me develop the practical experience and professional skills needed to work in elite sport.</p>
+          <br>
+          <p>I now work as a Sport and Exercise Psychologist at Liverpool F.C., supporting athletes, coaches and teams with performance, confidence, motivation and wellbeing. My role includes one-to-one sessions, group workshops and psychological skills training.</p>
+          <br>
+          <p>My degree helped me develop key skills in communication, research, understanding behaviour, ethical awareness and evidence-based practice. These skills are central to my work with athletes and support staff.</p>
+        </div>
+        <div class="alumni-advice">
+          <div class="alumni-advice-label">Advice to current students</div>
+          <p>Start gaining experience early, even through volunteering, coaching or supporting university sports teams. Sport psychology takes time and further training, but practical experience and strong communication skills are just as important as academic qualifications.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="alumni-card">
+      <div class="alumni-card-header">
+        <div class="alumni-role">CBT Therapist</div>
+        <div class="alumni-name">Dr Jasmine Perceval</div>
+      </div>
+      <div class="alumni-card-body">
+        <div class="alumni-meta">
+          <span><strong>Degree:</strong> BSc Psychology</span>
+          <span><strong>Graduated:</strong> 2017</span>
+          <span><strong>Current role:</strong> Cognitive Behavioural Therapist</span>
+        </div>
+        <div class="alumni-story">
+          <p>After graduating from Liverpool Hope University, I knew I was interested in mental health but was unsure which specific route I wanted to take. I began working in support roles, which helped me build confidence working directly with people and understand the importance of empathy, patience and professional boundaries.</p>
+          <br>
+          <p>I later completed further training in Cognitive Behavioural Therapy and now work as a CBT Therapist, supporting clients to understand the links between their thoughts, feelings and behaviours.</p>
+          <br>
+          <p>My psychology degree gave me a strong foundation in mental health, research evidence and reflective practice.</p>
+        </div>
+        <div class="alumni-advice">
+          <div class="alumni-advice-label">Advice to current students</div>
+          <p>Do not worry if your career path is not completely clear yet. Focus on gaining experience, learning from each opportunity, and understanding what kind of work suits you. Your first role after university can be a stepping stone, not your final destination.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="alumni-card">
+      <div class="alumni-card-header">
+        <div class="alumni-role">Trainee Clinical Psychologist</div>
+        <div class="alumni-name">Rebecca Browne</div>
+      </div>
+      <div class="alumni-card-body">
+        <div class="alumni-placeholder">
+          <p>Profile coming soon.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="alumni-card">
+      <div class="alumni-card-header">
+        <div class="alumni-role">Marketing Assistant</div>
+        <div class="alumni-name">Joshua Walker</div>
+      </div>
+      <div class="alumni-card-body">
+        <div class="alumni-placeholder">
+          <p>Profile coming soon.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="alumni-card">
+      <div class="alumni-card-header">
+        <div class="alumni-role">Counsellor</div>
+        <div class="alumni-name">Jade Chapman</div>
+      </div>
+      <div class="alumni-card-body">
+        <div class="alumni-placeholder">
+          <p>Profile coming soon.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="alumni-card">
+      <div class="alumni-card-header">
+        <div class="alumni-role">Public Health Officer</div>
+        <div class="alumni-name">Martin Mallinson</div>
+      </div>
+      <div class="alumni-card-body">
+        <div class="alumni-placeholder">
+          <p>Profile coming soon.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
