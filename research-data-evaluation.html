@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research, Data and Evaluation — Psychology Careers | Liverpool Hope University</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
+  .site-header { background: #1a3a5c; color: white; padding: 1rem 2rem; }
+  .site-header-title { font-size: 16px; font-weight: 500; }
+  .site-header-text { font-size: 14px; opacity: 0.85; }
+  .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+  .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .breadcrumb a { color: #1a5fa8; text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .theme-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+  .theme-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
+  .subtheme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 2rem; }
+  .subtheme-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; text-align: left; width: 100%; }
+  .subtheme-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.1); }
+  .subtheme-icon { font-size: 24px; margin-bottom: 10px; }
+  .subtheme-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+  .subtheme-desc { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
+  .explore-link { font-size: 13px; color: #1a5fa8; }
+  .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+  .now-box { background: #e8f0fb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+  .now-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 8px; }
+  .now-list { padding-left: 1.2rem; }
+  .now-list li { font-size: 14px; color: #1a3a5c; line-height: 1.7; }
+  .why-box { background: #f0f7f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+  .why-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1e6e35; margin-bottom: 8px; }
+  .why-list { padding-left: 1.2rem; }
+  .why-list li { font-size: 14px; color: #1a3a1a; line-height: 1.7; }
+  .employers-box { background: #faf8f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+  .employers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #a05a00; margin-bottom: 8px; }
+  .employers-list { padding-left: 1.2rem; }
+  .employers-list li { font-size: 14px; color: #3a2a00; line-height: 1.7; }
+  .related-box { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+  .related-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+  .related-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .related-chip { font-size: 13px; background: #f0f4ff; border: 1px solid #c0ccee; border-radius: 20px; padding: 4px 12px; color: #1a3a5c; cursor: pointer; }
+  .related-chip:hover { background: #e0e8ff; }
+  .divider { border: none; border-top: 1px solid #e8e8e8; margin: 1.5rem 0; }
+  .orgs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+  .org-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.85rem 1rem; display: flex; align-items: flex-start; gap: 10px; }
+  .org-name { font-size: 13px; font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
+  .org-desc { font-size: 12px; color: #666; }
+  .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
+  .role-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1.25rem; }
+  .role-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+  .role-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
+  .role-badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
+  .badge-grad { background: #e6f4ea; color: #1e6e35; }
+  .badge-further { background: #fff3e0; color: #a05a00; }
+  .skills-box { background: #f5f5f3; border-radius: 8px; padding: 0.85rem 1rem; margin-bottom: 1rem; }
+  .skills-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .skill-chip { font-size: 12px; background: white; border: 1px solid #ddd; border-radius: 20px; padding: 3px 10px; color: #555; }
+  .page-view { display: none; }
+  .page-view.active { display: block; }
+  .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #1a5fa8; cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 1.5rem; font-family: inherit; }
+  .back-btn:hover { text-decoration: underline; }
+  .subtheme-page-title { font-size: 24px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+  .subtheme-page-intro { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
+
+.site-nav { background: #1a3a5c; padding: 0 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+.site-nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; gap: 0; height: 48px; }
+.site-nav-home { color: white; text-decoration: none; font-weight: 600; font-size: 14px; margin-right: auto; }
+.site-nav-link { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 13px; padding: 0 14px; height: 48px; display: flex; align-items: center; cursor: pointer; transition: background 0.15s; }
+.site-nav-link:hover, a.site-nav-link:hover { background: rgba(255,255,255,0.1); color: white; }
+.site-nav-dropdown { position: relative; }
+.site-nav-menu { display: none; position: absolute; right: 0; top: 48px; background: white; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); min-width: 280px; padding: 6px 0; z-index: 1001; }
+.site-nav-menu a { display: block; padding: 9px 16px; font-size: 13px; color: #1a3a5c; text-decoration: none; }
+.site-nav-menu a:hover { background: #f0f4ff; }
+.site-nav-dropdown:hover .site-nav-menu { display: block; }
+
+</style>
+</head>
+<body>
+<div class="site-nav">
+  <div class="site-nav-inner">
+    <a class="site-nav-home" href="index.html">🏠 Psychology Careers Hub</a>
+    <a class="site-nav-link" href="index.html">All Pathways</a>
+    <div class="site-nav-dropdown">
+      <span class="site-nav-link">Themes ▾</span>
+      <div class="site-nav-menu">
+        <a href="poc.html">People, Organisations &amp; Consultancy</a>
+        <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
+        <a href="education.html">Education</a>
+        <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
+        <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
+        <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
+        <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
+        <a href="sport-exercise.html">Sport &amp; Exercise</a>
+        <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
+        <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
+        <a href="mental-health.html">Mental Health</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="site-header">
+  <div class="site-header-title">Liverpool Hope University</div>
+  <div class="site-header-text">School of Psychology — Psychology Careers</div>
+</div>
+
+<div class="container">
+
+  <!-- OVERVIEW PAGE -->
+  <div id="overview" class="page-view active">
+    <div class="breadcrumb"><a href="#">Psychology Careers</a><span>›</span><span>Research, Data and Evaluation</span></div>
+    <h1 class="theme-title">🔬 Research, Data and Evaluation</h1>
+    <p class="theme-intro">The research training at the heart of a psychology degree provides strong foundations for careers in academic and applied research, data analysis, and programme evaluation. Psychology graduates are skilled at designing studies, analysing data, and communicating findings clearly — all highly valued across a wide range of sectors.</p>
+
+    <div class="subtheme-grid">
+      <button class="subtheme-card" onclick="showPage('academic')">
+        <div class="subtheme-icon">🎓</div>
+        <div class="subtheme-name">Academic Research</div>
+        <div class="subtheme-desc">Contribute to psychology research in university and laboratory settings.</div>
+        <div class="explore-link">Explore this area →</div>
+      </button>
+      <button class="subtheme-card" onclick="showPage('applied')">
+        <div class="subtheme-icon">📊</div>
+        <div class="subtheme-name">Applied Research</div>
+        <div class="subtheme-desc">Use research methods to answer real-world questions in business, policy and the public sector.</div>
+        <div class="explore-link">Explore this area →</div>
+      </button>
+      <button class="subtheme-card" onclick="showPage('data')">
+        <div class="subtheme-icon">💻</div>
+        <div class="subtheme-name">Data and Analytics</div>
+        <div class="subtheme-desc">Apply quantitative skills to analyse and interpret data across all sectors.</div>
+        <div class="explore-link">Explore this area →</div>
+      </button>
+      <button class="subtheme-card" onclick="showPage('evaluation')">
+        <div class="subtheme-icon">📋</div>
+        <div class="subtheme-name">Evaluation and Impact</div>
+        <div class="subtheme-desc">Assess whether programmes and interventions are working and communicate the results.</div>
+        <div class="explore-link">Explore this area →</div>
+      </button>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Approach academic staff about volunteering as a research assistant — many projects need help with data collection and analysis</li>
+        <li>Build your statistical skills through your degree and consider learning R, SPSS or Excel beyond what is required</li>
+        <li>Access free datasets through the UK Data Service or Kaggle to build a data portfolio</li>
+        <li>Apply for a Research Assistant role during or after your degree</li>
+        <li>Attend research seminars and conferences to understand how psychology research is conducted and communicated</li>
+      </ul>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div><div class="org-name">British Psychological Society</div><div class="org-desc">Careers in research, including academic and applied routes</div></div></div>
+      <div class="org-card"><div><div class="org-name">Government Social Research Profession</div><div class="org-desc">Research careers within government and public policy</div></div></div>
+      <div class="org-card"><div><div class="org-name">UK Data Service</div><div class="org-desc">Access to real datasets for skills building and portfolio development</div></div></div>
+      <div class="org-card"><div><div class="org-name">Market Research Society</div><div class="org-desc">Professional body for market research and consumer insight careers</div></div></div>
+    </div>
+  </div>
+
+  <!-- ACADEMIC RESEARCH PAGE -->
+  <div id="academic" class="page-view">
+    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Research, Data and Evaluation</a><span>›</span><span>Academic Research</span></div>
+    <button class="back-btn" onclick="showPage('overview')">← Back to Research, Data and Evaluation</button>
+    <h1 class="subtheme-page-title">🎓 Academic Research</h1>
+    <p class="subtheme-page-intro">Academic research roles allow you to contribute directly to the development of psychological knowledge. Research Assistant positions are often available during undergraduate study, making this one of the most accessible areas to get started in.</p>
+
+    <div class="why-box">
+      <div class="why-label">Why Psychology?</div>
+      <ul class="why-list">
+        <li>In-depth training in research design, methodology, and statistical analysis throughout the degree</li>
+        <li>Experience of conducting and writing up original research through assessments and the dissertation</li>
+        <li>Understanding of psychological theory that informs and contextualises research questions</li>
+        <li>Critical thinking and evidence evaluation skills essential for academic work</li>
+        <li>Familiarity with ethical considerations in research with human participants</li>
+      </ul>
+    </div>
+
+    <div class="section-label">Possible roles in this area</div>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-name">Research Assistant</div>
+        <div class="role-desc">Supports academic researchers with data collection, transcription, analysis, and literature reviews. Often available as a paid or voluntary role during undergraduate study.</div>
+        <span class="role-badge badge-grad">Available during degree</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Postgraduate Researcher (PhD)</div>
+        <div class="role-desc">Conducts original doctoral research in psychology or an adjacent field, leading to an academic or applied research career.</div>
+        <span class="role-badge badge-further">Postgrad training required</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Academic Lecturer / Researcher</div>
+        <div class="role-desc">Teaches and conducts research at university level, typically requiring a PhD and a strong publication record.</div>
+        <span class="role-badge badge-further">PhD required</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div class="section-label">Skills that may be useful</div>
+      <div class="skills-list">
+        <span class="skill-chip">Research design</span>
+        <span class="skill-chip">Statistical analysis</span>
+        <span class="skill-chip">Academic writing</span>
+        <span class="skill-chip">Critical thinking</span>
+        <span class="skill-chip">Attention to detail</span>
+        <span class="skill-chip">Ethical awareness</span>
+      </div>
+    </div>
+
+    <div class="employers-box">
+      <div class="employers-label">Example employers</div>
+      <ul class="employers-list">
+        <li>Universities and higher education institutions across the UK</li>
+        <li>Research institutes and think tanks</li>
+        <li>NHS research departments and clinical trials units</li>
+        <li>Government research bodies including the Economic and Social Research Council (ESRC)</li>
+      </ul>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Ask academic staff in the School of Psychology about Research Assistant opportunities</li>
+        <li>Put effort into your dissertation — it is often the strongest piece of evidence of research ability</li>
+        <li>Attend research seminars and departmental events to understand academic research culture</li>
+        <li>If considering a PhD, look into ESRC studentships and research council funding routes</li>
+      </ul>
+    </div>
+
+    <div class="related-box">
+      <div class="related-label">You may also be interested in</div>
+      <div class="related-chips">
+        <span class="related-chip" onclick="showPage('applied')">Applied Research</span>
+        <span class="related-chip" onclick="showPage('data')">Data and Analytics</span>
+        <span class="related-chip" onclick="showPage('evaluation')">Evaluation and Impact</span>
+        <span class="related-chip">Behavioural Science</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div><div class="org-name">British Psychological Society</div><div class="org-desc">Routes into research psychology and academic careers</div></div></div>
+      <div class="org-card"><div><div class="org-name">ESRC</div><div class="org-desc">Economic and Social Research Council — funding for postgraduate research</div></div></div>
+      <div class="org-card"><div><div class="org-name">Jobs.ac.uk</div><div class="org-desc">The main job board for research and academic vacancies in the UK</div></div></div>
+    </div>
+  </div>
+
+  <!-- APPLIED RESEARCH PAGE -->
+  <div id="applied" class="page-view">
+    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Research, Data and Evaluation</a><span>›</span><span>Applied Research</span></div>
+    <button class="back-btn" onclick="showPage('overview')">← Back to Research, Data and Evaluation</button>
+    <h1 class="subtheme-page-title">📊 Applied Research</h1>
+    <p class="subtheme-page-intro">Applied research roles use psychological methods to address real-world questions in business, policy, and the public sector. These careers are a great fit for psychology graduates who enjoy research but want to see their work make a direct practical difference.</p>
+
+    <div class="why-box">
+      <div class="why-label">Why Psychology?</div>
+      <ul class="why-list">
+        <li>Psychology graduates are trained in both quantitative and qualitative research methods — a rare combination valued in applied settings</li>
+        <li>Understanding of human behaviour, attitudes, and decision-making informs research design and interpretation</li>
+        <li>Skills in survey design, interviewing, and data analysis translate directly into market and policy research roles</li>
+        <li>Ability to communicate research findings clearly to non-specialist audiences</li>
+        <li>Ethical awareness around data collection and participant rights is increasingly valued by employers</li>
+      </ul>
+    </div>
+
+    <div class="section-label">Possible roles in this area</div>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-name">Market Research Executive</div>
+        <div class="role-desc">Designs and conducts research to understand consumer behaviour, attitudes, and preferences for commercial clients.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Policy Researcher</div>
+        <div class="role-desc">Uses psychological and social research methods to generate evidence that informs government or third sector policy decisions.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Social Researcher (Government)</div>
+        <div class="role-desc">Conducts research for government departments to inform policy, service design, and public communications.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Consumer Insights Analyst</div>
+        <div class="role-desc">Analyses data and research findings to understand how and why consumers make decisions, informing business strategy.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div class="section-label">Skills that may be useful</div>
+      <div class="skills-list">
+        <span class="skill-chip">Quantitative and qualitative methods</span>
+        <span class="skill-chip">Survey design</span>
+        <span class="skill-chip">Data interpretation</span>
+        <span class="skill-chip">Report writing</span>
+        <span class="skill-chip">Communication</span>
+        <span class="skill-chip">Project management</span>
+      </div>
+    </div>
+
+    <div class="employers-box">
+      <div class="employers-label">Example employers</div>
+      <ul class="employers-list">
+        <li>Market research agencies including Ipsos, Kantar, and YouGov</li>
+        <li>Government Social Research profession across central government departments</li>
+        <li>Think tanks and policy organisations such as the Nuffield Foundation and Joseph Rowntree Foundation</li>
+        <li>Charities and public health bodies conducting programme research</li>
+      </ul>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Research the Government Social Research Fast Stream and graduate entry routes</li>
+        <li>Look into graduate schemes at major market research agencies</li>
+        <li>Practise writing research summaries and policy briefs — clear communication is essential in applied research</li>
+        <li>Build familiarity with survey platforms like Qualtrics through your degree work</li>
+      </ul>
+    </div>
+
+    <div class="related-box">
+      <div class="related-label">You may also be interested in</div>
+      <div class="related-chips">
+        <span class="related-chip" onclick="showPage('academic')">Academic Research</span>
+        <span class="related-chip" onclick="showPage('evaluation')">Evaluation and Impact</span>
+        <span class="related-chip" onclick="showPage('data')">Data and Analytics</span>
+        <span class="related-chip">Policy and Government</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div><div class="org-name">Market Research Society</div><div class="org-desc">Professional body for market and social research careers</div></div></div>
+      <div class="org-card"><div><div class="org-name">Government Social Research Profession</div><div class="org-desc">Research careers in government and public policy</div></div></div>
+      <div class="org-card"><div><div class="org-name">UK Data Service</div><div class="org-desc">Access to real datasets for skills development</div></div></div>
+    </div>
+  </div>
+
+  <!-- DATA AND ANALYTICS PAGE -->
+  <div id="data" class="page-view">
+    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Research, Data and Evaluation</a><span>›</span><span>Data and Analytics</span></div>
+    <button class="back-btn" onclick="showPage('overview')">← Back to Research, Data and Evaluation</button>
+    <h1 class="subtheme-page-title">💻 Data and Analytics</h1>
+    <p class="subtheme-page-intro">Data and analytics roles are one of the fastest-growing areas of graduate employment. Psychology graduates bring a distinctive combination of quantitative skills and understanding of human behaviour that sets them apart in this space.</p>
+
+    <div class="why-box">
+      <div class="why-label">Why Psychology?</div>
+      <ul class="why-list">
+        <li>Statistical training in psychology — including inferential statistics, regression, and data visualisation — directly underpins data analyst roles</li>
+        <li>Experience with data analysis software such as SPSS, R, or Excel is directly transferable</li>
+        <li>Understanding of research methodology means psychology graduates can critically evaluate data and avoid common analytical errors</li>
+        <li>Knowledge of human behaviour adds interpretive depth to data analysis that purely technical graduates may lack</li>
+        <li>Skills in communicating complex findings to non-specialist audiences are highly valued by employers</li>
+      </ul>
+    </div>
+
+    <div class="section-label">Possible roles in this area</div>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-name">Data Analyst</div>
+        <div class="role-desc">Collects, processes, and interprets large datasets to generate insights that inform business or organisational decisions.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Consumer Insights Analyst</div>
+        <div class="role-desc">Applies research and analytical skills to understand how and why consumers make decisions, informing marketing and product strategy.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">UX Researcher</div>
+        <div class="role-desc">Plans and conducts research to understand how users interact with products and services, using both quantitative and qualitative methods.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">People Analytics Analyst</div>
+        <div class="role-desc">Uses data to understand workforce trends, employee wellbeing, and organisational effectiveness — a growing area within HR.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div class="section-label">Skills that may be useful</div>
+      <div class="skills-list">
+        <span class="skill-chip">Statistics and data analysis</span>
+        <span class="skill-chip">SPSS, R or Excel</span>
+        <span class="skill-chip">Data visualisation</span>
+        <span class="skill-chip">Critical thinking</span>
+        <span class="skill-chip">Communication of findings</span>
+        <span class="skill-chip">Attention to detail</span>
+      </div>
+    </div>
+
+    <div class="employers-box">
+      <div class="employers-label">Example employers</div>
+      <ul class="employers-list">
+        <li>Technology companies and digital agencies</li>
+        <li>Market research firms including YouGov, Ipsos, and Kantar</li>
+        <li>Financial services, retail, and consumer goods companies</li>
+        <li>NHS and public sector bodies with data and intelligence teams</li>
+      </ul>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Go beyond what is required in your statistics modules — build confidence with SPSS, R, or Excel</li>
+        <li>Use free datasets from the UK Data Service or Kaggle to practise analysis and build a portfolio</li>
+        <li>Consider free online courses in data analysis, SQL, or Python to supplement your degree</li>
+        <li>Look into graduate analyst schemes at large employers — many are open to any degree subject</li>
+      </ul>
+    </div>
+
+    <div class="related-box">
+      <div class="related-label">You may also be interested in</div>
+      <div class="related-chips">
+        <span class="related-chip" onclick="showPage('applied')">Applied Research</span>
+        <span class="related-chip" onclick="showPage('evaluation')">Evaluation and Impact</span>
+        <span class="related-chip">UX Research</span>
+        <span class="related-chip">Behavioural Science</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div><div class="org-name">UK Data Service</div><div class="org-desc">Free access to datasets for skills building and portfolio work</div></div></div>
+      <div class="org-card"><div><div class="org-name">Office for National Statistics</div><div class="org-desc">Public datasets and careers in government data and statistics</div></div></div>
+      <div class="org-card"><div><div class="org-name">Kaggle</div><div class="org-desc">Online platform for data science practice and portfolio projects</div></div></div>
+    </div>
+  </div>
+
+  <!-- EVALUATION AND IMPACT PAGE -->
+  <div id="evaluation" class="page-view">
+    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Research, Data and Evaluation</a><span>›</span><span>Evaluation and Impact</span></div>
+    <button class="back-btn" onclick="showPage('overview')">← Back to Research, Data and Evaluation</button>
+    <h1 class="subtheme-page-title">📋 Evaluation and Impact</h1>
+    <p class="subtheme-page-intro">Evaluation and impact roles are a growing area, particularly in the charity, public health, and public sector fields. They draw directly on psychology research skills to assess whether programmes and interventions are working, and communicate findings to inform future decisions.</p>
+
+    <div class="why-box">
+      <div class="why-label">Why Psychology?</div>
+      <ul class="why-list">
+        <li>Research methods training provides the foundation for designing and conducting programme evaluations</li>
+        <li>Knowledge of psychological theory helps evaluators understand why interventions do or do not work</li>
+        <li>Skills in both quantitative and qualitative data collection and analysis are directly applicable</li>
+        <li>Understanding of behaviour change theory is particularly relevant in health and social care evaluation</li>
+        <li>Ability to communicate complex findings clearly to commissioners, funders, and the public</li>
+      </ul>
+    </div>
+
+    <div class="section-label">Possible roles in this area</div>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-name">Evaluation Officer</div>
+        <div class="role-desc">Assesses the effectiveness of programmes and interventions using a range of research methods, and reports findings to internal and external stakeholders.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Monitoring and Evaluation Officer</div>
+        <div class="role-desc">Tracks and reports on programme delivery and outcomes, often working in charities, local authorities, or international development organisations.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Impact Analyst</div>
+        <div class="role-desc">Measures and communicates the social or commercial impact of an organisation's programmes, often producing annual impact reports or case studies.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div class="section-label">Skills that may be useful</div>
+      <div class="skills-list">
+        <span class="skill-chip">Research methods</span>
+        <span class="skill-chip">Data collection and analysis</span>
+        <span class="skill-chip">Report writing</span>
+        <span class="skill-chip">Stakeholder communication</span>
+        <span class="skill-chip">Critical thinking</span>
+        <span class="skill-chip">Project management</span>
+      </div>
+    </div>
+
+    <div class="employers-box">
+      <div class="employers-label">Example employers</div>
+      <ul class="employers-list">
+        <li>Charities and third sector organisations with impact and evaluation functions</li>
+        <li>NHS and public health bodies evaluating health programmes</li>
+        <li>Local authorities and government departments</li>
+        <li>Evaluation consultancies and social research firms</li>
+      </ul>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Volunteer with a charity and offer to help with data collection or reporting — many small organisations need this support</li>
+        <li>Build familiarity with logic models and theory of change frameworks, which are widely used in evaluation</li>
+        <li>Look for graduate research or evaluation roles in charities and public health organisations</li>
+        <li>Use your dissertation to develop a strong example of applying research methods to a real question</li>
+      </ul>
+    </div>
+
+    <div class="related-box">
+      <div class="related-label">You may also be interested in</div>
+      <div class="related-chips">
+        <span class="related-chip" onclick="showPage('applied')">Applied Research</span>
+        <span class="related-chip" onclick="showPage('academic')">Academic Research</span>
+        <span class="related-chip">Charity and Third Sector</span>
+        <span class="related-chip">Public Health</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div><div class="org-name">Government Social Research Profession</div><div class="org-desc">Research and evaluation careers in government</div></div></div>
+      <div class="org-card"><div><div class="org-name">NCVO</div><div class="org-desc">National Council for Voluntary Organisations — charity sector careers and resources</div></div></div>
+      <div class="org-card"><div><div class="org-name">Market Research Society</div><div class="org-desc">Professional standards and career support for research professionals</div></div></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function showPage(id) {
+  document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+</script>
+</body>
+</html>

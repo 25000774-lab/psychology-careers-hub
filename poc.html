@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>People, Organisations and Consultancy — Psychology Careers | Liverpool Hope University</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
+  .site-header { background: #1a3a5c; color: white; padding: 1rem 2rem; }
+  .site-header-title { font-size: 16px; font-weight: 500; }
+  .site-header-text { font-size: 14px; opacity: 0.85; }
+  .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+  .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .breadcrumb a { color: #1a5fa8; text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .theme-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+  .theme-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
+  .subtheme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 2rem; }
+  .subtheme-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; text-align: left; width: 100%; }
+  .subtheme-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.1); }
+  .subtheme-icon { font-size: 24px; margin-bottom: 10px; }
+  .subtheme-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+  .subtheme-desc { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
+  .explore-link { font-size: 13px; color: #1a5fa8; }
+  .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+  .now-box { background: #e8f0fb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+  .now-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 8px; }
+  .now-list { padding-left: 1.2rem; }
+  .now-list li { font-size: 14px; color: #1a3a5c; line-height: 1.7; }
+  .why-box { background: #f0f7f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+  .why-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1e6e35; margin-bottom: 8px; }
+  .why-list { padding-left: 1.2rem; }
+  .why-list li { font-size: 14px; color: #1a3a1a; line-height: 1.7; }
+  .employers-box { background: #faf8f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+  .employers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #a05a00; margin-bottom: 8px; }
+  .employers-list { padding-left: 1.2rem; }
+  .employers-list li { font-size: 14px; color: #3a2a00; line-height: 1.7; }
+  .related-box { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+  .related-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+  .related-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .related-chip { font-size: 13px; background: #f0f4ff; border: 1px solid #c0ccee; border-radius: 20px; padding: 4px 12px; color: #1a3a5c; cursor: pointer; }
+  .related-chip:hover { background: #e0e8ff; }
+  .divider { border: none; border-top: 1px solid #e8e8e8; margin: 1.5rem 0; }
+  .orgs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+  .org-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.85rem 1rem; display: flex; align-items: flex-start; gap: 10px; }
+  .org-name { font-size: 13px; font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
+  .org-desc { font-size: 12px; color: #666; }
+  .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
+  .role-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1.25rem; }
+  .role-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+  .role-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
+  .role-badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
+  .badge-grad { background: #e6f4ea; color: #1e6e35; }
+  .badge-further { background: #fff3e0; color: #a05a00; }
+  .skills-box { background: #f5f5f3; border-radius: 8px; padding: 0.85rem 1rem; margin-bottom: 1rem; }
+  .skills-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .skill-chip { font-size: 12px; background: white; border: 1px solid #ddd; border-radius: 20px; padding: 3px 10px; color: #555; }
+  .page-view { display: none; }
+  .page-view.active { display: block; }
+  .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #1a5fa8; cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 1.5rem; font-family: inherit; }
+  .back-btn:hover { text-decoration: underline; }
+  .subtheme-page-title { font-size: 24px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+  .subtheme-page-intro { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
+
+.site-nav { background: #1a3a5c; padding: 0 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+.site-nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; gap: 0; height: 48px; }
+.site-nav-home { color: white; text-decoration: none; font-weight: 600; font-size: 14px; margin-right: auto; }
+.site-nav-link { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 13px; padding: 0 14px; height: 48px; display: flex; align-items: center; cursor: pointer; transition: background 0.15s; }
+.site-nav-link:hover, a.site-nav-link:hover { background: rgba(255,255,255,0.1); color: white; }
+.site-nav-dropdown { position: relative; }
+.site-nav-menu { display: none; position: absolute; right: 0; top: 48px; background: white; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); min-width: 280px; padding: 6px 0; z-index: 1001; }
+.site-nav-menu a { display: block; padding: 9px 16px; font-size: 13px; color: #1a3a5c; text-decoration: none; }
+.site-nav-menu a:hover { background: #f0f4ff; }
+.site-nav-dropdown:hover .site-nav-menu { display: block; }
+
+</style>
+</head>
+<body>
+<div class="site-nav">
+  <div class="site-nav-inner">
+    <a class="site-nav-home" href="index.html">&#127968; Psychology Careers Hub</a>
+    <a class="site-nav-link" href="index.html">All Pathways</a>
+    <div class="site-nav-dropdown">
+      <span class="site-nav-link">Themes &#9662;</span>
+      <div class="site-nav-menu">
+        <a href="poc.html">People, Organisations &amp; Consultancy</a>
+        <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
+        <a href="education.html">Education</a>
+        <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
+        <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
+        <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
+        <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
+        <a href="sport-exercise.html">Sport &amp; Exercise</a>
+        <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
+        <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
+        <a href="mental-health.html">Mental Health</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="site-header">
+  <div class="site-header-title">Liverpool Hope University</div>
+  <div class="site-header-text">School of Psychology — Psychology Careers</div>
+</div>
+
+<div class="container">
+
+  <!-- OVERVIEW PAGE -->
+  <div id="overview" class="page-view active">
+    <div class="breadcrumb">
+      <a href="#">Psychology Careers</a>
+      <span>›</span>
+      <span>People, Organisations and Consultancy</span>
+    </div>
+    <h1 class="theme-title">🏢 People, Organisations and Consultancy</h1>
+    <p class="theme-intro">Psychology graduates are well suited to roles that involve understanding human behaviour in workplace settings. This theme covers careers in HR, people management, occupational psychology, and consultancy, where knowledge of motivation, communication, behaviour change, and group dynamics is directly applicable.</p>
+
+    <div class="subtheme-grid">
+      <button class="subtheme-card" onclick="showPage('hr')">
+        <div class="subtheme-icon">👥</div>
+        <div class="subtheme-name">Human Resources</div>
+        <div class="subtheme-desc">Support, develop and manage people within organisations using psychological knowledge.</div>
+        <div class="explore-link">Explore this area →</div>
+      </button>
+      <button class="subtheme-card" onclick="showPage('management')">
+        <div class="subtheme-icon">📋</div>
+        <div class="subtheme-name">People Management</div>
+        <div class="subtheme-desc">Lead and develop teams, drawing on understanding of motivation and communication.</div>
+        <div class="explore-link">Explore this area →</div>
+      </button>
+      <button class="subtheme-card" onclick="showPage('occupational')">
+        <div class="subtheme-icon">🔬</div>
+        <div class="subtheme-name">Occupational Psychology</div>
+        <div class="subtheme-desc">Apply psychology to improve performance, wellbeing, and effectiveness at work.</div>
+        <div class="explore-link">Explore this area →</div>
+      </button>
+      <button class="subtheme-card" onclick="showPage('consultancy')">
+        <div class="subtheme-icon">💡</div>
+        <div class="subtheme-name">Consultancy</div>
+        <div class="subtheme-desc">Help organisations solve problems and improve performance using analytical and people skills.</div>
+        <div class="explore-link">Explore this area →</div>
+      </button>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Take on a committee or leadership role in a student society</li>
+        <li>Look for part-time work in a people-facing role such as retail, hospitality or customer service</li>
+        <li>Explore CIPD student membership and resources</li>
+        <li>Attend careers events focused on HR, business, or graduate schemes</li>
+        <li>Look into the Civil Service Fast Stream and large graduate employer schemes</li>
+      </ul>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div><div class="org-name">CIPD</div><div class="org-desc">Chartered Institute of Personnel and Development — the professional body for HR</div></div></div>
+      <div class="org-card"><div><div class="org-name">BPS Division of Occupational Psychology</div><div class="org-desc">Career info and training routes for occupational psychology</div></div></div>
+      <div class="org-card"><div><div class="org-name">Association for Business Psychology</div><div class="org-desc">Professional body for applied business psychology</div></div></div>
+      <div class="org-card"><div><div class="org-name">HCPC</div><div class="org-desc">Registration body for chartered occupational psychologists</div></div></div>
+    </div>
+  </div>
+
+  <!-- HUMAN RESOURCES PAGE -->
+  <div id="hr" class="page-view">
+    <div class="breadcrumb">
+      <a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a>
+      <span>›</span>
+      <a href="#" onclick="showPage('overview'); return false;">People, Organisations and Consultancy</a>
+      <span>›</span>
+      <span>Human Resources</span>
+    </div>
+    <button class="back-btn" onclick="showPage('overview')">← Back to People, Organisations and Consultancy</button>
+    <h1 class="subtheme-page-title">👥 Human Resources</h1>
+    <p class="subtheme-page-intro">HR is one of the most common destinations for psychology graduates. Knowledge of recruitment, motivation, learning, and organisational behaviour translates directly into roles that manage, develop, and support people at work.</p>
+
+    <div class="why-box">
+      <div class="why-label">Why Psychology?</div>
+      <ul class="why-list">
+        <li>Understanding of what motivates people and how to get the best from individuals and teams</li>
+        <li>Knowledge of learning theory and behaviour change, directly applicable to training and development</li>
+        <li>Research and analytical skills for measuring performance and evaluating HR initiatives</li>
+        <li>Strong communication and interpersonal skills developed throughout the degree</li>
+        <li>Understanding of group dynamics, conflict, and organisational behaviour</li>
+      </ul>
+    </div>
+
+    <div class="section-label">Possible roles in this area</div>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-name">Recruitment Consultant / Talent Acquisition</div>
+        <div class="role-desc">Uses psychological knowledge to assess candidates, design interviews, and identify talent for organisations.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Learning and Development Officer</div>
+        <div class="role-desc">Designs and delivers training programmes using principles of learning, behaviour change, and motivation.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Organisational Development Adviser</div>
+        <div class="role-desc">Applies psychology to improve workplace culture, team dynamics, and organisational effectiveness.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">HR Graduate Scheme</div>
+        <div class="role-desc">Structured graduate programmes at large employers that rotate across HR functions including recruitment, reward, and employee relations.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div class="section-label">Skills that may be useful</div>
+      <div class="skills-list">
+        <span class="skill-chip">Communication</span>
+        <span class="skill-chip">Empathy and active listening</span>
+        <span class="skill-chip">Understanding of motivation</span>
+        <span class="skill-chip">Data and analytical skills</span>
+        <span class="skill-chip">Organisation and planning</span>
+        <span class="skill-chip">Ethical awareness</span>
+      </div>
+    </div>
+
+    <div class="employers-box">
+      <div class="employers-label">Example employers</div>
+      <ul class="employers-list">
+        <li>Large graduate employers including Deloitte, PwC, Unilever and the NHS</li>
+        <li>Local authorities and public sector organisations</li>
+        <li>Recruitment agencies and headhunting firms</li>
+        <li>HR consultancies and people management firms</li>
+      </ul>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Explore CIPD student membership and free resources on HR careers</li>
+        <li>Take on a people-facing role in part-time work to build communication and interpersonal skills</li>
+        <li>Research large graduate HR schemes and their application timelines</li>
+        <li>Attend careers fairs and employer events focused on business and HR</li>
+      </ul>
+    </div>
+
+    <div class="related-box">
+      <div class="related-label">You may also be interested in</div>
+      <div class="related-chips">
+        <span class="related-chip" onclick="showPage('management')">People Management</span>
+        <span class="related-chip" onclick="showPage('occupational')">Occupational Psychology</span>
+        <span class="related-chip" onclick="showPage('consultancy')">Consultancy</span>
+        <span class="related-chip">Behaviour Change Officer</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div><div class="org-name">CIPD</div><div class="org-desc">The professional body for HR and people development</div></div></div>
+      <div class="org-card"><div><div class="org-name">BPS Division of Occupational Psychology</div><div class="org-desc">Career info and routes into occupational psychology</div></div></div>
+    </div>
+  </div>
+
+  <!-- PEOPLE MANAGEMENT PAGE -->
+  <div id="management" class="page-view">
+    <div class="breadcrumb">
+      <a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a>
+      <span>›</span>
+      <a href="#" onclick="showPage('overview'); return false;">People, Organisations and Consultancy</a>
+      <span>›</span>
+      <span>People Management</span>
+    </div>
+    <button class="back-btn" onclick="showPage('overview')">← Back to People, Organisations and Consultancy</button>
+    <h1 class="subtheme-page-title">📋 People Management</h1>
+    <p class="subtheme-page-intro">Psychology graduates bring strong interpersonal skills and an understanding of motivation and communication to management roles, making them effective leaders at all levels of an organisation.</p>
+
+    <div class="why-box">
+      <div class="why-label">Why Psychology?</div>
+      <ul class="why-list">
+        <li>Deep understanding of what motivates individuals and how to bring out the best in people</li>
+        <li>Knowledge of group dynamics, conflict resolution, and team behaviour</li>
+        <li>Strong communication skills, including the ability to adapt style to different audiences</li>
+        <li>Awareness of wellbeing and mental health in the workplace</li>
+        <li>Analytical thinking and evidence-based decision making</li>
+      </ul>
+    </div>
+
+    <div class="section-label">Possible roles in this area</div>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-name">Team Leader / Line Manager</div>
+        <div class="role-desc">Entry-level management positions overseeing small teams, drawing on interpersonal and communication skills.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Graduate Management Scheme</div>
+        <div class="role-desc">Structured programmes at large organisations that develop future managers and leaders across different business areas.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Leadership Development Coordinator</div>
+        <div class="role-desc">Supports the identification and development of leadership talent within an organisation, often sitting within HR or L&D.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div class="section-label">Skills that may be useful</div>
+      <div class="skills-list">
+        <span class="skill-chip">Leadership and influence</span>
+        <span class="skill-chip">Communication</span>
+        <span class="skill-chip">Motivation and behaviour</span>
+        <span class="skill-chip">Conflict resolution</span>
+        <span class="skill-chip">Decision making</span>
+        <span class="skill-chip">Emotional intelligence</span>
+      </div>
+    </div>
+
+    <div class="employers-box">
+      <div class="employers-label">Example employers</div>
+      <ul class="employers-list">
+        <li>Retail and hospitality chains with graduate management programmes</li>
+        <li>NHS and public sector management schemes</li>
+        <li>Large graduate employers including Marks & Spencer, John Lewis, and Tesco</li>
+        <li>Charities and third sector organisations with management roles</li>
+      </ul>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Take on a leadership or committee role in a student society</li>
+        <li>Apply for a student ambassador or peer mentor role</li>
+        <li>Seek out part-time work in a team environment and aim for a supervisor role</li>
+        <li>Research graduate management schemes and their requirements</li>
+      </ul>
+    </div>
+
+    <div class="related-box">
+      <div class="related-label">You may also be interested in</div>
+      <div class="related-chips">
+        <span class="related-chip" onclick="showPage('hr')">Human Resources</span>
+        <span class="related-chip" onclick="showPage('consultancy')">Consultancy</span>
+        <span class="related-chip" onclick="showPage('occupational')">Occupational Psychology</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div><div class="org-name">CIPD</div><div class="org-desc">The professional body for HR and people development</div></div></div>
+      <div class="org-card"><div><div class="org-name">Chartered Management Institute</div><div class="org-desc">Professional body for management and leadership</div></div></div>
+    </div>
+  </div>
+
+  <!-- OCCUPATIONAL PSYCHOLOGY PAGE -->
+  <div id="occupational" class="page-view">
+    <div class="breadcrumb">
+      <a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a>
+      <span>›</span>
+      <a href="#" onclick="showPage('overview'); return false;">People, Organisations and Consultancy</a>
+      <span>›</span>
+      <span>Occupational Psychology</span>
+    </div>
+    <button class="back-btn" onclick="showPage('overview')">← Back to People, Organisations and Consultancy</button>
+    <h1 class="subtheme-page-title">🔬 Occupational Psychology</h1>
+    <p class="subtheme-page-intro">Occupational psychology applies psychological research to the world of work, focusing on improving performance, wellbeing, and organisational effectiveness. With further training, it leads to chartered practitioner status — one of the seven protected titles in psychology.</p>
+
+    <div class="why-box">
+      <div class="why-label">Why Psychology?</div>
+      <ul class="why-list">
+        <li>Occupational psychology is built directly on undergraduate psychology — it applies theories of motivation, learning, and behaviour in workplace settings</li>
+        <li>Research and statistical skills are central to assessment, evaluation, and evidence-based practice</li>
+        <li>Understanding of wellbeing, stress, and mental health is increasingly valued by employers</li>
+        <li>Knowledge of group behaviour, leadership, and organisational change informs consultancy and advisory work</li>
+      </ul>
+    </div>
+
+    <div class="section-label">Possible roles in this area</div>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-name">Wellbeing at Work Coordinator</div>
+        <div class="role-desc">Designs and implements workplace wellbeing initiatives drawing on psychological research and behaviour change principles.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Employee Engagement Analyst</div>
+        <div class="role-desc">Uses surveys, data, and psychological insight to measure and improve employee motivation and job satisfaction.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Chartered Occupational Psychologist</div>
+        <div class="role-desc">A fully qualified practitioner working across areas including assessment, selection, coaching, organisational development, and wellbeing.</div>
+        <span class="role-badge badge-further">Postgrad training required</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div class="section-label">Skills that may be useful</div>
+      <div class="skills-list">
+        <span class="skill-chip">Psychological theory</span>
+        <span class="skill-chip">Research and evaluation</span>
+        <span class="skill-chip">Data analysis</span>
+        <span class="skill-chip">Communication and presentation</span>
+        <span class="skill-chip">Ethical practice</span>
+        <span class="skill-chip">Problem solving</span>
+      </div>
+    </div>
+
+    <div class="employers-box">
+      <div class="employers-label">Example employers</div>
+      <ul class="employers-list">
+        <li>Occupational psychology consultancies and HR advisory firms</li>
+        <li>NHS and public sector organisations with OD or workforce functions</li>
+        <li>Large corporations with in-house people analytics or wellbeing teams</li>
+        <li>Assessment and selection companies</li>
+      </ul>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Research BPS-accredited MSc programmes in Occupational Psychology</li>
+        <li>Explore the BPS Division of Occupational Psychology and the Association for Business Psychology</li>
+        <li>Look for assistant or analyst roles in HR, wellbeing, or people teams as a graduate entry point</li>
+        <li>Build data and research skills through your dissertation or online courses</li>
+      </ul>
+    </div>
+
+    <div class="related-box">
+      <div class="related-label">You may also be interested in</div>
+      <div class="related-chips">
+        <span class="related-chip" onclick="showPage('hr')">Human Resources</span>
+        <span class="related-chip" onclick="showPage('consultancy')">Consultancy</span>
+        <span class="related-chip">Behavioural Science</span>
+        <span class="related-chip">Research and Data</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div><div class="org-name">BPS Division of Occupational Psychology</div><div class="org-desc">Career info, training routes and accredited programmes</div></div></div>
+      <div class="org-card"><div><div class="org-name">Association for Business Psychology</div><div class="org-desc">Professional body for applied business psychology</div></div></div>
+      <div class="org-card"><div><div class="org-name">HCPC</div><div class="org-desc">Registration body for chartered occupational psychologists</div></div></div>
+      <div class="org-card"><div><div class="org-name">CIPD</div><div class="org-desc">The professional body for HR and people development</div></div></div>
+    </div>
+  </div>
+
+  <!-- CONSULTANCY PAGE -->
+  <div id="consultancy" class="page-view">
+    <div class="breadcrumb">
+      <a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a>
+      <span>›</span>
+      <a href="#" onclick="showPage('overview'); return false;">People, Organisations and Consultancy</a>
+      <span>›</span>
+      <span>Consultancy</span>
+    </div>
+    <button class="back-btn" onclick="showPage('overview')">← Back to People, Organisations and Consultancy</button>
+    <h1 class="subtheme-page-title">💡 Consultancy</h1>
+    <p class="subtheme-page-intro">Consultancy roles allow psychology graduates to apply their analytical and people skills to help organisations solve problems and improve performance, often working across a range of clients and sectors.</p>
+
+    <div class="why-box">
+      <div class="why-label">Why Psychology?</div>
+      <ul class="why-list">
+        <li>Analytical and critical thinking skills developed through research methods and statistics</li>
+        <li>Understanding of human behaviour, motivation, and decision-making — central to advising organisations</li>
+        <li>Strong written and verbal communication skills for presenting findings and recommendations</li>
+        <li>Knowledge of behaviour change and organisational dynamics</li>
+        <li>Ability to synthesise evidence and translate it into practical recommendations</li>
+      </ul>
+    </div>
+
+    <div class="section-label">Possible roles in this area</div>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-name">Management Consultant</div>
+        <div class="role-desc">Advises organisations on strategy, structure, and performance, drawing on analytical and communication skills. Many large firms run psychology-friendly graduate schemes.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Change Management Consultant</div>
+        <div class="role-desc">Manages the human side of organisational change, drawing on psychological knowledge of behaviour, motivation, and resistance to change.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Behavioural Science Consultant</div>
+        <div class="role-desc">Applies behavioural science and psychological research to help organisations understand and influence the behaviour of employees, customers, or users.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Learning Experience Designer</div>
+        <div class="role-desc">Designs engaging learning and development programmes for corporate or educational settings, drawing on psychology of learning and instructional design principles.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div class="section-label">Skills that may be useful</div>
+      <div class="skills-list">
+        <span class="skill-chip">Analytical thinking</span>
+        <span class="skill-chip">Communication and presentation</span>
+        <span class="skill-chip">Problem solving</span>
+        <span class="skill-chip">Understanding of behaviour</span>
+        <span class="skill-chip">Report writing</span>
+        <span class="skill-chip">Client management</span>
+      </div>
+    </div>
+
+    <div class="employers-box">
+      <div class="employers-label">Example employers</div>
+      <ul class="employers-list">
+        <li>Big Four firms — Deloitte, PwC, KPMG, EY — all run graduate schemes open to psychology graduates</li>
+        <li>Specialist behavioural science consultancies such as the Behavioural Insights Team</li>
+        <li>HR and organisational development consultancies</li>
+        <li>Public sector and government advisory bodies</li>
+      </ul>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Research graduate consultancy schemes — many are open to all degree subjects</li>
+        <li>Build analytical and presentation skills through your degree assessments</li>
+        <li>Look into the Behavioural Insights Team and similar organisations for internship opportunities</li>
+        <li>Practice case study interviews, which are commonly used in consultancy recruitment</li>
+      </ul>
+    </div>
+
+    <div class="related-box">
+      <div class="related-label">You may also be interested in</div>
+      <div class="related-chips">
+        <span class="related-chip" onclick="showPage('occupational')">Occupational Psychology</span>
+        <span class="related-chip" onclick="showPage('hr')">Human Resources</span>
+        <span class="related-chip">Behavioural Science</span>
+        <span class="related-chip">Policy and Government</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div><div class="org-name">Association for Business Psychology</div><div class="org-desc">Professional body for applied business psychology and consultancy</div></div></div>
+      <div class="org-card"><div><div class="org-name">BPS Division of Occupational Psychology</div><div class="org-desc">Career info for applied psychology in workplace settings</div></div></div>
+      <div class="org-card"><div><div class="org-name">Behavioural Insights Team</div><div class="org-desc">Leading applied behavioural science organisation — useful for understanding the field</div></div></div>
+      <div class="org-card"><div><div class="org-name">Management Consultancies Association</div><div class="org-desc">Industry body for the UK management consulting sector</div></div></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function showPage(id) {
+  document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mental Health — Psychology Careers | Liverpool Hope University</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
+  .site-header { background: #1a3a5c; color: white; padding: 1rem 2rem; }
+  .site-header-title { font-size: 16px; font-weight: 500; }
+  .site-header-text { font-size: 14px; opacity: 0.85; }
+  .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+  .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .breadcrumb a { color: #1a5fa8; text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .theme-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+  .theme-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
+  .subtheme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 2rem; }
+  .subtheme-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; text-align: left; width: 100%; }
+  .subtheme-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.1); }
+  .subtheme-icon { font-size: 24px; margin-bottom: 10px; }
+  .subtheme-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+  .subtheme-desc { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
+  .explore-link { font-size: 13px; color: #1a5fa8; }
+  .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+  .now-box { background: #e8f0fb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+  .now-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 8px; }
+  .now-list { padding-left: 1.2rem; }
+  .now-list li { font-size: 14px; color: #1a3a5c; line-height: 1.7; }
+  .why-box { background: #f0f7f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+  .why-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1e6e35; margin-bottom: 8px; }
+  .why-list { padding-left: 1.2rem; }
+  .why-list li { font-size: 14px; color: #1a3a1a; line-height: 1.7; }
+  .employers-box { background: #faf8f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+  .employers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #a05a00; margin-bottom: 8px; }
+  .employers-list { padding-left: 1.2rem; }
+  .employers-list li { font-size: 14px; color: #3a2a00; line-height: 1.7; }
+  .info-box { background: #fff8e1; border: 1px solid #ffe082; border-radius: 8px; padding: 0.9rem 1.1rem; margin-bottom: 1.5rem; }
+  .info-box-text { font-size: 13px; color: #5a4000; line-height: 1.6; }
+  .related-box { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+  .related-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+  .related-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .related-chip { font-size: 13px; background: #f0f4ff; border: 1px solid #c0ccee; border-radius: 20px; padding: 4px 12px; color: #1a3a5c; cursor: pointer; }
+  .related-chip:hover { background: #e0e8ff; }
+  .divider { border: none; border-top: 1px solid #e8e8e8; margin: 1.5rem 0; }
+  .orgs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+  .org-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.85rem 1rem; }
+  .org-name { font-size: 13px; font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
+  .org-desc { font-size: 12px; color: #666; }
+  .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
+  .role-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1.25rem; }
+  .role-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+  .role-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
+  .role-badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
+  .badge-grad { background: #e6f4ea; color: #1e6e35; }
+  .badge-further { background: #fff3e0; color: #a05a00; }
+  .skills-box { background: #f5f5f3; border-radius: 8px; padding: 0.85rem 1rem; margin-bottom: 1rem; }
+  .skills-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .skill-chip { font-size: 12px; background: white; border: 1px solid #ddd; border-radius: 20px; padding: 3px 10px; color: #555; }
+  .page-view { display: none; }
+  .page-view.active { display: block; }
+  .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #1a5fa8; cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 1.5rem; font-family: inherit; }
+  .back-btn:hover { text-decoration: underline; }
+  .subtheme-page-title { font-size: 24px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+  .subtheme-page-intro { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
+
+.site-nav { background: #1a3a5c; padding: 0 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+.site-nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; gap: 0; height: 48px; }
+.site-nav-home { color: white; text-decoration: none; font-weight: 600; font-size: 14px; margin-right: auto; }
+.site-nav-link { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 13px; padding: 0 14px; height: 48px; display: flex; align-items: center; cursor: pointer; transition: background 0.15s; }
+.site-nav-link:hover, a.site-nav-link:hover { background: rgba(255,255,255,0.1); color: white; }
+.site-nav-dropdown { position: relative; }
+.site-nav-menu { display: none; position: absolute; right: 0; top: 48px; background: white; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); min-width: 280px; padding: 6px 0; z-index: 1001; }
+.site-nav-menu a { display: block; padding: 9px 16px; font-size: 13px; color: #1a3a5c; text-decoration: none; }
+.site-nav-menu a:hover { background: #f0f4ff; }
+.site-nav-dropdown:hover .site-nav-menu { display: block; }
+
+</style>
+</head>
+<body>
+<div class="site-nav">
+  <div class="site-nav-inner">
+    <a class="site-nav-home" href="index.html">🏠 Psychology Careers Hub</a>
+    <a class="site-nav-link" href="index.html">All Pathways</a>
+    <div class="site-nav-dropdown">
+      <span class="site-nav-link">Themes ▾</span>
+      <div class="site-nav-menu">
+        <a href="poc.html">People, Organisations &amp; Consultancy</a>
+        <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
+        <a href="education.html">Education</a>
+        <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
+        <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
+        <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
+        <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
+        <a href="sport-exercise.html">Sport &amp; Exercise</a>
+        <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
+        <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
+        <a href="mental-health.html">Mental Health</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="site-header">
+  <div class="site-header-title">Liverpool Hope University</div>
+  <div class="site-header-text">School of Psychology — Psychology Careers</div>
+</div>
+<div class="container">
+
+  <!-- OVERVIEW -->
+  <div id="overview" class="page-view active">
+    <div class="breadcrumb"><a href="#">Psychology Careers</a><span>›</span><span>Mental Health</span></div>
+    <h1 class="theme-title">🧠 Mental Health</h1>
+    <p class="theme-intro">Mental health careers are one of the most direct pathways from a psychology degree, spanning therapy, counselling, community support, early intervention, and occupational therapy. Most practitioner roles require further postgraduate training, but there are graduate-entry positions — such as Assistant Psychologist and Mental Health Support Worker — that allow you to build experience and work towards qualified status. Understanding which route suits you early in your degree is an important first step.</p>
+
+    <div class="info-box">
+      <div class="info-box-text"><strong>Note on training routes:</strong> Most clinical and therapeutic roles in this area require postgraduate training and professional registration. Graduate-entry roles such as Assistant Psychologist or Mental Health Support Worker are valuable stepping stones. Each sub-theme below explains what further training is typically needed and when.</div>
+    </div>
+
+    <div class="subtheme-grid">
+      <button class="subtheme-card" onclick="showPage('high-intensity')">
+        <div class="subtheme-icon">🏥</div>
+        <div class="subtheme-name">Psychological Therapy — High Intensity</div>
+        <div class="subtheme-desc">Delivering intensive, evidence-based psychological interventions for moderate to severe mental health conditions. Most roles require postgraduate training.</div>
+        <div class="explore-link">Explore this area →</div>
+      </button>
+      <button class="subtheme-card" onclick="showPage('low-intensity')">
+        <div class="subtheme-icon">🌱</div>
+        <div class="subtheme-name">Early Intervention — Low Intensity</div>
+        <div class="subtheme-desc">Brief, structured interventions for mild to moderate mental health conditions, often delivered in community or primary care settings. Some roles are accessible at graduate level with on-the-job training.</div>
+        <div class="explore-link">Explore this area →</div>
+      </button>
+      <button class="subtheme-card" onclick="showPage('counselling')">
+        <div class="subtheme-icon">💬</div>
+        <div class="subtheme-name">Counselling and Psychotherapy</div>
+        <div class="subtheme-desc">Supporting clients through emotional and psychological difficulties using a range of therapeutic approaches. Requires professional training and accreditation.</div>
+        <div class="explore-link">Explore this area →</div>
+      </button>
+      <button class="subtheme-card" onclick="showPage('community')">
+        <div class="subtheme-icon">🤝</div>
+        <div class="subtheme-name">Community and Social Support</div>
+        <div class="subtheme-desc">Supporting people with mental health needs in community settings, focusing on social inclusion, housing, and daily living. Includes graduate-entry roles.</div>
+        <div class="explore-link">Explore this area →</div>
+      </button>
+      <button class="subtheme-card" onclick="showPage('ot')">
+        <div class="subtheme-icon">🔄</div>
+        <div class="subtheme-name">Occupational Therapy</div>
+        <div class="subtheme-desc">Helping people with mental health conditions to regain independence and engage in meaningful daily activities. Requires a registered OT qualification.</div>
+        <div class="explore-link">Explore this area →</div>
+      </button>
+      <button class="subtheme-card" onclick="showPage('research')">
+        <div class="subtheme-icon">🔬</div>
+        <div class="subtheme-name">Mental Health Research</div>
+        <div class="subtheme-desc">Applying research and analytical skills to understand mental health conditions, evaluate interventions, and inform clinical practice and policy.</div>
+        <div class="explore-link">Explore this area →</div>
+      </button>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Volunteer with mental health charities such as Mind, Samaritans, or Rethink to build relevant experience</li>
+        <li>Look into Assistant Psychologist roles and what NHS Trusts expect at application — most require a 2:1 and relevant voluntary experience</li>
+        <li>Explore the NHS Health Careers website for detailed information on each training pathway</li>
+        <li>Research the differences between clinical psychology, counselling psychology, and CBT training routes — they lead to different careers</li>
+        <li>Consider joining the BPS Student Committee or engaging with the Division of Clinical Psychology's student resources</li>
+      </ul>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div class="org-name">British Psychological Society (BPS)</div><div class="org-desc">Professional body for psychology — Division of Clinical Psychology covers training routes and career information</div></div>
+      <div class="org-card"><div class="org-name">Health and Care Professions Council (HCPC)</div><div class="org-desc">Regulatory body for clinical and practitioner psychologists in the UK</div></div>
+      <div class="org-card"><div class="org-name">NHS Health Careers</div><div class="org-desc">Comprehensive information on all NHS mental health roles and training routes</div></div>
+      <div class="org-card"><div class="org-name">British Association for Counselling and Psychotherapy (BACP)</div><div class="org-desc">Professional body for counsellors and psychotherapists — accreditation and training information</div></div>
+    </div>
+  </div>
+
+  <!-- HIGH INTENSITY -->
+  <div id="high-intensity" class="page-view">
+    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Mental Health</a><span>›</span><span>Psychological Therapy — High Intensity</span></div>
+    <button class="back-btn" onclick="showPage('overview')">← Back to Mental Health</button>
+    <h1 class="subtheme-page-title">🏥 Psychological Therapy — High Intensity</h1>
+    <p class="subtheme-page-intro">High-intensity psychological therapy roles deliver evidence-based interventions for moderate to severe mental health conditions. These are specialist practitioner roles that require postgraduate training and professional registration, but a psychology undergraduate degree is the typical entry point and provides strong preparation.</p>
+
+    <div class="info-box">
+      <div class="info-box-text"><strong>Training note:</strong> All roles in this area require postgraduate qualifications. A psychology degree provides the academic foundation, but you will need to gain experience in graduate-entry roles (such as Assistant Psychologist or support worker) before applying to training programmes.</div>
+    </div>
+
+    <div class="why-box">
+      <div class="why-label">Why Psychology?</div>
+      <ul class="why-list">
+        <li>Understanding of psychological models of mental health — including cognitive, behavioural, and psychodynamic frameworks — is foundational to therapeutic practice</li>
+        <li>Research methods training develops the evidence-based thinking that underpins clinical work</li>
+        <li>Communication, empathy, and professional boundary skills developed throughout a psychology degree are directly transferable</li>
+        <li>Academic grounding in psychopathology and assessment prepares graduates for postgraduate clinical training</li>
+      </ul>
+    </div>
+
+    <div class="section-label">Graduate entry — where most people start</div>
+    <div class="roles-grid" style="margin-bottom: 1.5rem;">
+      <div class="role-card">
+        <div class="role-name">Assistant Psychologist</div>
+        <div class="role-desc">Supports qualified clinical or counselling psychologists in assessment, intervention delivery, and research within NHS or charity settings. The most common graduate-entry route into clinical psychology training.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+    </div>
+
+    <div class="section-label">Qualified practitioner roles — require further training</div>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-name">Clinical Psychologist</div>
+        <div class="role-desc">Assesses and treats mental health conditions across the lifespan using multiple therapeutic models. Requires a BPS-accredited Doctorate in Clinical Psychology (DClinPsy), which is highly competitive.</div>
+        <span class="role-badge badge-further">Doctorate required</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">High-Intensity CBT Therapist</div>
+        <div class="role-desc">Delivers one-to-one cognitive behavioural therapy for moderate to severe depression, anxiety, and trauma. Requires a postgraduate diploma in high-intensity CBT, usually completed via an IAPT training programme.</div>
+        <span class="role-badge badge-further">Postgrad diploma required</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Systemic / Family Therapist</div>
+        <div class="role-desc">Works with couples and families to address patterns of interaction that affect mental health and wellbeing. Requires MSc-level training in systemic practice, accredited by the Association for Family Therapy.</div>
+        <span class="role-badge badge-further">MSc required</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div class="section-label">Skills that may be useful</div>
+      <div class="skills-list">
+        <span class="skill-chip">Empathy and active listening</span>
+        <span class="skill-chip">Professional boundaries</span>
+        <span class="skill-chip">Knowledge of psychopathology</span>
+        <span class="skill-chip">Evidence-based practice</span>
+        <span class="skill-chip">Written communication</span>
+        <span class="skill-chip">Resilience</span>
+      </div>
+    </div>
+
+    <div class="employers-box">
+      <div class="employers-label">Example employers</div>
+      <ul class="employers-list">
+        <li>NHS Mental Health Trusts — the main employer of clinical psychologists and CBT therapists</li>
+        <li>Improving Access to Psychological Therapies (IAPT) services within NHS primary care</li>
+        <li>Charitable organisations delivering NHS-commissioned mental health services (e.g. Mind, Turning Point)</li>
+        <li>Private mental health clinics and independent therapy practices</li>
+      </ul>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Research the DClinPsy application process early — competition is high and relevant experience is essential</li>
+        <li>Pursue voluntary work with mental health charities to build a strong experience profile</li>
+        <li>Look at Assistant Psychologist job adverts to understand what experience NHS Trusts expect</li>
+        <li>Explore the Leeds Clearing House website — the central application system for clinical psychology training</li>
+      </ul>
+    </div>
+
+    <div class="related-box">
+      <div class="related-label">You may also be interested in</div>
+      <div class="related-chips">
+        <span class="related-chip" onclick="showPage('low-intensity')">Early Intervention — Low Intensity</span>
+        <span class="related-chip" onclick="showPage('counselling')">Counselling and Psychotherapy</span>
+        <span class="related-chip" onclick="showPage('research')">Mental Health Research</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div class="org-name">BPS Division of Clinical Psychology</div><div class="org-desc">Training routes, accredited programmes, and career information for clinical psychologists</div></div>
+      <div class="org-card"><div class="org-name">HCPC</div><div class="org-desc">Regulatory body — registration required to practise as a clinical psychologist</div></div>
+      <div class="org-card"><div class="org-name">British Association for Behavioural and Cognitive Psychotherapies (BABCP)</div><div class="org-desc">Professional body for CBT practitioners — accreditation and training information</div></div>
+      <div class="org-card"><div class="org-name">Association for Family Therapy (AFT)</div><div class="org-desc">Accreditation body for systemic and family therapists</div></div>
+    </div>
+  </div>
+
+  <!-- LOW INTENSITY -->
+  <div id="low-intensity" class="page-view">
+    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Mental Health</a><span>›</span><span>Early Intervention — Low Intensity</span></div>
+    <button class="back-btn" onclick="showPage('overview')">← Back to Mental Health</button>
+    <h1 class="subtheme-page-title">🌱 Early Intervention — Low Intensity</h1>
+    <p class="subtheme-page-intro">Low-intensity roles provide brief, structured support for people with mild to moderate mental health difficulties, acting as the first line of response in community and primary care settings. These are among the most accessible graduate-entry pathways into mental health work, with training delivered on the job alongside a postgraduate qualification.</p>
+
+    <div class="why-box">
+      <div class="why-label">Why Psychology?</div>
+      <ul class="why-list">
+        <li>Knowledge of CBT principles and psychological models of anxiety and depression is directly applied in low-intensity work</li>
+        <li>Communication and interpersonal skills from a psychology degree are central to effective guided self-help delivery</li>
+        <li>Understanding of child development and educational psychology is particularly relevant for school-based roles</li>
+        <li>Research training supports evidence-based approaches to early intervention</li>
+      </ul>
+    </div>
+
+    <div class="section-label">Possible roles in this area</div>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-name">Psychological Wellbeing Practitioner (PWP)</div>
+        <div class="role-desc">Delivers low-intensity, guided self-help interventions for anxiety and depression in NHS primary care settings. Training is completed on the job alongside a postgraduate qualification, typically over one year.</div>
+        <span class="role-badge badge-grad">Graduate entry with on-job training</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Education Mental Health Practitioner (EMHP)</div>
+        <div class="role-desc">Works within schools to deliver early mental health interventions to children and young people with emerging needs. A relatively new role, trained via the Children and Young People's IAPT programme.</div>
+        <span class="role-badge badge-grad">Graduate entry with on-job training</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Children's Wellbeing Practitioner (CWP)</div>
+        <div class="role-desc">Delivers evidence-based low-intensity interventions for children and young people experiencing mild to moderate mental health difficulties, working within NHS and school-based mental health services.</div>
+        <span class="role-badge badge-grad">Graduate entry with on-job training</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div class="section-label">Skills that may be useful</div>
+      <div class="skills-list">
+        <span class="skill-chip">Active listening</span>
+        <span class="skill-chip">Knowledge of CBT principles</span>
+        <span class="skill-chip">Empathy</span>
+        <span class="skill-chip">Written communication</span>
+        <span class="skill-chip">Organisation</span>
+        <span class="skill-chip">Resilience</span>
+      </div>
+    </div>
+
+    <div class="employers-box">
+      <div class="employers-label">Example employers</div>
+      <ul class="employers-list">
+        <li>NHS IAPT (Improving Access to Psychological Therapies) services in primary care</li>
+        <li>NHS Mental Health Trusts running Children and Young People's mental health services</li>
+        <li>Schools and Multi-Academy Trusts with embedded mental health teams</li>
+        <li>Local authority children's services and early help teams</li>
+      </ul>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Explore NHS Health Careers for detailed information on the PWP, EMHP, and CWP training routes</li>
+        <li>Volunteer with mental health or young people's charities to build relevant experience</li>
+        <li>Research NHS Trust vacancies for trainee PWP roles — these are typically advertised annually</li>
+        <li>Look into the BABCP website for information on low-intensity CBT training and accreditation</li>
+      </ul>
+    </div>
+
+    <div class="related-box">
+      <div class="related-label">You may also be interested in</div>
+      <div class="related-chips">
+        <span class="related-chip" onclick="showPage('high-intensity')">Psychological Therapy — High Intensity</span>
+        <span class="related-chip" onclick="showPage('community')">Community and Social Support</span>
+        <span class="related-chip">Education Careers</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div class="org-name">NHS Health Careers</div><div class="org-desc">Detailed information on PWP, EMHP, and CWP training routes and entry requirements</div></div>
+      <div class="org-card"><div class="org-name">BABCP</div><div class="org-desc">British Association for Behavioural and Cognitive Psychotherapies — accreditation for low-intensity practitioners</div></div>
+      <div class="org-card"><div class="org-name">BPS Division of Clinical Psychology</div><div class="org-desc">Professional community and resources for those working in psychological therapies</div></div>
+    </div>
+  </div>
+
+  <!-- COUNSELLING AND PSYCHOTHERAPY -->
+  <div id="counselling" class="page-view">
+    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Mental Health</a><span>›</span><span>Counselling and Psychotherapy</span></div>
+    <button class="back-btn" onclick="showPage('overview')">← Back to Mental Health</button>
+    <h1 class="subtheme-page-title">💬 Counselling and Psychotherapy</h1>
+    <p class="subtheme-page-intro">Counsellors and psychotherapists support clients through emotional and psychological difficulties by providing a structured space to explore thoughts, feelings, and behaviour. These roles draw on a range of therapeutic approaches — including CBT, psychodynamic, and humanistic models — and require professional training and accreditation before independent practice.</p>
+
+    <div class="why-box">
+      <div class="why-label">Why Psychology?</div>
+      <ul class="why-list">
+        <li>Psychology training provides the theoretical grounding in therapeutic models — cognitive, behavioural, psychodynamic, humanistic — that underpins counselling and psychotherapy practice</li>
+        <li>Understanding of human development, attachment, and mental health informs therapeutic approaches</li>
+        <li>Strong communication, empathy, and reflective skills developed through a psychology degree are central to effective therapeutic work</li>
+        <li>Research training supports evidence-based practice and critical evaluation of therapeutic approaches</li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <div class="info-box-text"><strong>Protected titles:</strong> The titles <em>Clinical Psychologist</em> and <em>Counselling Psychologist</em> are protected by law and can only be used by practitioners registered with the HCPC. By contrast, <em>Counsellor</em> and <em>Psychotherapist</em> are not legally protected titles in the UK — anyone can use them. This means the quality of training and practice can vary considerably. When exploring training routes, look for programmes accredited by BACP or UKCP, and be cautious of unaccredited courses.</div>
+    </div>
+
+    <div class="section-label">Possible roles in this area</div>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-name">Counsellor</div>
+        <div class="role-desc">Works with clients to explore personal difficulties and support them in finding their own solutions. Found in GP surgeries, schools, universities, charities, and private practice. Requires a recognised counselling qualification and accreditation.</div>
+        <span class="role-badge badge-further">Professional training required</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Psychotherapist</div>
+        <div class="role-desc">Provides longer-term therapeutic support, exploring deeper patterns of thought, feeling, and behaviour. Works from a specific theoretical model — most commonly CBT, psychodynamic, or humanistic. Requires postgraduate training and professional registration.</div>
+        <span class="role-badge badge-further">Postgrad training required</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Counselling Psychologist</div>
+        <div class="role-desc">Integrates psychological research with therapeutic practice, working with clients experiencing a range of psychological difficulties. Requires a BPS-accredited Doctorate in Counselling Psychology and HCPC registration.</div>
+        <span class="role-badge badge-further">Doctorate required</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div class="section-label">Skills that may be useful</div>
+      <div class="skills-list">
+        <span class="skill-chip">Active listening</span>
+        <span class="skill-chip">Empathy</span>
+        <span class="skill-chip">Self-reflection</span>
+        <span class="skill-chip">Therapeutic knowledge</span>
+        <span class="skill-chip">Professional boundaries</span>
+        <span class="skill-chip">Ethical practice</span>
+      </div>
+    </div>
+
+    <div class="employers-box">
+      <div class="employers-label">Example employers</div>
+      <ul class="employers-list">
+        <li>NHS Mental Health Trusts and IAPT services</li>
+        <li>GP surgeries and primary care networks</li>
+        <li>Universities and student counselling services</li>
+        <li>Mental health charities (e.g. Mind, Relate, Cruse Bereavement)</li>
+        <li>Independent and private therapy practice</li>
+      </ul>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Research the difference between counselling, psychotherapy, and counselling psychology — they involve different training routes and lead to different careers</li>
+        <li>Explore BACP and UKCP accredited training courses for counselling and psychotherapy</li>
+        <li>Consider voluntary listening roles (e.g. Samaritans, university peer support) to develop foundational skills</li>
+        <li>Look into the BPS Qualification in Counselling Psychology if you want to pursue the academic-practitioner route</li>
+      </ul>
+    </div>
+
+    <div class="related-box">
+      <div class="related-label">You may also be interested in</div>
+      <div class="related-chips">
+        <span class="related-chip" onclick="showPage('high-intensity')">Psychological Therapy — High Intensity</span>
+        <span class="related-chip" onclick="showPage('community')">Community and Social Support</span>
+        <span class="related-chip">Forensic and Legal Psychology</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div class="org-name">British Association for Counselling and Psychotherapy (BACP)</div><div class="org-desc">Main professional body for counsellors and psychotherapists — accreditation, training, and ethical framework</div></div>
+      <div class="org-card"><div class="org-name">UK Council for Psychotherapy (UKCP)</div><div class="org-desc">Professional body for psychotherapists — registration and accredited training routes</div></div>
+      <div class="org-card"><div class="org-name">BPS Division of Counselling Psychology</div><div class="org-desc">Route to Chartered Counselling Psychologist status and professional community</div></div>
+      <div class="org-card"><div class="org-name">HCPC</div><div class="org-desc">Regulatory body — registration required to use the title Counselling Psychologist</div></div>
+    </div>
+  </div>
+
+  <!-- COMMUNITY AND SOCIAL SUPPORT -->
+  <div id="community" class="page-view">
+    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Mental Health</a><span>›</span><span>Community and Social Support</span></div>
+    <button class="back-btn" onclick="showPage('overview')">← Back to Mental Health</button>
+    <h1 class="subtheme-page-title">🤝 Community and Social Support</h1>
+    <p class="subtheme-page-intro">Community and social support roles help people with mental health needs to live independently, access services, and engage with their communities. These roles sit across the NHS, local authorities, and the charity sector, and many are accessible to psychology graduates at entry level — making them an important route into mental health work and further training.</p>
+
+    <div class="why-box">
+      <div class="why-label">Why Psychology?</div>
+      <ul class="why-list">
+        <li>Understanding of mental health conditions and their social determinants is directly relevant to community support work</li>
+        <li>Knowledge of behaviour change, motivation, and wellbeing informs effective support planning</li>
+        <li>Strong communication and interpersonal skills are central to building trust with clients in community settings</li>
+        <li>Ethical awareness and understanding of safeguarding issues is essential in roles working with vulnerable individuals</li>
+      </ul>
+    </div>
+
+    <div class="section-label">Possible roles in this area</div>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-name">Mental Health Support Worker</div>
+        <div class="role-desc">Provides practical and emotional support to people with mental health needs in community, residential, or clinical settings. A common graduate-entry role and a strong foundation for further training in clinical, social work, or nursing pathways.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Support Time and Recovery (STR) Worker</div>
+        <div class="role-desc">An NHS-specific role focused on providing time, support, and practical help to people experiencing mental health difficulties in community settings. A good graduate-entry position for those considering a career in mental health services.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Peer Support Worker</div>
+        <div class="role-desc">Uses lived experience of mental health difficulties to support others in their recovery. A growing role across NHS and third sector mental health services, increasingly professionalised with formal training pathways.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Mental Health Nurse</div>
+        <div class="role-desc">Assesses, plans, and delivers care for people with mental health conditions across inpatient, community, and crisis settings. Requires a three-year nursing degree (or two-year postgraduate entry for graduates) and NMC registration. A common pathway for psychology graduates entering the NHS.</div>
+        <span class="role-badge badge-further">Nursing qualification required</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Mental Health Social Worker</div>
+        <div class="role-desc">Supports people with mental health needs from a social and environmental perspective, addressing the impact of housing, finances, and relationships on wellbeing. Requires a Social Work degree or postgraduate qualification.</div>
+        <span class="role-badge badge-further">Further qualification required</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Recovery Worker</div>
+        <div class="role-desc">Supports people with mental health or substance misuse difficulties to set goals, build independence, and engage with their community. Many roles are accessible at graduate level with relevant experience.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div class="section-label">Skills that may be useful</div>
+      <div class="skills-list">
+        <span class="skill-chip">Empathy</span>
+        <span class="skill-chip">Communication</span>
+        <span class="skill-chip">Knowledge of mental health conditions</span>
+        <span class="skill-chip">Safeguarding awareness</span>
+        <span class="skill-chip">Resilience</span>
+        <span class="skill-chip">Person-centred approach</span>
+      </div>
+    </div>
+
+    <div class="employers-box">
+      <div class="employers-label">Example employers</div>
+      <ul class="employers-list">
+        <li>NHS Mental Health Trusts — community mental health teams, crisis services, and inpatient wards</li>
+        <li>Local authority adult social care and mental health teams</li>
+        <li>Mental health charities including Mind, Rethink Mental Illness, and Turning Point</li>
+        <li>Housing associations and supported living providers</li>
+      </ul>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Volunteer with local mental health charities such as Mind or Rethink to gain relevant experience</li>
+        <li>Search for Mental Health Support Worker and STR Worker vacancies — many NHS Trusts and charities recruit graduates directly</li>
+        <li>Research Mental Health Nursing entry routes — postgraduate entry programmes allow psychology graduates to qualify in two years</li>
+        <li>Explore routes into Social Work if you want to progress to a qualified practitioner role with a social perspective</li>
+      </ul>
+    </div>
+
+    <div class="related-box">
+      <div class="related-label">You may also be interested in</div>
+      <div class="related-chips">
+        <span class="related-chip" onclick="showPage('low-intensity')">Early Intervention — Low Intensity</span>
+        <span class="related-chip" onclick="showPage('ot')">Occupational Therapy</span>
+        <span class="related-chip">Charity and Third Sector</span>
+        <span class="related-chip">Public Services and Policy</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div class="org-name">NHS Health Careers</div><div class="org-desc">Information on support worker, STR worker, and community mental health roles across the NHS</div></div>
+      <div class="org-card"><div class="org-name">Nursing and Midwifery Council (NMC)</div><div class="org-desc">Regulatory body for nurses — information on Mental Health Nursing registration and entry routes</div></div>
+      <div class="org-card"><div class="org-name">Social Work England</div><div class="org-desc">Regulatory body for social workers — training routes and registration</div></div>
+      <div class="org-card"><div class="org-name">Mind</div><div class="org-desc">One of the UK's largest mental health charities — major employer of support and community roles</div></div>
+      <div class="org-card"><div class="org-name">Rethink Mental Illness</div><div class="org-desc">Charity providing community support services — common employer for graduate-entry roles</div></div>
+    </div>
+  </div>
+
+  <!-- OCCUPATIONAL THERAPY -->
+  <div id="ot" class="page-view">
+    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Mental Health</a><span>›</span><span>Occupational Therapy</span></div>
+    <button class="back-btn" onclick="showPage('overview')">← Back to Mental Health</button>
+    <h1 class="subtheme-page-title">🔄 Occupational Therapy</h1>
+    <p class="subtheme-page-intro">Occupational therapists (OTs) working in mental health help people to overcome psychological barriers to everyday living — supporting independence, routine, and meaningful activity as part of recovery. OTs are a core part of NHS mental health teams, and a psychology degree provides strong preparation for the postgraduate or pre-registration training required to qualify.</p>
+
+    <div class="why-box">
+      <div class="why-label">Why Psychology?</div>
+      <ul class="why-list">
+        <li>Understanding of mental health conditions, motivation, and behaviour change is central to occupational therapy in mental health settings</li>
+        <li>Knowledge of human development and the impact of psychological difficulties on daily functioning informs OT assessment and intervention</li>
+        <li>Person-centred values and communication skills developed through a psychology degree translate directly into OT practice</li>
+        <li>Research training supports evidence-based approaches to occupational therapy intervention</li>
+      </ul>
+    </div>
+
+    <div class="section-label">Possible roles in this area</div>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-name">Occupational Therapy Assistant</div>
+        <div class="role-desc">Supports qualified occupational therapists in delivering activities and interventions with mental health service users. An accessible graduate-entry role that provides experience before or alongside OT training.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Registered Occupational Therapist (Mental Health)</div>
+        <div class="role-desc">Works with people experiencing mental health difficulties to support their engagement in meaningful daily activities and independence. Requires an accredited OT degree or postgraduate pre-registration qualification, plus HCPC registration.</div>
+        <span class="role-badge badge-further">OT qualification required</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div class="section-label">Skills that may be useful</div>
+      <div class="skills-list">
+        <span class="skill-chip">Person-centred practice</span>
+        <span class="skill-chip">Understanding of mental health</span>
+        <span class="skill-chip">Communication</span>
+        <span class="skill-chip">Activity analysis</span>
+        <span class="skill-chip">Goal setting</span>
+        <span class="skill-chip">Empathy</span>
+      </div>
+    </div>
+
+    <div class="employers-box">
+      <div class="employers-label">Example employers</div>
+      <ul class="employers-list">
+        <li>NHS Mental Health Trusts — inpatient, community, and crisis teams</li>
+        <li>Secure psychiatric hospitals and forensic mental health services</li>
+        <li>Local authority adult social care teams</li>
+        <li>Mental health charities and supported housing providers</li>
+      </ul>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Research postgraduate pre-registration OT programmes — these allow psychology graduates to qualify as OTs in two years</li>
+        <li>Look for Occupational Therapy Assistant roles in NHS mental health services to gain direct experience</li>
+        <li>Explore the Royal College of Occupational Therapists (RCOT) website for information on training routes and careers</li>
+        <li>Volunteer in mental health settings to build relevant experience and understanding of OT in practice</li>
+      </ul>
+    </div>
+
+    <div class="related-box">
+      <div class="related-label">You may also be interested in</div>
+      <div class="related-chips">
+        <span class="related-chip" onclick="showPage('community')">Community and Social Support</span>
+        <span class="related-chip" onclick="showPage('high-intensity')">Psychological Therapy — High Intensity</span>
+        <span class="related-chip">Public Services and Policy</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div class="org-name">Royal College of Occupational Therapists (RCOT)</div><div class="org-desc">Professional body for OTs — training routes, careers information, and student resources</div></div>
+      <div class="org-card"><div class="org-name">HCPC</div><div class="org-desc">Regulatory body — HCPC registration required to practise as an occupational therapist</div></div>
+      <div class="org-card"><div class="org-name">NHS Health Careers</div><div class="org-desc">Overview of OT roles and training routes in the NHS</div></div>
+    </div>
+  </div>
+
+  <!-- MENTAL HEALTH RESEARCH -->
+  <div id="research" class="page-view">
+    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Mental Health</a><span>›</span><span>Mental Health Research</span></div>
+    <button class="back-btn" onclick="showPage('overview')">← Back to Mental Health</button>
+    <h1 class="subtheme-page-title">🔬 Mental Health Research</h1>
+    <p class="subtheme-page-intro">Mental health research applies scientific methods to better understand mental health conditions, evaluate interventions, and inform clinical practice and policy. Research skills developed through a psychology degree — study design, statistical analysis, literature review, and writing — provide strong preparation for research assistant roles in universities, NHS trusts, and research institutes.</p>
+
+    <div class="why-box">
+      <div class="why-label">Why Psychology?</div>
+      <ul class="why-list">
+        <li>Research methods training — quantitative, qualitative, and mixed methods — directly transfers to mental health research settings</li>
+        <li>Academic grounding in psychopathology and evidence-based practice is foundational to clinical research</li>
+        <li>Statistical skills and familiarity with software such as SPSS are valued in research roles</li>
+        <li>Dissertation experience provides a concrete example of independent research design and execution</li>
+      </ul>
+    </div>
+
+    <div class="section-label">Possible roles in this area</div>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-name">Research Assistant (Mental Health)</div>
+        <div class="role-desc">Supports academic or clinical researchers in data collection, participant recruitment, literature reviews, and analysis. Roles are available in universities, NHS trusts, and research charities at graduate entry level.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Clinical Research Practitioner</div>
+        <div class="role-desc">Supports the delivery of clinical research studies within NHS settings, including participant recruitment, data collection, and regulatory compliance. A growing NHS role that psychology graduates are well placed to apply for.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Clinical Trials Assistant</div>
+        <div class="role-desc">Supports the delivery of clinical trials evaluating psychological interventions or mental health treatments, including participant management, data entry, and regulatory compliance.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Postgraduate Researcher (PhD)</div>
+        <div class="role-desc">Conducts doctoral research into mental health topics, leading to academic or applied research careers. Funded studentships are available through research councils and NHS research programmes.</div>
+        <span class="role-badge badge-further">Postgrad required</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div class="section-label">Skills that may be useful</div>
+      <div class="skills-list">
+        <span class="skill-chip">Research methods</span>
+        <span class="skill-chip">Statistical analysis</span>
+        <span class="skill-chip">Academic writing</span>
+        <span class="skill-chip">Attention to detail</span>
+        <span class="skill-chip">Literature review</span>
+        <span class="skill-chip">Data management</span>
+      </div>
+    </div>
+
+    <div class="employers-box">
+      <div class="employers-label">Example employers</div>
+      <ul class="employers-list">
+        <li>Universities with psychology and psychiatry departments</li>
+        <li>NHS Mental Health Trusts with research departments (e.g. research-active trusts in the NIHR network)</li>
+        <li>Mental health research charities (e.g. MQ Mental Health Research, Mental Health Foundation)</li>
+        <li>Government research bodies and public health agencies</li>
+      </ul>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Look for undergraduate research assistant opportunities within your department — these are excellent for building a research CV</li>
+        <li>Explore NIHR (National Institute for Health Research) for information on NHS research careers and funding</li>
+        <li>Use your dissertation as a springboard — strong dissertations can lead to publications and PhD applications</li>
+        <li>Research funded PhD studentships in mental health at universities and through the NIHR doctoral training programme</li>
+      </ul>
+    </div>
+
+    <div class="related-box">
+      <div class="related-label">You may also be interested in</div>
+      <div class="related-chips">
+        <span class="related-chip" onclick="showPage('high-intensity')">Psychological Therapy — High Intensity</span>
+        <span class="related-chip">Research, Data and Evaluation</span>
+        <span class="related-chip">Public Services and Policy</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div class="org-name">NIHR (National Institute for Health Research)</div><div class="org-desc">The main funder of NHS and applied health research — information on research careers and funding</div></div>
+      <div class="org-card"><div class="org-name">MQ Mental Health Research</div><div class="org-desc">UK charity funding mental health research — information on the research landscape and funding</div></div>
+      <div class="org-card"><div class="org-name">BPS Division of Clinical Psychology</div><div class="org-desc">Resources for those pursuing research in clinical psychology settings</div></div>
+      <div class="org-card"><div class="org-name">Jobs.ac.uk</div><div class="org-desc">Main job board for research, academic, and NHS research vacancies</div></div>
+    </div>
+  </div>
+
+</div>
+<script>
+function showPage(id) {
+  document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+</script>
+</body>
+</html>

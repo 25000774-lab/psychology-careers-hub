@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Public Services, Policy and Justice — Psychology Careers | Liverpool Hope University</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
+  .site-header { background: #1a3a5c; color: white; padding: 1rem 2rem; }
+  .site-header-title { font-size: 16px; font-weight: 500; }
+  .site-header-text { font-size: 14px; opacity: 0.85; }
+  .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+  .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .breadcrumb a { color: #1a5fa8; text-decoration: none; }
+  .breadcrumb a:hover { text-decoration: underline; }
+  .theme-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+  .theme-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
+  .subtheme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 2rem; }
+  .subtheme-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; text-align: left; width: 100%; }
+  .subtheme-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.1); }
+  .subtheme-icon { font-size: 24px; margin-bottom: 10px; }
+  .subtheme-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+  .subtheme-desc { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
+  .explore-link { font-size: 13px; color: #1a5fa8; }
+  .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+  .now-box { background: #e8f0fb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+  .now-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 8px; }
+  .now-list { padding-left: 1.2rem; }
+  .now-list li { font-size: 14px; color: #1a3a5c; line-height: 1.7; }
+  .why-box { background: #f0f7f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+  .why-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1e6e35; margin-bottom: 8px; }
+  .why-list { padding-left: 1.2rem; }
+  .why-list li { font-size: 14px; color: #1a3a1a; line-height: 1.7; }
+  .employers-box { background: #faf8f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+  .employers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #a05a00; margin-bottom: 8px; }
+  .employers-list { padding-left: 1.2rem; }
+  .employers-list li { font-size: 14px; color: #3a2a00; line-height: 1.7; }
+  .related-box { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+  .related-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+  .related-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .related-chip { font-size: 13px; background: #f0f4ff; border: 1px solid #c0ccee; border-radius: 20px; padding: 4px 12px; color: #1a3a5c; cursor: pointer; }
+  .related-chip:hover { background: #e0e8ff; }
+  .divider { border: none; border-top: 1px solid #e8e8e8; margin: 1.5rem 0; }
+  .orgs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+  .org-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.85rem 1rem; }
+  .org-name { font-size: 13px; font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
+  .org-desc { font-size: 12px; color: #666; }
+  .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
+  .role-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1.25rem; }
+  .role-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+  .role-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
+  .role-badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
+  .badge-grad { background: #e6f4ea; color: #1e6e35; }
+  .badge-further { background: #fff3e0; color: #a05a00; }
+  .skills-box { background: #f5f5f3; border-radius: 8px; padding: 0.85rem 1rem; margin-bottom: 1rem; }
+  .skills-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .skill-chip { font-size: 12px; background: white; border: 1px solid #ddd; border-radius: 20px; padding: 3px 10px; color: #555; }
+  .page-view { display: none; }
+  .page-view.active { display: block; }
+  .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #1a5fa8; cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 1.5rem; font-family: inherit; }
+  .back-btn:hover { text-decoration: underline; }
+  .subtheme-page-title { font-size: 24px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+  .subtheme-page-intro { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
+
+.site-nav { background: #1a3a5c; padding: 0 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
+.site-nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; gap: 0; height: 48px; }
+.site-nav-home { color: white; text-decoration: none; font-weight: 600; font-size: 14px; margin-right: auto; }
+.site-nav-link { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 13px; padding: 0 14px; height: 48px; display: flex; align-items: center; cursor: pointer; transition: background 0.15s; }
+.site-nav-link:hover, a.site-nav-link:hover { background: rgba(255,255,255,0.1); color: white; }
+.site-nav-dropdown { position: relative; }
+.site-nav-menu { display: none; position: absolute; right: 0; top: 48px; background: white; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); min-width: 280px; padding: 6px 0; z-index: 1001; }
+.site-nav-menu a { display: block; padding: 9px 16px; font-size: 13px; color: #1a3a5c; text-decoration: none; }
+.site-nav-menu a:hover { background: #f0f4ff; }
+.site-nav-dropdown:hover .site-nav-menu { display: block; }
+
+</style>
+</head>
+<body>
+<div class="site-nav">
+  <div class="site-nav-inner">
+    <a class="site-nav-home" href="index.html">🏠 Psychology Careers Hub</a>
+    <a class="site-nav-link" href="index.html">All Pathways</a>
+    <div class="site-nav-dropdown">
+      <span class="site-nav-link">Themes ▾</span>
+      <div class="site-nav-menu">
+        <a href="poc.html">People, Organisations &amp; Consultancy</a>
+        <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
+        <a href="education.html">Education</a>
+        <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
+        <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
+        <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
+        <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
+        <a href="sport-exercise.html">Sport &amp; Exercise</a>
+        <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
+        <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
+        <a href="mental-health.html">Mental Health</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="site-header">
+  <div class="site-header-title">Liverpool Hope University</div>
+  <div class="site-header-text">School of Psychology — Psychology Careers</div>
+</div>
+<div class="container">
+
+  <!-- OVERVIEW -->
+  <div id="overview" class="page-view active">
+    <div class="breadcrumb"><a href="#">Psychology Careers</a><span>›</span><span>Public Services, Policy and Justice</span></div>
+    <h1 class="theme-title">🏛️ Public Services, Policy and Justice</h1>
+    <p class="theme-intro">Psychology graduates contribute to a wide range of public sector careers, from government policy and intelligence to public health and criminal justice. Analytical skills, understanding of human behaviour, and research training are all highly valued in this sector — and psychology graduates are often stronger candidates than they realise.</p>
+
+    <div class="subtheme-grid">
+      <button class="subtheme-card" onclick="showPage('government')">
+        <div class="subtheme-icon">📋</div>
+        <div class="subtheme-name">Government and Policy</div>
+        <div class="subtheme-desc">Use research and analytical skills to develop, evaluate, and communicate government policy across all areas.</div>
+        <div class="explore-link">Explore this area →</div>
+      </button>
+      <button class="subtheme-card" onclick="showPage('intelligence')">
+        <div class="subtheme-icon">🔍</div>
+        <div class="subtheme-name">Intelligence and Security</div>
+        <div class="subtheme-desc">Apply psychological understanding of behaviour and decision-making to support national security and counter-fraud work.</div>
+        <div class="explore-link">Explore this area →</div>
+      </button>
+      <button class="subtheme-card" onclick="showPage('public')">
+        <div class="subtheme-icon">🏥</div>
+        <div class="subtheme-name">Public Health</div>
+        <div class="subtheme-desc">Improve population health through evidence-based programmes, policy, and behaviour change initiatives.</div>
+        <div class="explore-link">Explore this area →</div>
+      </button>
+      <button class="subtheme-card" onclick="showPage('justice')">
+        <div class="subtheme-icon">⚖️</div>
+        <div class="subtheme-name">Social Services and Criminal Justice</div>
+        <div class="subtheme-desc">Support vulnerable individuals and contribute to rehabilitation and justice through frontline and policy roles.</div>
+        <div class="explore-link">Explore this area →</div>
+      </button>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Research the Civil Service Fast Stream — applications open annually and psychology graduates are competitive candidates</li>
+        <li>Look into the NHS Graduate Management Training Scheme</li>
+        <li>Volunteer with community support organisations to build relevant experience</li>
+        <li>Explore the Government Social Research profession for research-focused roles</li>
+        <li>Attend public sector careers events and employer talks</li>
+      </ul>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div class="org-name">Civil Service Fast Stream</div><div class="org-desc">The government's flagship graduate leadership programme</div></div>
+      <div class="org-card"><div class="org-name">Government Social Research Profession</div><div class="org-desc">Research careers across government departments</div></div>
+      <div class="org-card"><div class="org-name">Faculty of Public Health</div><div class="org-desc">Standard-setting body for public health in the UK</div></div>
+      <div class="org-card"><div class="org-name">NHS Graduate Management Training Scheme</div><div class="org-desc">Fast-track NHS graduate programme across multiple disciplines</div></div>
+    </div>
+  </div>
+
+  <!-- GOVERNMENT AND POLICY -->
+  <div id="government" class="page-view">
+    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Public Services, Policy and Justice</a><span>›</span><span>Government and Policy</span></div>
+    <button class="back-btn" onclick="showPage('overview')">← Back to Public Services, Policy and Justice</button>
+    <h1 class="subtheme-page-title">📋 Government and Policy</h1>
+    <p class="subtheme-page-intro">Government and policy careers draw on analytical thinking, research skills, and understanding of human behaviour to develop and evaluate public policy. Psychology graduates are often strong candidates for government roles — particularly those requiring evidence synthesis, communication, and behavioural insight.</p>
+
+    <div class="why-box">
+      <div class="why-label">Why Psychology?</div>
+      <ul class="why-list">
+        <li>Research and analytical skills are central to policy development and evaluation — exactly what psychology training provides</li>
+        <li>Understanding of human behaviour, decision-making, and social influence informs how policy is designed and communicated</li>
+        <li>Behavioural insights are now embedded across many government departments, making psychology graduates particularly relevant</li>
+        <li>Strong written communication skills for producing briefings, reports, and policy papers</li>
+        <li>Critical thinking and evidence evaluation skills essential for a career in government</li>
+      </ul>
+    </div>
+
+    <div class="section-label">Possible roles in this area</div>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-name">Civil Service Fast Stream</div>
+        <div class="role-desc">A highly competitive accelerated leadership programme across government departments. Open to all graduates and particularly suited to psychology students with strong analytical and communication skills.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Policy Adviser</div>
+        <div class="role-desc">Uses research and analytical skills to develop and evaluate government policy across areas including health, education, justice, and the economy.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Government Social Researcher</div>
+        <div class="role-desc">Conducts research for government departments to inform policy, service design, and public communications, using a range of qualitative and quantitative methods.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div class="section-label">Skills that may be useful</div>
+      <div class="skills-list">
+        <span class="skill-chip">Analytical thinking</span>
+        <span class="skill-chip">Research methods</span>
+        <span class="skill-chip">Written communication</span>
+        <span class="skill-chip">Evidence synthesis</span>
+        <span class="skill-chip">Understanding of behaviour</span>
+        <span class="skill-chip">Attention to detail</span>
+      </div>
+    </div>
+
+    <div class="employers-box">
+      <div class="employers-label">Example employers</div>
+      <ul class="employers-list">
+        <li>Civil Service departments including Home Office, DWP, DHSC, and Cabinet Office</li>
+        <li>Government Social Research profession across all departments</li>
+        <li>NHS England and NHS Improvement</li>
+        <li>Local authorities and Combined Authorities with policy functions</li>
+      </ul>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Research the Civil Service Fast Stream and apply — applications typically open in September</li>
+        <li>Look into the Government Social Research profession and its entry requirements</li>
+        <li>Practise the analytical and written exercises used in Civil Service recruitment</li>
+        <li>Consider student placements in local government or parliamentary settings</li>
+      </ul>
+    </div>
+
+    <div class="related-box">
+      <div class="related-label">You may also be interested in</div>
+      <div class="related-chips">
+        <span class="related-chip" onclick="showPage('intelligence')">Intelligence and Security</span>
+        <span class="related-chip" onclick="showPage('public')">Public Health</span>
+        <span class="related-chip">Behavioural Science</span>
+        <span class="related-chip">Research, Data and Evaluation</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div class="org-name">Civil Service Fast Stream</div><div class="org-desc">faststream.gov.uk — graduate leadership programme</div></div>
+      <div class="org-card"><div class="org-name">Government Social Research Profession</div><div class="org-desc">Research careers across government</div></div>
+      <div class="org-card"><div class="org-name">Civil Service Careers</div><div class="org-desc">All government departments and entry routes</div></div>
+    </div>
+  </div>
+
+  <!-- INTELLIGENCE AND SECURITY -->
+  <div id="intelligence" class="page-view">
+    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Public Services, Policy and Justice</a><span>›</span><span>Intelligence and Security</span></div>
+    <button class="back-btn" onclick="showPage('overview')">← Back to Public Services, Policy and Justice</button>
+    <h1 class="subtheme-page-title">🔍 Intelligence and Security</h1>
+    <p class="subtheme-page-intro">Intelligence and security roles draw on psychological understanding of behaviour, motivation, and decision-making to support national security and fraud prevention. These are less obvious pathways for psychology graduates but ones where the degree is directly and distinctively relevant.</p>
+
+    <div class="why-box">
+      <div class="why-label">Why Psychology?</div>
+      <ul class="why-list">
+        <li>Understanding of human behaviour, motivation, and decision-making is central to intelligence analysis</li>
+        <li>Knowledge of cognitive biases and how they affect judgement is directly applicable to intelligence work</li>
+        <li>Analytical and research skills for synthesising complex information from multiple sources</li>
+        <li>Understanding of social influence, group dynamics, and radicalisation processes</li>
+        <li>Ethical awareness and professional discretion developed throughout the degree</li>
+      </ul>
+    </div>
+
+    <div class="section-label">Possible roles in this area</div>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-name">Intelligence Analyst</div>
+        <div class="role-desc">Analyses information to identify threats and support national security operations, drawing on psychological understanding of behaviour and decision-making.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Counter-Fraud Analyst</div>
+        <div class="role-desc">Uses behavioural and analytical skills to detect patterns of fraudulent activity and support prevention work across public and private sector organisations.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Security Research Officer</div>
+        <div class="role-desc">Conducts research to support intelligence and security operations, drawing on social science methods and psychological theory.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div class="section-label">Skills that may be useful</div>
+      <div class="skills-list">
+        <span class="skill-chip">Analytical thinking</span>
+        <span class="skill-chip">Understanding of behaviour and motivation</span>
+        <span class="skill-chip">Research and evidence synthesis</span>
+        <span class="skill-chip">Written communication</span>
+        <span class="skill-chip">Attention to detail</span>
+        <span class="skill-chip">Discretion and ethical awareness</span>
+      </div>
+    </div>
+
+    <div class="employers-box">
+      <div class="employers-label">Example employers</div>
+      <ul class="employers-list">
+        <li>GCHQ, MI5, and MI6 — all recruit graduates including from psychology</li>
+        <li>National Crime Agency</li>
+        <li>Police forces and specialist units</li>
+        <li>Department for Work and Pensions and HMRC counter-fraud teams</li>
+      </ul>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Research graduate roles at GCHQ, MI5, and the National Crime Agency — all have public graduate recruitment</li>
+        <li>Look into the Civil Service Fast Stream analytical and intelligence streams</li>
+        <li>Build strong analytical and research skills through your degree and dissertation</li>
+        <li>Be aware that many roles require security clearance — honesty and integrity in your application is essential</li>
+      </ul>
+    </div>
+
+    <div class="related-box">
+      <div class="related-label">You may also be interested in</div>
+      <div class="related-chips">
+        <span class="related-chip" onclick="showPage('government')">Government and Policy</span>
+        <span class="related-chip" onclick="showPage('justice')">Criminal Justice</span>
+        <span class="related-chip">Forensic and Legal Psychology</span>
+        <span class="related-chip">Research, Data and Evaluation</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div class="org-name">Civil Service Careers</div><div class="org-desc">All government departments including security and intelligence roles</div></div>
+      <div class="org-card"><div class="org-name">National Crime Agency</div><div class="org-desc">Graduate roles in intelligence and investigation</div></div>
+    </div>
+  </div>
+
+  <!-- PUBLIC HEALTH -->
+  <div id="public" class="page-view">
+    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Public Services, Policy and Justice</a><span>›</span><span>Public Health</span></div>
+    <button class="back-btn" onclick="showPage('overview')">← Back to Public Services, Policy and Justice</button>
+    <h1 class="subtheme-page-title">🏥 Public Health</h1>
+    <p class="subtheme-page-intro">Public health careers focus on improving population health through evidence-based programmes, policy, and behaviour change. Psychology graduates are well equipped for this field, bringing research skills, behavioural expertise, and understanding of health inequalities.</p>
+
+    <div class="why-box">
+      <div class="why-label">Why Psychology?</div>
+      <ul class="why-list">
+        <li>Behaviour change theory — central to public health — is taught throughout psychology degrees</li>
+        <li>Research and evaluation skills for designing and assessing health interventions</li>
+        <li>Understanding of health inequalities and the psychological and social factors that influence health</li>
+        <li>Communication skills for engaging diverse communities in health programmes</li>
+        <li>Familiarity with mixed methods research — both qualitative and quantitative approaches are used in public health</li>
+      </ul>
+    </div>
+
+    <div class="section-label">Possible roles in this area</div>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-name">Public Health Practitioner</div>
+        <div class="role-desc">Works to improve population health through evidence-based programmes, campaigns, and policy recommendations at local or national level.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Health Improvement Officer</div>
+        <div class="role-desc">Designs and delivers programmes to promote healthier lifestyles and reduce health inequalities, drawing on behaviour change theory and community engagement.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Public Health Intelligence Analyst</div>
+        <div class="role-desc">Analyses population health data to identify trends, inform strategy, and support public health decision-making.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div class="section-label">Skills that may be useful</div>
+      <div class="skills-list">
+        <span class="skill-chip">Behaviour change knowledge</span>
+        <span class="skill-chip">Research and evaluation</span>
+        <span class="skill-chip">Data analysis</span>
+        <span class="skill-chip">Community engagement</span>
+        <span class="skill-chip">Written communication</span>
+        <span class="skill-chip">Partnership working</span>
+      </div>
+    </div>
+
+    <div class="employers-box">
+      <div class="employers-label">Example employers</div>
+      <ul class="employers-list">
+        <li>NHS Trusts and Integrated Care Boards</li>
+        <li>Local authority public health teams</li>
+        <li>UK Health Security Agency</li>
+        <li>Office for Health Improvements and Disparities (OHID)</li>
+      </ul>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Research the NHS Graduate Management Training Scheme — public health is one of its specialisms</li>
+        <li>Volunteer with health charities or community health projects</li>
+        <li>Explore health psychology and behaviour change modules in your degree</li>
+        <li>Look into the Faculty of Public Health and routes into specialist public health training</li>
+      </ul>
+    </div>
+
+    <div class="related-box">
+      <div class="related-label">You may also be interested in</div>
+      <div class="related-chips">
+        <span class="related-chip" onclick="showPage('government')">Government and Policy</span>
+        <span class="related-chip">Behavioural Science and Behaviour Change</span>
+        <span class="related-chip">Charity and Third Sector</span>
+        <span class="related-chip">Health and Physical Activity</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div class="org-name">Faculty of Public Health</div><div class="org-desc">Standard-setting body for public health in the UK</div></div>
+      <div class="org-card"><div class="org-name">UK Health Security Agency</div><div class="org-desc">Government agency working on health protection</div></div>
+      <div class="org-card"><div class="org-name">NHS Health Careers</div><div class="org-desc">Overview of public health roles within the NHS</div></div>
+    </div>
+  </div>
+
+  <!-- SOCIAL SERVICES AND CRIMINAL JUSTICE -->
+  <div id="justice" class="page-view">
+    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Public Services, Policy and Justice</a><span>›</span><span>Social Services and Criminal Justice</span></div>
+    <button class="back-btn" onclick="showPage('overview')">← Back to Public Services, Policy and Justice</button>
+    <h1 class="subtheme-page-title">⚖️ Social Services and Criminal Justice</h1>
+    <p class="subtheme-page-intro">Social services and criminal justice roles involve supporting vulnerable individuals and contributing to rehabilitation, safeguarding, and community safety. Psychology graduates are well suited to this sector, though some roles require further professional training.</p>
+
+    <div class="why-box">
+      <div class="why-label">Why Psychology?</div>
+      <ul class="why-list">
+        <li>Understanding of behaviour, risk, and the factors that contribute to offending and vulnerability</li>
+        <li>Knowledge of attachment theory, developmental psychology, and family dynamics relevant to social work</li>
+        <li>Communication and empathy skills for working with individuals in difficult circumstances</li>
+        <li>Understanding of rehabilitation psychology and evidence-based approaches to reducing reoffending</li>
+        <li>Ethical awareness and professional boundaries essential in frontline roles</li>
+      </ul>
+    </div>
+
+    <div class="section-label">Possible roles in this area</div>
+    <div class="roles-grid">
+      <div class="role-card">
+        <div class="role-name">Community Support Worker</div>
+        <div class="role-desc">Supports individuals in the community with daily living, often working with people with mental health difficulties, learning disabilities, or other vulnerabilities.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Prison Officer</div>
+        <div class="role-desc">Works within custodial settings, drawing on understanding of behaviour, risk, and rehabilitation to support safe and effective custody.</div>
+        <span class="role-badge badge-grad">Graduate entry</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Probation Officer (with training)</div>
+        <div class="role-desc">Works with offenders to support rehabilitation and manage risk in the community. Requires completion of the Probation Qualification Framework.</div>
+        <span class="role-badge badge-further">Professional training required</span>
+      </div>
+      <div class="role-card">
+        <div class="role-name">Social Worker (with further training)</div>
+        <div class="role-desc">Works with vulnerable individuals and families to safeguard and support wellbeing. Requires a Social Work degree or postgraduate qualification.</div>
+        <span class="role-badge badge-further">Postgrad training required</span>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div class="section-label">Skills that may be useful</div>
+      <div class="skills-list">
+        <span class="skill-chip">Empathy and communication</span>
+        <span class="skill-chip">Understanding of risk and behaviour</span>
+        <span class="skill-chip">Professional boundaries</span>
+        <span class="skill-chip">Resilience</span>
+        <span class="skill-chip">Report writing</span>
+        <span class="skill-chip">Safeguarding awareness</span>
+      </div>
+    </div>
+
+    <div class="employers-box">
+      <div class="employers-label">Example employers</div>
+      <ul class="employers-list">
+        <li>His Majesty's Prison and Probation Service</li>
+        <li>Local authority children's and adults' social care teams</li>
+        <li>Charities working in criminal justice and rehabilitation</li>
+        <li>Community interest companies and voluntary sector organisations</li>
+      </ul>
+    </div>
+
+    <div class="now-box">
+      <div class="now-label">What you could do now</div>
+      <ul class="now-list">
+        <li>Volunteer with a charity working in criminal justice or social care to build experience</li>
+        <li>Research the Probation Qualification Framework and how to enter the probation service</li>
+        <li>Look into care and support work as part-time employment — relevant experience and paid</li>
+        <li>Research postgraduate Social Work routes if that is your longer-term aim</li>
+      </ul>
+    </div>
+
+    <div class="related-box">
+      <div class="related-label">You may also be interested in</div>
+      <div class="related-chips">
+        <span class="related-chip" onclick="showPage('public')">Public Health</span>
+        <span class="related-chip">Forensic and Legal Psychology</span>
+        <span class="related-chip">Charity and Third Sector</span>
+        <span class="related-chip">Behavioural Science</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+    <div class="section-label">Relevant professional organisations</div>
+    <div class="orgs-grid">
+      <div class="org-card"><div class="org-name">HM Prison and Probation Service</div><div class="org-desc">Graduate and trainee roles in custody and probation</div></div>
+      <div class="org-card"><div class="org-name">Social Work England</div><div class="org-desc">Regulator for social workers in England</div></div>
+      <div class="org-card"><div class="org-name">NCVO</div><div class="org-desc">Voluntary sector roles in criminal justice and support</div></div>
+    </div>
+  </div>
+
+</div>
+<script>
+function showPage(id) {
+  document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+</script>
+</body>
+</html>
