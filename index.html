@@ -3,433 +3,1001 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Psychology at Liverpool Hope — Making the Most of Your Degree</title>
+<title>Psychology at Liverpool Hope — Careers Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
- *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
+/* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+:root {
+  --navy:       #1E3A5F;
+  --navy-deep:  #142845;
+  --teal:       #0891B2;
+  --teal-light: #E0F2FE;
+  --teal-mid:   #38BDF8;
+  --periwinkle: #EEF2FF;
+  --indigo:     #4F46E5;
+  --white:      #FFFFFF;
+  --off-white:  #F8FAFC;
+  --border:     #E2E8F0;
+  --text:       #0F172A;
+  --muted:      #64748B;
+  --success:    #059669;
+  --success-bg: #ECFDF5;
+  --warn-bg:    #FFF7ED;
+  --warn:       #C2410C;
 
- /* Nav */
- .site-nav { background: #1a3a5c; padding: 0 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
- .site-nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; height: 48px; }
- .site-nav-home { color: white; text-decoration: none; font-weight: 600; font-size: 14px; margin-right: auto; }
- .site-nav-link { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 13px; padding: 0 14px; height: 48px; display: flex; align-items: center; transition: background 0.15s; }
- .site-nav-link:hover { background: rgba(255,255,255,0.1); color: white; }
- .site-nav-dropdown { position: relative; }
- .site-nav-menu { display: none; position: absolute; right: 0; top: 48px; background: white; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); min-width: 280px; padding: 6px 0; z-index: 1001; }
- .site-nav-menu a { display: block; padding: 9px 16px; font-size: 13px; color: #1a3a5c; text-decoration: none; }
- .site-nav-menu a:hover { background: #f0f4ff; }
- .site-nav-dropdown:hover .site-nav-menu { display: block; }
+  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body:    'Inter', system-ui, sans-serif;
 
- /* Hero */
- .hero { background: #1a3a5c; color: white; padding: 3.5rem 2rem 3rem; }
- .hero-inner { max-width: 720px; margin: 0 auto; }
- .hero-label { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.7; margin-bottom: 12px; }
- .hero h1 { font-size: 32px; font-weight: 700; margin-bottom: 14px; line-height: 1.25; }
- .hero p { font-size: 16px; opacity: 0.88; line-height: 1.75; }
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  20px;
+  --radius-xl:  28px;
 
- /* Layout */
- .container { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.5rem; }
- .section { margin-bottom: 3rem; }
- .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #888; margin-bottom: 10px; }
- .section-title { font-size: 22px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.6rem; }
- .section-intro { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 700px; }
- .divider { border: none; border-top: 1px solid #e8e8e8; margin: 2.5rem 0; }
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md:  0 4px 16px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.04);
+  --shadow-lg:  0 12px 32px rgba(0,0,0,0.10), 0 4px 12px rgba(0,0,0,0.06);
+  --shadow-teal: 0 4px 20px rgba(8, 145, 178, 0.25);
+}
 
- /* Pathway cards */
- .pathways-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; }
- .pathway-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1rem 1.1rem; text-decoration: none; transition: border-color 0.15s, box-shadow 0.15s; display: block; }
- .pathway-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.1); }
- .pathway-card-icon { font-size: 20px; margin-bottom: 6px; }
- .pathway-card-name { font-size: 13px; font-weight: 600; color: #1a3a5c; line-height: 1.4; }
+/* ============================================================
+   RESET + BASE
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--white);
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
 
- /* Experience blocks */
- .experience-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
- .experience-card { background: white; border: 1px solid #e0e0e0; border-radius: 12px; padding: 1.25rem; }
- .experience-icon { font-size: 24px; margin-bottom: 10px; }
- .experience-title { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
- .experience-body { font-size: 13px; color: #444; line-height: 1.65; }
- .experience-body ul { padding-left: 1.1rem; margin: 8px 0; }
- .experience-body li { margin-bottom: 4px; }
- .experience-link { display: inline-block; margin-top: 10px; font-size: 13px; color: #1a5fa8; text-decoration: none; font-weight: 500; }
- .experience-link:hover { text-decoration: underline; }
+/* ============================================================
+   NAV
+   ============================================================ */
+.site-nav {
+  background: var(--navy-deep);
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+.site-nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 52px;
+  gap: 0;
+}
+.site-nav-home {
+  color: white;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  margin-right: auto;
+  letter-spacing: -0.01em;
+}
+.site-nav-home span {
+  color: var(--teal-mid);
+}
+.site-nav-link {
+  color: rgba(255,255,255,0.75);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 0 14px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  transition: color 0.15s, background 0.15s;
+  white-space: nowrap;
+}
+.site-nav-link:hover { color: white; background: rgba(255,255,255,0.07); }
+.site-nav-dropdown { position: relative; }
+.site-nav-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 52px;
+  background: white;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  min-width: 300px;
+  padding: 8px 0;
+  z-index: 1001;
+  border: 1px solid var(--border);
+}
+.site-nav-menu a {
+  display: block;
+  padding: 9px 18px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--navy);
+  transition: background 0.1s;
+}
+.site-nav-menu a:hover { background: var(--periwinkle); }
+.site-nav-dropdown:hover .site-nav-menu { display: block; }
+.nav-caret { opacity: 0.6; font-size: 10px; margin-left: 3px; }
 
- /* Support section */
- .support-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
- .support-card { background: white; border: 1px solid #e0e0e0; border-radius: 12px; padding: 1.25rem; }
- .support-title { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
- .support-body { font-size: 13px; color: #444; line-height: 1.65; }
- .support-body ul { padding-left: 1.1rem; margin-top: 8px; }
- .support-body li { margin-bottom: 4px; }
- .support-link { display: inline-block; margin-top: 10px; font-size: 13px; color: #1a5fa8; text-decoration: none; font-weight: 500; }
- .support-link:hover { text-decoration: underline; }
+/* ============================================================
+   HERO — the signature moment
+   ============================================================ */
+.hero {
+  background: linear-gradient(135deg, var(--navy-deep) 0%, #1a3a5f 50%, #1a4a6a 100%);
+  min-height: 520px;
+  padding: 5rem 2rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(8,145,178,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  left: 30%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(79,70,229,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.hero-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(8,145,178,0.15);
+  border: 1px solid rgba(56,189,248,0.25);
+  color: var(--teal-mid);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-bottom: 1.25rem;
+}
+.hero-label::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--teal-mid);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 46px);
+  font-weight: 800;
+  color: white;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25rem;
+}
+.hero h1 em {
+  font-style: normal;
+  background: linear-gradient(90deg, var(--teal-mid), #818CF8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-sub {
+  font-size: 16px;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.75;
+  margin-bottom: 2rem;
+  max-width: 440px;
+}
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--teal);
+  color: white;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+  box-shadow: var(--shadow-teal);
+}
+.btn-primary:hover {
+  background: #0E7490;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 24px rgba(8,145,178,0.35);
+}
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.85);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: background 0.15s, border-color 0.15s;
+}
+.btn-outline:hover {
+  background: rgba(255,255,255,0.14);
+  border-color: rgba(255,255,255,0.4);
+}
 
- /* Highlight box */
- .highlight-box { background: #e8f0fb; border-radius: 10px; padding: 1.25rem 1.5rem; margin-bottom: 1.5rem; }
- .highlight-box p { font-size: 15px; color: #1a3a5c; line-height: 1.7; }
- .highlight-box strong { font-weight: 600; }
+/* Hero right: theme cloud — the signature */
+.hero-themes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: center;
+  justify-content: center;
+}
+.theme-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 40px;
+  padding: 9px 16px;
+  color: rgba(255,255,255,0.88);
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font-display);
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.theme-pill:hover {
+  background: rgba(8,145,178,0.2);
+  border-color: rgba(56,189,248,0.4);
+  transform: translateY(-2px);
+  color: white;
+}
+.theme-pill-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
 
- /* After graduation */
- .after-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
- .after-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1rem 1.1rem; }
- .after-badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 20px; margin-bottom: 8px; }
- .badge-grad { background: #e6f4ea; color: #1e6e35; }
- .badge-further { background: #fff3e0; color: #a05a00; }
- .after-title { font-size: 14px; font-weight: 600; color: #1a3a5c; margin-bottom: 4px; }
- .after-body { font-size: 13px; color: #555; line-height: 1.55; }
+/* ============================================================
+   INTRO STRIP
+   ============================================================ */
+.intro-strip {
+  background: var(--navy);
+  padding: 2rem;
+  border-bottom: 3px solid var(--teal);
+}
+.intro-strip-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.intro-strip-placeholder {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  font-style: italic;
+  border: 1px dashed rgba(255,255,255,0.2);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.intro-strip-placeholder strong {
+  color: rgba(255,255,255,0.7);
+  font-style: normal;
+}
 
- /* Contact */
- .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
- .contact-card { background: #e8f0fb; border-radius: 10px; padding: 1rem 1.25rem; }
- .contact-role { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 4px; }
- .contact-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
- .contact-email { font-size: 13px; color: #1a5fa8; text-decoration: none; }
- .contact-note { font-size: 14px; color: #444; margin-bottom: 1rem; line-height: 1.6; }
+/* ============================================================
+   LAYOUT CONTAINERS
+   ============================================================ */
+.section { padding: 4rem 2rem; }
+.section-inner { max-width: 1100px; margin: 0 auto; }
+.section-bg-light { background: var(--off-white); }
+.section-bg-periwinkle { background: var(--periwinkle); }
 
-  .org-name a { color: #1a3a5c; text-decoration: none; font-weight: 600; }
-  .org-name a:hover { color: #1a5fa8; text-decoration: underline; }
+.eyebrow {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.eyebrow::after {
+  content: '';
+  flex: 1;
+  max-width: 40px;
+  height: 2px;
+  background: var(--teal);
+  border-radius: 1px;
+}
+.section-heading {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.6rem;
+  line-height: 1.2;
+}
+.section-sub {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.75;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+.divider { border: none; border-top: 1px solid var(--border); margin: 3rem 0; }
 
+/* ============================================================
+   CAREER PATHWAY CARDS
+   ============================================================ */
+.pathways-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 12px;
+}
+.pathway-card {
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.1rem 1.2rem;
+  display: block;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.pathway-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--teal);
+  transform: scaleX(0);
+  transition: transform 0.2s;
+  transform-origin: left;
+}
+.pathway-card:hover {
+  border-color: var(--teal);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+.pathway-card:hover::before { transform: scaleX(1); }
+.pathway-card-name {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.4;
+}
+.pathway-card-arrow {
+  font-size: 11px;
+  color: var(--teal);
+  margin-top: 8px;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.pathway-card:hover .pathway-card-arrow { opacity: 1; }
+
+/* ============================================================
+   EXPERIENCE CARDS
+   ============================================================ */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.experience-card {
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.4rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.experience-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+.experience-card-accent {
+  width: 40px;
+  height: 4px;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+.experience-card h3 {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+.experience-card p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.65;
+  flex: 1;
+}
+.experience-card ul {
+  padding-left: 1.1rem;
+  margin: 8px 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+.experience-card li { margin-bottom: 4px; line-height: 1.55; }
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--teal);
+  text-decoration: none;
+  transition: gap 0.15s;
+}
+.card-link:hover { gap: 8px; }
+
+/* ============================================================
+   SUPPORT GRID
+   ============================================================ */
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.support-card {
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.4rem;
+  transition: box-shadow 0.2s;
+}
+.support-card:hover { box-shadow: var(--shadow-md); }
+.support-card-badge {
+  display: inline-block;
+  background: var(--periwinkle);
+  color: var(--indigo);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.support-card h3 {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.support-card p, .support-card li {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+.support-card ul { padding-left: 1.1rem; margin-top: 8px; }
+.support-card li { margin-bottom: 4px; }
+
+/* ============================================================
+   HIGHLIGHT BOX
+   ============================================================ */
+.highlight-box {
+  background: linear-gradient(135deg, var(--navy) 0%, #1a4a6a 100%);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+.highlight-box-text {
+  flex: 1;
+  min-width: 260px;
+}
+.highlight-box-text p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.75;
+}
+.highlight-box-text strong { color: white; }
+
+/* ============================================================
+   AFTER GRADUATION CARDS
+   ============================================================ */
+.after-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 14px;
+}
+.after-card {
+  background: white;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  transition: box-shadow 0.2s;
+}
+.after-card:hover { box-shadow: var(--shadow-sm); }
+.after-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 0.04em;
+}
+.badge-grad { background: var(--success-bg); color: var(--success); }
+.badge-further { background: var(--warn-bg); color: var(--warn); }
+.badge-ongoing { background: var(--periwinkle); color: var(--indigo); }
+.after-card h3 {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+.after-card p { font-size: 13px; color: var(--muted); line-height: 1.55; }
+
+/* ============================================================
+   CONTACT
+   ============================================================ */
+.contact-section {
+  background: var(--navy-deep);
+  padding: 3rem 2rem;
+}
+.contact-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact-text h2 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  color: white;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+.contact-text p {
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.6;
+}
+.contact-cards {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.contact-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  min-width: 180px;
+  transition: background 0.15s;
+}
+.contact-card:hover { background: rgba(255,255,255,0.1); }
+.contact-role {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--teal-mid);
+  margin-bottom: 5px;
+}
+.contact-name {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 3px;
+}
+.contact-email {
+  font-size: 12px;
+  color: rgba(255,255,255,0.55);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.contact-email:hover { color: var(--teal-mid); }
+
+/* ============================================================
+   ORG LINK STYLES
+   ============================================================ */
+.org-name a { color: var(--navy); text-decoration: none; font-weight: 600; }
+.org-name a:hover { color: var(--teal); text-decoration: underline; }
+
+/* ============================================================
+   ROADMAP CTA STRIP
+   ============================================================ */
+.cta-strip {
+  background: linear-gradient(90deg, var(--teal) 0%, #0E7490 100%);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.cta-strip-text {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+.cta-strip-sub {
+  font-size: 13px;
+  color: rgba(255,255,255,0.8);
+  margin-top: 2px;
+}
+.cta-strip-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: white;
+  color: var(--teal);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  transition: transform 0.15s;
+}
+.cta-strip-btn:hover { transform: translateY(-1px); }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-themes { display: none; }
+  .contact-inner { grid-template-columns: 1fr; }
+  .cta-strip { flex-direction: column; text-align: center; }
+  .highlight-box { flex-direction: column; }
+}
+
+/* ============================================================
+   MOTION
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
 </style>
 </head>
 <body>
 
+<!-- NAV -->
 <div class="site-nav">
- <div class="site-nav-inner">
- <a class="site-nav-home" href="index.html">Psychology Careers Hub</a>
- <a class="site-nav-link" href="index.html">All Pathways</a>
- <a class="site-nav-link" href="roadmap.html">Roadmap</a>
- <a class="site-nav-link" href="employer-trends.html">Employer Trends</a>
- <a class="site-nav-link" href="alumni.html">Alumni</a>
- <div class="site-nav-dropdown">
- <span class="site-nav-link">Themes &#9662;</span>
- <div class="site-nav-menu">
- <a href="poc.html">People, Organisations &amp; Consultancy</a>
- <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
- <a href="education.html">Education</a>
- <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
- <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
- <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
- <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
- <a href="sport-exercise.html">Sport &amp; Exercise</a>
- <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
- <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
- <a href="mental-health.html">Mental Health</a>
- </div>
- </div>
- </div>
+  <div class="site-nav-inner">
+    <a class="site-nav-home" href="index.html">Psychology <span>Careers Hub</span></a>
+    <a class="site-nav-link" href="roadmap.html">Roadmap</a>
+    <a class="site-nav-link" href="employer-trends.html">Employer Trends</a>
+    <a class="site-nav-link" href="alumni.html">Alumni</a>
+    <div class="site-nav-dropdown">
+      <span class="site-nav-link">Themes <span class="nav-caret">&#9660;</span></span>
+      <div class="site-nav-menu">
+        <a href="poc.html">People, Organisations &amp; Consultancy</a>
+        <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
+        <a href="education.html">Education</a>
+        <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
+        <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
+        <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
+        <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
+        <a href="sport-exercise.html">Sport &amp; Exercise</a>
+        <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
+        <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
+        <a href="mental-health.html">Mental Health</a>
+      </div>
+    </div>
+  </div>
 </div>
 
-
-<!-- ============================================================
- INTRODUCTORY OVERVIEW SECTION — PLACEHOLDER
- This section sits above the main page content.
- Suggested content: a short welcome message, what this resource is,
- who it is for, and how it links to the wider university careers service.
- ============================================================ -->
-<div style="background: #1a3a5c; color: white; padding: 2.5rem 2rem; border-bottom: 4px solid #1a5fa8;">
- <div style="max-width: 960px; margin: 0 auto;">
- <div style="display: inline-block; background: rgba(255,255,255,0.15); border-radius: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 10px; margin-bottom: 16px;">&#9888; Draft placeholder — content to be confirmed</div>
- <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; align-items: center;">
- <div>
- <h2 style="font-size: 26px; font-weight: 700; margin-bottom: 12px; line-height: 1.3;">Welcome to the Psychology Employability Resource</h2>
- <p style="font-size: 15px; opacity: 0.88; line-height: 1.75; margin-bottom: 0;">This resource has been developed by the School of Psychology at Liverpool Hope University to help psychology students explore career options, build employability skills, and make the most of their degree. [Further introductory content to be added here — e.g. a message from the department, context about the project, or a brief overview of what students will find on the site.]</p>
- </div>
- <div style="display: flex; flex-direction: column; gap: 12px;">
- <div style="background: rgba(255,255,255,0.1); border-radius: 10px; padding: 1rem 1.25rem;">
- <div style="font-size: 13px; font-weight: 600; margin-bottom: 4px;"> For Psychology Students</div>
- <div style="font-size: 13px; opacity: 0.85; line-height: 1.5;">[Placeholder — one sentence about what students will find here]</div>
- </div>
- <div style="background: rgba(255,255,255,0.1); border-radius: 10px; padding: 1rem 1.25rem;">
- <div style="font-size: 13px; font-weight: 600; margin-bottom: 4px;"> Developed at Liverpool Hope</div>
- <div style="font-size: 13px; opacity: 0.85; line-height: 1.5;">[Placeholder — one sentence about who built this and why]</div>
- </div>
- </div>
- </div>
- </div>
+<!-- INTRO PLACEHOLDER STRIP -->
+<div class="intro-strip">
+  <div class="intro-strip-inner">
+    <div class="intro-strip-placeholder">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;opacity:0.6"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <div><strong>Introductory overview — placeholder.</strong> This section will introduce the Psychology Careers Hub, who it is for, and how it connects to Liverpool Hope's wider employability support. Content to be confirmed.</div>
+    </div>
+  </div>
 </div>
 
+<!-- HERO -->
 <div class="hero">
- <div class="hero-inner">
- <div class="hero-label">Liverpool Hope University — School of Psychology</div>
- <h1>Psychology at Hope — Making the Most of Your Degree</h1>
- <p>A psychology degree opens far more doors than most students expect. This page is your guide to the careers support, experiences and opportunities available to you at Liverpool Hope — and how to make the most of them as a psychology student specifically.</p>
- </div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-label">Liverpool Hope University &mdash; School of Psychology</div>
+      <h1>Your psychology degree opens <em>far more doors</em> than you think</h1>
+      <p class="hero-sub">Explore 11 career theme areas, understand what employers are looking for, and take practical steps during your degree to build the experience and skills that matter.</p>
+      <div class="hero-actions">
+        <a href="#pathways" class="btn-primary">Explore career pathways &rarr;</a>
+        <a href="#support" class="btn-outline">Get careers support</a>
+      </div>
+    </div>
+    <div class="hero-themes" aria-hidden="true">
+      <a href="poc.html" class="theme-pill"><span class="theme-pill-dot" style="background:#38BDF8"></span>People &amp; Organisations</a>
+      <a href="research-data-evaluation.html" class="theme-pill"><span class="theme-pill-dot" style="background:#818CF8"></span>Research &amp; Data</a>
+      <a href="mental-health.html" class="theme-pill"><span class="theme-pill-dot" style="background:#34D399"></span>Mental Health</a>
+      <a href="education.html" class="theme-pill"><span class="theme-pill-dot" style="background:#FBBF24"></span>Education</a>
+      <a href="forensic-legal.html" class="theme-pill"><span class="theme-pill-dot" style="background:#F87171"></span>Forensic &amp; Legal</a>
+      <a href="marketing-consumer-behavioural.html" class="theme-pill"><span class="theme-pill-dot" style="background:#FB923C"></span>Marketing &amp; Consumer</a>
+      <a href="digital-technology-hcd.html" class="theme-pill"><span class="theme-pill-dot" style="background:#60A5FA"></span>Digital &amp; Technology</a>
+      <a href="behavioural-science.html" class="theme-pill"><span class="theme-pill-dot" style="background:#A78BFA"></span>Behavioural Science</a>
+      <a href="sport-exercise.html" class="theme-pill"><span class="theme-pill-dot" style="background:#4ADE80"></span>Sport &amp; Exercise</a>
+      <a href="public-services-policy-justice.html" class="theme-pill"><span class="theme-pill-dot" style="background:#94A3B8"></span>Public Services</a>
+      <a href="charity-third-sector.html" class="theme-pill"><span class="theme-pill-dot" style="background:#F472B6"></span>Charity &amp; Third Sector</a>
+    </div>
+  </div>
 </div>
 
-<div class="container">
-
- <!-- SECTION 1: EXPLORE PATHWAYS -->
- <div class="section">
- <div class="section-label">Where can your degree take you?</div>
- <h2 class="section-title">Explore Career Pathways</h2>
- <p class="section-intro">Psychology graduates are well suited to a much wider range of careers than most students realise. The careers hub covers 11 theme areas — from HR, research and marketing to forensic psychology, digital roles and mental health. Each theme explains why psychology graduates are valued, what roles are available, and what you can do now to prepare.</p>
-
- <div class="pathways-grid">
- <a href="poc.html" class="pathway-card">
- <div class="pathway-card-icon"></div>
- <div class="pathway-card-name">People, Organisations &amp; Consultancy</div>
- </a>
- <a href="research-data-evaluation.html" class="pathway-card">
- <div class="pathway-card-icon"></div>
- <div class="pathway-card-name">Research, Data &amp; Evaluation</div>
- </a>
- <a href="education.html" class="pathway-card">
- <div class="pathway-card-icon"></div>
- <div class="pathway-card-name">Education</div>
- </a>
- <a href="marketing-consumer-behavioural.html" class="pathway-card">
- <div class="pathway-card-icon"></div>
- <div class="pathway-card-name">Marketing, Consumer &amp; Behavioural Insight</div>
- </a>
- <a href="behavioural-science.html" class="pathway-card">
- <div class="pathway-card-icon"></div>
- <div class="pathway-card-name">Behavioural Science &amp; Behaviour Change</div>
- </a>
- <a href="public-services-policy-justice.html" class="pathway-card">
- <div class="pathway-card-icon">️</div>
- <div class="pathway-card-name">Public Services, Policy &amp; Justice</div>
- </a>
- <a href="charity-third-sector.html" class="pathway-card">
- <div class="pathway-card-icon"></div>
- <div class="pathway-card-name">Charity &amp; Third Sector</div>
- </a>
- <a href="sport-exercise.html" class="pathway-card">
- <div class="pathway-card-icon"></div>
- <div class="pathway-card-name">Sport &amp; Exercise</div>
- </a>
- <a href="forensic-legal.html" class="pathway-card">
- <div class="pathway-card-icon">⚖️</div>
- <div class="pathway-card-name">Forensic &amp; Legal Psychology</div>
- </a>
- <a href="digital-technology-hcd.html" class="pathway-card">
- <div class="pathway-card-icon"></div>
- <div class="pathway-card-name">Digital, Technology &amp; HCD</div>
- </a>
- <a href="mental-health.html" class="pathway-card">
- <div class="pathway-card-icon"></div>
- <div class="pathway-card-name">Mental Health</div>
- </a>
- </div>
- </div>
-
- <hr class="divider">
-
- <!-- SECTION 2: BUILD EXPERIENCE -->
- <div class="section">
- <div class="section-label">Getting experience as a psychology student</div>
- <h2 class="section-title">Build Experience While You Study</h2>
- <p class="section-intro">Experience does not need to be perfectly matched to your career plans to be valuable. The key is developing the skills employers look for — communication, research, empathy, analytical thinking, and professionalism — through whatever opportunities are available to you. Here are the most useful types of experience for psychology students specifically.</p>
-
- <div class="experience-grid">
-
- <div class="experience-card">
- <div class="experience-icon"></div>
- <div class="experience-title">Research Experience</div>
- <div class="experience-body">
- <p>Research skills are one of psychology's strongest selling points with employers. Look for opportunities to use them beyond your coursework.</p>
- <ul>
- <li>Apply for undergraduate research assistant roles within the School of Psychology</li>
- <li>Participate in staff-led research projects — ask your lecturers directly</li>
- <li>Choose an applied dissertation topic relevant to your career interests</li>
- <li>Build data skills through online courses in SPSS, R, or Excel</li>
- </ul>
- </div>
- </div>
-
- <div class="experience-card">
- <div class="experience-icon"></div>
- <div class="experience-title">People-Facing Experience</div>
- <div class="experience-body">
- <p>For psychology graduates, experience working with people is particularly valuable — it demonstrates the empathy, communication and professional boundaries employers expect.</p>
- <ul>
- <li>Peer mentoring within Liverpool Hope — supports others while building your own skills</li>
- <li>Volunteering with community or charity organisations</li>
- <li>Support worker or care roles (part-time)</li>
- <li>Coaching, tutoring, or youth work</li>
- </ul>
- <a class="experience-link" href="https://www.hope.ac.uk/careers/part-timework/" target="_blank">Liverpool Hope part-time work support →</a>
- </div>
- </div>
-
- <div class="experience-card">
- <div class="experience-icon"></div>
- <div class="experience-title">Professional and Leadership Experience</div>
- <div class="experience-body">
- <p>Taking on responsibility within university life is one of the most efficient ways to build the leadership and teamwork skills employers value.</p>
- <ul>
- <li>Student Ambassador Scheme — excellent for communication and professional development</li>
- <li>Student Representative roles — demonstrates initiative and professional engagement</li>
- <li>Psychology Society committee membership</li>
- <li>BPS Student Membership — starts building your professional identity early</li>
- </ul>
- <a class="experience-link" href="https://www.hope.ac.uk/careers/serviceandleadershipaward/" target="_blank">Service and Leadership Award →</a>
- </div>
- </div>
-
- <div class="experience-card">
- <div class="experience-icon"></div>
- <div class="experience-title">Work Placements</div>
- <div class="experience-body">
- <p>A placement year gives you a significant advantage in the graduate job market — employers consistently rate work experience as one of the most important factors in hiring decisions.</p>
- <ul>
- <li>Liverpool Hope offers an optional placement year module</li>
- <li>Placements are available across a range of sectors relevant to psychology</li>
- <li>Even shorter summer internships make a meaningful difference</li>
- </ul>
- <a class="experience-link" href="https://www.hope.ac.uk/careers/placementyear/" target="_blank">Placement year at Liverpool Hope →</a>
- </div>
- </div>
-
- </div>
-
- <div style="margin-top:1.25rem;">
- <a href="roadmap.html" style="display:inline-flex;align-items:center;gap:8px;background:#1a3a5c;color:white;text-decoration:none;font-size:14px;font-weight:500;padding:10px 20px;border-radius:8px;">
- View the full employability roadmap
- </a>
- </div>
- </div>
-
- <hr class="divider">
-
- <!-- SECTION 3: CAREERS SUPPORT -->
- <div class="section">
- <div class="section-label">Support available to you</div>
- <h2 class="section-title">Get Careers Support</h2>
- <p class="section-intro">Liverpool Hope's careers service offers one-to-one support, employer events, and resources throughout your degree. As a psychology student, there are specific things worth knowing about how to use this support most effectively.</p>
-
- <div class="highlight-box">
- <p><strong>Psychology students have direct access to careers advisers with experience of psychology-specific routes.</strong> Whether you are interested in clinical training, HR, research or something you have not considered yet, a careers appointment is the best starting point. It is free, confidential, and available throughout your degree and for up to four years after graduation.</p>
- </div>
-
- <div class="support-grid">
-
- <div class="support-card">
- <div class="support-title"> One-to-One Careers Appointments</div>
- <div class="support-body">
- <p>Book a session with a careers adviser to discuss your options, get CV feedback, or prepare for applications and interviews. As a psychology student, it is worth asking specifically about:</p>
- <ul>
- <li>Non-clinical careers your degree suits</li>
- <li>Graduate schemes that recruit from psychology</li>
- <li>How to talk about your skills to employers</li>
- <li>Routes into further training if you are considering clinical, forensic or occupational psychology</li>
- </ul>
- <a class="support-link" href="https://www.hope.ac.uk/careers/careersadvice/" target="_blank">Book careers advice →</a>
- </div>
- </div>
-
- <div class="support-card">
- <div class="support-title"> Campus Events and Employer Talks</div>
- <div class="support-body">
- <p>Liverpool Hope hosts careers events, employer talks, and networking opportunities throughout the year. For psychology students, the most relevant events tend to be:</p>
- <ul>
- <li>Health and social care employer panels</li>
- <li>Graduate scheme information sessions</li>
- <li>Alumni networking events</li>
- <li>CV and applications workshops</li>
- </ul>
- <a class="support-link" href="https://www.hope.ac.uk/careers/campusevents/" target="_blank">View campus events →</a>
- </div>
- </div>
-
- <div class="support-card">
- <div class="support-title"> Reach Your Full Potential</div>
- <div class="support-body">
- <p>Liverpool Hope's employability programme supports you in building skills and confidence beyond your academic work. Particularly useful for psychology students are opportunities in:</p>
- <ul>
- <li>Leadership and communication development</li>
- <li>Volunteering and community engagement</li>
- <li>Digital and data skills programmes</li>
- </ul>
- <a class="support-link" href="https://www.hope.ac.uk/careers/reachyourfullpotential/" target="_blank">Reach Your Full Potential →</a>
- </div>
- </div>
-
- <div class="support-card">
- <div class="support-title"> Student Futures Internship</div>
- <div class="support-body">
- <p>Liverpool Hope offers paid internship opportunities for students through the Student Futures programme. These are excellent for building professional experience in a supported context and can span a range of sectors relevant to psychology graduates.</p>
- <a class="support-link" href="https://www.hope.ac.uk/careers/studentfuturesinternship/" target="_blank">Student Futures Internship →</a>
- </div>
- </div>
-
- </div>
- </div>
-
- <hr class="divider">
-
- <!-- SECTION 4: DEVELOP SKILLS -->
- <div class="section">
- <div class="section-label">What employers are looking for</div>
- <h2 class="section-title">Develop Your Skills</h2>
- <p class="section-intro">Employers consistently value psychology graduates for their research skills, communication, empathy and analytical thinking. What is shifting is the growing importance of digital confidence, commercial awareness and the ability to apply psychological knowledge outside traditional helping roles.</p>
-
- <div class="highlight-box">
- <p>The most employable psychology graduates are those who can <strong>demonstrate their skills with evidence</strong> — specific examples from their degree, placements, volunteering or part-time work — rather than simply listing them. Start collecting evidence of your skills now, even if a career direction is not yet clear.</p>
- </div>
-
- <a href="employer-trends.html" style="display:inline-flex;align-items:center;gap:8px;background:white;color:#1a3a5c;text-decoration:none;font-size:14px;font-weight:500;padding:10px 20px;border-radius:8px;border:1px solid #c0ccee;">
- See what employers want in 2026 →
- </a>
- </div>
-
- <hr class="divider">
-
- <!-- SECTION 5: AFTER GRADUATION -->
- <div class="section">
- <div class="section-label">After you graduate</div>
- <h2 class="section-title">What Happens After Graduation</h2>
- <p class="section-intro">Your degree is a starting point, not a destination. Most psychology career paths begin with a graduate-entry role that builds experience — some routes require further training to reach chartered or registered practitioner status.</p>
-
- <div class="after-grid">
- <div class="after-card">
- <span class="after-badge badge-grad">Graduate entry</span>
- <div class="after-title">Direct entry roles</div>
- <div class="after-body">Many careers in HR, research, marketing, public sector, charity and consultancy are open on graduation with no further training required.</div>
- </div>
- <div class="after-card">
- <span class="after-badge badge-further">Further training</span>
- <div class="after-title">Postgraduate routes</div>
- <div class="after-body">Clinical, forensic, occupational and sport psychology require a BPS-accredited Masters or doctorate. These are competitive — experience during your degree matters significantly.</div>
- </div>
- <div class="after-card">
- <span class="after-badge badge-grad">Graduate entry</span>
- <div class="after-title">Graduate schemes</div>
- <div class="after-body">Many large employers run graduate schemes open to psychology graduates — NHS, Civil Service, retail, finance, consultancy and more. Most open in autumn of your final year.</div>
- </div>
- <div class="after-card">
- <span class="after-badge badge-further">Ongoing</span>
- <div class="after-title">Alumni support</div>
- <div class="after-body">Liverpool Hope's careers service is available to graduates for up to four years after completing your degree. You are not on your own after graduation.</div>
- </div>
- </div>
-
- <div style="margin-top:1.25rem;">
- <a href="https://www.hope.ac.uk/careers/graduatesandalumni/" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:white;color:#1a3a5c;text-decoration:none;font-size:14px;font-weight:500;padding:10px 20px;border-radius:8px;border:1px solid #c0ccee;">
- Graduates and alumni support at Liverpool Hope →
- </a>
- </div>
- </div>
-
- <hr class="divider">
-
- <!-- SECTION 6: CONTACT -->
- <div class="section">
- <div class="section-label">Get in touch</div>
- <h2 class="section-title">Need Help or Advice?</h2>
- <p class="contact-note">You can contact the School of Psychology's careers contacts directly at any time. Support is available throughout your degree and for up to four years after graduation.</p>
- <div class="contact-grid">
- <div class="contact-card">
- <div class="contact-role">Careers Adviser</div>
- <div class="contact-name">Ali Wood</div>
- <a class="contact-email" href="mailto:wooda@hope.ac.uk">wooda@hope.ac.uk</a>
- </div>
- <div class="contact-card">
- <div class="contact-role">Employer Engagement Officer</div>
- <div class="contact-name">Melissa Grindon</div>
- <a class="contact-email" href="mailto:grinm@hope.ac.uk">grinm@hope.ac.uk</a>
- </div>
- </div>
- </div>
-
+<!-- CAREER PATHWAYS -->
+<div class="section" id="pathways">
+  <div class="section-inner">
+    <div class="eyebrow">Where can your degree take you?</div>
+    <h2 class="section-heading">Explore Career Pathways</h2>
+    <p class="section-sub">Psychology graduates are well suited to a much wider range of careers than most students realise. Each theme area explains why your degree is valued, what roles are available, and what you can do now to prepare.</p>
+    <div class="pathways-grid">
+      <a href="poc.html" class="pathway-card"><div class="pathway-card-name">People, Organisations &amp; Consultancy</div><div class="pathway-card-arrow">Explore &rarr;</div></a>
+      <a href="research-data-evaluation.html" class="pathway-card"><div class="pathway-card-name">Research, Data &amp; Evaluation</div><div class="pathway-card-arrow">Explore &rarr;</div></a>
+      <a href="education.html" class="pathway-card"><div class="pathway-card-name">Education</div><div class="pathway-card-arrow">Explore &rarr;</div></a>
+      <a href="marketing-consumer-behavioural.html" class="pathway-card"><div class="pathway-card-name">Marketing, Consumer &amp; Behavioural Insight</div><div class="pathway-card-arrow">Explore &rarr;</div></a>
+      <a href="behavioural-science.html" class="pathway-card"><div class="pathway-card-name">Behavioural Science &amp; Behaviour Change</div><div class="pathway-card-arrow">Explore &rarr;</div></a>
+      <a href="public-services-policy-justice.html" class="pathway-card"><div class="pathway-card-name">Public Services, Policy &amp; Justice</div><div class="pathway-card-arrow">Explore &rarr;</div></a>
+      <a href="charity-third-sector.html" class="pathway-card"><div class="pathway-card-name">Charity &amp; Third Sector</div><div class="pathway-card-arrow">Explore &rarr;</div></a>
+      <a href="sport-exercise.html" class="pathway-card"><div class="pathway-card-name">Sport &amp; Exercise</div><div class="pathway-card-arrow">Explore &rarr;</div></a>
+      <a href="forensic-legal.html" class="pathway-card"><div class="pathway-card-name">Forensic &amp; Legal Psychology</div><div class="pathway-card-arrow">Explore &rarr;</div></a>
+      <a href="digital-technology-hcd.html" class="pathway-card"><div class="pathway-card-name">Digital, Technology &amp; HCD</div><div class="pathway-card-arrow">Explore &rarr;</div></a>
+      <a href="mental-health.html" class="pathway-card"><div class="pathway-card-name">Mental Health</div><div class="pathway-card-arrow">Explore &rarr;</div></a>
+    </div>
+  </div>
 </div>
+
+<!-- BUILD EXPERIENCE -->
+<div class="section section-bg-light">
+  <div class="section-inner">
+    <div class="eyebrow">Getting experience as a psychology student</div>
+    <h2 class="section-heading">Build Experience While You Study</h2>
+    <p class="section-sub">Experience does not need to be perfectly matched to your plans to be valuable. The key is developing skills employers look for through whatever is available to you.</p>
+    <div class="experience-grid">
+      <div class="experience-card">
+        <div class="experience-card-accent" style="background:#0891B2"></div>
+        <h3>Research Experience</h3>
+        <p>Research skills are one of psychology's strongest selling points with employers.</p>
+        <ul>
+          <li>Undergraduate research assistant roles</li>
+          <li>Staff-led research projects</li>
+          <li>Applied dissertation topics</li>
+          <li>Data skills — SPSS, R, or Excel</li>
+        </ul>
+      </div>
+      <div class="experience-card">
+        <div class="experience-card-accent" style="background:#4F46E5"></div>
+        <h3>People-Facing Experience</h3>
+        <p>Demonstrates the empathy, communication and professional boundaries employers expect from psychology graduates.</p>
+        <ul>
+          <li>Peer mentoring at Liverpool Hope</li>
+          <li>Volunteering in community settings</li>
+          <li>Support worker or care roles</li>
+          <li>Coaching, tutoring, youth work</li>
+        </ul>
+        <a class="card-link" href="https://www.hope.ac.uk/careers/part-timework/" target="_blank">Part-time work support &rarr;</a>
+      </div>
+      <div class="experience-card">
+        <div class="experience-card-accent" style="background:#059669"></div>
+        <h3>Leadership Experience</h3>
+        <p>Taking on responsibility within university life builds skills employers consistently rank as most important.</p>
+        <ul>
+          <li>Student Ambassador Scheme</li>
+          <li>Student Representative roles</li>
+          <li>Psychology Society committee</li>
+          <li>BPS Student Membership</li>
+        </ul>
+        <a class="card-link" href="https://www.hope.ac.uk/careers/serviceandleadershipaward/" target="_blank">Service and Leadership Award &rarr;</a>
+      </div>
+      <div class="experience-card">
+        <div class="experience-card-accent" style="background:#F59E0B"></div>
+        <h3>Work Placements</h3>
+        <p>A placement year gives you a significant advantage — employers consistently rate work experience as a top hiring factor.</p>
+        <ul>
+          <li>Optional placement year module</li>
+          <li>Placements across psychology-relevant sectors</li>
+          <li>Summer internships also make a real difference</li>
+        </ul>
+        <a class="card-link" href="https://www.hope.ac.uk/careers/placementyear/" target="_blank">Placement year information &rarr;</a>
+      </div>
+    </div>
+    <a href="roadmap.html" class="cta-strip">
+      <div>
+        <div class="cta-strip-text">View the Employability Roadmap</div>
+        <div class="cta-strip-sub">See how activities across your degree map to the skills employers value</div>
+      </div>
+      <div class="cta-strip-btn">Open roadmap &rarr;</div>
+    </a>
+  </div>
+</div>
+
+<!-- CAREERS SUPPORT -->
+<div class="section" id="support">
+  <div class="section-inner">
+    <div class="eyebrow">Support available to you</div>
+    <h2 class="section-heading">Get Careers Support</h2>
+    <p class="section-sub">Liverpool Hope's careers service offers one-to-one support, employer events, and resources throughout your degree and for up to four years after graduation.</p>
+    <div class="highlight-box">
+      <div class="highlight-box-text">
+        <p><strong>Psychology students have direct access to careers advisers with experience of psychology-specific routes.</strong> Whether you are interested in clinical training, HR, research or something you have not yet considered, a careers appointment is the best starting point. Free, confidential, and available throughout your degree and beyond.</p>
+      </div>
+      <a href="https://www.hope.ac.uk/careers/careersadvice/" target="_blank" class="btn-primary">Book an appointment &rarr;</a>
+    </div>
+    <div class="support-grid">
+      <div class="support-card">
+        <div class="support-card-badge">One-to-One</div>
+        <h3>Careers Appointments</h3>
+        <p>Book a session to discuss your options, get CV feedback, or prepare for applications and interviews. Ask specifically about:</p>
+        <ul>
+          <li>Non-clinical careers your degree suits</li>
+          <li>Graduate schemes recruiting from psychology</li>
+          <li>Routes into further training</li>
+        </ul>
+        <a class="card-link" href="https://www.hope.ac.uk/careers/careersadvice/" target="_blank">Book careers advice &rarr;</a>
+      </div>
+      <div class="support-card">
+        <div class="support-card-badge">Events</div>
+        <h3>Campus Events and Employer Talks</h3>
+        <p>Liverpool Hope hosts careers events, employer talks, and networking opportunities throughout the year. Most relevant for psychology students:</p>
+        <ul>
+          <li>Health and social care employer panels</li>
+          <li>Graduate scheme information sessions</li>
+          <li>CV and applications workshops</li>
+        </ul>
+        <a class="card-link" href="https://www.hope.ac.uk/careers/campusevents/" target="_blank">View campus events &rarr;</a>
+      </div>
+      <div class="support-card">
+        <div class="support-card-badge">Development</div>
+        <h3>Reach Your Full Potential</h3>
+        <p>Liverpool Hope's employability programme builds skills and confidence beyond your academic work. Useful for psychology students:</p>
+        <ul>
+          <li>Leadership and communication</li>
+          <li>Volunteering and community engagement</li>
+          <li>Digital and data skills</li>
+        </ul>
+        <a class="card-link" href="https://www.hope.ac.uk/careers/reachyourfullpotential/" target="_blank">Find out more &rarr;</a>
+      </div>
+      <div class="support-card">
+        <div class="support-card-badge">Paid Internship</div>
+        <h3>Student Futures Internship</h3>
+        <p>Paid internship opportunities for students through the Student Futures programme — excellent for building professional experience in a supported context.</p>
+        <a class="card-link" href="https://www.hope.ac.uk/careers/studentfuturesinternship/" target="_blank">Student Futures Internship &rarr;</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SKILLS -->
+<div class="section section-bg-periwinkle">
+  <div class="section-inner">
+    <div class="eyebrow">What employers are looking for</div>
+    <h2 class="section-heading">Develop Your Skills</h2>
+    <p class="section-sub">The most employable psychology graduates are those who can demonstrate their skills with specific evidence — not just list them. Start collecting that evidence now, even if a career direction is not yet clear.</p>
+    <a href="employer-trends.html" style="display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:white;font-family:var(--font-display);font-weight:600;font-size:14px;padding:12px 24px;border-radius:var(--radius-sm);transition:transform 0.15s;" onmouseover="this.style.transform='translateY(-1px)'" onmouseout="this.style.transform=''">
+      See what employers want in 2026 &rarr;
+    </a>
+  </div>
+</div>
+
+<!-- AFTER GRADUATION -->
+<div class="section">
+  <div class="section-inner">
+    <div class="eyebrow">After you graduate</div>
+    <h2 class="section-heading">What Happens After Graduation</h2>
+    <p class="section-sub">Your degree is a starting point. Most psychology career paths begin with a graduate-entry role that builds experience — some routes require further training to reach practitioner status.</p>
+    <div class="after-grid">
+      <div class="after-card">
+        <span class="after-badge badge-grad">Graduate entry</span>
+        <h3>Direct entry roles</h3>
+        <p>HR, research, marketing, public sector, charity and consultancy careers are open on graduation with no further training required.</p>
+      </div>
+      <div class="after-card">
+        <span class="after-badge badge-further">Further training</span>
+        <h3>Postgraduate routes</h3>
+        <p>Clinical, forensic, occupational and sport psychology require a BPS-accredited Masters or doctorate. Experience during your degree matters significantly.</p>
+      </div>
+      <div class="after-card">
+        <span class="after-badge badge-grad">Graduate entry</span>
+        <h3>Graduate schemes</h3>
+        <p>NHS, Civil Service, retail, finance, consultancy and more run schemes open to psychology graduates. Most open in autumn of your final year.</p>
+      </div>
+      <div class="after-card">
+        <span class="after-badge badge-ongoing">Ongoing</span>
+        <h3>Alumni support</h3>
+        <p>Liverpool Hope's careers service is available to graduates for up to four years after completing your degree.</p>
+      </div>
+    </div>
+    <div style="margin-top:1.5rem;">
+      <a href="https://www.hope.ac.uk/careers/graduatesandalumni/" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:white;border:1.5px solid var(--border);color:var(--navy);font-family:var(--font-display);font-weight:600;font-size:13px;padding:10px 20px;border-radius:var(--radius-sm);transition:box-shadow 0.15s;" onmouseover="this.style.boxShadow='var(--shadow-md)'" onmouseout="this.style.boxShadow=''">
+        Graduates and alumni support at Liverpool Hope &rarr;
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="contact-section">
+  <div class="contact-inner">
+    <div class="contact-text">
+      <h2>Need help or advice?</h2>
+      <p>Contact the School of Psychology's careers contacts at any time — support is free and available throughout your degree and for up to four years after graduation.</p>
+    </div>
+    <div class="contact-cards">
+      <div class="contact-card">
+        <div class="contact-role">Careers Adviser</div>
+        <div class="contact-name">Ali Wood</div>
+        <a class="contact-email" href="mailto:wooda@hope.ac.uk">wooda@hope.ac.uk</a>
+      </div>
+      <div class="contact-card">
+        <div class="contact-role">Employer Engagement</div>
+        <div class="contact-name">Melissa Grindon</div>
+        <a class="contact-email" href="mailto:grinm@hope.ac.uk">grinm@hope.ac.uk</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
