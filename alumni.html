@@ -23,8 +23,12 @@
  .page-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
  .page-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
  .alumni-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 2rem; }
- .alumni-card { background: white; border: 1px solid #e0e0e0; border-radius: 12px; overflow: hidden; }
- .alumni-card-header { background: #1a3a5c; color: white; padding: 1.25rem; }
+ .alumni-card { background: white; border: 1px solid #e0e0e0; border-radius: 12px; overflow: visible; position: relative; margin-top: 52px; }
+  .alumni-avatar-wrap { position: absolute; top: -44px; left: 50%; transform: translateX(-50%); z-index: 2; }
+  .alumni-avatar { width: 88px; height: 88px; border-radius: 50%; background: #e8f0fb; border: 4px solid white; box-shadow: 0 2px 12px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .alumni-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+  .alumni-avatar-placeholder { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; }
+ .alumni-card-header { background: #1a3a5c; color: white; padding: 2.5rem 1.25rem 1rem; border-radius: 12px 12px 0 0; text-align: center; }
  .alumni-role { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.75; margin-bottom: 4px; }
  .alumni-name { font-size: 18px; font-weight: 600; }
  .alumni-card-body { padding: 1.25rem; }
@@ -81,7 +85,15 @@
  <div class="alumni-grid">
 
  <div class="alumni-card">
- <div class="alumni-card-header">
+ <div class="alumni-avatar-wrap">
+        <div class="alumni-avatar">
+          <div class="alumni-avatar-placeholder">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1a5fa8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <span style="font-size:9px;color:#1a5fa8;font-weight:600;letter-spacing:0.05em;">PHOTO</span>
+          </div>
+        </div>
+      </div>
+<div class="alumni-card-header">
  <div class="alumni-role">Sport and Exercise Psychologist</div>
  <div class="alumni-name">Dr Alexander Smith</div>
  </div>
@@ -106,7 +118,15 @@
  </div>
 
  <div class="alumni-card">
- <div class="alumni-card-header">
+ <div class="alumni-avatar-wrap">
+        <div class="alumni-avatar">
+          <div class="alumni-avatar-placeholder">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1a5fa8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <span style="font-size:9px;color:#1a5fa8;font-weight:600;letter-spacing:0.05em;">PHOTO</span>
+          </div>
+        </div>
+      </div>
+<div class="alumni-card-header">
  <div class="alumni-role">CBT Therapist</div>
  <div class="alumni-name">Dr Jasmine Perceval</div>
  </div>
@@ -131,7 +151,15 @@
  </div>
 
  <div class="alumni-card">
- <div class="alumni-card-header">
+ <div class="alumni-avatar-wrap">
+        <div class="alumni-avatar">
+          <div class="alumni-avatar-placeholder">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1a5fa8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <span style="font-size:9px;color:#1a5fa8;font-weight:600;letter-spacing:0.05em;">PHOTO</span>
+          </div>
+        </div>
+      </div>
+<div class="alumni-card-header">
  <div class="alumni-role">Trainee Clinical Psychologist</div>
  <div class="alumni-name">Rebecca Browne</div>
  </div>
@@ -143,7 +171,15 @@
  </div>
 
  <div class="alumni-card">
- <div class="alumni-card-header">
+ <div class="alumni-avatar-wrap">
+        <div class="alumni-avatar">
+          <div class="alumni-avatar-placeholder">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1a5fa8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <span style="font-size:9px;color:#1a5fa8;font-weight:600;letter-spacing:0.05em;">PHOTO</span>
+          </div>
+        </div>
+      </div>
+<div class="alumni-card-header">
  <div class="alumni-role">Marketing Assistant</div>
  <div class="alumni-name">Joshua Walker</div>
  </div>
@@ -155,7 +191,15 @@
  </div>
 
  <div class="alumni-card">
- <div class="alumni-card-header">
+ <div class="alumni-avatar-wrap">
+        <div class="alumni-avatar">
+          <div class="alumni-avatar-placeholder">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1a5fa8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <span style="font-size:9px;color:#1a5fa8;font-weight:600;letter-spacing:0.05em;">PHOTO</span>
+          </div>
+        </div>
+      </div>
+<div class="alumni-card-header">
  <div class="alumni-role">Counsellor</div>
  <div class="alumni-name">Jade Chapman</div>
  </div>
@@ -167,7 +211,15 @@
  </div>
 
  <div class="alumni-card">
- <div class="alumni-card-header">
+ <div class="alumni-avatar-wrap">
+        <div class="alumni-avatar">
+          <div class="alumni-avatar-placeholder">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1a5fa8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <span style="font-size:9px;color:#1a5fa8;font-weight:600;letter-spacing:0.05em;">PHOTO</span>
+          </div>
+        </div>
+      </div>
+<div class="alumni-card-header">
  <div class="alumni-role">Public Health Officer</div>
  <div class="alumni-name">Martin Mallinson</div>
  </div>
