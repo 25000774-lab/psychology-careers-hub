@@ -5,60 +5,60 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Forensic and Legal Psychology — Psychology Careers | Liverpool Hope University</title>
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
-  .site-header { background: #1a3a5c; color: white; padding: 1rem 2rem; display: flex; align-items: center; gap: 12px; }
-  .site-header-text { font-size: 14px; opacity: 0.85; }
-  .site-header-title { font-size: 16px; font-weight: 500; }
-  .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
-  .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
-  .breadcrumb a { color: #1a5fa8; text-decoration: none; }
-  .breadcrumb a:hover { text-decoration: underline; }
-  .theme-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
-  .theme-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
-  .subtheme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-bottom: 2rem; }
-  .subtheme-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; text-align: left; width: 100%; }
-  .subtheme-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.1); }
-  .subtheme-icon { font-size: 24px; margin-bottom: 10px; }
-  .subtheme-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
-  .subtheme-desc { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
-  .explore-link { font-size: 13px; color: #1a5fa8; }
-  .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
-  .now-box { background: #e8f0fb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .now-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 8px; }
-  .now-list { padding-left: 1.2rem; }
-  .now-list li { font-size: 14px; color: #1a3a5c; line-height: 1.7; }
-  .why-box { background: #f0f7f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .why-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1e6e35; margin-bottom: 8px; }
-  .why-list { padding-left: 1.2rem; }
-  .why-list li { font-size: 14px; color: #1a3a1a; line-height: 1.7; }
-  .employers-box { background: #faf8f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .employers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #a05a00; margin-bottom: 8px; }
-  .employers-list { padding-left: 1.2rem; }
-  .employers-list li { font-size: 14px; color: #3a2a00; line-height: 1.7; }
-  .info-box { background: #fff8e1; border: 1px solid #ffe082; border-radius: 8px; padding: 0.9rem 1.1rem; margin-bottom: 1.5rem; }
-  .info-box-text { font-size: 13px; color: #5a4000; line-height: 1.6; }
-  .divider { border: none; border-top: 1px solid #e8e8e8; margin: 1.5rem 0; }
-  .orgs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
-  .org-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.85rem 1rem; display: flex; align-items: flex-start; gap: 10px; }
-  .org-name { font-size: 13px; font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
-  .org-desc { font-size: 12px; color: #666; }
-  .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
-  .role-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1.25rem; }
-  .role-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
-  .role-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
-  .role-badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
-  .badge-grad { background: #e6f4ea; color: #1e6e35; }
-  .badge-further { background: #fff3e0; color: #a05a00; }
-  .skills-box { background: #f5f5f3; border-radius: 8px; padding: 0.85rem 1rem; margin-bottom: 1rem; }
-  .skills-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-  .skill-chip { font-size: 12px; background: white; border: 1px solid #ddd; border-radius: 20px; padding: 3px 10px; color: #555; }
-  .page-view { display: none; }
-  .page-view.active { display: block; }
-  .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #1a5fa8; cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 1.5rem; font-family: inherit; }
-  .back-btn:hover { text-decoration: underline; }
-  .subtheme-page-title { font-size: 24px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
-  .subtheme-page-intro { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
+ .site-header { background: #1a3a5c; color: white; padding: 1rem 2rem; display: flex; align-items: center; gap: 12px; }
+ .site-header-text { font-size: 14px; opacity: 0.85; }
+ .site-header-title { font-size: 16px; font-weight: 500; }
+ .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+ .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+ .breadcrumb a { color: #1a5fa8; text-decoration: none; }
+ .breadcrumb a:hover { text-decoration: underline; }
+ .theme-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+ .theme-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
+ .subtheme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-bottom: 2rem; }
+ .subtheme-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; text-align: left; width: 100%; }
+ .subtheme-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.1); }
+ .subtheme-icon { font-size: 24px; margin-bottom: 10px; }
+ .subtheme-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+ .subtheme-desc { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
+ .explore-link { font-size: 13px; color: #1a5fa8; }
+ .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+ .now-box { background: #e8f0fb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .now-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 8px; }
+ .now-list { padding-left: 1.2rem; }
+ .now-list li { font-size: 14px; color: #1a3a5c; line-height: 1.7; }
+ .why-box { background: #f0f7f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .why-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1e6e35; margin-bottom: 8px; }
+ .why-list { padding-left: 1.2rem; }
+ .why-list li { font-size: 14px; color: #1a3a1a; line-height: 1.7; }
+ .employers-box { background: #faf8f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .employers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #a05a00; margin-bottom: 8px; }
+ .employers-list { padding-left: 1.2rem; }
+ .employers-list li { font-size: 14px; color: #3a2a00; line-height: 1.7; }
+ .info-box { background: #fff8e1; border: 1px solid #ffe082; border-radius: 8px; padding: 0.9rem 1.1rem; margin-bottom: 1.5rem; }
+ .info-box-text { font-size: 13px; color: #5a4000; line-height: 1.6; }
+ .divider { border: none; border-top: 1px solid #e8e8e8; margin: 1.5rem 0; }
+ .orgs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+ .org-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.85rem 1rem; display: flex; align-items: flex-start; gap: 10px; }
+ .org-name { font-size: 13px; font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
+ .org-desc { font-size: 12px; color: #666; }
+ .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
+ .role-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1.25rem; }
+ .role-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+ .role-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
+ .role-badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
+ .badge-grad { background: #e6f4ea; color: #1e6e35; }
+ .badge-further { background: #fff3e0; color: #a05a00; }
+ .skills-box { background: #f5f5f3; border-radius: 8px; padding: 0.85rem 1rem; margin-bottom: 1rem; }
+ .skills-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+ .skill-chip { font-size: 12px; background: white; border: 1px solid #ddd; border-radius: 20px; padding: 3px 10px; color: #555; }
+ .page-view { display: none; }
+ .page-view.active { display: block; }
+ .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #1a5fa8; cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 1.5rem; font-family: inherit; }
+ .back-btn:hover { text-decoration: underline; }
+ .subtheme-page-title { font-size: 24px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+ .subtheme-page-intro { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
 
 .site-nav { background: #1a3a5c; padding: 0 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
 .site-nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; gap: 0; height: 48px; }
@@ -71,349 +71,353 @@
 .site-nav-menu a:hover { background: #f0f4ff; }
 .site-nav-dropdown:hover .site-nav-menu { display: block; }
 
+
+  .org-name a { color: #1a3a5c; text-decoration: none; font-weight: 600; }
+  .org-name a:hover { color: #1a5fa8; text-decoration: underline; }
+
 </style>
 </head>
 <body>
 <div class="site-nav">
-  <div class="site-nav-inner">
-    <a class="site-nav-home" href="index.html">&#127968; Psychology Careers Hub</a>
-    <a class="site-nav-link" href="index.html">All Pathways</a>
-    <a class="site-nav-link" href="roadmap.html">Roadmap</a>
-    <a class="site-nav-link" href="employer-trends.html">Employer Trends</a>
-    <a class="site-nav-link" href="alumni.html">Alumni</a>
-    <div class="site-nav-dropdown">
-      <span class="site-nav-link">Themes &#9662;</span>
-      <div class="site-nav-menu">
-        <a href="poc.html">People, Organisations &amp; Consultancy</a>
-        <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
-        <a href="education.html">Education</a>
-        <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
-        <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
-        <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
-        <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
-        <a href="sport-exercise.html">Sport &amp; Exercise</a>
-        <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
-        <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
-        <a href="mental-health.html">Mental Health</a>
-      </div>
-    </div>
-  </div>
+ <div class="site-nav-inner">
+ <a class="site-nav-home" href="index.html">Psychology Careers Hub</a>
+ <a class="site-nav-link" href="index.html">All Pathways</a>
+ <a class="site-nav-link" href="roadmap.html">Roadmap</a>
+ <a class="site-nav-link" href="employer-trends.html">Employer Trends</a>
+ <a class="site-nav-link" href="alumni.html">Alumni</a>
+ <div class="site-nav-dropdown">
+ <span class="site-nav-link">Themes &#9662;</span>
+ <div class="site-nav-menu">
+ <a href="poc.html">People, Organisations &amp; Consultancy</a>
+ <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
+ <a href="education.html">Education</a>
+ <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
+ <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
+ <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
+ <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
+ <a href="sport-exercise.html">Sport &amp; Exercise</a>
+ <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
+ <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
+ <a href="mental-health.html">Mental Health</a>
+ </div>
+ </div>
+ </div>
 </div>
-  </div>
+ </div>
 </div>
 
 <div class="site-header">
-  <div>
-    <div class="site-header-title">Liverpool Hope University</div>
-    <div class="site-header-text">School of Psychology — Psychology Careers</div>
-  </div>
+ <div>
+ <div class="site-header-title">Liverpool Hope University</div>
+ <div class="site-header-text">School of Psychology — Psychology Careers</div>
+ </div>
 </div>
 
 <div class="container">
 
-  <!-- OVERVIEW PAGE -->
-  <div id="overview" class="page-view active">
-    <div class="breadcrumb">
-      <a href="#">Career Pathways</a>
-      <span>›</span>
-      <span>Forensic and Legal Psychology</span>
-    </div>
+ <!-- OVERVIEW PAGE -->
+ <div id="overview" class="page-view active">
+ <div class="breadcrumb">
+ <a href="#">Career Pathways</a>
+ <span>›</span>
+ <span>Forensic and Legal Psychology</span>
+ </div>
 
-    <h1 class="theme-title">Forensic and Legal Psychology</h1>
-    <p class="theme-intro">Forensic and legal psychology applies psychological knowledge to criminal justice, offender rehabilitation, risk assessment, legal processes and public protection. There are graduate-entry routes into this field, particularly in offender management and criminal justice support roles, alongside specialist practitioner routes that require further postgraduate training.</p>
+ <h1 class="theme-title">Forensic and Legal Psychology</h1>
+ <p class="theme-intro">Forensic and legal psychology applies psychological knowledge to criminal justice, offender rehabilitation, risk assessment, legal processes and public protection. There are graduate-entry routes into this field, particularly in offender management and criminal justice support roles, alongside specialist practitioner routes that require further postgraduate training.</p>
 
-    <div class="info-box">
-      <div class="info-box-text"><strong>Note on scope:</strong> This page covers criminal justice and policy-related careers. Clinical forensic psychology — including qualified forensic psychologist roles — involves further training and falls under the further training routes covered elsewhere on this site.</div>
-    </div>
+ <div class="info-box">
+ <div class="info-box-text"><strong>Note on scope:</strong> This page covers criminal justice and policy-related careers. Clinical forensic psychology — including qualified forensic psychologist roles — involves further training and falls under the further training routes covered elsewhere on this site.</div>
+ </div>
 
-    <div class="section-label">Sub-themes</div>
-    <div class="subtheme-grid">
-      <button class="subtheme-card" onclick="showPage('cj')">
-        <div class="subtheme-icon">⚖️</div>
-        <div class="subtheme-name">Criminal Justice and Offender Management</div>
-        <div class="subtheme-desc">Working within the prison, probation and criminal justice system to support rehabilitation and public protection.</div>
-        <div class="explore-link">Explore roles →</div>
-      </button>
-      <button class="subtheme-card" onclick="showPage('fa')">
-        <div class="subtheme-icon">📋</div>
-        <div class="subtheme-name">Forensic Assessment and Expert Work</div>
-        <div class="subtheme-desc">Supporting psychological assessment, report writing and expert evidence in legal and court settings.</div>
-        <div class="explore-link">Explore roles →</div>
-      </button>
-      <button class="subtheme-card" onclick="showPage('pr')">
-        <div class="subtheme-icon">📊</div>
-        <div class="subtheme-name">Policy, Research and Crime Analysis</div>
-        <div class="subtheme-desc">Using research and analytical skills to inform criminal justice policy, crime prevention and public safety.</div>
-        <div class="explore-link">Explore roles →</div>
-      </button>
-    </div>
+ <div class="section-label">Sub-themes</div>
+ <div class="subtheme-grid">
+ <button class="subtheme-card" onclick="showPage('cj')">
+ <div class="subtheme-icon">⚖️</div>
+ <div class="subtheme-name">Criminal Justice and Offender Management</div>
+ <div class="subtheme-desc">Working within the prison, probation and criminal justice system to support rehabilitation and public protection.</div>
+ <div class="explore-link">Explore roles →</div>
+ </button>
+ <button class="subtheme-card" onclick="showPage('fa')">
+ <div class="subtheme-icon"></div>
+ <div class="subtheme-name">Forensic Assessment and Expert Work</div>
+ <div class="subtheme-desc">Supporting psychological assessment, report writing and expert evidence in legal and court settings.</div>
+ <div class="explore-link">Explore roles →</div>
+ </button>
+ <button class="subtheme-card" onclick="showPage('pr')">
+ <div class="subtheme-icon"></div>
+ <div class="subtheme-name">Policy, Research and Crime Analysis</div>
+ <div class="subtheme-desc">Using research and analytical skills to inform criminal justice policy, crime prevention and public safety.</div>
+ <div class="explore-link">Explore roles →</div>
+ </button>
+ </div>
 
-    <div class="now-box">
-      <div class="now-label">What you could do right now</div>
-      <ul class="now-list">
-        <li>Volunteer with organisations supporting people in the criminal justice system (e.g. Nacro, Victim Support, St Giles Trust)</li>
-        <li>Look into the BPS Division of Forensic Psychology student membership and events</li>
-        <li>Apply for observer placements or work experience within HMPPS, the Crown Prosecution Service or the courts service</li>
-        <li>Develop report writing and analytical skills through research projects and dissertation work</li>
-        <li>Explore the Civil Service Fast Stream and HMPPS graduate schemes</li>
-      </ul>
-    </div>
+ <div class="now-box">
+ <div class="now-label">What you could do right now</div>
+ <ul class="now-list">
+ <li>Volunteer with organisations supporting people in the criminal justice system (e.g. Nacro, Victim Support, St Giles Trust)</li>
+ <li>Look into the BPS Division of Forensic Psychology student membership and events</li>
+ <li>Apply for observer placements or work experience within HMPPS, the Crown Prosecution Service or the courts service</li>
+ <li>Develop report writing and analytical skills through research projects and dissertation work</li>
+ <li>Explore the Civil Service Fast Stream and HMPPS graduate schemes</li>
+ </ul>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card">
-        <div>
-          <div class="org-name">BPS Division of Forensic Psychology</div>
-          <div class="org-desc">Routes to Chartered Forensic Psychologist status and professional community for forensic practitioners</div>
-        </div>
-      </div>
-      <div class="org-card">
-        <div>
-          <div class="org-name">HCPC</div>
-          <div class="org-desc">Health and Care Professions Council — regulates qualified forensic psychologists in the UK</div>
-        </div>
-      </div>
-      <div class="org-card">
-        <div>
-          <div class="org-name">Probation Institute</div>
-          <div class="org-desc">Professional body for probation practitioners, with resources on routes into the service</div>
-        </div>
-      </div>
-      <div class="org-card">
-        <div>
-          <div class="org-name">Ministry of Justice / HMPPS</div>
-          <div class="org-desc">Employer of psychologists, offender managers and researchers across the prison and probation services</div>
-        </div>
-      </div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card">
+ <div>
+ <div class="org-name"><a href="https://www.bps.org.uk/member-networks/division-forensic-psychology" target="_blank" rel="noopener">BPS Division of Forensic Psychology</a></div>
+ <div class="org-desc">Routes to Chartered Forensic Psychologist status and professional community for forensic practitioners</div>
+ </div>
+ </div>
+ <div class="org-card">
+ <div>
+ <div class="org-name"><a href="https://www.hcpc-uk.org" target="_blank" rel="noopener">HCPC</a></div>
+ <div class="org-desc">Health and Care Professions Council — regulates qualified forensic psychologists in the UK</div>
+ </div>
+ </div>
+ <div class="org-card">
+ <div>
+ <div class="org-name"><a href="https://www.probation-institute.org" target="_blank" rel="noopener">Probation Institute</a></div>
+ <div class="org-desc">Professional body for probation practitioners, with resources on routes into the service</div>
+ </div>
+ </div>
+ <div class="org-card">
+ <div>
+ <div class="org-name"><a href="https://www.gov.uk/government/organisations/ministry-of-justice" target="_blank" rel="noopener">Ministry of Justice / HMPPS</a></div>
+ <div class="org-desc">Employer of psychologists, offender managers and researchers across the prison and probation services</div>
+ </div>
+ </div>
+ </div>
+ </div>
 
-  <!-- CRIMINAL JUSTICE AND OFFENDER MANAGEMENT -->
-  <div id="cj" class="page-view">
-    <button class="back-btn" onclick="showPage('overview')">← Back to Forensic and Legal Psychology</button>
-    <div class="breadcrumb">
-      <a href="#" onclick="showPage('overview'); return false;">Forensic and Legal Psychology</a>
-      <span>›</span>
-      <span>Criminal Justice and Offender Management</span>
-    </div>
-    <h2 class="subtheme-page-title">Criminal Justice and Offender Management</h2>
-    <p class="subtheme-page-intro">Roles in criminal justice and offender management involve working with people who have offended or are at risk of offending, supporting rehabilitation, managing risk, and contributing to public protection. Psychology graduates can enter this field directly at graduate level through HMPPS and probation graduate schemes.</p>
+ <!-- CRIMINAL JUSTICE AND OFFENDER MANAGEMENT -->
+ <div id="cj" class="page-view">
+ <button class="back-btn" onclick="showPage('overview')">← Back to Forensic and Legal Psychology</button>
+ <div class="breadcrumb">
+ <a href="#" onclick="showPage('overview'); return false;">Forensic and Legal Psychology</a>
+ <span>›</span>
+ <span>Criminal Justice and Offender Management</span>
+ </div>
+ <h2 class="subtheme-page-title">Criminal Justice and Offender Management</h2>
+ <p class="subtheme-page-intro">Roles in criminal justice and offender management involve working with people who have offended or are at risk of offending, supporting rehabilitation, managing risk, and contributing to public protection. Psychology graduates can enter this field directly at graduate level through HMPPS and probation graduate schemes.</p>
 
-    <div class="why-box">
-      <div class="why-label">Why psychology?</div>
-      <ul class="why-list">
-        <li>Understanding of risk factors, mental health and behaviour change underpins effective offender supervision</li>
-        <li>Psychological theories of motivation and desistance inform rehabilitation programmes</li>
-        <li>Strong communication and professional boundary skills are essential to working in high-stakes settings</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why psychology?</div>
+ <ul class="why-list">
+ <li>Understanding of risk factors, mental health and behaviour change underpins effective offender supervision</li>
+ <li>Psychological theories of motivation and desistance inform rehabilitation programmes</li>
+ <li>Strong communication and professional boundary skills are essential to working in high-stakes settings</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Roles in Criminal Justice and Offender Management</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">Prison Officer / Offender Supervisor</div>
-        <div class="role-desc">Works with people in custody to support sentence management, behaviour change and preparation for release. Psychology graduates are valued for their understanding of behaviour and communication skills.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Probation Officer (Trainee)</div>
-        <div class="role-desc">Supervises offenders in the community, produces pre-sentence reports and assesses risk. The Professional Qualification in Probation (PQiP) is completed on the job.</div>
-        <span class="role-badge badge-further">Training on the job</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Assistant Psychologist (HMPPS)</div>
-        <div class="role-desc">Supports qualified forensic psychologists in delivering and evaluating offending behaviour programmes within the prison service.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-    </div>
+ <div class="section-label">Roles in Criminal Justice and Offender Management</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">Prison Officer / Offender Supervisor</div>
+ <div class="role-desc">Works with people in custody to support sentence management, behaviour change and preparation for release. Psychology graduates are valued for their understanding of behaviour and communication skills.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Probation Officer (Trainee)</div>
+ <div class="role-desc">Supervises offenders in the community, produces pre-sentence reports and assesses risk. The Professional Qualification in Probation (PQiP) is completed on the job.</div>
+ <span class="role-badge badge-further">Training on the job</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Assistant Psychologist (HMPPS)</div>
+ <div class="role-desc">Supports qualified forensic psychologists in delivering and evaluating offending behaviour programmes within the prison service.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Risk assessment</span>
-        <span class="skill-chip">Professional boundaries</span>
-        <span class="skill-chip">Report writing</span>
-        <span class="skill-chip">Resilience</span>
-        <span class="skill-chip">Empathy</span>
-        <span class="skill-chip">Ethical practice</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Risk assessment</span>
+ <span class="skill-chip">Professional boundaries</span>
+ <span class="skill-chip">Report writing</span>
+ <span class="skill-chip">Resilience</span>
+ <span class="skill-chip">Empathy</span>
+ <span class="skill-chip">Ethical practice</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>His Majesty's Prison and Probation Service (HMPPS)</li>
-        <li>National Probation Service</li>
-        <li>Youth Offending Teams (local authority)</li>
-        <li>Charities supporting people in the justice system (Nacro, St Giles Trust, St Mungo's)</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>His Majesty's Prison and Probation Service (HMPPS)</li>
+ <li>National Probation Service</li>
+ <li>Youth Offending Teams (local authority)</li>
+ <li>Charities supporting people in the justice system (Nacro, St Giles Trust, St Mungo's)</li>
+ </ul>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div><div class="org-name">BPS Division of Forensic Psychology</div></div></div>
-      <div class="org-card"><div><div class="org-name">Probation Institute</div></div></div>
-      <div class="org-card"><div><div class="org-name">HCPC</div></div></div>
-      <div class="org-card"><div><div class="org-name">Ministry of Justice / HMPPS</div></div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div><div class="org-name"><a href="https://www.bps.org.uk/member-networks/division-forensic-psychology" target="_blank" rel="noopener">BPS Division of Forensic Psychology</a></div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.probation-institute.org" target="_blank" rel="noopener">Probation Institute</a></div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.hcpc-uk.org" target="_blank" rel="noopener">HCPC</a></div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.gov.uk/government/organisations/ministry-of-justice" target="_blank" rel="noopener">Ministry of Justice / HMPPS</a></div></div></div>
+ </div>
+ </div>
 
-  <!-- FORENSIC ASSESSMENT AND EXPERT WORK -->
-  <div id="fa" class="page-view">
-    <button class="back-btn" onclick="showPage('overview')">← Back to Forensic and Legal Psychology</button>
-    <div class="breadcrumb">
-      <a href="#" onclick="showPage('overview'); return false;">Forensic and Legal Psychology</a>
-      <span>›</span>
-      <span>Forensic Assessment and Expert Work</span>
-    </div>
-    <h2 class="subtheme-page-title">Forensic Assessment and Expert Work</h2>
-    <p class="subtheme-page-intro">Forensic assessment involves psychological evaluation of individuals involved in legal proceedings — including risk assessment, cognitive assessment and expert witness work. Many of the senior roles in this area require postgraduate training and registration as a forensic psychologist, but psychology graduates can enter supporting roles at assistant level.</p>
+ <!-- FORENSIC ASSESSMENT AND EXPERT WORK -->
+ <div id="fa" class="page-view">
+ <button class="back-btn" onclick="showPage('overview')">← Back to Forensic and Legal Psychology</button>
+ <div class="breadcrumb">
+ <a href="#" onclick="showPage('overview'); return false;">Forensic and Legal Psychology</a>
+ <span>›</span>
+ <span>Forensic Assessment and Expert Work</span>
+ </div>
+ <h2 class="subtheme-page-title">Forensic Assessment and Expert Work</h2>
+ <p class="subtheme-page-intro">Forensic assessment involves psychological evaluation of individuals involved in legal proceedings — including risk assessment, cognitive assessment and expert witness work. Many of the senior roles in this area require postgraduate training and registration as a forensic psychologist, but psychology graduates can enter supporting roles at assistant level.</p>
 
-    <div class="info-box">
-      <div class="info-box-text"><strong>Further training note:</strong> Becoming a Chartered Forensic Psychologist requires Stage 2 training following a BPS-accredited postgraduate qualification. The roles below represent the graduate-entry pathway into this field.</div>
-    </div>
+ <div class="info-box">
+ <div class="info-box-text"><strong>Further training note:</strong> Becoming a Chartered Forensic Psychologist requires Stage 2 training following a BPS-accredited postgraduate qualification. The roles below represent the graduate-entry pathway into this field.</div>
+ </div>
 
-    <div class="why-box">
-      <div class="why-label">Why psychology?</div>
-      <ul class="why-list">
-        <li>Training in psychological assessment tools and research methods directly transfers to forensic evaluation work</li>
-        <li>Understanding of psychopathology, risk factors and cognitive processes underpins forensic report writing</li>
-        <li>Ethical training equips psychology graduates to navigate the complex duty-of-care issues in legal settings</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why psychology?</div>
+ <ul class="why-list">
+ <li>Training in psychological assessment tools and research methods directly transfers to forensic evaluation work</li>
+ <li>Understanding of psychopathology, risk factors and cognitive processes underpins forensic report writing</li>
+ <li>Ethical training equips psychology graduates to navigate the complex duty-of-care issues in legal settings</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Roles in Forensic Assessment and Expert Work</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">Assistant Psychologist (Forensic)</div>
-        <div class="role-desc">Supports qualified forensic psychologists in assessment, report writing and intervention delivery in secure settings or the community.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Psychological Wellbeing Practitioner (Forensic)</div>
-        <div class="role-desc">Delivers low-intensity CBT-based interventions to people in the criminal justice system with mental health needs — typically via an IAPT-style training pathway.</div>
-        <span class="role-badge badge-further">Additional training needed</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Chartered Forensic Psychologist</div>
-        <div class="role-desc">Conducts risk assessments, provides expert opinion to courts and tribunals, and develops treatment programmes for offenders. Requires Stage 2 qualification and HCPC registration.</div>
-        <span class="role-badge badge-further">Postgrad required</span>
-      </div>
-    </div>
+ <div class="section-label">Roles in Forensic Assessment and Expert Work</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">Assistant Psychologist (Forensic)</div>
+ <div class="role-desc">Supports qualified forensic psychologists in assessment, report writing and intervention delivery in secure settings or the community.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Psychological Wellbeing Practitioner (Forensic)</div>
+ <div class="role-desc">Delivers low-intensity CBT-based interventions to people in the criminal justice system with mental health needs — typically via an IAPT-style training pathway.</div>
+ <span class="role-badge badge-further">Additional training needed</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Chartered Forensic Psychologist</div>
+ <div class="role-desc">Conducts risk assessments, provides expert opinion to courts and tribunals, and develops treatment programmes for offenders. Requires Stage 2 qualification and HCPC registration.</div>
+ <span class="role-badge badge-further">Postgrad required</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Psychological assessment</span>
-        <span class="skill-chip">Report writing</span>
-        <span class="skill-chip">Analytical thinking</span>
-        <span class="skill-chip">Ethical judgement</span>
-        <span class="skill-chip">Attention to detail</span>
-        <span class="skill-chip">Professional communication</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Psychological assessment</span>
+ <span class="skill-chip">Report writing</span>
+ <span class="skill-chip">Analytical thinking</span>
+ <span class="skill-chip">Ethical judgement</span>
+ <span class="skill-chip">Attention to detail</span>
+ <span class="skill-chip">Professional communication</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>HMPPS and secure psychiatric hospitals</li>
-        <li>NHS forensic mental health services</li>
-        <li>Independent forensic psychology practices</li>
-        <li>Courts, tribunals and legal teams</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>HMPPS and secure psychiatric hospitals</li>
+ <li>NHS forensic mental health services</li>
+ <li>Independent forensic psychology practices</li>
+ <li>Courts, tribunals and legal teams</li>
+ </ul>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div><div class="org-name">BPS Division of Forensic Psychology</div></div></div>
-      <div class="org-card"><div><div class="org-name">HCPC</div></div></div>
-      <div class="org-card"><div><div class="org-name">British Psychological Society</div></div></div>
-      <div class="org-card"><div><div class="org-name">Ministry of Justice / HMPPS</div></div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div><div class="org-name"><a href="https://www.bps.org.uk/member-networks/division-forensic-psychology" target="_blank" rel="noopener">BPS Division of Forensic Psychology</a></div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.hcpc-uk.org" target="_blank" rel="noopener">HCPC</a></div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.bps.org.uk" target="_blank" rel="noopener">British Psychological Society</a></div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.gov.uk/government/organisations/ministry-of-justice" target="_blank" rel="noopener">Ministry of Justice / HMPPS</a></div></div></div>
+ </div>
+ </div>
 
-  <!-- POLICY, RESEARCH AND CRIME ANALYSIS -->
-  <div id="pr" class="page-view">
-    <button class="back-btn" onclick="showPage('overview')">← Back to Forensic and Legal Psychology</button>
-    <div class="breadcrumb">
-      <a href="#" onclick="showPage('overview'); return false;">Forensic and Legal Psychology</a>
-      <span>›</span>
-      <span>Policy, Research and Crime Analysis</span>
-    </div>
-    <h2 class="subtheme-page-title">Policy, Research and Crime Analysis</h2>
-    <p class="subtheme-page-intro">Psychology graduates can apply their research and analytical skills to criminal justice policy, crime prevention and public safety. These roles sit within government departments, police forces, research institutes and think tanks, and are open to graduates with strong quantitative or qualitative research skills.</p>
+ <!-- POLICY, RESEARCH AND CRIME ANALYSIS -->
+ <div id="pr" class="page-view">
+ <button class="back-btn" onclick="showPage('overview')">← Back to Forensic and Legal Psychology</button>
+ <div class="breadcrumb">
+ <a href="#" onclick="showPage('overview'); return false;">Forensic and Legal Psychology</a>
+ <span>›</span>
+ <span>Policy, Research and Crime Analysis</span>
+ </div>
+ <h2 class="subtheme-page-title">Policy, Research and Crime Analysis</h2>
+ <p class="subtheme-page-intro">Psychology graduates can apply their research and analytical skills to criminal justice policy, crime prevention and public safety. These roles sit within government departments, police forces, research institutes and think tanks, and are open to graduates with strong quantitative or qualitative research skills.</p>
 
-    <div class="why-box">
-      <div class="why-label">Why psychology?</div>
-      <ul class="why-list">
-        <li>Research methods training equips psychology graduates to design and analyse criminal justice evaluations</li>
-        <li>Understanding of behaviour, risk and cognition informs evidence-based crime prevention and policy work</li>
-        <li>Strong critical thinking and written communication skills are highly valued in policy and research settings</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why psychology?</div>
+ <ul class="why-list">
+ <li>Research methods training equips psychology graduates to design and analyse criminal justice evaluations</li>
+ <li>Understanding of behaviour, risk and cognition informs evidence-based crime prevention and policy work</li>
+ <li>Strong critical thinking and written communication skills are highly valued in policy and research settings</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Roles in Policy, Research and Crime Analysis</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">Crime Analyst</div>
-        <div class="role-desc">Analyses crime data and patterns to inform policing priorities, resource allocation and crime prevention strategies within police forces or local authorities.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Criminal Justice Policy Researcher</div>
-        <div class="role-desc">Conducts research and produces evidence reviews to inform legislation, policy development and programme evaluation within government or research bodies.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Research Officer (Criminology / Justice)</div>
-        <div class="role-desc">Designs and delivers research projects examining offending, victimisation, rehabilitation or policing effectiveness for academic or policy organisations.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-    </div>
+ <div class="section-label">Roles in Policy, Research and Crime Analysis</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">Crime Analyst</div>
+ <div class="role-desc">Analyses crime data and patterns to inform policing priorities, resource allocation and crime prevention strategies within police forces or local authorities.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Criminal Justice Policy Researcher</div>
+ <div class="role-desc">Conducts research and produces evidence reviews to inform legislation, policy development and programme evaluation within government or research bodies.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Research Officer (Criminology / Justice)</div>
+ <div class="role-desc">Designs and delivers research projects examining offending, victimisation, rehabilitation or policing effectiveness for academic or policy organisations.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Research methods</span>
-        <span class="skill-chip">Data analysis</span>
-        <span class="skill-chip">Written communication</span>
-        <span class="skill-chip">Critical thinking</span>
-        <span class="skill-chip">Policy awareness</span>
-        <span class="skill-chip">Attention to detail</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Research methods</span>
+ <span class="skill-chip">Data analysis</span>
+ <span class="skill-chip">Written communication</span>
+ <span class="skill-chip">Critical thinking</span>
+ <span class="skill-chip">Policy awareness</span>
+ <span class="skill-chip">Attention to detail</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>Home Office and Ministry of Justice research teams</li>
-        <li>Police forces and the College of Policing</li>
-        <li>Think tanks and research institutes (e.g. Policy Exchange, Crest Advisory)</li>
-        <li>Universities with criminology and forensic psychology departments</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>Home Office and Ministry of Justice research teams</li>
+ <li>Police forces and the College of Policing</li>
+ <li>Think tanks and research institutes (e.g. Policy Exchange, Crest Advisory)</li>
+ <li>Universities with criminology and forensic psychology departments</li>
+ </ul>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div><div class="org-name">BPS Division of Forensic Psychology</div></div></div>
-      <div class="org-card"><div><div class="org-name">Probation Institute</div></div></div>
-      <div class="org-card"><div><div class="org-name">College of Policing</div><div class="org-desc">Professional body for policing — research and evidence resources</div></div></div>
-      <div class="org-card"><div><div class="org-name">British Society of Criminology</div><div class="org-desc">Professional community for researchers in criminology and criminal justice</div></div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div><div class="org-name"><a href="https://www.bps.org.uk/member-networks/division-forensic-psychology" target="_blank" rel="noopener">BPS Division of Forensic Psychology</a></div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.probation-institute.org" target="_blank" rel="noopener">Probation Institute</a></div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.college.police.uk" target="_blank" rel="noopener">College of Policing</a></div><div class="org-desc">Professional body for policing — research and evidence resources</div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.britsoccrim.org" target="_blank" rel="noopener">British Society of Criminology</a></div><div class="org-desc">Professional community for researchers in criminology and criminal justice</div></div></div>
+ </div>
+ </div>
 
 </div>
 
 <script>
-  function showPage(id) {
-    document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-    window.scrollTo(0, 0);
-  }
+ function showPage(id) {
+ document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
+ document.getElementById(id).classList.add('active');
+ window.scrollTo(0, 0);
+ }
 </script>
 </body>
 </html>

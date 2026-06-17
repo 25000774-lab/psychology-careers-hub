@@ -5,63 +5,63 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Marketing, Consumer Insight and Behavioural Insight — Psychology Careers | Liverpool Hope University</title>
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
-  .site-header { background: #1a3a5c; color: white; padding: 1rem 2rem; }
-  .site-header-title { font-size: 16px; font-weight: 500; }
-  .site-header-text { font-size: 14px; opacity: 0.85; }
-  .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
-  .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
-  .breadcrumb a { color: #1a5fa8; text-decoration: none; }
-  .breadcrumb a:hover { text-decoration: underline; }
-  .theme-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
-  .theme-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
-  .subtheme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 2rem; }
-  .subtheme-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; text-align: left; width: 100%; }
-  .subtheme-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.1); }
-  .subtheme-icon { font-size: 24px; margin-bottom: 10px; }
-  .subtheme-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
-  .subtheme-desc { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
-  .explore-link { font-size: 13px; color: #1a5fa8; }
-  .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
-  .now-box { background: #e8f0fb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .now-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 8px; }
-  .now-list { padding-left: 1.2rem; }
-  .now-list li { font-size: 14px; color: #1a3a5c; line-height: 1.7; }
-  .why-box { background: #f0f7f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .why-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1e6e35; margin-bottom: 8px; }
-  .why-list { padding-left: 1.2rem; }
-  .why-list li { font-size: 14px; color: #1a3a1a; line-height: 1.7; }
-  .employers-box { background: #faf8f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .employers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #a05a00; margin-bottom: 8px; }
-  .employers-list { padding-left: 1.2rem; }
-  .employers-list li { font-size: 14px; color: #3a2a00; line-height: 1.7; }
-  .related-box { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .related-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
-  .related-chips { display: flex; flex-wrap: wrap; gap: 8px; }
-  .related-chip { font-size: 13px; background: #f0f4ff; border: 1px solid #c0ccee; border-radius: 20px; padding: 4px 12px; color: #1a3a5c; cursor: pointer; }
-  .related-chip:hover { background: #e0e8ff; }
-  .divider { border: none; border-top: 1px solid #e8e8e8; margin: 1.5rem 0; }
-  .orgs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
-  .org-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.85rem 1rem; }
-  .org-name { font-size: 13px; font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
-  .org-desc { font-size: 12px; color: #666; }
-  .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
-  .role-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1.25rem; }
-  .role-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
-  .role-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
-  .role-badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
-  .badge-grad { background: #e6f4ea; color: #1e6e35; }
-  .badge-further { background: #fff3e0; color: #a05a00; }
-  .skills-box { background: #f5f5f3; border-radius: 8px; padding: 0.85rem 1rem; margin-bottom: 1rem; }
-  .skills-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-  .skill-chip { font-size: 12px; background: white; border: 1px solid #ddd; border-radius: 20px; padding: 3px 10px; color: #555; }
-  .page-view { display: none; }
-  .page-view.active { display: block; }
-  .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #1a5fa8; cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 1.5rem; font-family: inherit; }
-  .back-btn:hover { text-decoration: underline; }
-  .subtheme-page-title { font-size: 24px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
-  .subtheme-page-intro { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
+ .site-header { background: #1a3a5c; color: white; padding: 1rem 2rem; }
+ .site-header-title { font-size: 16px; font-weight: 500; }
+ .site-header-text { font-size: 14px; opacity: 0.85; }
+ .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+ .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+ .breadcrumb a { color: #1a5fa8; text-decoration: none; }
+ .breadcrumb a:hover { text-decoration: underline; }
+ .theme-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+ .theme-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
+ .subtheme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 2rem; }
+ .subtheme-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; text-align: left; width: 100%; }
+ .subtheme-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.1); }
+ .subtheme-icon { font-size: 24px; margin-bottom: 10px; }
+ .subtheme-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+ .subtheme-desc { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
+ .explore-link { font-size: 13px; color: #1a5fa8; }
+ .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+ .now-box { background: #e8f0fb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .now-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 8px; }
+ .now-list { padding-left: 1.2rem; }
+ .now-list li { font-size: 14px; color: #1a3a5c; line-height: 1.7; }
+ .why-box { background: #f0f7f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .why-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1e6e35; margin-bottom: 8px; }
+ .why-list { padding-left: 1.2rem; }
+ .why-list li { font-size: 14px; color: #1a3a1a; line-height: 1.7; }
+ .employers-box { background: #faf8f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .employers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #a05a00; margin-bottom: 8px; }
+ .employers-list { padding-left: 1.2rem; }
+ .employers-list li { font-size: 14px; color: #3a2a00; line-height: 1.7; }
+ .related-box { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .related-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+ .related-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+ .related-chip { font-size: 13px; background: #f0f4ff; border: 1px solid #c0ccee; border-radius: 20px; padding: 4px 12px; color: #1a3a5c; cursor: pointer; }
+ .related-chip:hover { background: #e0e8ff; }
+ .divider { border: none; border-top: 1px solid #e8e8e8; margin: 1.5rem 0; }
+ .orgs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+ .org-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.85rem 1rem; }
+ .org-name { font-size: 13px; font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
+ .org-desc { font-size: 12px; color: #666; }
+ .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
+ .role-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1.25rem; }
+ .role-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+ .role-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
+ .role-badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
+ .badge-grad { background: #e6f4ea; color: #1e6e35; }
+ .badge-further { background: #fff3e0; color: #a05a00; }
+ .skills-box { background: #f5f5f3; border-radius: 8px; padding: 0.85rem 1rem; margin-bottom: 1rem; }
+ .skills-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+ .skill-chip { font-size: 12px; background: white; border: 1px solid #ddd; border-radius: 20px; padding: 3px 10px; color: #555; }
+ .page-view { display: none; }
+ .page-view.active { display: block; }
+ .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #1a5fa8; cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 1.5rem; font-family: inherit; }
+ .back-btn:hover { text-decoration: underline; }
+ .subtheme-page-title { font-size: 24px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+ .subtheme-page-intro { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
 
 .site-nav { background: #1a3a5c; padding: 0 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
 .site-nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; gap: 0; height: 48px; }
@@ -74,363 +74,367 @@
 .site-nav-menu a:hover { background: #f0f4ff; }
 .site-nav-dropdown:hover .site-nav-menu { display: block; }
 
+
+  .org-name a { color: #1a3a5c; text-decoration: none; font-weight: 600; }
+  .org-name a:hover { color: #1a5fa8; text-decoration: underline; }
+
 </style>
 </head>
 <body>
 <div class="site-nav">
-  <div class="site-nav-inner">
-    <a class="site-nav-home" href="index.html">&#127968; Psychology Careers Hub</a>
-    <a class="site-nav-link" href="index.html">All Pathways</a>
-    <a class="site-nav-link" href="roadmap.html">Roadmap</a>
-    <a class="site-nav-link" href="employer-trends.html">Employer Trends</a>
-    <a class="site-nav-link" href="alumni.html">Alumni</a>
-    <div class="site-nav-dropdown">
-      <span class="site-nav-link">Themes &#9662;</span>
-      <div class="site-nav-menu">
-        <a href="poc.html">People, Organisations &amp; Consultancy</a>
-        <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
-        <a href="education.html">Education</a>
-        <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
-        <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
-        <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
-        <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
-        <a href="sport-exercise.html">Sport &amp; Exercise</a>
-        <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
-        <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
-        <a href="mental-health.html">Mental Health</a>
-      </div>
-    </div>
-  </div>
+ <div class="site-nav-inner">
+ <a class="site-nav-home" href="index.html">Psychology Careers Hub</a>
+ <a class="site-nav-link" href="index.html">All Pathways</a>
+ <a class="site-nav-link" href="roadmap.html">Roadmap</a>
+ <a class="site-nav-link" href="employer-trends.html">Employer Trends</a>
+ <a class="site-nav-link" href="alumni.html">Alumni</a>
+ <div class="site-nav-dropdown">
+ <span class="site-nav-link">Themes &#9662;</span>
+ <div class="site-nav-menu">
+ <a href="poc.html">People, Organisations &amp; Consultancy</a>
+ <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
+ <a href="education.html">Education</a>
+ <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
+ <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
+ <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
+ <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
+ <a href="sport-exercise.html">Sport &amp; Exercise</a>
+ <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
+ <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
+ <a href="mental-health.html">Mental Health</a>
+ </div>
+ </div>
+ </div>
 </div>
-  </div>
+ </div>
 </div>
 <div class="site-header">
-  <div class="site-header-title">Liverpool Hope University</div>
-  <div class="site-header-text">School of Psychology — Psychology Careers</div>
+ <div class="site-header-title">Liverpool Hope University</div>
+ <div class="site-header-text">School of Psychology — Psychology Careers</div>
 </div>
 <div class="container">
 
-  <!-- OVERVIEW -->
-  <div id="overview" class="page-view active">
-    <div class="breadcrumb"><a href="#">Psychology Careers</a><span>›</span><span>Marketing, Consumer Insight and Behavioural Insight</span></div>
-    <h1 class="theme-title">📣 Marketing, Consumer Insight and Behavioural Insight</h1>
-    <p class="theme-intro">An understanding of how people think, make decisions, and respond to persuasion makes psychology graduates particularly well suited to careers in marketing, consumer research, and behavioural insight. These are some of the most commercially valued areas for psychology graduates and are often overlooked as a career pathway.</p>
+ <!-- OVERVIEW -->
+ <div id="overview" class="page-view active">
+ <div class="breadcrumb"><a href="#">Psychology Careers</a><span>›</span><span>Marketing, Consumer Insight and Behavioural Insight</span></div>
+ <h1 class="theme-title"> Marketing, Consumer Insight and Behavioural Insight</h1>
+ <p class="theme-intro">An understanding of how people think, make decisions, and respond to persuasion makes psychology graduates particularly well suited to careers in marketing, consumer research, and behavioural insight. These are some of the most commercially valued areas for psychology graduates and are often overlooked as a career pathway.</p>
 
-    <div class="subtheme-grid">
-      <button class="subtheme-card" onclick="showPage('marketing')">
-        <div class="subtheme-icon">📱</div>
-        <div class="subtheme-name">Marketing and Advertising</div>
-        <div class="subtheme-desc">Use knowledge of attention, persuasion, and consumer behaviour to develop effective communications and campaigns.</div>
-        <div class="explore-link">Explore this area →</div>
-      </button>
-      <button class="subtheme-card" onclick="showPage('consumer')">
-        <div class="subtheme-icon">🔍</div>
-        <div class="subtheme-name">Consumer Research</div>
-        <div class="subtheme-desc">Design and conduct research to understand consumer attitudes, motivations, and decision-making.</div>
-        <div class="explore-link">Explore this area →</div>
-      </button>
-      <button class="subtheme-card" onclick="showPage('behavioural')">
-        <div class="subtheme-icon">🧠</div>
-        <div class="subtheme-name">Behavioural Insight</div>
-        <div class="subtheme-desc">Apply behavioural science to help organisations understand and influence decision-making in commercial and public sector contexts.</div>
-        <div class="explore-link">Explore this area →</div>
-      </button>
-    </div>
+ <div class="subtheme-grid">
+ <button class="subtheme-card" onclick="showPage('marketing')">
+ <div class="subtheme-icon"></div>
+ <div class="subtheme-name">Marketing and Advertising</div>
+ <div class="subtheme-desc">Use knowledge of attention, persuasion, and consumer behaviour to develop effective communications and campaigns.</div>
+ <div class="explore-link">Explore this area →</div>
+ </button>
+ <button class="subtheme-card" onclick="showPage('consumer')">
+ <div class="subtheme-icon"></div>
+ <div class="subtheme-name">Consumer Research</div>
+ <div class="subtheme-desc">Design and conduct research to understand consumer attitudes, motivations, and decision-making.</div>
+ <div class="explore-link">Explore this area →</div>
+ </button>
+ <button class="subtheme-card" onclick="showPage('behavioural')">
+ <div class="subtheme-icon"></div>
+ <div class="subtheme-name">Behavioural Insight</div>
+ <div class="subtheme-desc">Apply behavioural science to help organisations understand and influence decision-making in commercial and public sector contexts.</div>
+ <div class="explore-link">Explore this area →</div>
+ </button>
+ </div>
 
-    <div class="now-box">
-      <div class="now-label">What you could do now</div>
-      <ul class="now-list">
-        <li>Build a LinkedIn profile and follow marketing and consumer insight employers</li>
-        <li>Look into graduate schemes at agencies such as Ipsos, Kantar, and YouGov</li>
-        <li>Research the Market Research Society and its student resources</li>
-        <li>Consider modules covering social influence, persuasion, and consumer behaviour in your degree</li>
-        <li>Look for marketing assistant roles as part-time work to build commercial awareness</li>
-      </ul>
-    </div>
+ <div class="now-box">
+ <div class="now-label">What you could do now</div>
+ <ul class="now-list">
+ <li>Build a LinkedIn profile and follow marketing and consumer insight employers</li>
+ <li>Look into graduate schemes at agencies such as Ipsos, Kantar, and YouGov</li>
+ <li>Research the Market Research Society and its student resources</li>
+ <li>Consider modules covering social influence, persuasion, and consumer behaviour in your degree</li>
+ <li>Look for marketing assistant roles as part-time work to build commercial awareness</li>
+ </ul>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div class="org-name">Market Research Society (MRS)</div><div class="org-desc">Professional body for market and consumer research</div></div>
-      <div class="org-card"><div class="org-name">Chartered Institute of Marketing</div><div class="org-desc">Professional body for marketing practitioners</div></div>
-      <div class="org-card"><div class="org-name">Behavioural Insights Team</div><div class="org-desc">Leading applied behavioural science organisation</div></div>
-      <div class="org-card"><div class="org-name">Institute of Practitioners in Advertising</div><div class="org-desc">Trade body for advertising and communications agencies</div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div class="org-name"><a href="https://www.mrs.org.uk" target="_blank" rel="noopener">Market Research Society (MRS)</a></div><div class="org-desc">Professional body for market and consumer research</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.cim.co.uk" target="_blank" rel="noopener">Chartered Institute of Marketing</a></div><div class="org-desc">Professional body for marketing practitioners</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.bi.team" target="_blank" rel="noopener">Behavioural Insights Team</a></div><div class="org-desc">Leading applied behavioural science organisation</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.ipa.co.uk" target="_blank" rel="noopener">Institute of Practitioners in Advertising</a></div><div class="org-desc">Trade body for advertising and communications agencies</div></div>
+ </div>
+ </div>
 
-  <!-- MARKETING AND ADVERTISING -->
-  <div id="marketing" class="page-view">
-    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Marketing, Consumer Insight and Behavioural Insight</a><span>›</span><span>Marketing and Advertising</span></div>
-    <button class="back-btn" onclick="showPage('overview')">← Back to Marketing, Consumer Insight and Behavioural Insight</button>
-    <h1 class="subtheme-page-title">📱 Marketing and Advertising</h1>
-    <p class="subtheme-page-intro">Marketing and advertising draw heavily on psychological principles of attention, persuasion, memory, and consumer behaviour. Psychology graduates bring a distinctive analytical perspective that many employers value alongside creative thinking.</p>
+ <!-- MARKETING AND ADVERTISING -->
+ <div id="marketing" class="page-view">
+ <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Marketing, Consumer Insight and Behavioural Insight</a><span>›</span><span>Marketing and Advertising</span></div>
+ <button class="back-btn" onclick="showPage('overview')">← Back to Marketing, Consumer Insight and Behavioural Insight</button>
+ <h1 class="subtheme-page-title"> Marketing and Advertising</h1>
+ <p class="subtheme-page-intro">Marketing and advertising draw heavily on psychological principles of attention, persuasion, memory, and consumer behaviour. Psychology graduates bring a distinctive analytical perspective that many employers value alongside creative thinking.</p>
 
-    <div class="why-box">
-      <div class="why-label">Why Psychology?</div>
-      <ul class="why-list">
-        <li>Deep understanding of persuasion, influence, and how people respond to messages — central to effective marketing</li>
-        <li>Knowledge of attention, memory, and perception informs how advertising is designed and placed</li>
-        <li>Research and analytical skills for measuring campaign effectiveness and audience insight</li>
-        <li>Understanding of identity, social influence, and group behaviour relevant to brand strategy</li>
-        <li>Ethical awareness around nudging, persuasion, and consumer autonomy — increasingly valued in the sector</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why Psychology?</div>
+ <ul class="why-list">
+ <li>Deep understanding of persuasion, influence, and how people respond to messages — central to effective marketing</li>
+ <li>Knowledge of attention, memory, and perception informs how advertising is designed and placed</li>
+ <li>Research and analytical skills for measuring campaign effectiveness and audience insight</li>
+ <li>Understanding of identity, social influence, and group behaviour relevant to brand strategy</li>
+ <li>Ethical awareness around nudging, persuasion, and consumer autonomy — increasingly valued in the sector</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Possible roles in this area</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">Marketing Assistant / Executive</div>
-        <div class="role-desc">Entry-level marketing roles supporting campaign delivery, content creation, and audience research across a range of channels.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Brand and Communications Executive</div>
-        <div class="role-desc">Uses psychological insight into perception, identity, and persuasion to develop brand strategy and communications.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Media Planner</div>
-        <div class="role-desc">Understands audience psychology to inform how and where advertising is placed for maximum impact.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Content Strategist</div>
-        <div class="role-desc">Uses knowledge of attention, memory, and persuasion to develop content that engages audiences and drives behaviour.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-    </div>
+ <div class="section-label">Possible roles in this area</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">Marketing Assistant / Executive</div>
+ <div class="role-desc">Entry-level marketing roles supporting campaign delivery, content creation, and audience research across a range of channels.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Brand and Communications Executive</div>
+ <div class="role-desc">Uses psychological insight into perception, identity, and persuasion to develop brand strategy and communications.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Media Planner</div>
+ <div class="role-desc">Understands audience psychology to inform how and where advertising is placed for maximum impact.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Content Strategist</div>
+ <div class="role-desc">Uses knowledge of attention, memory, and persuasion to develop content that engages audiences and drives behaviour.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Understanding of persuasion</span>
-        <span class="skill-chip">Communication and writing</span>
-        <span class="skill-chip">Analytical thinking</span>
-        <span class="skill-chip">Commercial awareness</span>
-        <span class="skill-chip">Digital literacy</span>
-        <span class="skill-chip">Creativity</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Understanding of persuasion</span>
+ <span class="skill-chip">Communication and writing</span>
+ <span class="skill-chip">Analytical thinking</span>
+ <span class="skill-chip">Commercial awareness</span>
+ <span class="skill-chip">Digital literacy</span>
+ <span class="skill-chip">Creativity</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>Marketing and communications agencies of all sizes</li>
-        <li>In-house marketing teams at large retailers, brands, and charities</li>
-        <li>Digital and social media agencies</li>
-        <li>Advertising agencies including WPP, Publicis, and Omnicom group companies</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>Marketing and communications agencies of all sizes</li>
+ <li>In-house marketing teams at large retailers, brands, and charities</li>
+ <li>Digital and social media agencies</li>
+ <li>Advertising agencies including WPP, Publicis, and Omnicom group companies</li>
+ </ul>
+ </div>
 
-    <div class="now-box">
-      <div class="now-label">What you could do now</div>
-      <ul class="now-list">
-        <li>Look for part-time or voluntary marketing roles to build commercial experience</li>
-        <li>Build a portfolio of writing, content, or campaign ideas to show employers</li>
-        <li>Research graduate marketing schemes at large consumer brands and agencies</li>
-        <li>Follow marketing industry publications such as Campaign and Marketing Week</li>
-      </ul>
-    </div>
+ <div class="now-box">
+ <div class="now-label">What you could do now</div>
+ <ul class="now-list">
+ <li>Look for part-time or voluntary marketing roles to build commercial experience</li>
+ <li>Build a portfolio of writing, content, or campaign ideas to show employers</li>
+ <li>Research graduate marketing schemes at large consumer brands and agencies</li>
+ <li>Follow marketing industry publications such as Campaign and Marketing Week</li>
+ </ul>
+ </div>
 
-    <div class="related-box">
-      <div class="related-label">You may also be interested in</div>
-      <div class="related-chips">
-        <span class="related-chip" onclick="showPage('consumer')">Consumer Research</span>
-        <span class="related-chip" onclick="showPage('behavioural')">Behavioural Insight</span>
-        <span class="related-chip">People, Organisations and Consultancy</span>
-        <span class="related-chip">Digital and UX</span>
-      </div>
-    </div>
+ <div class="related-box">
+ <div class="related-label">You may also be interested in</div>
+ <div class="related-chips">
+ <span class="related-chip" onclick="showPage('consumer')">Consumer Research</span>
+ <span class="related-chip" onclick="showPage('behavioural')">Behavioural Insight</span>
+ <span class="related-chip">People, Organisations and Consultancy</span>
+ <span class="related-chip">Digital and UX</span>
+ </div>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div class="org-name">Chartered Institute of Marketing</div><div class="org-desc">Professional body and qualifications for marketing practitioners</div></div>
-      <div class="org-card"><div class="org-name">Institute of Practitioners in Advertising</div><div class="org-desc">Trade body for the UK advertising and communications industry</div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div class="org-name"><a href="https://www.cim.co.uk" target="_blank" rel="noopener">Chartered Institute of Marketing</a></div><div class="org-desc">Professional body and qualifications for marketing practitioners</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.ipa.co.uk" target="_blank" rel="noopener">Institute of Practitioners in Advertising</a></div><div class="org-desc">Trade body for the UK advertising and communications industry</div></div>
+ </div>
+ </div>
 
-  <!-- CONSUMER RESEARCH -->
-  <div id="consumer" class="page-view">
-    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Marketing, Consumer Insight and Behavioural Insight</a><span>›</span><span>Consumer Research</span></div>
-    <button class="back-btn" onclick="showPage('overview')">← Back to Marketing, Consumer Insight and Behavioural Insight</button>
-    <h1 class="subtheme-page-title">🔍 Consumer Research</h1>
-    <p class="subtheme-page-intro">Consumer research roles involve investigating how and why people make purchasing decisions, applying psychological research methods in commercial settings. This is one of the most natural fits for psychology graduates entering the commercial world.</p>
+ <!-- CONSUMER RESEARCH -->
+ <div id="consumer" class="page-view">
+ <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Marketing, Consumer Insight and Behavioural Insight</a><span>›</span><span>Consumer Research</span></div>
+ <button class="back-btn" onclick="showPage('overview')">← Back to Marketing, Consumer Insight and Behavioural Insight</button>
+ <h1 class="subtheme-page-title"> Consumer Research</h1>
+ <p class="subtheme-page-intro">Consumer research roles involve investigating how and why people make purchasing decisions, applying psychological research methods in commercial settings. This is one of the most natural fits for psychology graduates entering the commercial world.</p>
 
-    <div class="why-box">
-      <div class="why-label">Why Psychology?</div>
-      <ul class="why-list">
-        <li>Training in both quantitative and qualitative research methods — exactly what consumer research employers need</li>
-        <li>Understanding of attitude formation, decision-making, and behaviour change directly informs consumer insight work</li>
-        <li>Experience with surveys, interviews, and data analysis from degree assessments and dissertation</li>
-        <li>Ability to synthesise complex data and communicate findings clearly to non-specialist audiences</li>
-        <li>Ethical awareness around research with human participants</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why Psychology?</div>
+ <ul class="why-list">
+ <li>Training in both quantitative and qualitative research methods — exactly what consumer research employers need</li>
+ <li>Understanding of attitude formation, decision-making, and behaviour change directly informs consumer insight work</li>
+ <li>Experience with surveys, interviews, and data analysis from degree assessments and dissertation</li>
+ <li>Ability to synthesise complex data and communicate findings clearly to non-specialist audiences</li>
+ <li>Ethical awareness around research with human participants</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Possible roles in this area</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">Market Research Executive</div>
-        <div class="role-desc">Designs and conducts qualitative and quantitative research to understand consumer attitudes, behaviours, and preferences for commercial clients.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Consumer Insights Analyst</div>
-        <div class="role-desc">Analyses data from surveys, focus groups, and sales figures to generate insights about consumer behaviour and inform business strategy.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Qualitative Research Executive</div>
-        <div class="role-desc">Plans and moderates focus groups and depth interviews to explore consumer attitudes and motivations in depth.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-    </div>
+ <div class="section-label">Possible roles in this area</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">Market Research Executive</div>
+ <div class="role-desc">Designs and conducts qualitative and quantitative research to understand consumer attitudes, behaviours, and preferences for commercial clients.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Consumer Insights Analyst</div>
+ <div class="role-desc">Analyses data from surveys, focus groups, and sales figures to generate insights about consumer behaviour and inform business strategy.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Qualitative Research Executive</div>
+ <div class="role-desc">Plans and moderates focus groups and depth interviews to explore consumer attitudes and motivations in depth.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Quantitative and qualitative methods</span>
-        <span class="skill-chip">Survey design</span>
-        <span class="skill-chip">Data analysis</span>
-        <span class="skill-chip">Report writing</span>
-        <span class="skill-chip">Interviewing and facilitation</span>
-        <span class="skill-chip">Commercial awareness</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Quantitative and qualitative methods</span>
+ <span class="skill-chip">Survey design</span>
+ <span class="skill-chip">Data analysis</span>
+ <span class="skill-chip">Report writing</span>
+ <span class="skill-chip">Interviewing and facilitation</span>
+ <span class="skill-chip">Commercial awareness</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>Market research agencies including Ipsos, Kantar, YouGov, and Savanta</li>
-        <li>In-house insight teams at large retailers, FMCG brands, and financial services</li>
-        <li>Advertising and brand consultancies with research functions</li>
-        <li>Public sector and charity organisations conducting audience research</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>Market research agencies including Ipsos, Kantar, YouGov, and Savanta</li>
+ <li>In-house insight teams at large retailers, FMCG brands, and financial services</li>
+ <li>Advertising and brand consultancies with research functions</li>
+ <li>Public sector and charity organisations conducting audience research</li>
+ </ul>
+ </div>
 
-    <div class="now-box">
-      <div class="now-label">What you could do now</div>
-      <ul class="now-list">
-        <li>Research graduate schemes at major market research agencies — many recruit directly from psychology</li>
-        <li>Explore Market Research Society student membership and resources</li>
-        <li>Practise running focus groups and interviews through degree projects</li>
-        <li>Build familiarity with survey platforms like Qualtrics through your degree work</li>
-      </ul>
-    </div>
+ <div class="now-box">
+ <div class="now-label">What you could do now</div>
+ <ul class="now-list">
+ <li>Research graduate schemes at major market research agencies — many recruit directly from psychology</li>
+ <li>Explore Market Research Society student membership and resources</li>
+ <li>Practise running focus groups and interviews through degree projects</li>
+ <li>Build familiarity with survey platforms like Qualtrics through your degree work</li>
+ </ul>
+ </div>
 
-    <div class="related-box">
-      <div class="related-label">You may also be interested in</div>
-      <div class="related-chips">
-        <span class="related-chip" onclick="showPage('marketing')">Marketing and Advertising</span>
-        <span class="related-chip" onclick="showPage('behavioural')">Behavioural Insight</span>
-        <span class="related-chip">Research, Data and Evaluation</span>
-        <span class="related-chip">UX Research</span>
-      </div>
-    </div>
+ <div class="related-box">
+ <div class="related-label">You may also be interested in</div>
+ <div class="related-chips">
+ <span class="related-chip" onclick="showPage('marketing')">Marketing and Advertising</span>
+ <span class="related-chip" onclick="showPage('behavioural')">Behavioural Insight</span>
+ <span class="related-chip">Research, Data and Evaluation</span>
+ <span class="related-chip">UX Research</span>
+ </div>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div class="org-name">Market Research Society (MRS)</div><div class="org-desc">Professional body for market and social research — student membership available</div></div>
-      <div class="org-card"><div class="org-name">ESOMAR</div><div class="org-desc">International body for market, consumer, and societal research</div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div class="org-name"><a href="https://www.mrs.org.uk" target="_blank" rel="noopener">Market Research Society (MRS)</a></div><div class="org-desc">Professional body for market and social research — student membership available</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.esomar.org" target="_blank" rel="noopener">ESOMAR</a></div><div class="org-desc">International body for market, consumer, and societal research</div></div>
+ </div>
+ </div>
 
-  <!-- BEHAVIOURAL INSIGHT -->
-  <div id="behavioural" class="page-view">
-    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Marketing, Consumer Insight and Behavioural Insight</a><span>›</span><span>Behavioural Insight</span></div>
-    <button class="back-btn" onclick="showPage('overview')">← Back to Marketing, Consumer Insight and Behavioural Insight</button>
-    <h1 class="subtheme-page-title">🧠 Behavioural Insight</h1>
-    <p class="subtheme-page-intro">Behavioural insight roles apply psychological and behavioural economics principles to help organisations understand and influence decision-making — in commercial, public sector, and policy contexts. This is one of the most psychology-specific career areas and is growing rapidly.</p>
+ <!-- BEHAVIOURAL INSIGHT -->
+ <div id="behavioural" class="page-view">
+ <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Marketing, Consumer Insight and Behavioural Insight</a><span>›</span><span>Behavioural Insight</span></div>
+ <button class="back-btn" onclick="showPage('overview')">← Back to Marketing, Consumer Insight and Behavioural Insight</button>
+ <h1 class="subtheme-page-title"> Behavioural Insight</h1>
+ <p class="subtheme-page-intro">Behavioural insight roles apply psychological and behavioural economics principles to help organisations understand and influence decision-making — in commercial, public sector, and policy contexts. This is one of the most psychology-specific career areas and is growing rapidly.</p>
 
-    <div class="why-box">
-      <div class="why-label">Why Psychology?</div>
-      <ul class="why-list">
-        <li>Behavioural insight is built directly on psychology — drawing on cognitive biases, heuristics, social norms, and decision-making theory</li>
-        <li>Research methods training is essential for designing and evaluating behavioural interventions</li>
-        <li>Understanding of motivation, habit, and behaviour change informs nudge-based approaches</li>
-        <li>Analytical skills for interpreting data and communicating evidence to clients and stakeholders</li>
-        <li>Critical thinking around the ethics of nudging and behavioural influence</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why Psychology?</div>
+ <ul class="why-list">
+ <li>Behavioural insight is built directly on psychology — drawing on cognitive biases, heuristics, social norms, and decision-making theory</li>
+ <li>Research methods training is essential for designing and evaluating behavioural interventions</li>
+ <li>Understanding of motivation, habit, and behaviour change informs nudge-based approaches</li>
+ <li>Analytical skills for interpreting data and communicating evidence to clients and stakeholders</li>
+ <li>Critical thinking around the ethics of nudging and behavioural influence</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Possible roles in this area</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">Behavioural Insights Officer</div>
-        <div class="role-desc">Applies behavioural science to design interventions that influence decision-making in public or private sector contexts, often running trials to test effectiveness.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Nudge Specialist</div>
-        <div class="role-desc">Uses knowledge of behavioural economics and psychology to design choice environments that make desired behaviours easier and more likely.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Behavioural Science Consultant</div>
-        <div class="role-desc">Advises organisations on how to apply behavioural insights to improve outcomes — from employee engagement to customer behaviour and public policy.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-    </div>
+ <div class="section-label">Possible roles in this area</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">Behavioural Insights Officer</div>
+ <div class="role-desc">Applies behavioural science to design interventions that influence decision-making in public or private sector contexts, often running trials to test effectiveness.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Nudge Specialist</div>
+ <div class="role-desc">Uses knowledge of behavioural economics and psychology to design choice environments that make desired behaviours easier and more likely.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Behavioural Science Consultant</div>
+ <div class="role-desc">Advises organisations on how to apply behavioural insights to improve outcomes — from employee engagement to customer behaviour and public policy.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Behavioural science knowledge</span>
-        <span class="skill-chip">Research and evaluation</span>
-        <span class="skill-chip">Analytical thinking</span>
-        <span class="skill-chip">Communication of evidence</span>
-        <span class="skill-chip">Ethical reasoning</span>
-        <span class="skill-chip">Project management</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Behavioural science knowledge</span>
+ <span class="skill-chip">Research and evaluation</span>
+ <span class="skill-chip">Analytical thinking</span>
+ <span class="skill-chip">Communication of evidence</span>
+ <span class="skill-chip">Ethical reasoning</span>
+ <span class="skill-chip">Project management</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>Behavioural Insights Team and similar applied behavioural science organisations</li>
-        <li>Government departments and regulators using behavioural approaches</li>
-        <li>Management consultancies with behavioural science practices</li>
-        <li>Financial services, utilities, and tech companies applying behavioural insight to products</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>Behavioural Insights Team and similar applied behavioural science organisations</li>
+ <li>Government departments and regulators using behavioural approaches</li>
+ <li>Management consultancies with behavioural science practices</li>
+ <li>Financial services, utilities, and tech companies applying behavioural insight to products</li>
+ </ul>
+ </div>
 
-    <div class="now-box">
-      <div class="now-label">What you could do now</div>
-      <ul class="now-list">
-        <li>Read the Behavioural Insights Team's EAST framework — a practical introduction to applied behavioural science</li>
-        <li>Look into internship opportunities at the Behavioural Insights Team and similar organisations</li>
-        <li>Explore modules on social influence, decision-making, and behaviour change in your degree</li>
-        <li>Research postgraduate programmes in behavioural science if you want to specialise further</li>
-      </ul>
-    </div>
+ <div class="now-box">
+ <div class="now-label">What you could do now</div>
+ <ul class="now-list">
+ <li>Read the Behavioural Insights Team's EAST framework — a practical introduction to applied behavioural science</li>
+ <li>Look into internship opportunities at the Behavioural Insights Team and similar organisations</li>
+ <li>Explore modules on social influence, decision-making, and behaviour change in your degree</li>
+ <li>Research postgraduate programmes in behavioural science if you want to specialise further</li>
+ </ul>
+ </div>
 
-    <div class="related-box">
-      <div class="related-label">You may also be interested in</div>
-      <div class="related-chips">
-        <span class="related-chip" onclick="showPage('consumer')">Consumer Research</span>
-        <span class="related-chip">Behavioural Science and Behaviour Change</span>
-        <span class="related-chip">Public Services and Policy</span>
-        <span class="related-chip">Consultancy</span>
-      </div>
-    </div>
+ <div class="related-box">
+ <div class="related-label">You may also be interested in</div>
+ <div class="related-chips">
+ <span class="related-chip" onclick="showPage('consumer')">Consumer Research</span>
+ <span class="related-chip">Behavioural Science and Behaviour Change</span>
+ <span class="related-chip">Public Services and Policy</span>
+ <span class="related-chip">Consultancy</span>
+ </div>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div class="org-name">Behavioural Insights Team</div><div class="org-desc">The UK's leading applied behavioural science organisation</div></div>
-      <div class="org-card"><div class="org-name">BPS Division of Occupational Psychology</div><div class="org-desc">Relevant for those applying behavioural science in workplace contexts</div></div>
-      <div class="org-card"><div class="org-name">Market Research Society</div><div class="org-desc">Relevant for research-focused behavioural insight roles</div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div class="org-name"><a href="https://www.bi.team" target="_blank" rel="noopener">Behavioural Insights Team</a></div><div class="org-desc">The UK's leading applied behavioural science organisation</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.bps.org.uk/member-networks/division-occupational-psychology" target="_blank" rel="noopener">BPS Division of Occupational Psychology</a></div><div class="org-desc">Relevant for those applying behavioural science in workplace contexts</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.mrs.org.uk" target="_blank" rel="noopener">Market Research Society</a></div><div class="org-desc">Relevant for research-focused behavioural insight roles</div></div>
+ </div>
+ </div>
 
 </div>
 <script>
 function showPage(id) {
-  document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  window.scrollTo(0, 0);
+ document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
+ document.getElementById(id).classList.add('active');
+ window.scrollTo(0, 0);
 }
 </script>
 </body>

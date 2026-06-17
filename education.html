@@ -5,63 +5,63 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Education — Psychology Careers | Liverpool Hope University</title>
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
-  .site-header { background: #1a3a5c; color: white; padding: 1rem 2rem; }
-  .site-header-title { font-size: 16px; font-weight: 500; }
-  .site-header-text { font-size: 14px; opacity: 0.85; }
-  .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
-  .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
-  .breadcrumb a { color: #1a5fa8; text-decoration: none; }
-  .breadcrumb a:hover { text-decoration: underline; }
-  .theme-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
-  .theme-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
-  .subtheme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 2rem; }
-  .subtheme-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; text-align: left; width: 100%; }
-  .subtheme-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.1); }
-  .subtheme-icon { font-size: 24px; margin-bottom: 10px; }
-  .subtheme-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
-  .subtheme-desc { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
-  .explore-link { font-size: 13px; color: #1a5fa8; }
-  .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
-  .now-box { background: #e8f0fb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .now-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 8px; }
-  .now-list { padding-left: 1.2rem; }
-  .now-list li { font-size: 14px; color: #1a3a5c; line-height: 1.7; }
-  .why-box { background: #f0f7f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .why-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1e6e35; margin-bottom: 8px; }
-  .why-list { padding-left: 1.2rem; }
-  .why-list li { font-size: 14px; color: #1a3a1a; line-height: 1.7; }
-  .employers-box { background: #faf8f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .employers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #a05a00; margin-bottom: 8px; }
-  .employers-list { padding-left: 1.2rem; }
-  .employers-list li { font-size: 14px; color: #3a2a00; line-height: 1.7; }
-  .related-box { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .related-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
-  .related-chips { display: flex; flex-wrap: wrap; gap: 8px; }
-  .related-chip { font-size: 13px; background: #f0f4ff; border: 1px solid #c0ccee; border-radius: 20px; padding: 4px 12px; color: #1a3a5c; cursor: pointer; }
-  .related-chip:hover { background: #e0e8ff; }
-  .divider { border: none; border-top: 1px solid #e8e8e8; margin: 1.5rem 0; }
-  .orgs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
-  .org-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.85rem 1rem; }
-  .org-name { font-size: 13px; font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
-  .org-desc { font-size: 12px; color: #666; }
-  .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
-  .role-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1.25rem; }
-  .role-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
-  .role-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
-  .role-badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
-  .badge-grad { background: #e6f4ea; color: #1e6e35; }
-  .badge-further { background: #fff3e0; color: #a05a00; }
-  .skills-box { background: #f5f5f3; border-radius: 8px; padding: 0.85rem 1rem; margin-bottom: 1rem; }
-  .skills-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-  .skill-chip { font-size: 12px; background: white; border: 1px solid #ddd; border-radius: 20px; padding: 3px 10px; color: #555; }
-  .page-view { display: none; }
-  .page-view.active { display: block; }
-  .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #1a5fa8; cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 1.5rem; font-family: inherit; }
-  .back-btn:hover { text-decoration: underline; }
-  .subtheme-page-title { font-size: 24px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
-  .subtheme-page-intro { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
+ .site-header { background: #1a3a5c; color: white; padding: 1rem 2rem; }
+ .site-header-title { font-size: 16px; font-weight: 500; }
+ .site-header-text { font-size: 14px; opacity: 0.85; }
+ .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+ .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+ .breadcrumb a { color: #1a5fa8; text-decoration: none; }
+ .breadcrumb a:hover { text-decoration: underline; }
+ .theme-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+ .theme-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
+ .subtheme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 2rem; }
+ .subtheme-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; text-align: left; width: 100%; }
+ .subtheme-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.1); }
+ .subtheme-icon { font-size: 24px; margin-bottom: 10px; }
+ .subtheme-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+ .subtheme-desc { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
+ .explore-link { font-size: 13px; color: #1a5fa8; }
+ .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+ .now-box { background: #e8f0fb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .now-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 8px; }
+ .now-list { padding-left: 1.2rem; }
+ .now-list li { font-size: 14px; color: #1a3a5c; line-height: 1.7; }
+ .why-box { background: #f0f7f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .why-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1e6e35; margin-bottom: 8px; }
+ .why-list { padding-left: 1.2rem; }
+ .why-list li { font-size: 14px; color: #1a3a1a; line-height: 1.7; }
+ .employers-box { background: #faf8f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .employers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #a05a00; margin-bottom: 8px; }
+ .employers-list { padding-left: 1.2rem; }
+ .employers-list li { font-size: 14px; color: #3a2a00; line-height: 1.7; }
+ .related-box { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .related-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+ .related-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+ .related-chip { font-size: 13px; background: #f0f4ff; border: 1px solid #c0ccee; border-radius: 20px; padding: 4px 12px; color: #1a3a5c; cursor: pointer; }
+ .related-chip:hover { background: #e0e8ff; }
+ .divider { border: none; border-top: 1px solid #e8e8e8; margin: 1.5rem 0; }
+ .orgs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+ .org-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.85rem 1rem; }
+ .org-name { font-size: 13px; font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
+ .org-desc { font-size: 12px; color: #666; }
+ .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
+ .role-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1.25rem; }
+ .role-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+ .role-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
+ .role-badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
+ .badge-grad { background: #e6f4ea; color: #1e6e35; }
+ .badge-further { background: #fff3e0; color: #a05a00; }
+ .skills-box { background: #f5f5f3; border-radius: 8px; padding: 0.85rem 1rem; margin-bottom: 1rem; }
+ .skills-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+ .skill-chip { font-size: 12px; background: white; border: 1px solid #ddd; border-radius: 20px; padding: 3px 10px; color: #555; }
+ .page-view { display: none; }
+ .page-view.active { display: block; }
+ .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #1a5fa8; cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 1.5rem; font-family: inherit; }
+ .back-btn:hover { text-decoration: underline; }
+ .subtheme-page-title { font-size: 24px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+ .subtheme-page-intro { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
 
 .site-nav { background: #1a3a5c; padding: 0 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
 .site-nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; gap: 0; height: 48px; }
@@ -74,375 +74,379 @@
 .site-nav-menu a:hover { background: #f0f4ff; }
 .site-nav-dropdown:hover .site-nav-menu { display: block; }
 
+
+  .org-name a { color: #1a3a5c; text-decoration: none; font-weight: 600; }
+  .org-name a:hover { color: #1a5fa8; text-decoration: underline; }
+
 </style>
 </head>
 <body>
 <div class="site-nav">
-  <div class="site-nav-inner">
-    <a class="site-nav-home" href="index.html">&#127968; Psychology Careers Hub</a>
-    <a class="site-nav-link" href="index.html">All Pathways</a>
-    <a class="site-nav-link" href="roadmap.html">Roadmap</a>
-    <a class="site-nav-link" href="employer-trends.html">Employer Trends</a>
-    <a class="site-nav-link" href="alumni.html">Alumni</a>
-    <div class="site-nav-dropdown">
-      <span class="site-nav-link">Themes &#9662;</span>
-      <div class="site-nav-menu">
-        <a href="poc.html">People, Organisations &amp; Consultancy</a>
-        <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
-        <a href="education.html">Education</a>
-        <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
-        <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
-        <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
-        <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
-        <a href="sport-exercise.html">Sport &amp; Exercise</a>
-        <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
-        <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
-        <a href="mental-health.html">Mental Health</a>
-      </div>
-    </div>
-  </div>
+ <div class="site-nav-inner">
+ <a class="site-nav-home" href="index.html">Psychology Careers Hub</a>
+ <a class="site-nav-link" href="index.html">All Pathways</a>
+ <a class="site-nav-link" href="roadmap.html">Roadmap</a>
+ <a class="site-nav-link" href="employer-trends.html">Employer Trends</a>
+ <a class="site-nav-link" href="alumni.html">Alumni</a>
+ <div class="site-nav-dropdown">
+ <span class="site-nav-link">Themes &#9662;</span>
+ <div class="site-nav-menu">
+ <a href="poc.html">People, Organisations &amp; Consultancy</a>
+ <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
+ <a href="education.html">Education</a>
+ <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
+ <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
+ <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
+ <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
+ <a href="sport-exercise.html">Sport &amp; Exercise</a>
+ <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
+ <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
+ <a href="mental-health.html">Mental Health</a>
+ </div>
+ </div>
+ </div>
 </div>
-  </div>
+ </div>
 </div>
 <div class="site-header">
-  <div class="site-header-title">Liverpool Hope University</div>
-  <div class="site-header-text">School of Psychology — Psychology Careers</div>
+ <div class="site-header-title">Liverpool Hope University</div>
+ <div class="site-header-text">School of Psychology — Psychology Careers</div>
 </div>
 <div class="container">
 
-  <!-- OVERVIEW -->
-  <div id="overview" class="page-view active">
-    <div class="breadcrumb"><a href="#">Psychology Careers</a><span>›</span><span>Education</span></div>
-    <h1 class="theme-title">📚 Education</h1>
-    <p class="theme-intro">Psychology graduates bring valuable understanding of learning, development, and behaviour to a range of education-related careers. Whether in the classroom, supporting students with additional needs, guiding young people through career decisions, or working in higher education, the knowledge and skills developed through a psychology degree are directly applicable.</p>
+ <!-- OVERVIEW -->
+ <div id="overview" class="page-view active">
+ <div class="breadcrumb"><a href="#">Psychology Careers</a><span>›</span><span>Education</span></div>
+ <h1 class="theme-title"> Education</h1>
+ <p class="theme-intro">Psychology graduates bring valuable understanding of learning, development, and behaviour to a range of education-related careers. Whether in the classroom, supporting students with additional needs, guiding young people through career decisions, or working in higher education, the knowledge and skills developed through a psychology degree are directly applicable.</p>
 
-    <div class="subtheme-grid">
-      <button class="subtheme-card" onclick="showPage('school')">
-        <div class="subtheme-icon">🏫</div>
-        <div class="subtheme-name">School-based Roles</div>
-        <div class="subtheme-desc">Work directly with children and young people in school settings, from teaching to learning support.</div>
-        <div class="explore-link">Explore this area →</div>
-      </button>
-      <button class="subtheme-card" onclick="showPage('support')">
-        <div class="subtheme-icon">🤝</div>
-        <div class="subtheme-name">Educational Support</div>
-        <div class="subtheme-desc">Support students' access to education and wellbeing through guidance, outreach and welfare roles.</div>
-        <div class="explore-link">Explore this area →</div>
-      </button>
-      <button class="subtheme-card" onclick="showPage('higher')">
-        <div class="subtheme-icon">🎓</div>
-        <div class="subtheme-name">Higher Education</div>
-        <div class="subtheme-desc">Work in universities in academic, research, or professional services roles.</div>
-        <div class="explore-link">Explore this area →</div>
-      </button>
-    </div>
+ <div class="subtheme-grid">
+ <button class="subtheme-card" onclick="showPage('school')">
+ <div class="subtheme-icon"></div>
+ <div class="subtheme-name">School-based Roles</div>
+ <div class="subtheme-desc">Work directly with children and young people in school settings, from teaching to learning support.</div>
+ <div class="explore-link">Explore this area →</div>
+ </button>
+ <button class="subtheme-card" onclick="showPage('support')">
+ <div class="subtheme-icon"></div>
+ <div class="subtheme-name">Educational Support</div>
+ <div class="subtheme-desc">Support students' access to education and wellbeing through guidance, outreach and welfare roles.</div>
+ <div class="explore-link">Explore this area →</div>
+ </button>
+ <button class="subtheme-card" onclick="showPage('higher')">
+ <div class="subtheme-icon"></div>
+ <div class="subtheme-name">Higher Education</div>
+ <div class="subtheme-desc">Work in universities in academic, research, or professional services roles.</div>
+ <div class="explore-link">Explore this area →</div>
+ </button>
+ </div>
 
-    <div class="now-box">
-      <div class="now-label">What you could do now</div>
-      <ul class="now-list">
-        <li>Volunteer as a peer mentor or student ambassador to build communication and support skills</li>
-        <li>Look into school experience placements through Get Into Teaching</li>
-        <li>Apply for a teaching assistant or learning support role as part-time work</li>
-        <li>Explore the widening participation and outreach activities run by Liverpool Hope</li>
-        <li>Consider whether a PGCE or School Direct route into teaching might be right for you</li>
-      </ul>
-    </div>
+ <div class="now-box">
+ <div class="now-label">What you could do now</div>
+ <ul class="now-list">
+ <li>Volunteer as a peer mentor or student ambassador to build communication and support skills</li>
+ <li>Look into school experience placements through Get Into Teaching</li>
+ <li>Apply for a teaching assistant or learning support role as part-time work</li>
+ <li>Explore the widening participation and outreach activities run by Liverpool Hope</li>
+ <li>Consider whether a PGCE or School Direct route into teaching might be right for you</li>
+ </ul>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div class="org-name">Get Into Teaching</div><div class="org-desc">Government resource covering all routes into teaching</div></div>
-      <div class="org-card"><div class="org-name">Chartered College of Teaching</div><div class="org-desc">Professional body for teachers and education professionals</div></div>
-      <div class="org-card"><div class="org-name">National Association of Educational Psychologists</div><div class="org-desc">Relevant for those interested in Educational Psychology routes</div></div>
-      <div class="org-card"><div class="org-name">Career Development Institute</div><div class="org-desc">Professional body for careers guidance and development</div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div class="org-name"><a href="https://getintoteaching.education.gov.uk" target="_blank" rel="noopener">Get Into Teaching</a></div><div class="org-desc">Government resource covering all routes into teaching</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://chartered.college" target="_blank" rel="noopener">Chartered College of Teaching</a></div><div class="org-desc">Professional body for teachers and education professionals</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.naep.org.uk" target="_blank" rel="noopener">National Association of Educational Psychologists</a></div><div class="org-desc">Relevant for those interested in Educational Psychology routes</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.thecdi.net" target="_blank" rel="noopener">Career Development Institute</a></div><div class="org-desc">Professional body for careers guidance and development</div></div>
+ </div>
+ </div>
 
-  <!-- SCHOOL-BASED ROLES -->
-  <div id="school" class="page-view">
-    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Education</a><span>›</span><span>School-based Roles</span></div>
-    <button class="back-btn" onclick="showPage('overview')">← Back to Education</button>
-    <h1 class="subtheme-page-title">🏫 School-based Roles</h1>
-    <p class="subtheme-page-intro">Schools offer a range of roles for psychology graduates, from classroom teaching to mentoring and support, where understanding of child development, learning, and behaviour is directly relevant.</p>
+ <!-- SCHOOL-BASED ROLES -->
+ <div id="school" class="page-view">
+ <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Education</a><span>›</span><span>School-based Roles</span></div>
+ <button class="back-btn" onclick="showPage('overview')">← Back to Education</button>
+ <h1 class="subtheme-page-title"> School-based Roles</h1>
+ <p class="subtheme-page-intro">Schools offer a range of roles for psychology graduates, from classroom teaching to mentoring and support, where understanding of child development, learning, and behaviour is directly relevant.</p>
 
-    <div class="why-box">
-      <div class="why-label">Why Psychology?</div>
-      <ul class="why-list">
-        <li>Understanding of child and adolescent development provides a strong foundation for working with young people</li>
-        <li>Knowledge of learning theory — how people acquire, retain and apply knowledge — is directly applicable to teaching</li>
-        <li>Understanding of behaviour, motivation, and what helps young people engage with learning</li>
-        <li>Communication and interpersonal skills developed throughout the psychology degree</li>
-        <li>Awareness of mental health and wellbeing in young people, increasingly valued in school settings</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why Psychology?</div>
+ <ul class="why-list">
+ <li>Understanding of child and adolescent development provides a strong foundation for working with young people</li>
+ <li>Knowledge of learning theory — how people acquire, retain and apply knowledge — is directly applicable to teaching</li>
+ <li>Understanding of behaviour, motivation, and what helps young people engage with learning</li>
+ <li>Communication and interpersonal skills developed throughout the psychology degree</li>
+ <li>Awareness of mental health and wellbeing in young people, increasingly valued in school settings</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Possible roles in this area</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">Teacher (with PGCE)</div>
-        <div class="role-desc">Qualified classroom teachers, with psychology graduates particularly suited to PSHE, social sciences, and subjects involving human behaviour. Requires a PGCE or School Direct qualification.</div>
-        <span class="role-badge badge-further">PGCE required</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Teaching Assistant</div>
-        <div class="role-desc">Provides classroom support to teachers and pupils, often with a focus on students with additional learning needs or SEND. A widely accessible graduate entry role.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Learning Mentor</div>
-        <div class="role-desc">Supports students with academic, social, or emotional challenges in school settings, drawing on understanding of wellbeing, motivation, and behaviour.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">SENCO / SEND Support</div>
-        <div class="role-desc">Coordinates support for students with special educational needs and disabilities. SENCO roles typically require teaching experience, but SEND support roles are accessible as a graduate.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-    </div>
+ <div class="section-label">Possible roles in this area</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">Teacher (with PGCE)</div>
+ <div class="role-desc">Qualified classroom teachers, with psychology graduates particularly suited to PSHE, social sciences, and subjects involving human behaviour. Requires a PGCE or School Direct qualification.</div>
+ <span class="role-badge badge-further">PGCE required</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Teaching Assistant</div>
+ <div class="role-desc">Provides classroom support to teachers and pupils, often with a focus on students with additional learning needs or SEND. A widely accessible graduate entry role.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Learning Mentor</div>
+ <div class="role-desc">Supports students with academic, social, or emotional challenges in school settings, drawing on understanding of wellbeing, motivation, and behaviour.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">SENCO / SEND Support</div>
+ <div class="role-desc">Coordinates support for students with special educational needs and disabilities. SENCO roles typically require teaching experience, but SEND support roles are accessible as a graduate.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Communication</span>
-        <span class="skill-chip">Empathy and patience</span>
-        <span class="skill-chip">Child development knowledge</span>
-        <span class="skill-chip">Behaviour management</span>
-        <span class="skill-chip">Differentiation and inclusion</span>
-        <span class="skill-chip">Organisation</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Communication</span>
+ <span class="skill-chip">Empathy and patience</span>
+ <span class="skill-chip">Child development knowledge</span>
+ <span class="skill-chip">Behaviour management</span>
+ <span class="skill-chip">Differentiation and inclusion</span>
+ <span class="skill-chip">Organisation</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>Primary and secondary schools across the maintained and independent sectors</li>
-        <li>Special educational needs schools and specialist provisions</li>
-        <li>Alternative provision settings and pupil referral units</li>
-        <li>Multi-academy trusts running groups of schools</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>Primary and secondary schools across the maintained and independent sectors</li>
+ <li>Special educational needs schools and specialist provisions</li>
+ <li>Alternative provision settings and pupil referral units</li>
+ <li>Multi-academy trusts running groups of schools</li>
+ </ul>
+ </div>
 
-    <div class="now-box">
-      <div class="now-label">What you could do now</div>
-      <ul class="now-list">
-        <li>Explore school experience through Get Into Teaching — free placements available</li>
-        <li>Apply for a teaching assistant role as part-time or voluntary work</li>
-        <li>Research PGCE and School Direct routes, including subject-specific options</li>
-        <li>Look into tuition and mentoring opportunities for local young people</li>
-      </ul>
-    </div>
+ <div class="now-box">
+ <div class="now-label">What you could do now</div>
+ <ul class="now-list">
+ <li>Explore school experience through Get Into Teaching — free placements available</li>
+ <li>Apply for a teaching assistant role as part-time or voluntary work</li>
+ <li>Research PGCE and School Direct routes, including subject-specific options</li>
+ <li>Look into tuition and mentoring opportunities for local young people</li>
+ </ul>
+ </div>
 
-    <div class="related-box">
-      <div class="related-label">You may also be interested in</div>
-      <div class="related-chips">
-        <span class="related-chip" onclick="showPage('support')">Educational Support</span>
-        <span class="related-chip" onclick="showPage('higher')">Higher Education</span>
-        <span class="related-chip">Educational Psychology</span>
-        <span class="related-chip">Social Work</span>
-      </div>
-    </div>
+ <div class="related-box">
+ <div class="related-label">You may also be interested in</div>
+ <div class="related-chips">
+ <span class="related-chip" onclick="showPage('support')">Educational Support</span>
+ <span class="related-chip" onclick="showPage('higher')">Higher Education</span>
+ <span class="related-chip">Educational Psychology</span>
+ <span class="related-chip">Social Work</span>
+ </div>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div class="org-name">Get Into Teaching</div><div class="org-desc">All routes into teaching, funding and subject information</div></div>
-      <div class="org-card"><div class="org-name">Chartered College of Teaching</div><div class="org-desc">Professional body for teachers in England</div></div>
-      <div class="org-card"><div class="org-name">NASEN</div><div class="org-desc">National Association for Special Educational Needs</div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div class="org-name"><a href="https://getintoteaching.education.gov.uk" target="_blank" rel="noopener">Get Into Teaching</a></div><div class="org-desc">All routes into teaching, funding and subject information</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://chartered.college" target="_blank" rel="noopener">Chartered College of Teaching</a></div><div class="org-desc">Professional body for teachers in England</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.nasen.org.uk" target="_blank" rel="noopener">NASEN</a></div><div class="org-desc">National Association for Special Educational Needs</div></div>
+ </div>
+ </div>
 
-  <!-- EDUCATIONAL SUPPORT -->
-  <div id="support" class="page-view">
-    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Education</a><span>›</span><span>Educational Support</span></div>
-    <button class="back-btn" onclick="showPage('overview')">← Back to Education</button>
-    <h1 class="subtheme-page-title">🤝 Educational Support</h1>
-    <p class="subtheme-page-intro">Beyond classroom teaching, psychology graduates can pursue a range of roles focused on student welfare, access to education, and career guidance — areas where psychological understanding is directly valuable.</p>
+ <!-- EDUCATIONAL SUPPORT -->
+ <div id="support" class="page-view">
+ <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Education</a><span>›</span><span>Educational Support</span></div>
+ <button class="back-btn" onclick="showPage('overview')">← Back to Education</button>
+ <h1 class="subtheme-page-title"> Educational Support</h1>
+ <p class="subtheme-page-intro">Beyond classroom teaching, psychology graduates can pursue a range of roles focused on student welfare, access to education, and career guidance — areas where psychological understanding is directly valuable.</p>
 
-    <div class="why-box">
-      <div class="why-label">Why Psychology?</div>
-      <ul class="why-list">
-        <li>Understanding of barriers to learning — including mental health, socioeconomic factors, and motivation — informs effective support</li>
-        <li>Knowledge of adolescent development and the challenges facing young people in education</li>
-        <li>Strong communication and rapport-building skills for working with students and families</li>
-        <li>Research skills for evaluating the effectiveness of interventions and support programmes</li>
-        <li>Awareness of safeguarding, confidentiality, and professional ethics in education settings</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why Psychology?</div>
+ <ul class="why-list">
+ <li>Understanding of barriers to learning — including mental health, socioeconomic factors, and motivation — informs effective support</li>
+ <li>Knowledge of adolescent development and the challenges facing young people in education</li>
+ <li>Strong communication and rapport-building skills for working with students and families</li>
+ <li>Research skills for evaluating the effectiveness of interventions and support programmes</li>
+ <li>Awareness of safeguarding, confidentiality, and professional ethics in education settings</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Possible roles in this area</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">Careers Adviser</div>
-        <div class="role-desc">Helps students explore career options and make informed decisions about their future, drawing on understanding of motivation, identity, and decision-making.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Education Welfare Officer</div>
-        <div class="role-desc">Works with schools and families to support student attendance and wellbeing, often involving casework with vulnerable young people and their families.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Widening Participation Officer</div>
-        <div class="role-desc">Supports underrepresented students in accessing and succeeding in higher education, working in outreach, mentoring, and programme delivery.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Education Outreach Officer</div>
-        <div class="role-desc">Engages with schools and communities to promote educational opportunities and raise aspirations, often working for universities or charities.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-    </div>
+ <div class="section-label">Possible roles in this area</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">Careers Adviser</div>
+ <div class="role-desc">Helps students explore career options and make informed decisions about their future, drawing on understanding of motivation, identity, and decision-making.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Education Welfare Officer</div>
+ <div class="role-desc">Works with schools and families to support student attendance and wellbeing, often involving casework with vulnerable young people and their families.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Widening Participation Officer</div>
+ <div class="role-desc">Supports underrepresented students in accessing and succeeding in higher education, working in outreach, mentoring, and programme delivery.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Education Outreach Officer</div>
+ <div class="role-desc">Engages with schools and communities to promote educational opportunities and raise aspirations, often working for universities or charities.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Communication and listening</span>
-        <span class="skill-chip">Empathy</span>
-        <span class="skill-chip">Understanding of barriers to education</span>
-        <span class="skill-chip">Casework and record keeping</span>
-        <span class="skill-chip">Programme planning</span>
-        <span class="skill-chip">Partnership working</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Communication and listening</span>
+ <span class="skill-chip">Empathy</span>
+ <span class="skill-chip">Understanding of barriers to education</span>
+ <span class="skill-chip">Casework and record keeping</span>
+ <span class="skill-chip">Programme planning</span>
+ <span class="skill-chip">Partnership working</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>Universities and higher education institutions — widening participation teams</li>
-        <li>Local authorities — education welfare and SEND teams</li>
-        <li>Schools and multi-academy trusts</li>
-        <li>Charities focused on education access and youth support</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>Universities and higher education institutions — widening participation teams</li>
+ <li>Local authorities — education welfare and SEND teams</li>
+ <li>Schools and multi-academy trusts</li>
+ <li>Charities focused on education access and youth support</li>
+ </ul>
+ </div>
 
-    <div class="now-box">
-      <div class="now-label">What you could do now</div>
-      <ul class="now-list">
-        <li>Get involved in Liverpool Hope's widening participation activities as a student ambassador</li>
-        <li>Volunteer with youth organisations or mentoring programmes</li>
-        <li>Research the Career Development Institute and routes into careers guidance</li>
-        <li>Look for education support roles in local schools or charities</li>
-      </ul>
-    </div>
+ <div class="now-box">
+ <div class="now-label">What you could do now</div>
+ <ul class="now-list">
+ <li>Get involved in Liverpool Hope's widening participation activities as a student ambassador</li>
+ <li>Volunteer with youth organisations or mentoring programmes</li>
+ <li>Research the Career Development Institute and routes into careers guidance</li>
+ <li>Look for education support roles in local schools or charities</li>
+ </ul>
+ </div>
 
-    <div class="related-box">
-      <div class="related-label">You may also be interested in</div>
-      <div class="related-chips">
-        <span class="related-chip" onclick="showPage('school')">School-based Roles</span>
-        <span class="related-chip" onclick="showPage('higher')">Higher Education</span>
-        <span class="related-chip">Charity and Third Sector</span>
-        <span class="related-chip">Social Work</span>
-      </div>
-    </div>
+ <div class="related-box">
+ <div class="related-label">You may also be interested in</div>
+ <div class="related-chips">
+ <span class="related-chip" onclick="showPage('school')">School-based Roles</span>
+ <span class="related-chip" onclick="showPage('higher')">Higher Education</span>
+ <span class="related-chip">Charity and Third Sector</span>
+ <span class="related-chip">Social Work</span>
+ </div>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div class="org-name">Career Development Institute</div><div class="org-desc">Professional body for careers guidance practitioners</div></div>
-      <div class="org-card"><div class="org-name">National Education Union</div><div class="org-desc">Covers a wide range of education roles and support staff</div></div>
-      <div class="org-card"><div class="org-name">NASEN</div><div class="org-desc">National Association for Special Educational Needs</div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div class="org-name"><a href="https://www.thecdi.net" target="_blank" rel="noopener">Career Development Institute</a></div><div class="org-desc">Professional body for careers guidance practitioners</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://neu.org.uk" target="_blank" rel="noopener">National Education Union</a></div><div class="org-desc">Covers a wide range of education roles and support staff</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.nasen.org.uk" target="_blank" rel="noopener">NASEN</a></div><div class="org-desc">National Association for Special Educational Needs</div></div>
+ </div>
+ </div>
 
-  <!-- HIGHER EDUCATION -->
-  <div id="higher" class="page-view">
-    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Education</a><span>›</span><span>Higher Education</span></div>
-    <button class="back-btn" onclick="showPage('overview')">← Back to Education</button>
-    <h1 class="subtheme-page-title">🎓 Higher Education</h1>
-    <p class="subtheme-page-intro">Universities employ psychology graduates in both academic and professional services roles. From student support and widening participation to research and lecturing, higher education offers a wide range of career paths.</p>
+ <!-- HIGHER EDUCATION -->
+ <div id="higher" class="page-view">
+ <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Education</a><span>›</span><span>Higher Education</span></div>
+ <button class="back-btn" onclick="showPage('overview')">← Back to Education</button>
+ <h1 class="subtheme-page-title"> Higher Education</h1>
+ <p class="subtheme-page-intro">Universities employ psychology graduates in both academic and professional services roles. From student support and widening participation to research and lecturing, higher education offers a wide range of career paths.</p>
 
-    <div class="why-box">
-      <div class="why-label">Why Psychology?</div>
-      <ul class="why-list">
-        <li>Research and analytical skills underpin both academic lecturing and evidence-based professional services work</li>
-        <li>Understanding of student wellbeing, mental health, and the challenges of the student experience</li>
-        <li>Communication and presentation skills developed throughout the degree</li>
-        <li>Knowledge of diversity, inclusion, and access — increasingly important in HE professional services</li>
-        <li>For academic roles: strong foundation for postgraduate study and original research</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why Psychology?</div>
+ <ul class="why-list">
+ <li>Research and analytical skills underpin both academic lecturing and evidence-based professional services work</li>
+ <li>Understanding of student wellbeing, mental health, and the challenges of the student experience</li>
+ <li>Communication and presentation skills developed throughout the degree</li>
+ <li>Knowledge of diversity, inclusion, and access — increasingly important in HE professional services</li>
+ <li>For academic roles: strong foundation for postgraduate study and original research</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Possible roles in this area</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">Student Support Adviser</div>
-        <div class="role-desc">Provides pastoral and practical support to university students, drawing on understanding of wellbeing, mental health, and the challenges of student life.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Widening Participation / Outreach Officer</div>
-        <div class="role-desc">Works to improve access and success for underrepresented groups in higher education, through outreach, mentoring, and programme delivery.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Disability and Inclusion Adviser</div>
-        <div class="role-desc">Supports students with disabilities, mental health conditions, or additional needs to access and succeed in higher education.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Academic Lecturer / Researcher</div>
-        <div class="role-desc">Teaches and conducts research at university level. Typically requires a PhD and a developing publication record. Psychology graduates are well positioned for postgraduate study.</div>
-        <span class="role-badge badge-further">PhD required</span>
-      </div>
-    </div>
+ <div class="section-label">Possible roles in this area</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">Student Support Adviser</div>
+ <div class="role-desc">Provides pastoral and practical support to university students, drawing on understanding of wellbeing, mental health, and the challenges of student life.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Widening Participation / Outreach Officer</div>
+ <div class="role-desc">Works to improve access and success for underrepresented groups in higher education, through outreach, mentoring, and programme delivery.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Disability and Inclusion Adviser</div>
+ <div class="role-desc">Supports students with disabilities, mental health conditions, or additional needs to access and succeed in higher education.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Academic Lecturer / Researcher</div>
+ <div class="role-desc">Teaches and conducts research at university level. Typically requires a PhD and a developing publication record. Psychology graduates are well positioned for postgraduate study.</div>
+ <span class="role-badge badge-further">PhD required</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Communication</span>
-        <span class="skill-chip">Empathy and active listening</span>
-        <span class="skill-chip">Understanding of mental health</span>
-        <span class="skill-chip">Research skills</span>
-        <span class="skill-chip">Inclusion and diversity awareness</span>
-        <span class="skill-chip">Organisation</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Communication</span>
+ <span class="skill-chip">Empathy and active listening</span>
+ <span class="skill-chip">Understanding of mental health</span>
+ <span class="skill-chip">Research skills</span>
+ <span class="skill-chip">Inclusion and diversity awareness</span>
+ <span class="skill-chip">Organisation</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>Universities and higher education institutions across the UK</li>
-        <li>Students' Unions and student services departments</li>
-        <li>Research institutes and postgraduate programmes</li>
-        <li>Widening participation and access programmes including NCOP</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>Universities and higher education institutions across the UK</li>
+ <li>Students' Unions and student services departments</li>
+ <li>Research institutes and postgraduate programmes</li>
+ <li>Widening participation and access programmes including NCOP</li>
+ </ul>
+ </div>
 
-    <div class="now-box">
-      <div class="now-label">What you could do now</div>
-      <ul class="now-list">
-        <li>Explore student-facing roles at Liverpool Hope — student ambassadors, peer mentors, and student reps all build relevant skills</li>
-        <li>If interested in academic careers, speak to staff about research opportunities and postgraduate routes</li>
-        <li>Look for graduate roles in university student services, disability teams, or widening participation</li>
-        <li>Research ESRC and other postgraduate funding routes if you are considering a PhD</li>
-      </ul>
-    </div>
+ <div class="now-box">
+ <div class="now-label">What you could do now</div>
+ <ul class="now-list">
+ <li>Explore student-facing roles at Liverpool Hope — student ambassadors, peer mentors, and student reps all build relevant skills</li>
+ <li>If interested in academic careers, speak to staff about research opportunities and postgraduate routes</li>
+ <li>Look for graduate roles in university student services, disability teams, or widening participation</li>
+ <li>Research ESRC and other postgraduate funding routes if you are considering a PhD</li>
+ </ul>
+ </div>
 
-    <div class="related-box">
-      <div class="related-label">You may also be interested in</div>
-      <div class="related-chips">
-        <span class="related-chip" onclick="showPage('support')">Educational Support</span>
-        <span class="related-chip">Academic Research</span>
-        <span class="related-chip">Charity and Third Sector</span>
-        <span class="related-chip">Occupational Psychology</span>
-      </div>
-    </div>
+ <div class="related-box">
+ <div class="related-label">You may also be interested in</div>
+ <div class="related-chips">
+ <span class="related-chip" onclick="showPage('support')">Educational Support</span>
+ <span class="related-chip">Academic Research</span>
+ <span class="related-chip">Charity and Third Sector</span>
+ <span class="related-chip">Occupational Psychology</span>
+ </div>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div class="org-name">Advance HE</div><div class="org-desc">Professional body for higher education staff and academics</div></div>
-      <div class="org-card"><div class="org-name">ESRC</div><div class="org-desc">Economic and Social Research Council — postgraduate funding</div></div>
-      <div class="org-card"><div class="org-name">AMOSSHE</div><div class="org-desc">Association of Managers of Student Services in Higher Education</div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div class="org-name"><a href="https://www.advance-he.ac.uk" target="_blank" rel="noopener">Advance HE</a></div><div class="org-desc">Professional body for higher education staff and academics</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.ukri.org/councils/esrc/" target="_blank" rel="noopener">ESRC</a></div><div class="org-desc">Economic and Social Research Council — postgraduate funding</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.amosshe.org.uk" target="_blank" rel="noopener">AMOSSHE</a></div><div class="org-desc">Association of Managers of Student Services in Higher Education</div></div>
+ </div>
+ </div>
 
 </div>
 <script>
 function showPage(id) {
-  document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  window.scrollTo(0, 0);
+ document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
+ document.getElementById(id).classList.add('active');
+ window.scrollTo(0, 0);
 }
 </script>
 </body>

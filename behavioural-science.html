@@ -5,63 +5,63 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Behavioural Science and Behaviour Change — Psychology Careers | Liverpool Hope University</title>
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
-  .site-header { background: #1a3a5c; color: white; padding: 1rem 2rem; }
-  .site-header-title { font-size: 16px; font-weight: 500; }
-  .site-header-text { font-size: 14px; opacity: 0.85; }
-  .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
-  .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
-  .breadcrumb a { color: #1a5fa8; text-decoration: none; }
-  .breadcrumb a:hover { text-decoration: underline; }
-  .theme-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
-  .theme-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
-  .subtheme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 2rem; }
-  .subtheme-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; text-align: left; width: 100%; }
-  .subtheme-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.1); }
-  .subtheme-icon { font-size: 24px; margin-bottom: 10px; }
-  .subtheme-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
-  .subtheme-desc { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
-  .explore-link { font-size: 13px; color: #1a5fa8; }
-  .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
-  .now-box { background: #e8f0fb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .now-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 8px; }
-  .now-list { padding-left: 1.2rem; }
-  .now-list li { font-size: 14px; color: #1a3a5c; line-height: 1.7; }
-  .why-box { background: #f0f7f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .why-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1e6e35; margin-bottom: 8px; }
-  .why-list { padding-left: 1.2rem; }
-  .why-list li { font-size: 14px; color: #1a3a1a; line-height: 1.7; }
-  .employers-box { background: #faf8f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .employers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #a05a00; margin-bottom: 8px; }
-  .employers-list { padding-left: 1.2rem; }
-  .employers-list li { font-size: 14px; color: #3a2a00; line-height: 1.7; }
-  .related-box { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .related-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
-  .related-chips { display: flex; flex-wrap: wrap; gap: 8px; }
-  .related-chip { font-size: 13px; background: #f0f4ff; border: 1px solid #c0ccee; border-radius: 20px; padding: 4px 12px; color: #1a3a5c; cursor: pointer; }
-  .related-chip:hover { background: #e0e8ff; }
-  .divider { border: none; border-top: 1px solid #e8e8e8; margin: 1.5rem 0; }
-  .orgs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
-  .org-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.85rem 1rem; }
-  .org-name { font-size: 13px; font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
-  .org-desc { font-size: 12px; color: #666; }
-  .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
-  .role-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1.25rem; }
-  .role-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
-  .role-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
-  .role-badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
-  .badge-grad { background: #e6f4ea; color: #1e6e35; }
-  .badge-further { background: #fff3e0; color: #a05a00; }
-  .skills-box { background: #f5f5f3; border-radius: 8px; padding: 0.85rem 1rem; margin-bottom: 1rem; }
-  .skills-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-  .skill-chip { font-size: 12px; background: white; border: 1px solid #ddd; border-radius: 20px; padding: 3px 10px; color: #555; }
-  .page-view { display: none; }
-  .page-view.active { display: block; }
-  .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #1a5fa8; cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 1.5rem; font-family: inherit; }
-  .back-btn:hover { text-decoration: underline; }
-  .subtheme-page-title { font-size: 24px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
-  .subtheme-page-intro { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
+ .site-header { background: #1a3a5c; color: white; padding: 1rem 2rem; }
+ .site-header-title { font-size: 16px; font-weight: 500; }
+ .site-header-text { font-size: 14px; opacity: 0.85; }
+ .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+ .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+ .breadcrumb a { color: #1a5fa8; text-decoration: none; }
+ .breadcrumb a:hover { text-decoration: underline; }
+ .theme-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+ .theme-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
+ .subtheme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 2rem; }
+ .subtheme-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; text-align: left; width: 100%; }
+ .subtheme-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.1); }
+ .subtheme-icon { font-size: 24px; margin-bottom: 10px; }
+ .subtheme-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+ .subtheme-desc { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
+ .explore-link { font-size: 13px; color: #1a5fa8; }
+ .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+ .now-box { background: #e8f0fb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .now-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 8px; }
+ .now-list { padding-left: 1.2rem; }
+ .now-list li { font-size: 14px; color: #1a3a5c; line-height: 1.7; }
+ .why-box { background: #f0f7f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .why-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1e6e35; margin-bottom: 8px; }
+ .why-list { padding-left: 1.2rem; }
+ .why-list li { font-size: 14px; color: #1a3a1a; line-height: 1.7; }
+ .employers-box { background: #faf8f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .employers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #a05a00; margin-bottom: 8px; }
+ .employers-list { padding-left: 1.2rem; }
+ .employers-list li { font-size: 14px; color: #3a2a00; line-height: 1.7; }
+ .related-box { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .related-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+ .related-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+ .related-chip { font-size: 13px; background: #f0f4ff; border: 1px solid #c0ccee; border-radius: 20px; padding: 4px 12px; color: #1a3a5c; cursor: pointer; }
+ .related-chip:hover { background: #e0e8ff; }
+ .divider { border: none; border-top: 1px solid #e8e8e8; margin: 1.5rem 0; }
+ .orgs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+ .org-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.85rem 1rem; }
+ .org-name { font-size: 13px; font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
+ .org-desc { font-size: 12px; color: #666; }
+ .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
+ .role-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1.25rem; }
+ .role-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+ .role-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
+ .role-badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
+ .badge-grad { background: #e6f4ea; color: #1e6e35; }
+ .badge-further { background: #fff3e0; color: #a05a00; }
+ .skills-box { background: #f5f5f3; border-radius: 8px; padding: 0.85rem 1rem; margin-bottom: 1rem; }
+ .skills-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+ .skill-chip { font-size: 12px; background: white; border: 1px solid #ddd; border-radius: 20px; padding: 3px 10px; color: #555; }
+ .page-view { display: none; }
+ .page-view.active { display: block; }
+ .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #1a5fa8; cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 1.5rem; font-family: inherit; }
+ .back-btn:hover { text-decoration: underline; }
+ .subtheme-page-title { font-size: 24px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+ .subtheme-page-intro { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
 
 .site-nav { background: #1a3a5c; padding: 0 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
 .site-nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; gap: 0; height: 48px; }
@@ -74,266 +74,270 @@
 .site-nav-menu a:hover { background: #f0f4ff; }
 .site-nav-dropdown:hover .site-nav-menu { display: block; }
 
+
+  .org-name a { color: #1a3a5c; text-decoration: none; font-weight: 600; }
+  .org-name a:hover { color: #1a5fa8; text-decoration: underline; }
+
 </style>
 </head>
 <body>
 <div class="site-nav">
-  <div class="site-nav-inner">
-    <a class="site-nav-home" href="index.html">&#127968; Psychology Careers Hub</a>
-    <a class="site-nav-link" href="index.html">All Pathways</a>
-    <a class="site-nav-link" href="roadmap.html">Roadmap</a>
-    <a class="site-nav-link" href="employer-trends.html">Employer Trends</a>
-    <a class="site-nav-link" href="alumni.html">Alumni</a>
-    <div class="site-nav-dropdown">
-      <span class="site-nav-link">Themes &#9662;</span>
-      <div class="site-nav-menu">
-        <a href="poc.html">People, Organisations &amp; Consultancy</a>
-        <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
-        <a href="education.html">Education</a>
-        <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
-        <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
-        <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
-        <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
-        <a href="sport-exercise.html">Sport &amp; Exercise</a>
-        <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
-        <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
-        <a href="mental-health.html">Mental Health</a>
-      </div>
-    </div>
-  </div>
+ <div class="site-nav-inner">
+ <a class="site-nav-home" href="index.html">Psychology Careers Hub</a>
+ <a class="site-nav-link" href="index.html">All Pathways</a>
+ <a class="site-nav-link" href="roadmap.html">Roadmap</a>
+ <a class="site-nav-link" href="employer-trends.html">Employer Trends</a>
+ <a class="site-nav-link" href="alumni.html">Alumni</a>
+ <div class="site-nav-dropdown">
+ <span class="site-nav-link">Themes &#9662;</span>
+ <div class="site-nav-menu">
+ <a href="poc.html">People, Organisations &amp; Consultancy</a>
+ <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
+ <a href="education.html">Education</a>
+ <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
+ <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
+ <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
+ <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
+ <a href="sport-exercise.html">Sport &amp; Exercise</a>
+ <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
+ <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
+ <a href="mental-health.html">Mental Health</a>
+ </div>
+ </div>
+ </div>
 </div>
-  </div>
+ </div>
 </div>
 <div class="site-header">
-  <div class="site-header-title">Liverpool Hope University</div>
-  <div class="site-header-text">School of Psychology — Psychology Careers</div>
+ <div class="site-header-title">Liverpool Hope University</div>
+ <div class="site-header-text">School of Psychology — Psychology Careers</div>
 </div>
 <div class="container">
 
-  <!-- OVERVIEW -->
-  <div id="overview" class="page-view active">
-    <div class="breadcrumb"><a href="#">Psychology Careers</a><span>›</span><span>Behavioural Science and Behaviour Change</span></div>
-    <h1 class="theme-title">🔬 Behavioural Science and Behaviour Change</h1>
-    <p class="theme-intro">One of the most psychology-specific non-clinical career areas, behavioural science applies insights from psychology and behavioural economics to understand and influence human behaviour. From public health campaigns to sustainability initiatives and government policy, this field is growing rapidly — and many students are unaware it exists as a career pathway.</p>
+ <!-- OVERVIEW -->
+ <div id="overview" class="page-view active">
+ <div class="breadcrumb"><a href="#">Psychology Careers</a><span>›</span><span>Behavioural Science and Behaviour Change</span></div>
+ <h1 class="theme-title"> Behavioural Science and Behaviour Change</h1>
+ <p class="theme-intro">One of the most psychology-specific non-clinical career areas, behavioural science applies insights from psychology and behavioural economics to understand and influence human behaviour. From public health campaigns to sustainability initiatives and government policy, this field is growing rapidly — and many students are unaware it exists as a career pathway.</p>
 
-    <div class="subtheme-grid">
-      <button class="subtheme-card" onclick="showPage('public')">
-        <div class="subtheme-icon">🌍</div>
-        <div class="subtheme-name">Public Behaviour Change</div>
-        <div class="subtheme-desc">Design and deliver interventions to encourage healthier, safer, or more sustainable behaviour in communities and public settings.</div>
-        <div class="explore-link">Explore this area →</div>
-      </button>
-      <button class="subtheme-card" onclick="showPage('science')">
-        <div class="subtheme-icon">🧪</div>
-        <div class="subtheme-name">Behavioural Science</div>
-        <div class="subtheme-desc">Research and apply insights about human behaviour, working at the intersection of psychology, economics, and policy.</div>
-        <div class="explore-link">Explore this area →</div>
-      </button>
-    </div>
+ <div class="subtheme-grid">
+ <button class="subtheme-card" onclick="showPage('public')">
+ <div class="subtheme-icon"></div>
+ <div class="subtheme-name">Public Behaviour Change</div>
+ <div class="subtheme-desc">Design and deliver interventions to encourage healthier, safer, or more sustainable behaviour in communities and public settings.</div>
+ <div class="explore-link">Explore this area →</div>
+ </button>
+ <button class="subtheme-card" onclick="showPage('science')">
+ <div class="subtheme-icon"></div>
+ <div class="subtheme-name">Behavioural Science</div>
+ <div class="subtheme-desc">Research and apply insights about human behaviour, working at the intersection of psychology, economics, and policy.</div>
+ <div class="explore-link">Explore this area →</div>
+ </button>
+ </div>
 
-    <div class="now-box">
-      <div class="now-label">What you could do now</div>
-      <ul class="now-list">
-        <li>Read the Behavioural Insights Team's EAST framework — a practical introduction to applied behavioural science</li>
-        <li>Explore modules on social influence, decision-making, and health psychology in your degree</li>
-        <li>Look into internship opportunities at the Behavioural Insights Team and similar organisations</li>
-        <li>Consider volunteering with public health or sustainability campaigns to build applied experience</li>
-        <li>Research postgraduate programmes in behavioural science or health psychology if you want to specialise</li>
-      </ul>
-    </div>
+ <div class="now-box">
+ <div class="now-label">What you could do now</div>
+ <ul class="now-list">
+ <li>Read the Behavioural Insights Team's EAST framework — a practical introduction to applied behavioural science</li>
+ <li>Explore modules on social influence, decision-making, and health psychology in your degree</li>
+ <li>Look into internship opportunities at the Behavioural Insights Team and similar organisations</li>
+ <li>Consider volunteering with public health or sustainability campaigns to build applied experience</li>
+ <li>Research postgraduate programmes in behavioural science or health psychology if you want to specialise</li>
+ </ul>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div class="org-name">Behavioural Insights Team</div><div class="org-desc">The UK's leading applied behavioural science organisation</div></div>
-      <div class="org-card"><div class="org-name">BPS Division of Health Psychology</div><div class="org-desc">Relevant for behaviour change in health contexts</div></div>
-      <div class="org-card"><div class="org-name">Faculty of Public Health</div><div class="org-desc">Standard-setting body for public health in the UK</div></div>
-      <div class="org-card"><div class="org-name">UK Health Security Agency</div><div class="org-desc">Government agency working on health protection and behaviour</div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div class="org-name"><a href="https://www.bi.team" target="_blank" rel="noopener">Behavioural Insights Team</a></div><div class="org-desc">The UK's leading applied behavioural science organisation</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.bps.org.uk/member-networks/division-health-psychology" target="_blank" rel="noopener">BPS Division of Health Psychology</a></div><div class="org-desc">Relevant for behaviour change in health contexts</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.fph.org.uk" target="_blank" rel="noopener">Faculty of Public Health</a></div><div class="org-desc">Standard-setting body for public health in the UK</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.gov.uk/government/organisations/uk-health-security-agency" target="_blank" rel="noopener">UK Health Security Agency</a></div><div class="org-desc">Government agency working on health protection and behaviour</div></div>
+ </div>
+ </div>
 
-  <!-- PUBLIC BEHAVIOUR CHANGE -->
-  <div id="public" class="page-view">
-    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Behavioural Science and Behaviour Change</a><span>›</span><span>Public Behaviour Change</span></div>
-    <button class="back-btn" onclick="showPage('overview')">← Back to Behavioural Science and Behaviour Change</button>
-    <h1 class="subtheme-page-title">🌍 Public Behaviour Change</h1>
-    <p class="subtheme-page-intro">Public behaviour change roles design and deliver interventions to encourage healthier, safer, or more sustainable behaviour across communities and populations. These roles draw directly on psychological theory and evidence, making them an excellent fit for psychology graduates.</p>
+ <!-- PUBLIC BEHAVIOUR CHANGE -->
+ <div id="public" class="page-view">
+ <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Behavioural Science and Behaviour Change</a><span>›</span><span>Public Behaviour Change</span></div>
+ <button class="back-btn" onclick="showPage('overview')">← Back to Behavioural Science and Behaviour Change</button>
+ <h1 class="subtheme-page-title"> Public Behaviour Change</h1>
+ <p class="subtheme-page-intro">Public behaviour change roles design and deliver interventions to encourage healthier, safer, or more sustainable behaviour across communities and populations. These roles draw directly on psychological theory and evidence, making them an excellent fit for psychology graduates.</p>
 
-    <div class="why-box">
-      <div class="why-label">Why Psychology?</div>
-      <ul class="why-list">
-        <li>Deep knowledge of behaviour change theory — COM-B, the Transtheoretical Model, nudge theory, and others — directly underpins this work</li>
-        <li>Understanding of motivation, habit formation, and barriers to behaviour change</li>
-        <li>Research and evaluation skills for designing and testing interventions</li>
-        <li>Communication skills for engaging diverse communities and stakeholders</li>
-        <li>Awareness of health inequalities and the social determinants of behaviour</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why Psychology?</div>
+ <ul class="why-list">
+ <li>Deep knowledge of behaviour change theory — COM-B, the Transtheoretical Model, nudge theory, and others — directly underpins this work</li>
+ <li>Understanding of motivation, habit formation, and barriers to behaviour change</li>
+ <li>Research and evaluation skills for designing and testing interventions</li>
+ <li>Communication skills for engaging diverse communities and stakeholders</li>
+ <li>Awareness of health inequalities and the social determinants of behaviour</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Possible roles in this area</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">Behaviour Change Officer</div>
-        <div class="role-desc">Designs and delivers interventions to change public behaviour around health, safety, sustainability, or other priorities, drawing on psychological theory.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Public Health Behaviour Change Specialist</div>
-        <div class="role-desc">Develops and delivers behaviour change programmes in public health contexts, such as smoking cessation, physical activity promotion, or healthy eating.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Sustainability Behaviour Change Officer</div>
-        <div class="role-desc">Applies psychological principles to encourage pro-environmental behaviour in organisations, communities, or the general public.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-    </div>
+ <div class="section-label">Possible roles in this area</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">Behaviour Change Officer</div>
+ <div class="role-desc">Designs and delivers interventions to change public behaviour around health, safety, sustainability, or other priorities, drawing on psychological theory.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Public Health Behaviour Change Specialist</div>
+ <div class="role-desc">Develops and delivers behaviour change programmes in public health contexts, such as smoking cessation, physical activity promotion, or healthy eating.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Sustainability Behaviour Change Officer</div>
+ <div class="role-desc">Applies psychological principles to encourage pro-environmental behaviour in organisations, communities, or the general public.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Behaviour change theory</span>
-        <span class="skill-chip">Programme design and delivery</span>
-        <span class="skill-chip">Community engagement</span>
-        <span class="skill-chip">Data collection and evaluation</span>
-        <span class="skill-chip">Partnership working</span>
-        <span class="skill-chip">Communication</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Behaviour change theory</span>
+ <span class="skill-chip">Programme design and delivery</span>
+ <span class="skill-chip">Community engagement</span>
+ <span class="skill-chip">Data collection and evaluation</span>
+ <span class="skill-chip">Partnership working</span>
+ <span class="skill-chip">Communication</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>NHS Trusts and public health teams within local authorities</li>
-        <li>UK Health Security Agency and NHS England</li>
-        <li>Local councils and Combined Authorities with sustainability teams</li>
-        <li>Charities and social enterprises focused on health, environment, or community wellbeing</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>NHS Trusts and public health teams within local authorities</li>
+ <li>UK Health Security Agency and NHS England</li>
+ <li>Local councils and Combined Authorities with sustainability teams</li>
+ <li>Charities and social enterprises focused on health, environment, or community wellbeing</li>
+ </ul>
+ </div>
 
-    <div class="now-box">
-      <div class="now-label">What you could do now</div>
-      <ul class="now-list">
-        <li>Volunteer with a health promotion or sustainability campaign</li>
-        <li>Research NHS and local authority graduate public health roles</li>
-        <li>Explore behaviour change modules and health psychology in your degree</li>
-        <li>Look into the Faculty of Public Health and UK Health Security Agency as graduate employers</li>
-      </ul>
-    </div>
+ <div class="now-box">
+ <div class="now-label">What you could do now</div>
+ <ul class="now-list">
+ <li>Volunteer with a health promotion or sustainability campaign</li>
+ <li>Research NHS and local authority graduate public health roles</li>
+ <li>Explore behaviour change modules and health psychology in your degree</li>
+ <li>Look into the Faculty of Public Health and UK Health Security Agency as graduate employers</li>
+ </ul>
+ </div>
 
-    <div class="related-box">
-      <div class="related-label">You may also be interested in</div>
-      <div class="related-chips">
-        <span class="related-chip" onclick="showPage('science')">Behavioural Science</span>
-        <span class="related-chip">Public Services and Policy</span>
-        <span class="related-chip">Charity and Third Sector</span>
-        <span class="related-chip">Health and Physical Activity</span>
-      </div>
-    </div>
+ <div class="related-box">
+ <div class="related-label">You may also be interested in</div>
+ <div class="related-chips">
+ <span class="related-chip" onclick="showPage('science')">Behavioural Science</span>
+ <span class="related-chip">Public Services and Policy</span>
+ <span class="related-chip">Charity and Third Sector</span>
+ <span class="related-chip">Health and Physical Activity</span>
+ </div>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div class="org-name">Faculty of Public Health</div><div class="org-desc">Standard-setting body for public health in the UK</div></div>
-      <div class="org-card"><div class="org-name">UK Health Security Agency</div><div class="org-desc">Government agency working on health protection and behaviour change</div></div>
-      <div class="org-card"><div class="org-name">NHS Health Careers</div><div class="org-desc">Overview of NHS roles in public health and behaviour change</div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div class="org-name"><a href="https://www.fph.org.uk" target="_blank" rel="noopener">Faculty of Public Health</a></div><div class="org-desc">Standard-setting body for public health in the UK</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.gov.uk/government/organisations/uk-health-security-agency" target="_blank" rel="noopener">UK Health Security Agency</a></div><div class="org-desc">Government agency working on health protection and behaviour change</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.healthcareers.nhs.uk" target="_blank" rel="noopener">NHS Health Careers</a></div><div class="org-desc">Overview of NHS roles in public health and behaviour change</div></div>
+ </div>
+ </div>
 
-  <!-- BEHAVIOURAL SCIENCE -->
-  <div id="science" class="page-view">
-    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Behavioural Science and Behaviour Change</a><span>›</span><span>Behavioural Science</span></div>
-    <button class="back-btn" onclick="showPage('overview')">← Back to Behavioural Science and Behaviour Change</button>
-    <h1 class="subtheme-page-title">🧪 Behavioural Science</h1>
-    <p class="subtheme-page-intro">Behavioural science careers involve researching and applying insights about human behaviour, often working at the intersection of psychology, economics, and policy. This field emerged largely from academic psychology and remains one of the most directly psychology-relevant career areas available to graduates.</p>
+ <!-- BEHAVIOURAL SCIENCE -->
+ <div id="science" class="page-view">
+ <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Behavioural Science and Behaviour Change</a><span>›</span><span>Behavioural Science</span></div>
+ <button class="back-btn" onclick="showPage('overview')">← Back to Behavioural Science and Behaviour Change</button>
+ <h1 class="subtheme-page-title"> Behavioural Science</h1>
+ <p class="subtheme-page-intro">Behavioural science careers involve researching and applying insights about human behaviour, often working at the intersection of psychology, economics, and policy. This field emerged largely from academic psychology and remains one of the most directly psychology-relevant career areas available to graduates.</p>
 
-    <div class="why-box">
-      <div class="why-label">Why Psychology?</div>
-      <ul class="why-list">
-        <li>Behavioural science is grounded in psychological research — cognitive biases, social norms, heuristics, and decision-making theory are all central</li>
-        <li>Research design and statistical skills are essential for running experiments and evaluating interventions</li>
-        <li>Critical thinking skills help behavioural scientists design rigorous studies and avoid common analytical errors</li>
-        <li>Understanding of motivation and behaviour change theory informs practical intervention design</li>
-        <li>Ethical awareness around behavioural influence is increasingly important in the field</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why Psychology?</div>
+ <ul class="why-list">
+ <li>Behavioural science is grounded in psychological research — cognitive biases, social norms, heuristics, and decision-making theory are all central</li>
+ <li>Research design and statistical skills are essential for running experiments and evaluating interventions</li>
+ <li>Critical thinking skills help behavioural scientists design rigorous studies and avoid common analytical errors</li>
+ <li>Understanding of motivation and behaviour change theory informs practical intervention design</li>
+ <li>Ethical awareness around behavioural influence is increasingly important in the field</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Possible roles in this area</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">Behavioural Scientist</div>
-        <div class="role-desc">Uses insights from psychology and behavioural economics to understand and influence human behaviour in commercial, public sector, or policy settings.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Behavioural Insights Practitioner</div>
-        <div class="role-desc">Works within government, NHS, or private sector teams to apply behavioural science to policy and practice — designing trials, analysing results, and translating findings into recommendations.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Behavioural Research Associate</div>
-        <div class="role-desc">Conducts research to understand behaviour and test the effectiveness of interventions, often in a consultancy or think tank setting.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-    </div>
+ <div class="section-label">Possible roles in this area</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">Behavioural Scientist</div>
+ <div class="role-desc">Uses insights from psychology and behavioural economics to understand and influence human behaviour in commercial, public sector, or policy settings.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Behavioural Insights Practitioner</div>
+ <div class="role-desc">Works within government, NHS, or private sector teams to apply behavioural science to policy and practice — designing trials, analysing results, and translating findings into recommendations.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Behavioural Research Associate</div>
+ <div class="role-desc">Conducts research to understand behaviour and test the effectiveness of interventions, often in a consultancy or think tank setting.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Behavioural science knowledge</span>
-        <span class="skill-chip">Research design and statistics</span>
-        <span class="skill-chip">Data analysis</span>
-        <span class="skill-chip">Communication of evidence</span>
-        <span class="skill-chip">Critical thinking</span>
-        <span class="skill-chip">Ethical reasoning</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Behavioural science knowledge</span>
+ <span class="skill-chip">Research design and statistics</span>
+ <span class="skill-chip">Data analysis</span>
+ <span class="skill-chip">Communication of evidence</span>
+ <span class="skill-chip">Critical thinking</span>
+ <span class="skill-chip">Ethical reasoning</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>Behavioural Insights Team and similar applied behavioural science consultancies</li>
-        <li>Government departments including HMRC, DWP, and Cabinet Office</li>
-        <li>Financial Conduct Authority and other regulators using behavioural approaches</li>
-        <li>Technology companies and financial services organisations with behavioural science teams</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>Behavioural Insights Team and similar applied behavioural science consultancies</li>
+ <li>Government departments including HMRC, DWP, and Cabinet Office</li>
+ <li>Financial Conduct Authority and other regulators using behavioural approaches</li>
+ <li>Technology companies and financial services organisations with behavioural science teams</li>
+ </ul>
+ </div>
 
-    <div class="now-box">
-      <div class="now-label">What you could do now</div>
-      <ul class="now-list">
-        <li>Read Thinking, Fast and Slow by Daniel Kahneman — a foundational text for understanding behavioural science</li>
-        <li>Explore the Behavioural Insights Team website and their published trials and reports</li>
-        <li>Look for internship opportunities at the BIT and similar organisations</li>
-        <li>Build strong research and statistical skills through your degree — these are essential for practitioner roles</li>
-      </ul>
-    </div>
+ <div class="now-box">
+ <div class="now-label">What you could do now</div>
+ <ul class="now-list">
+ <li>Read Thinking, Fast and Slow by Daniel Kahneman — a foundational text for understanding behavioural science</li>
+ <li>Explore the Behavioural Insights Team website and their published trials and reports</li>
+ <li>Look for internship opportunities at the BIT and similar organisations</li>
+ <li>Build strong research and statistical skills through your degree — these are essential for practitioner roles</li>
+ </ul>
+ </div>
 
-    <div class="related-box">
-      <div class="related-label">You may also be interested in</div>
-      <div class="related-chips">
-        <span class="related-chip" onclick="showPage('public')">Public Behaviour Change</span>
-        <span class="related-chip">Behavioural Insight — Marketing</span>
-        <span class="related-chip">Research, Data and Evaluation</span>
-        <span class="related-chip">Public Services and Policy</span>
-      </div>
-    </div>
+ <div class="related-box">
+ <div class="related-label">You may also be interested in</div>
+ <div class="related-chips">
+ <span class="related-chip" onclick="showPage('public')">Public Behaviour Change</span>
+ <span class="related-chip">Behavioural Insight — Marketing</span>
+ <span class="related-chip">Research, Data and Evaluation</span>
+ <span class="related-chip">Public Services and Policy</span>
+ </div>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div class="org-name">Behavioural Insights Team</div><div class="org-desc">The UK's leading applied behavioural science organisation — careers and internships available</div></div>
-      <div class="org-card"><div class="org-name">Government Social Research Profession</div><div class="org-desc">Research and evaluation careers in government</div></div>
-      <div class="org-card"><div class="org-name">BPS Division of Health Psychology</div><div class="org-desc">Relevant for behaviour change in health contexts</div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div class="org-name"><a href="https://www.bi.team" target="_blank" rel="noopener">Behavioural Insights Team</a></div><div class="org-desc">The UK's leading applied behavioural science organisation — careers and internships available</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.gov.uk/government/organisations/government-social-research" target="_blank" rel="noopener">Government Social Research Profession</a></div><div class="org-desc">Research and evaluation careers in government</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.bps.org.uk/member-networks/division-health-psychology" target="_blank" rel="noopener">BPS Division of Health Psychology</a></div><div class="org-desc">Relevant for behaviour change in health contexts</div></div>
+ </div>
+ </div>
 
 </div>
 <script>
 function showPage(id) {
-  document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  window.scrollTo(0, 0);
+ document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
+ document.getElementById(id).classList.add('active');
+ window.scrollTo(0, 0);
 }
 </script>
 </body>

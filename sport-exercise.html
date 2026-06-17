@@ -5,63 +5,63 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sport and Exercise — Psychology Careers | Liverpool Hope University</title>
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
-  .site-header { background: #1a3a5c; color: white; padding: 1rem 2rem; display: flex; align-items: center; gap: 12px; }
-  .site-header-text { font-size: 14px; opacity: 0.85; }
-  .site-header-title { font-size: 16px; font-weight: 500; }
-  .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
-  .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
-  .breadcrumb a { color: #1a5fa8; text-decoration: none; }
-  .breadcrumb a:hover { text-decoration: underline; }
-  .theme-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
-  .theme-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
-  .subtheme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-bottom: 2rem; }
-  .subtheme-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; text-align: left; width: 100%; }
-  .subtheme-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.1); }
-  .subtheme-icon { font-size: 24px; margin-bottom: 10px; }
-  .subtheme-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
-  .subtheme-desc { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
-  .explore-link { font-size: 13px; color: #1a5fa8; }
-  .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
-  .now-box { background: #e8f0fb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .now-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 8px; }
-  .now-list { padding-left: 1.2rem; }
-  .now-list li { font-size: 14px; color: #1a3a5c; line-height: 1.7; }
-  .why-box { background: #f0f7f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .why-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1e6e35; margin-bottom: 8px; }
-  .why-list { padding-left: 1.2rem; }
-  .why-list li { font-size: 14px; color: #1a3a1a; line-height: 1.7; }
-  .employers-box { background: #faf8f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .employers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #a05a00; margin-bottom: 8px; }
-  .employers-list { padding-left: 1.2rem; }
-  .employers-list li { font-size: 14px; color: #3a2a00; line-height: 1.7; }
-  .related-box { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .related-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
-  .related-chips { display: flex; flex-wrap: wrap; gap: 8px; }
-  .related-chip { font-size: 13px; background: #f0f4ff; border: 1px solid #c0ccee; border-radius: 20px; padding: 4px 12px; color: #1a3a5c; cursor: pointer; }
-  .related-chip:hover { background: #e0e8ff; }
-  .divider { border: none; border-top: 1px solid #e8e8e8; margin: 1.5rem 0; }
-  .orgs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
-  .org-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.85rem 1rem; display: flex; align-items: flex-start; gap: 10px; }
-  .org-name { font-size: 13px; font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
-  .org-desc { font-size: 12px; color: #666; }
-  .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
-  .role-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1.25rem; }
-  .role-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
-  .role-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
-  .role-badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
-  .badge-grad { background: #e6f4ea; color: #1e6e35; }
-  .badge-further { background: #fff3e0; color: #a05a00; }
-  .skills-box { background: #f5f5f3; border-radius: 8px; padding: 0.85rem 1rem; margin-bottom: 1rem; }
-  .skills-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-  .skill-chip { font-size: 12px; background: white; border: 1px solid #ddd; border-radius: 20px; padding: 3px 10px; color: #555; }
-  .page-view { display: none; }
-  .page-view.active { display: block; }
-  .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #1a5fa8; cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 1.5rem; font-family: inherit; }
-  .back-btn:hover { text-decoration: underline; }
-  .subtheme-page-title { font-size: 24px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
-  .subtheme-page-intro { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
+ .site-header { background: #1a3a5c; color: white; padding: 1rem 2rem; display: flex; align-items: center; gap: 12px; }
+ .site-header-text { font-size: 14px; opacity: 0.85; }
+ .site-header-title { font-size: 16px; font-weight: 500; }
+ .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+ .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+ .breadcrumb a { color: #1a5fa8; text-decoration: none; }
+ .breadcrumb a:hover { text-decoration: underline; }
+ .theme-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+ .theme-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
+ .subtheme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-bottom: 2rem; }
+ .subtheme-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; text-align: left; width: 100%; }
+ .subtheme-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.1); }
+ .subtheme-icon { font-size: 24px; margin-bottom: 10px; }
+ .subtheme-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+ .subtheme-desc { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
+ .explore-link { font-size: 13px; color: #1a5fa8; }
+ .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+ .now-box { background: #e8f0fb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .now-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 8px; }
+ .now-list { padding-left: 1.2rem; }
+ .now-list li { font-size: 14px; color: #1a3a5c; line-height: 1.7; }
+ .why-box { background: #f0f7f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .why-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1e6e35; margin-bottom: 8px; }
+ .why-list { padding-left: 1.2rem; }
+ .why-list li { font-size: 14px; color: #1a3a1a; line-height: 1.7; }
+ .employers-box { background: #faf8f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .employers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #a05a00; margin-bottom: 8px; }
+ .employers-list { padding-left: 1.2rem; }
+ .employers-list li { font-size: 14px; color: #3a2a00; line-height: 1.7; }
+ .related-box { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .related-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+ .related-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+ .related-chip { font-size: 13px; background: #f0f4ff; border: 1px solid #c0ccee; border-radius: 20px; padding: 4px 12px; color: #1a3a5c; cursor: pointer; }
+ .related-chip:hover { background: #e0e8ff; }
+ .divider { border: none; border-top: 1px solid #e8e8e8; margin: 1.5rem 0; }
+ .orgs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+ .org-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.85rem 1rem; display: flex; align-items: flex-start; gap: 10px; }
+ .org-name { font-size: 13px; font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
+ .org-desc { font-size: 12px; color: #666; }
+ .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
+ .role-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1.25rem; }
+ .role-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+ .role-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
+ .role-badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
+ .badge-grad { background: #e6f4ea; color: #1e6e35; }
+ .badge-further { background: #fff3e0; color: #a05a00; }
+ .skills-box { background: #f5f5f3; border-radius: 8px; padding: 0.85rem 1rem; margin-bottom: 1rem; }
+ .skills-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+ .skill-chip { font-size: 12px; background: white; border: 1px solid #ddd; border-radius: 20px; padding: 3px 10px; color: #555; }
+ .page-view { display: none; }
+ .page-view.active { display: block; }
+ .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #1a5fa8; cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 1.5rem; font-family: inherit; }
+ .back-btn:hover { text-decoration: underline; }
+ .subtheme-page-title { font-size: 24px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+ .subtheme-page-intro { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
 
 .site-nav { background: #1a3a5c; padding: 0 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
 .site-nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; gap: 0; height: 48px; }
@@ -74,391 +74,395 @@
 .site-nav-menu a:hover { background: #f0f4ff; }
 .site-nav-dropdown:hover .site-nav-menu { display: block; }
 
+
+  .org-name a { color: #1a3a5c; text-decoration: none; font-weight: 600; }
+  .org-name a:hover { color: #1a5fa8; text-decoration: underline; }
+
 </style>
 </head>
 <body>
 <div class="site-nav">
-  <div class="site-nav-inner">
-    <a class="site-nav-home" href="index.html">&#127968; Psychology Careers Hub</a>
-    <a class="site-nav-link" href="index.html">All Pathways</a>
-    <a class="site-nav-link" href="roadmap.html">Roadmap</a>
-    <a class="site-nav-link" href="employer-trends.html">Employer Trends</a>
-    <a class="site-nav-link" href="alumni.html">Alumni</a>
-    <div class="site-nav-dropdown">
-      <span class="site-nav-link">Themes &#9662;</span>
-      <div class="site-nav-menu">
-        <a href="poc.html">People, Organisations &amp; Consultancy</a>
-        <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
-        <a href="education.html">Education</a>
-        <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
-        <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
-        <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
-        <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
-        <a href="sport-exercise.html">Sport &amp; Exercise</a>
-        <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
-        <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
-        <a href="mental-health.html">Mental Health</a>
-      </div>
-    </div>
-  </div>
+ <div class="site-nav-inner">
+ <a class="site-nav-home" href="index.html">Psychology Careers Hub</a>
+ <a class="site-nav-link" href="index.html">All Pathways</a>
+ <a class="site-nav-link" href="roadmap.html">Roadmap</a>
+ <a class="site-nav-link" href="employer-trends.html">Employer Trends</a>
+ <a class="site-nav-link" href="alumni.html">Alumni</a>
+ <div class="site-nav-dropdown">
+ <span class="site-nav-link">Themes &#9662;</span>
+ <div class="site-nav-menu">
+ <a href="poc.html">People, Organisations &amp; Consultancy</a>
+ <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
+ <a href="education.html">Education</a>
+ <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
+ <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
+ <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
+ <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
+ <a href="sport-exercise.html">Sport &amp; Exercise</a>
+ <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
+ <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
+ <a href="mental-health.html">Mental Health</a>
+ </div>
+ </div>
+ </div>
 </div>
-  </div>
+ </div>
 </div>
 
 <div class="site-header">
-  <div>
-    <div class="site-header-title">Liverpool Hope University</div>
-    <div class="site-header-text">School of Psychology — Psychology Careers</div>
-  </div>
+ <div>
+ <div class="site-header-title">Liverpool Hope University</div>
+ <div class="site-header-text">School of Psychology — Psychology Careers</div>
+ </div>
 </div>
 
 <div class="container">
 
-  <!-- OVERVIEW PAGE -->
-  <div id="overview" class="page-view active">
-    <div class="breadcrumb">
-      <a href="#">Psychology Careers</a>
-      <span>›</span>
-      <span>Sport and Exercise</span>
-    </div>
-    <h1 class="theme-title">🏃 Sport and Exercise</h1>
-    <p class="theme-intro">If you are interested in sport, physical activity, health, motivation, and performance, there are a range of careers where psychology can be applied. This area includes roles in performance support, athlete welfare, health promotion, and, with further training, sport psychology practice.</p>
+ <!-- OVERVIEW PAGE -->
+ <div id="overview" class="page-view active">
+ <div class="breadcrumb">
+ <a href="#">Psychology Careers</a>
+ <span>›</span>
+ <span>Sport and Exercise</span>
+ </div>
+ <h1 class="theme-title"> Sport and Exercise</h1>
+ <p class="theme-intro">If you are interested in sport, physical activity, health, motivation, and performance, there are a range of careers where psychology can be applied. This area includes roles in performance support, athlete welfare, health promotion, and, with further training, sport psychology practice.</p>
 
-    <div class="subtheme-grid">
-      <button class="subtheme-card" onclick="showPage('performance')">
-        <div class="subtheme-icon">🏆</div>
-        <div class="subtheme-name">Sport Performance</div>
-        <div class="subtheme-desc">Support athletes in maximising performance, wellbeing, and success in sport.</div>
-        <div class="explore-link">Explore this area →</div>
-      </button>
-      <button class="subtheme-card" onclick="showPage('health')">
-        <div class="subtheme-icon">💪</div>
-        <div class="subtheme-name">Health and Physical Activity</div>
-        <div class="subtheme-desc">Help individuals and communities improve physical activity, health, and behaviour.</div>
-        <div class="explore-link">Explore this area →</div>
-      </button>
-      <button class="subtheme-card" onclick="showPage('further')">
-        <div class="subtheme-icon">🎓</div>
-        <div class="subtheme-name">Sport Psychology</div>
-        <div class="subtheme-desc">Careers that build on a psychology degree but require postgraduate or professional training.</div>
-        <div class="explore-link">Explore this area →</div>
-      </button>
-    </div>
+ <div class="subtheme-grid">
+ <button class="subtheme-card" onclick="showPage('performance')">
+ <div class="subtheme-icon"></div>
+ <div class="subtheme-name">Sport Performance</div>
+ <div class="subtheme-desc">Support athletes in maximising performance, wellbeing, and success in sport.</div>
+ <div class="explore-link">Explore this area →</div>
+ </button>
+ <button class="subtheme-card" onclick="showPage('health')">
+ <div class="subtheme-icon"></div>
+ <div class="subtheme-name">Health and Physical Activity</div>
+ <div class="subtheme-desc">Help individuals and communities improve physical activity, health, and behaviour.</div>
+ <div class="explore-link">Explore this area →</div>
+ </button>
+ <button class="subtheme-card" onclick="showPage('further')">
+ <div class="subtheme-icon"></div>
+ <div class="subtheme-name">Sport Psychology</div>
+ <div class="subtheme-desc">Careers that build on a psychology degree but require postgraduate or professional training.</div>
+ <div class="explore-link">Explore this area →</div>
+ </button>
+ </div>
 
-    <div class="now-box">
-      <div class="now-label">What you could do now</div>
-      <ul class="now-list">
-        <li>Volunteer in sports clubs or community sport settings</li>
-        <li>Gain experience in welfare or support roles</li>
-        <li>Work with university sport teams</li>
-        <li>Build communication and helping skills through peer mentoring</li>
-        <li>Look into BPS student membership and Division of Sport and Exercise Psychology events</li>
-      </ul>
-    </div>
+ <div class="now-box">
+ <div class="now-label">What you could do now</div>
+ <ul class="now-list">
+ <li>Volunteer in sports clubs or community sport settings</li>
+ <li>Gain experience in welfare or support roles</li>
+ <li>Work with university sport teams</li>
+ <li>Build communication and helping skills through peer mentoring</li>
+ <li>Look into BPS student membership and Division of Sport and Exercise Psychology events</li>
+ </ul>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card">
-        <div><div class="org-name">BPS Division of Sport and Exercise Psychology</div><div class="org-desc">Career info, training routes and events</div></div>
-      </div>
-      <div class="org-card">
-        <div><div class="org-name">BASES</div><div class="org-desc">British Association of Sport and Exercise Sciences</div></div>
-      </div>
-      <div class="org-card">
-        <div><div class="org-name">UK Coaching</div><div class="org-desc">Resources and opportunities in coaching and athlete support</div></div>
-      </div>
-      <div class="org-card">
-        <div><div class="org-name">HCPC</div><div class="org-desc">Registration body for sport psychologists</div></div>
-      </div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card">
+ <div><div class="org-name"><a href="https://www.bps.org.uk/member-networks/division-sport-exercise-psychology" target="_blank" rel="noopener">BPS Division of Sport and Exercise Psychology</a></div><div class="org-desc">Career info, training routes and events</div></div>
+ </div>
+ <div class="org-card">
+ <div><div class="org-name"><a href="https://www.bases.org.uk" target="_blank" rel="noopener">BASES</a></div><div class="org-desc">British Association of Sport and Exercise Sciences</div></div>
+ </div>
+ <div class="org-card">
+ <div><div class="org-name"><a href="https://www.ukcoaching.org" target="_blank" rel="noopener">UK Coaching</a></div><div class="org-desc">Resources and opportunities in coaching and athlete support</div></div>
+ </div>
+ <div class="org-card">
+ <div><div class="org-name"><a href="https://www.hcpc-uk.org" target="_blank" rel="noopener">HCPC</a></div><div class="org-desc">Registration body for sport psychologists</div></div>
+ </div>
+ </div>
+ </div>
 
-  <!-- SPORT PERFORMANCE PAGE -->
-  <div id="performance" class="page-view">
-    <div class="breadcrumb">
-      <a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a>
-      <span>›</span>
-      <a href="#" onclick="showPage('overview'); return false;">Sport and Exercise</a>
-      <span>›</span>
-      <span>Sport Performance</span>
-    </div>
-    <button class="back-btn" onclick="showPage('overview')">← Back to Sport and Exercise</button>
-    <h1 class="subtheme-page-title">🏆 Sport Performance</h1>
-    <p class="subtheme-page-intro">Sport performance roles focus on helping athletes perform at their best while also supporting motivation, wellbeing, and life balance.</p>
+ <!-- SPORT PERFORMANCE PAGE -->
+ <div id="performance" class="page-view">
+ <div class="breadcrumb">
+ <a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a>
+ <span>›</span>
+ <a href="#" onclick="showPage('overview'); return false;">Sport and Exercise</a>
+ <span>›</span>
+ <span>Sport Performance</span>
+ </div>
+ <button class="back-btn" onclick="showPage('overview')">← Back to Sport and Exercise</button>
+ <h1 class="subtheme-page-title"> Sport Performance</h1>
+ <p class="subtheme-page-intro">Sport performance roles focus on helping athletes perform at their best while also supporting motivation, wellbeing, and life balance.</p>
 
-    <div class="why-box">
-      <div class="why-label">Why Psychology?</div>
-      <ul class="why-list">
-        <li>Understanding of motivation, behaviour, and what drives performance</li>
-        <li>Communication and rapport-building skills developed through study and placements</li>
-        <li>Knowledge of wellbeing, stress, and mental health in high-pressure environments</li>
-        <li>Research and data analysis skills applicable to performance analysis</li>
-        <li>Understanding of group dynamics and team behaviour</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why Psychology?</div>
+ <ul class="why-list">
+ <li>Understanding of motivation, behaviour, and what drives performance</li>
+ <li>Communication and rapport-building skills developed through study and placements</li>
+ <li>Knowledge of wellbeing, stress, and mental health in high-pressure environments</li>
+ <li>Research and data analysis skills applicable to performance analysis</li>
+ <li>Understanding of group dynamics and team behaviour</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Possible roles in this area</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">Athlete Welfare Officer</div>
-        <div class="role-desc">Supports the psychological and personal wellbeing of athletes within sport organisations, providing safeguarding and pastoral support.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Performance Lifestyle Adviser</div>
-        <div class="role-desc">Helps athletes manage the demands of elite sport alongside education, career planning, and everyday life.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Performance Analyst</div>
-        <div class="role-desc">Collects and analyses data on athlete and team performance to inform coaching decisions and training programmes.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-    </div>
+ <div class="section-label">Possible roles in this area</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">Athlete Welfare Officer</div>
+ <div class="role-desc">Supports the psychological and personal wellbeing of athletes within sport organisations, providing safeguarding and pastoral support.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Performance Lifestyle Adviser</div>
+ <div class="role-desc">Helps athletes manage the demands of elite sport alongside education, career planning, and everyday life.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Performance Analyst</div>
+ <div class="role-desc">Collects and analyses data on athlete and team performance to inform coaching decisions and training programmes.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Communication</span>
-        <span class="skill-chip">Empathy</span>
-        <span class="skill-chip">Motivation and behaviour</span>
-        <span class="skill-chip">Wellbeing support</span>
-        <span class="skill-chip">Data analysis</span>
-        <span class="skill-chip">Professional boundaries</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Communication</span>
+ <span class="skill-chip">Empathy</span>
+ <span class="skill-chip">Motivation and behaviour</span>
+ <span class="skill-chip">Wellbeing support</span>
+ <span class="skill-chip">Data analysis</span>
+ <span class="skill-chip">Professional boundaries</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>English Institute of Sport</li>
-        <li>British Cycling, British Athletics and other national governing bodies</li>
-        <li>Premier League and professional sports clubs</li>
-        <li>Universities and higher education sport departments</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>English Institute of Sport</li>
+ <li>British Cycling, British Athletics and other national governing bodies</li>
+ <li>Premier League and professional sports clubs</li>
+ <li>Universities and higher education sport departments</li>
+ </ul>
+ </div>
 
-    <div class="now-box">
-      <div class="now-label">What you could do now</div>
-      <ul class="now-list">
-        <li>Volunteer with sports clubs or university teams</li>
-        <li>Gain experience in welfare or pastoral support roles</li>
-        <li>Build data analysis skills through online courses</li>
-        <li>Attend BPS Division of Sport and Exercise Psychology student events</li>
-      </ul>
-    </div>
+ <div class="now-box">
+ <div class="now-label">What you could do now</div>
+ <ul class="now-list">
+ <li>Volunteer with sports clubs or university teams</li>
+ <li>Gain experience in welfare or pastoral support roles</li>
+ <li>Build data analysis skills through online courses</li>
+ <li>Attend BPS Division of Sport and Exercise Psychology student events</li>
+ </ul>
+ </div>
 
-    <div class="related-box">
-      <div class="related-label">You may also be interested in</div>
-      <div class="related-chips">
-        <span class="related-chip" onclick="showPage('further')">Sport Psychologist</span>
-        <span class="related-chip" onclick="showPage('health')">Health Promotion Officer</span>
-        <span class="related-chip">Behaviour Change Officer</span>
-        <span class="related-chip">Occupational Psychologist</span>
-      </div>
-    </div>
+ <div class="related-box">
+ <div class="related-label">You may also be interested in</div>
+ <div class="related-chips">
+ <span class="related-chip" onclick="showPage('further')">Sport Psychologist</span>
+ <span class="related-chip" onclick="showPage('health')">Health Promotion Officer</span>
+ <span class="related-chip">Behaviour Change Officer</span>
+ <span class="related-chip">Occupational Psychologist</span>
+ </div>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div><div class="org-name">BPS Division of Sport and Exercise Psychology</div><div class="org-desc">Career info, training routes and events</div></div></div>
-      <div class="org-card"><div><div class="org-name">UK Coaching</div><div class="org-desc">Resources and opportunities in coaching and athlete support</div></div></div>
-      <div class="org-card"><div><div class="org-name">BASES</div><div class="org-desc">British Association of Sport and Exercise Sciences</div></div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div><div class="org-name"><a href="https://www.bps.org.uk/member-networks/division-sport-exercise-psychology" target="_blank" rel="noopener">BPS Division of Sport and Exercise Psychology</a></div><div class="org-desc">Career info, training routes and events</div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.ukcoaching.org" target="_blank" rel="noopener">UK Coaching</a></div><div class="org-desc">Resources and opportunities in coaching and athlete support</div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.bases.org.uk" target="_blank" rel="noopener">BASES</a></div><div class="org-desc">British Association of Sport and Exercise Sciences</div></div></div>
+ </div>
+ </div>
 
-  <!-- HEALTH AND PHYSICAL ACTIVITY PAGE -->
-  <div id="health" class="page-view">
-    <div class="breadcrumb">
-      <a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a>
-      <span>›</span>
-      <a href="#" onclick="showPage('overview'); return false;">Sport and Exercise</a>
-      <span>›</span>
-      <span>Health and Physical Activity</span>
-    </div>
-    <button class="back-btn" onclick="showPage('overview')">← Back to Sport and Exercise</button>
-    <h1 class="subtheme-page-title">💪 Health and Physical Activity</h1>
-    <p class="subtheme-page-intro">Health and physical activity roles promote exercise and healthy behaviour in community and clinical settings, drawing on behaviour change theory and public health knowledge.</p>
+ <!-- HEALTH AND PHYSICAL ACTIVITY PAGE -->
+ <div id="health" class="page-view">
+ <div class="breadcrumb">
+ <a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a>
+ <span>›</span>
+ <a href="#" onclick="showPage('overview'); return false;">Sport and Exercise</a>
+ <span>›</span>
+ <span>Health and Physical Activity</span>
+ </div>
+ <button class="back-btn" onclick="showPage('overview')">← Back to Sport and Exercise</button>
+ <h1 class="subtheme-page-title"> Health and Physical Activity</h1>
+ <p class="subtheme-page-intro">Health and physical activity roles promote exercise and healthy behaviour in community and clinical settings, drawing on behaviour change theory and public health knowledge.</p>
 
-    <div class="why-box">
-      <div class="why-label">Why Psychology?</div>
-      <ul class="why-list">
-        <li>Deep understanding of behaviour change theory and how to apply it in practice</li>
-        <li>Knowledge of motivation, habit formation, and what helps people sustain healthy behaviours</li>
-        <li>Skills in designing and evaluating programmes and interventions</li>
-        <li>Person-centred communication skills, including motivational interviewing</li>
-        <li>Understanding of health inequalities and the social determinants of health</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why Psychology?</div>
+ <ul class="why-list">
+ <li>Deep understanding of behaviour change theory and how to apply it in practice</li>
+ <li>Knowledge of motivation, habit formation, and what helps people sustain healthy behaviours</li>
+ <li>Skills in designing and evaluating programmes and interventions</li>
+ <li>Person-centred communication skills, including motivational interviewing</li>
+ <li>Understanding of health inequalities and the social determinants of health</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Possible roles in this area</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">Health Promotion Officer</div>
-        <div class="role-desc">Designs and delivers programmes and campaigns encouraging people to be more physically active and make healthier choices.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Exercise Referral Specialist</div>
-        <div class="role-desc">Works with patients referred by GPs to use physical activity as a therapeutic intervention for long-term health conditions.</div>
-        <span class="role-badge badge-further">Specialist training needed</span>
-      </div>
-    </div>
+ <div class="section-label">Possible roles in this area</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">Health Promotion Officer</div>
+ <div class="role-desc">Designs and delivers programmes and campaigns encouraging people to be more physically active and make healthier choices.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Exercise Referral Specialist</div>
+ <div class="role-desc">Works with patients referred by GPs to use physical activity as a therapeutic intervention for long-term health conditions.</div>
+ <span class="role-badge badge-further">Specialist training needed</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Behaviour change knowledge</span>
-        <span class="skill-chip">Community engagement</span>
-        <span class="skill-chip">Programme design</span>
-        <span class="skill-chip">Evaluation</span>
-        <span class="skill-chip">Person-centred communication</span>
-        <span class="skill-chip">Motivational interviewing</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Behaviour change knowledge</span>
+ <span class="skill-chip">Community engagement</span>
+ <span class="skill-chip">Programme design</span>
+ <span class="skill-chip">Evaluation</span>
+ <span class="skill-chip">Person-centred communication</span>
+ <span class="skill-chip">Motivational interviewing</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>NHS Trusts and GP surgeries</li>
-        <li>Local authorities and Active Partnerships</li>
-        <li>Charities focused on health and physical activity</li>
-        <li>Public Health England and regional public health teams</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>NHS Trusts and GP surgeries</li>
+ <li>Local authorities and Active Partnerships</li>
+ <li>Charities focused on health and physical activity</li>
+ <li>Public Health England and regional public health teams</li>
+ </ul>
+ </div>
 
-    <div class="now-box">
-      <div class="now-label">What you could do now</div>
-      <ul class="now-list">
-        <li>Volunteer in community health or physical activity programmes</li>
-        <li>Look into NHS volunteering opportunities</li>
-        <li>Explore behaviour change modules in your degree</li>
-        <li>Research public health graduate schemes</li>
-      </ul>
-    </div>
+ <div class="now-box">
+ <div class="now-label">What you could do now</div>
+ <ul class="now-list">
+ <li>Volunteer in community health or physical activity programmes</li>
+ <li>Look into NHS volunteering opportunities</li>
+ <li>Explore behaviour change modules in your degree</li>
+ <li>Research public health graduate schemes</li>
+ </ul>
+ </div>
 
-    <div class="related-box">
-      <div class="related-label">You may also be interested in</div>
-      <div class="related-chips">
-        <span class="related-chip">Public Health Practitioner</span>
-        <span class="related-chip">Behaviour Change Officer</span>
-        <span class="related-chip" onclick="showPage('performance')">Athlete Welfare Officer</span>
-        <span class="related-chip">Community Support Worker</span>
-      </div>
-    </div>
+ <div class="related-box">
+ <div class="related-label">You may also be interested in</div>
+ <div class="related-chips">
+ <span class="related-chip">Public Health Practitioner</span>
+ <span class="related-chip">Behaviour Change Officer</span>
+ <span class="related-chip" onclick="showPage('performance')">Athlete Welfare Officer</span>
+ <span class="related-chip">Community Support Worker</span>
+ </div>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div><div class="org-name">Faculty of Public Health</div><div class="org-desc">Standard-setting body for public health in the UK</div></div></div>
-      <div class="org-card"><div><div class="org-name">NHS Health Careers</div><div class="org-desc">Overview of health-related roles within the NHS</div></div></div>
-      <div class="org-card"><div><div class="org-name">UK Coaching</div><div class="org-desc">Resources and opportunities in health and activity roles</div></div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div><div class="org-name"><a href="https://www.fph.org.uk" target="_blank" rel="noopener">Faculty of Public Health</a></div><div class="org-desc">Standard-setting body for public health in the UK</div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.healthcareers.nhs.uk" target="_blank" rel="noopener">NHS Health Careers</a></div><div class="org-desc">Overview of health-related roles within the NHS</div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.ukcoaching.org" target="_blank" rel="noopener">UK Coaching</a></div><div class="org-desc">Resources and opportunities in health and activity roles</div></div></div>
+ </div>
+ </div>
 
-  <!-- SPORT PSYCHOLOGY PAGE -->
-  <div id="further" class="page-view">
-    <div class="breadcrumb">
-      <a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a>
-      <span>›</span>
-      <a href="#" onclick="showPage('overview'); return false;">Sport and Exercise</a>
-      <span>›</span>
-      <span>Sport Psychology</span>
-    </div>
-    <button class="back-btn" onclick="showPage('overview')">← Back to Sport and Exercise</button>
-    <h1 class="subtheme-page-title">🎓 Sport Psychology</h1>
-    <p class="subtheme-page-intro">Sport psychology careers require postgraduate training beyond a psychology undergraduate degree, leading to chartered or registered practitioner status. These are highly rewarding roles for those passionate about combining psychology and sport.</p>
+ <!-- SPORT PSYCHOLOGY PAGE -->
+ <div id="further" class="page-view">
+ <div class="breadcrumb">
+ <a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a>
+ <span>›</span>
+ <a href="#" onclick="showPage('overview'); return false;">Sport and Exercise</a>
+ <span>›</span>
+ <span>Sport Psychology</span>
+ </div>
+ <button class="back-btn" onclick="showPage('overview')">← Back to Sport and Exercise</button>
+ <h1 class="subtheme-page-title"> Sport Psychology</h1>
+ <p class="subtheme-page-intro">Sport psychology careers require postgraduate training beyond a psychology undergraduate degree, leading to chartered or registered practitioner status. These are highly rewarding roles for those passionate about combining psychology and sport.</p>
 
-    <div class="why-box">
-      <div class="why-label">Why Psychology?</div>
-      <ul class="why-list">
-        <li>In-depth knowledge of psychological theory and evidence-based intervention</li>
-        <li>Research and evaluation skills essential for practice and academic work</li>
-        <li>Strong foundations in understanding behaviour, motivation, and performance under pressure</li>
-        <li>Understanding of mental health and wellbeing in competitive environments</li>
-        <li>Ethical awareness and professional practice skills developed throughout the degree</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why Psychology?</div>
+ <ul class="why-list">
+ <li>In-depth knowledge of psychological theory and evidence-based intervention</li>
+ <li>Research and evaluation skills essential for practice and academic work</li>
+ <li>Strong foundations in understanding behaviour, motivation, and performance under pressure</li>
+ <li>Understanding of mental health and wellbeing in competitive environments</li>
+ <li>Ethical awareness and professional practice skills developed throughout the degree</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Possible roles in this area</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">Sport Psychologist</div>
-        <div class="role-desc">Works with athletes and teams to optimise performance and support mental health using evidence-based psychological interventions such as goal-setting, imagery, and cognitive techniques.</div>
-        <span class="role-badge badge-further">Postgrad training required</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Chartered Sport and Exercise Psychologist</div>
-        <div class="role-desc">A fully qualified and HCPC-registered practitioner who provides psychological support to athletes, coaches, and organisations at all levels of sport.</div>
-        <span class="role-badge badge-further">Postgrad training required</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Academic Researcher in Sport Psychology</div>
-        <div class="role-desc">Conducts research into psychological aspects of sport and exercise performance, typically based in a university setting and requiring a PhD.</div>
-        <span class="role-badge badge-further">PhD required</span>
-      </div>
-    </div>
+ <div class="section-label">Possible roles in this area</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">Sport Psychologist</div>
+ <div class="role-desc">Works with athletes and teams to optimise performance and support mental health using evidence-based psychological interventions such as goal-setting, imagery, and cognitive techniques.</div>
+ <span class="role-badge badge-further">Postgrad training required</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Chartered Sport and Exercise Psychologist</div>
+ <div class="role-desc">A fully qualified and HCPC-registered practitioner who provides psychological support to athletes, coaches, and organisations at all levels of sport.</div>
+ <span class="role-badge badge-further">Postgrad training required</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Academic Researcher in Sport Psychology</div>
+ <div class="role-desc">Conducts research into psychological aspects of sport and exercise performance, typically based in a university setting and requiring a PhD.</div>
+ <span class="role-badge badge-further">PhD required</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Psychological theory</span>
-        <span class="skill-chip">Research and evaluation</span>
-        <span class="skill-chip">Rapport building</span>
-        <span class="skill-chip">Ethical practice</span>
-        <span class="skill-chip">Working under pressure</span>
-        <span class="skill-chip">Intervention design</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Psychological theory</span>
+ <span class="skill-chip">Research and evaluation</span>
+ <span class="skill-chip">Rapport building</span>
+ <span class="skill-chip">Ethical practice</span>
+ <span class="skill-chip">Working under pressure</span>
+ <span class="skill-chip">Intervention design</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>National sport governing bodies and institutes of sport</li>
-        <li>Professional sports clubs and academies</li>
-        <li>Universities (research and teaching roles)</li>
-        <li>Private practice and independent consultancy</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>National sport governing bodies and institutes of sport</li>
+ <li>Professional sports clubs and academies</li>
+ <li>Universities (research and teaching roles)</li>
+ <li>Private practice and independent consultancy</li>
+ </ul>
+ </div>
 
-    <div class="now-box">
-      <div class="now-label">What you could do now</div>
-      <ul class="now-list">
-        <li>Research BPS-accredited MSc programmes in Sport and Exercise Psychology</li>
-        <li>Gain experience working with athletes or in sport settings</li>
-        <li>Attend BPS Division of Sport and Exercise Psychology events</li>
-        <li>Consider volunteering in performance or welfare roles to strengthen your application</li>
-        <li>Talk to academic staff about undergraduate research opportunities in sport psychology</li>
-      </ul>
-    </div>
+ <div class="now-box">
+ <div class="now-label">What you could do now</div>
+ <ul class="now-list">
+ <li>Research BPS-accredited MSc programmes in Sport and Exercise Psychology</li>
+ <li>Gain experience working with athletes or in sport settings</li>
+ <li>Attend BPS Division of Sport and Exercise Psychology events</li>
+ <li>Consider volunteering in performance or welfare roles to strengthen your application</li>
+ <li>Talk to academic staff about undergraduate research opportunities in sport psychology</li>
+ </ul>
+ </div>
 
-    <div class="related-box">
-      <div class="related-label">You may also be interested in</div>
-      <div class="related-chips">
-        <span class="related-chip" onclick="showPage('performance')">Athlete Welfare Officer</span>
-        <span class="related-chip" onclick="showPage('performance')">Performance Lifestyle Adviser</span>
-        <span class="related-chip">Occupational Psychologist</span>
-        <span class="related-chip">Health Psychologist</span>
-      </div>
-    </div>
+ <div class="related-box">
+ <div class="related-label">You may also be interested in</div>
+ <div class="related-chips">
+ <span class="related-chip" onclick="showPage('performance')">Athlete Welfare Officer</span>
+ <span class="related-chip" onclick="showPage('performance')">Performance Lifestyle Adviser</span>
+ <span class="related-chip">Occupational Psychologist</span>
+ <span class="related-chip">Health Psychologist</span>
+ </div>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div><div class="org-name">BPS Division of Sport and Exercise Psychology</div><div class="org-desc">Training routes, accredited programmes and career info</div></div></div>
-      <div class="org-card"><div><div class="org-name">HCPC</div><div class="org-desc">Registration body for practising sport psychologists</div></div></div>
-      <div class="org-card"><div><div class="org-name">BASES</div><div class="org-desc">British Association of Sport and Exercise Sciences</div></div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div><div class="org-name"><a href="https://www.bps.org.uk/member-networks/division-sport-exercise-psychology" target="_blank" rel="noopener">BPS Division of Sport and Exercise Psychology</a></div><div class="org-desc">Training routes, accredited programmes and career info</div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.hcpc-uk.org" target="_blank" rel="noopener">HCPC</a></div><div class="org-desc">Registration body for practising sport psychologists</div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.bases.org.uk" target="_blank" rel="noopener">BASES</a></div><div class="org-desc">British Association of Sport and Exercise Sciences</div></div></div>
+ </div>
+ </div>
 
 </div>
 
 <script>
 function showPage(id) {
-  document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  window.scrollTo(0, 0);
+ document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
+ document.getElementById(id).classList.add('active');
+ window.scrollTo(0, 0);
 }
 </script>
 </body>

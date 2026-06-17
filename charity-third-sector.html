@@ -5,58 +5,58 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Charity and Third Sector — Psychology Careers | Liverpool Hope University</title>
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
-  .site-header { background: #1a3a5c; color: white; padding: 1rem 2rem; }
-  .site-header-title { font-size: 16px; font-weight: 500; }
-  .site-header-text { font-size: 14px; opacity: 0.85; }
-  .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
-  .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
-  .breadcrumb a { color: #1a5fa8; text-decoration: none; }
-  .breadcrumb a:hover { text-decoration: underline; }
-  .theme-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
-  .theme-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
-  .subtheme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 2rem; }
-  .subtheme-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; text-align: left; width: 100%; }
-  .subtheme-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.1); }
-  .subtheme-icon { font-size: 24px; margin-bottom: 10px; }
-  .subtheme-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
-  .subtheme-desc { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
-  .explore-link { font-size: 13px; color: #1a5fa8; }
-  .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
-  .now-box { background: #e8f0fb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .now-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 8px; }
-  .now-list { padding-left: 1.2rem; }
-  .now-list li { font-size: 14px; color: #1a3a5c; line-height: 1.7; }
-  .why-box { background: #f0f7f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .why-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1e6e35; margin-bottom: 8px; }
-  .why-list { padding-left: 1.2rem; }
-  .why-list li { font-size: 14px; color: #1a3a1a; line-height: 1.7; }
-  .employers-box { background: #faf8f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .employers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #a05a00; margin-bottom: 8px; }
-  .employers-list { padding-left: 1.2rem; }
-  .employers-list li { font-size: 14px; color: #3a2a00; line-height: 1.7; }
-  .divider { border: none; border-top: 1px solid #e8e8e8; margin: 1.5rem 0; }
-  .orgs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
-  .org-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.85rem 1rem; }
-  .org-name { font-size: 13px; font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
-  .org-desc { font-size: 12px; color: #666; }
-  .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
-  .role-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1.25rem; }
-  .role-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
-  .role-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
-  .role-badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
-  .badge-grad { background: #e6f4ea; color: #1e6e35; }
-  .badge-further { background: #fff3e0; color: #a05a00; }
-  .skills-box { background: #f5f5f3; border-radius: 8px; padding: 0.85rem 1rem; margin-bottom: 1.5rem; }
-  .skills-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-  .skill-chip { font-size: 12px; background: white; border: 1px solid #ddd; border-radius: 20px; padding: 3px 10px; color: #555; }
-  .page-view { display: none; }
-  .page-view.active { display: block; }
-  .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #1a5fa8; cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 1.5rem; font-family: inherit; }
-  .back-btn:hover { text-decoration: underline; }
-  .subtheme-page-title { font-size: 24px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
-  .subtheme-page-intro { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
+ .site-header { background: #1a3a5c; color: white; padding: 1rem 2rem; }
+ .site-header-title { font-size: 16px; font-weight: 500; }
+ .site-header-text { font-size: 14px; opacity: 0.85; }
+ .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+ .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+ .breadcrumb a { color: #1a5fa8; text-decoration: none; }
+ .breadcrumb a:hover { text-decoration: underline; }
+ .theme-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+ .theme-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
+ .subtheme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 2rem; }
+ .subtheme-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; text-align: left; width: 100%; }
+ .subtheme-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.1); }
+ .subtheme-icon { font-size: 24px; margin-bottom: 10px; }
+ .subtheme-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+ .subtheme-desc { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
+ .explore-link { font-size: 13px; color: #1a5fa8; }
+ .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+ .now-box { background: #e8f0fb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .now-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 8px; }
+ .now-list { padding-left: 1.2rem; }
+ .now-list li { font-size: 14px; color: #1a3a5c; line-height: 1.7; }
+ .why-box { background: #f0f7f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .why-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1e6e35; margin-bottom: 8px; }
+ .why-list { padding-left: 1.2rem; }
+ .why-list li { font-size: 14px; color: #1a3a1a; line-height: 1.7; }
+ .employers-box { background: #faf8f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .employers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #a05a00; margin-bottom: 8px; }
+ .employers-list { padding-left: 1.2rem; }
+ .employers-list li { font-size: 14px; color: #3a2a00; line-height: 1.7; }
+ .divider { border: none; border-top: 1px solid #e8e8e8; margin: 1.5rem 0; }
+ .orgs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+ .org-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.85rem 1rem; }
+ .org-name { font-size: 13px; font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
+ .org-desc { font-size: 12px; color: #666; }
+ .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
+ .role-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1.25rem; }
+ .role-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+ .role-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
+ .role-badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
+ .badge-grad { background: #e6f4ea; color: #1e6e35; }
+ .badge-further { background: #fff3e0; color: #a05a00; }
+ .skills-box { background: #f5f5f3; border-radius: 8px; padding: 0.85rem 1rem; margin-bottom: 1.5rem; }
+ .skills-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+ .skill-chip { font-size: 12px; background: white; border: 1px solid #ddd; border-radius: 20px; padding: 3px 10px; color: #555; }
+ .page-view { display: none; }
+ .page-view.active { display: block; }
+ .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #1a5fa8; cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 1.5rem; font-family: inherit; }
+ .back-btn:hover { text-decoration: underline; }
+ .subtheme-page-title { font-size: 24px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+ .subtheme-page-intro { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
 
 .site-nav { background: #1a3a5c; padding: 0 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
 .site-nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; gap: 0; height: 48px; }
@@ -69,300 +69,304 @@
 .site-nav-menu a:hover { background: #f0f4ff; }
 .site-nav-dropdown:hover .site-nav-menu { display: block; }
 
+
+  .org-name a { color: #1a3a5c; text-decoration: none; font-weight: 600; }
+  .org-name a:hover { color: #1a5fa8; text-decoration: underline; }
+
 </style>
 </head>
 <body>
 <div class="site-nav">
-  <div class="site-nav-inner">
-    <a class="site-nav-home" href="index.html">&#127968; Psychology Careers Hub</a>
-    <a class="site-nav-link" href="index.html">All Pathways</a>
-    <a class="site-nav-link" href="roadmap.html">Roadmap</a>
-    <a class="site-nav-link" href="employer-trends.html">Employer Trends</a>
-    <a class="site-nav-link" href="alumni.html">Alumni</a>
-    <div class="site-nav-dropdown">
-      <span class="site-nav-link">Themes &#9662;</span>
-      <div class="site-nav-menu">
-        <a href="poc.html">People, Organisations &amp; Consultancy</a>
-        <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
-        <a href="education.html">Education</a>
-        <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
-        <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
-        <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
-        <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
-        <a href="sport-exercise.html">Sport &amp; Exercise</a>
-        <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
-        <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
-        <a href="mental-health.html">Mental Health</a>
-      </div>
-    </div>
-  </div>
+ <div class="site-nav-inner">
+ <a class="site-nav-home" href="index.html">Psychology Careers Hub</a>
+ <a class="site-nav-link" href="index.html">All Pathways</a>
+ <a class="site-nav-link" href="roadmap.html">Roadmap</a>
+ <a class="site-nav-link" href="employer-trends.html">Employer Trends</a>
+ <a class="site-nav-link" href="alumni.html">Alumni</a>
+ <div class="site-nav-dropdown">
+ <span class="site-nav-link">Themes &#9662;</span>
+ <div class="site-nav-menu">
+ <a href="poc.html">People, Organisations &amp; Consultancy</a>
+ <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
+ <a href="education.html">Education</a>
+ <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
+ <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
+ <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
+ <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
+ <a href="sport-exercise.html">Sport &amp; Exercise</a>
+ <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
+ <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
+ <a href="mental-health.html">Mental Health</a>
+ </div>
+ </div>
+ </div>
 </div>
-  </div>
+ </div>
 </div>
 <div class="site-header">
-  <div class="site-header-title">Liverpool Hope University</div>
-  <div class="site-header-text">School of Psychology — Psychology Careers</div>
+ <div class="site-header-title">Liverpool Hope University</div>
+ <div class="site-header-text">School of Psychology — Psychology Careers</div>
 </div>
 <div class="container">
 
-  <!-- OVERVIEW -->
-  <div id="overview" class="page-view active">
-    <div class="breadcrumb"><a href="#">Psychology Careers</a><span>›</span><span>Charity and Third Sector</span></div>
-    <h1 class="theme-title">💛 Charity and Third Sector</h1>
-    <p class="theme-intro">The voluntary sector offers a wide range of roles where psychological knowledge of human behaviour, motivation, and wellbeing is directly applicable. From project coordination and fundraising to research, evaluation, and advocacy, the third sector is a significant graduate employer — and one that values the skills psychology graduates bring.</p>
+ <!-- OVERVIEW -->
+ <div id="overview" class="page-view active">
+ <div class="breadcrumb"><a href="#">Psychology Careers</a><span>›</span><span>Charity and Third Sector</span></div>
+ <h1 class="theme-title"> Charity and Third Sector</h1>
+ <p class="theme-intro">The voluntary sector offers a wide range of roles where psychological knowledge of human behaviour, motivation, and wellbeing is directly applicable. From project coordination and fundraising to research, evaluation, and advocacy, the third sector is a significant graduate employer — and one that values the skills psychology graduates bring.</p>
 
-    <div class="subtheme-grid">
-      <button class="subtheme-card" onclick="showPage('charity')">
-        <div class="subtheme-icon">🤲</div>
-        <div class="subtheme-name">Charity Work</div>
-        <div class="subtheme-desc">Coordinate projects and programmes, raise funds, and support the operational work of voluntary organisations.</div>
-        <div class="explore-link">Explore this area →</div>
-      </button>
-      <button class="subtheme-card" onclick="showPage('advocacy')">
-        <div class="subtheme-icon">📢</div>
-        <div class="subtheme-name">Advocacy and Campaigning</div>
-        <div class="subtheme-desc">Develop and deliver campaigns on social issues, drawing on research, communication, and understanding of persuasion.</div>
-        <div class="explore-link">Explore this area →</div>
-      </button>
-      <button class="subtheme-card" onclick="showPage('evaluation')">
-        <div class="subtheme-icon">📊</div>
-        <div class="subtheme-name">Programme Evaluation</div>
-        <div class="subtheme-desc">Measure and report on the outcomes and impact of charity programmes using research methods.</div>
-        <div class="explore-link">Explore this area →</div>
-      </button>
-    </div>
+ <div class="subtheme-grid">
+ <button class="subtheme-card" onclick="showPage('charity')">
+ <div class="subtheme-icon"></div>
+ <div class="subtheme-name">Charity Work</div>
+ <div class="subtheme-desc">Coordinate projects and programmes, raise funds, and support the operational work of voluntary organisations.</div>
+ <div class="explore-link">Explore this area →</div>
+ </button>
+ <button class="subtheme-card" onclick="showPage('advocacy')">
+ <div class="subtheme-icon"></div>
+ <div class="subtheme-name">Advocacy and Campaigning</div>
+ <div class="subtheme-desc">Develop and deliver campaigns on social issues, drawing on research, communication, and understanding of persuasion.</div>
+ <div class="explore-link">Explore this area →</div>
+ </button>
+ <button class="subtheme-card" onclick="showPage('evaluation')">
+ <div class="subtheme-icon"></div>
+ <div class="subtheme-name">Programme Evaluation</div>
+ <div class="subtheme-desc">Measure and report on the outcomes and impact of charity programmes using research methods.</div>
+ <div class="explore-link">Explore this area →</div>
+ </button>
+ </div>
 
-    <div class="now-box">
-      <div class="now-label">What you could do now</div>
-      <ul class="now-list">
-        <li>Volunteer with a local charity — many small organisations need support with coordination, research, and communications</li>
-        <li>Look into CharityJob.co.uk for graduate roles in the voluntary sector</li>
-        <li>Research the NCVO and its resources on careers in the voluntary sector</li>
-        <li>Consider a student ambassador or peer mentor role to build relevant skills</li>
-        <li>Look for charity internship programmes run by organisations such as the Social Mobility Foundation</li>
-      </ul>
-    </div>
+ <div class="now-box">
+ <div class="now-label">What you could do now</div>
+ <ul class="now-list">
+ <li>Volunteer with a local charity — many small organisations need support with coordination, research, and communications</li>
+ <li>Look into CharityJob.co.uk for graduate roles in the voluntary sector</li>
+ <li>Research the NCVO and its resources on careers in the voluntary sector</li>
+ <li>Consider a student ambassador or peer mentor role to build relevant skills</li>
+ <li>Look for charity internship programmes run by organisations such as the Social Mobility Foundation</li>
+ </ul>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div class="org-name">NCVO</div><div class="org-desc">National Council for Voluntary Organisations — sector body and careers resource</div></div>
-      <div class="org-card"><div class="org-name">CharityJob</div><div class="org-desc">The leading job board for charity and third sector roles</div></div>
-      <div class="org-card"><div class="org-name">Institute of Fundraising</div><div class="org-desc">Professional body for fundraising practitioners</div></div>
-      <div class="org-card"><div class="org-name">Association of Chief Executives of Voluntary Organisations</div><div class="org-desc">Leadership and development for the voluntary sector</div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div class="org-name"><a href="https://www.ncvo.org.uk" target="_blank" rel="noopener">NCVO</a></div><div class="org-desc">National Council for Voluntary Organisations — sector body and careers resource</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.charityjob.co.uk" target="_blank" rel="noopener">CharityJob</a></div><div class="org-desc">The leading job board for charity and third sector roles</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.ciof.org.uk" target="_blank" rel="noopener">Institute of Fundraising</a></div><div class="org-desc">Professional body for fundraising practitioners</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.acevo.org.uk" target="_blank" rel="noopener">Association of Chief Executives of Voluntary Organisations</a></div><div class="org-desc">Leadership and development for the voluntary sector</div></div>
+ </div>
+ </div>
 
-  <!-- CHARITY WORK -->
-  <div id="charity" class="page-view">
-    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Charity and Third Sector</a><span>›</span><span>Charity Work</span></div>
-    <button class="back-btn" onclick="showPage('overview')">← Back to Charity and Third Sector</button>
-    <h1 class="subtheme-page-title">🤲 Charity Work</h1>
-    <p class="subtheme-page-intro">Charities offer a wide range of operational roles for psychology graduates — from coordinating projects and managing volunteers to fundraising and communications. These roles draw on interpersonal skills, understanding of motivation, and the ability to work across diverse communities.</p>
+ <!-- CHARITY WORK -->
+ <div id="charity" class="page-view">
+ <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Charity and Third Sector</a><span>›</span><span>Charity Work</span></div>
+ <button class="back-btn" onclick="showPage('overview')">← Back to Charity and Third Sector</button>
+ <h1 class="subtheme-page-title"> Charity Work</h1>
+ <p class="subtheme-page-intro">Charities offer a wide range of operational roles for psychology graduates — from coordinating projects and managing volunteers to fundraising and communications. These roles draw on interpersonal skills, understanding of motivation, and the ability to work across diverse communities.</p>
 
-    <div class="why-box">
-      <div class="why-label">Why Psychology?</div>
-      <ul class="why-list">
-        <li>Understanding of human motivation and behaviour informs effective volunteer management and donor engagement</li>
-        <li>Communication and interpersonal skills for working with beneficiaries, staff, and funders</li>
-        <li>Knowledge of group dynamics and team behaviour relevant to coordinating volunteers and project teams</li>
-        <li>Analytical skills for reporting on outputs and outcomes to funders</li>
-        <li>Empathy and ethical awareness essential for working with vulnerable people and communities</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why Psychology?</div>
+ <ul class="why-list">
+ <li>Understanding of human motivation and behaviour informs effective volunteer management and donor engagement</li>
+ <li>Communication and interpersonal skills for working with beneficiaries, staff, and funders</li>
+ <li>Knowledge of group dynamics and team behaviour relevant to coordinating volunteers and project teams</li>
+ <li>Analytical skills for reporting on outputs and outcomes to funders</li>
+ <li>Empathy and ethical awareness essential for working with vulnerable people and communities</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Possible roles in this area</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">Charity Project Coordinator</div>
-        <div class="role-desc">Manages projects and programmes in the voluntary sector, often focused on social issues such as health, poverty, education, or community development.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Fundraising and Development Officer</div>
-        <div class="role-desc">Uses communication and persuasion skills to secure funding and support for charitable causes, through trusts, individual giving, and events.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Volunteer Coordinator</div>
-        <div class="role-desc">Recruits, trains, and supports volunteers, drawing on understanding of motivation and group dynamics to build effective volunteer communities.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-    </div>
+ <div class="section-label">Possible roles in this area</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">Charity Project Coordinator</div>
+ <div class="role-desc">Manages projects and programmes in the voluntary sector, often focused on social issues such as health, poverty, education, or community development.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Fundraising and Development Officer</div>
+ <div class="role-desc">Uses communication and persuasion skills to secure funding and support for charitable causes, through trusts, individual giving, and events.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Volunteer Coordinator</div>
+ <div class="role-desc">Recruits, trains, and supports volunteers, drawing on understanding of motivation and group dynamics to build effective volunteer communities.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Communication</span>
-        <span class="skill-chip">Organisation and project management</span>
-        <span class="skill-chip">Empathy</span>
-        <span class="skill-chip">Understanding of motivation</span>
-        <span class="skill-chip">Fundraising and bid writing</span>
-        <span class="skill-chip">Stakeholder management</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Communication</span>
+ <span class="skill-chip">Organisation and project management</span>
+ <span class="skill-chip">Empathy</span>
+ <span class="skill-chip">Understanding of motivation</span>
+ <span class="skill-chip">Fundraising and bid writing</span>
+ <span class="skill-chip">Stakeholder management</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>Large national charities including Mind, Age UK, Shelter, and the British Red Cross</li>
-        <li>Local and regional charities across all cause areas</li>
-        <li>Community interest companies and social enterprises</li>
-        <li>Housing associations and community organisations</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>Large national charities including Mind, Age UK, Shelter, and the British Red Cross</li>
+ <li>Local and regional charities across all cause areas</li>
+ <li>Community interest companies and social enterprises</li>
+ <li>Housing associations and community organisations</li>
+ </ul>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div class="org-name">NCVO</div><div class="org-desc">National Council for Voluntary Organisations</div></div>
-      <div class="org-card"><div class="org-name">Institute of Fundraising</div><div class="org-desc">Professional body for fundraising practitioners</div></div>
-      <div class="org-card"><div class="org-name">CharityJob</div><div class="org-desc">The leading job board for voluntary sector roles</div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div class="org-name"><a href="https://www.ncvo.org.uk" target="_blank" rel="noopener">NCVO</a></div><div class="org-desc">National Council for Voluntary Organisations</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.ciof.org.uk" target="_blank" rel="noopener">Institute of Fundraising</a></div><div class="org-desc">Professional body for fundraising practitioners</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.charityjob.co.uk" target="_blank" rel="noopener">CharityJob</a></div><div class="org-desc">The leading job board for voluntary sector roles</div></div>
+ </div>
+ </div>
 
-  <!-- ADVOCACY AND CAMPAIGNING -->
-  <div id="advocacy" class="page-view">
-    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Charity and Third Sector</a><span>›</span><span>Advocacy and Campaigning</span></div>
-    <button class="back-btn" onclick="showPage('overview')">← Back to Charity and Third Sector</button>
-    <h1 class="subtheme-page-title">📢 Advocacy and Campaigning</h1>
-    <p class="subtheme-page-intro">Advocacy and campaigning roles involve developing and delivering campaigns to influence public opinion and policy on social issues. Psychology graduates bring a distinctive understanding of persuasion, attitude change, and behaviour that is directly relevant to this work.</p>
+ <!-- ADVOCACY AND CAMPAIGNING -->
+ <div id="advocacy" class="page-view">
+ <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Charity and Third Sector</a><span>›</span><span>Advocacy and Campaigning</span></div>
+ <button class="back-btn" onclick="showPage('overview')">← Back to Charity and Third Sector</button>
+ <h1 class="subtheme-page-title"> Advocacy and Campaigning</h1>
+ <p class="subtheme-page-intro">Advocacy and campaigning roles involve developing and delivering campaigns to influence public opinion and policy on social issues. Psychology graduates bring a distinctive understanding of persuasion, attitude change, and behaviour that is directly relevant to this work.</p>
 
-    <div class="why-box">
-      <div class="why-label">Why Psychology?</div>
-      <ul class="why-list">
-        <li>Deep understanding of persuasion, attitude formation, and behaviour change — central to effective campaigning</li>
-        <li>Knowledge of social norms and group influence informs how campaigns are framed and targeted</li>
-        <li>Research skills for building an evidence base for advocacy positions</li>
-        <li>Written and verbal communication skills for creating compelling campaign materials</li>
-        <li>Understanding of media, public opinion, and the psychology of political engagement</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why Psychology?</div>
+ <ul class="why-list">
+ <li>Deep understanding of persuasion, attitude formation, and behaviour change — central to effective campaigning</li>
+ <li>Knowledge of social norms and group influence informs how campaigns are framed and targeted</li>
+ <li>Research skills for building an evidence base for advocacy positions</li>
+ <li>Written and verbal communication skills for creating compelling campaign materials</li>
+ <li>Understanding of media, public opinion, and the psychology of political engagement</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Possible roles in this area</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">Policy and Campaigns Officer</div>
-        <div class="role-desc">Develops and delivers campaigns on social issues, engaging with politicians, media, and the public to drive policy change on behalf of a charity or campaign organisation.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Communications Officer</div>
-        <div class="role-desc">Manages an organisation's communications and media presence, using understanding of audience psychology to craft effective messages across different channels.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Public Affairs Officer</div>
-        <div class="role-desc">Engages with government, parliament, and stakeholders on behalf of an organisation to influence policy and legislation, drawing on research and communication skills.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-    </div>
+ <div class="section-label">Possible roles in this area</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">Policy and Campaigns Officer</div>
+ <div class="role-desc">Develops and delivers campaigns on social issues, engaging with politicians, media, and the public to drive policy change on behalf of a charity or campaign organisation.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Communications Officer</div>
+ <div class="role-desc">Manages an organisation's communications and media presence, using understanding of audience psychology to craft effective messages across different channels.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Public Affairs Officer</div>
+ <div class="role-desc">Engages with government, parliament, and stakeholders on behalf of an organisation to influence policy and legislation, drawing on research and communication skills.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Persuasion and influence</span>
-        <span class="skill-chip">Written communication</span>
-        <span class="skill-chip">Research and evidence use</span>
-        <span class="skill-chip">Political awareness</span>
-        <span class="skill-chip">Media and digital skills</span>
-        <span class="skill-chip">Stakeholder engagement</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Persuasion and influence</span>
+ <span class="skill-chip">Written communication</span>
+ <span class="skill-chip">Research and evidence use</span>
+ <span class="skill-chip">Political awareness</span>
+ <span class="skill-chip">Media and digital skills</span>
+ <span class="skill-chip">Stakeholder engagement</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>Health and social care charities including Cancer Research UK, Mind, and Scope</li>
-        <li>Environmental organisations including Friends of the Earth and WWF</li>
-        <li>Human rights and equality organisations</li>
-        <li>Trade associations and professional bodies with public affairs functions</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>Health and social care charities including Cancer Research UK, Mind, and Scope</li>
+ <li>Environmental organisations including Friends of the Earth and WWF</li>
+ <li>Human rights and equality organisations</li>
+ <li>Trade associations and professional bodies with public affairs functions</li>
+ </ul>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div class="org-name">NCVO</div><div class="org-desc">National Council for Voluntary Organisations</div></div>
-      <div class="org-card"><div class="org-name">Chartered Institute of Public Relations</div><div class="org-desc">Professional body for communications practitioners</div></div>
-      <div class="org-card"><div class="org-name">Public Affairs Council</div><div class="org-desc">Professional body for public affairs practitioners</div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div class="org-name"><a href="https://www.ncvo.org.uk" target="_blank" rel="noopener">NCVO</a></div><div class="org-desc">National Council for Voluntary Organisations</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.cipr.co.uk" target="_blank" rel="noopener">Chartered Institute of Public Relations</a></div><div class="org-desc">Professional body for communications practitioners</div></div>
+ <div class="org-card"><div class="org-name">Public Affairs Council</div><div class="org-desc">Professional body for public affairs practitioners</div></div>
+ </div>
+ </div>
 
-  <!-- PROGRAMME EVALUATION -->
-  <div id="evaluation" class="page-view">
-    <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Charity and Third Sector</a><span>›</span><span>Programme Evaluation</span></div>
-    <button class="back-btn" onclick="showPage('overview')">← Back to Charity and Third Sector</button>
-    <h1 class="subtheme-page-title">📊 Programme Evaluation</h1>
-    <p class="subtheme-page-intro">Evaluation roles in the charity sector assess the impact of programmes and interventions, using research skills to demonstrate value to funders and inform future development. Psychology graduates are well placed for these roles given their training in research design and data analysis.</p>
+ <!-- PROGRAMME EVALUATION -->
+ <div id="evaluation" class="page-view">
+ <div class="breadcrumb"><a href="#" onclick="showPage('overview'); return false;">Psychology Careers</a><span>›</span><a href="#" onclick="showPage('overview'); return false;">Charity and Third Sector</a><span>›</span><span>Programme Evaluation</span></div>
+ <button class="back-btn" onclick="showPage('overview')">← Back to Charity and Third Sector</button>
+ <h1 class="subtheme-page-title"> Programme Evaluation</h1>
+ <p class="subtheme-page-intro">Evaluation roles in the charity sector assess the impact of programmes and interventions, using research skills to demonstrate value to funders and inform future development. Psychology graduates are well placed for these roles given their training in research design and data analysis.</p>
 
-    <div class="why-box">
-      <div class="why-label">Why Psychology?</div>
-      <ul class="why-list">
-        <li>Research methods training provides the foundation for designing and conducting programme evaluations</li>
-        <li>Knowledge of psychological theory helps evaluators understand why interventions do or do not work</li>
-        <li>Both qualitative and quantitative data collection and analysis skills are directly applicable</li>
-        <li>Understanding of behaviour change theory is particularly relevant in health and social care evaluation</li>
-        <li>Ability to communicate complex findings clearly to commissioners, funders, and the public</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why Psychology?</div>
+ <ul class="why-list">
+ <li>Research methods training provides the foundation for designing and conducting programme evaluations</li>
+ <li>Knowledge of psychological theory helps evaluators understand why interventions do or do not work</li>
+ <li>Both qualitative and quantitative data collection and analysis skills are directly applicable</li>
+ <li>Understanding of behaviour change theory is particularly relevant in health and social care evaluation</li>
+ <li>Ability to communicate complex findings clearly to commissioners, funders, and the public</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Possible roles in this area</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">Impact Officer</div>
-        <div class="role-desc">Measures and reports on the outcomes and social impact of a charity's programmes, often producing annual impact reports and case studies for funders.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Monitoring and Evaluation Officer</div>
-        <div class="role-desc">Tracks programme delivery and outcomes, collecting and analysing data to support learning and accountability to funders and beneficiaries.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Research Officer</div>
-        <div class="role-desc">Conducts research to inform strategy, advocacy, and programme development within a charity, drawing on both desk research and primary data collection.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-    </div>
+ <div class="section-label">Possible roles in this area</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">Impact Officer</div>
+ <div class="role-desc">Measures and reports on the outcomes and social impact of a charity's programmes, often producing annual impact reports and case studies for funders.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Monitoring and Evaluation Officer</div>
+ <div class="role-desc">Tracks programme delivery and outcomes, collecting and analysing data to support learning and accountability to funders and beneficiaries.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Research Officer</div>
+ <div class="role-desc">Conducts research to inform strategy, advocacy, and programme development within a charity, drawing on both desk research and primary data collection.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Research methods</span>
-        <span class="skill-chip">Data collection and analysis</span>
-        <span class="skill-chip">Report writing</span>
-        <span class="skill-chip">Communication of findings</span>
-        <span class="skill-chip">Understanding of behaviour change</span>
-        <span class="skill-chip">Attention to detail</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Research methods</span>
+ <span class="skill-chip">Data collection and analysis</span>
+ <span class="skill-chip">Report writing</span>
+ <span class="skill-chip">Communication of findings</span>
+ <span class="skill-chip">Understanding of behaviour change</span>
+ <span class="skill-chip">Attention to detail</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>Large charities with dedicated impact and evaluation teams</li>
-        <li>Social research consultancies working with the voluntary sector</li>
-        <li>Foundations and grant-making bodies requiring evidence of impact</li>
-        <li>NHS and public health bodies evaluating community health programmes</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>Large charities with dedicated impact and evaluation teams</li>
+ <li>Social research consultancies working with the voluntary sector</li>
+ <li>Foundations and grant-making bodies requiring evidence of impact</li>
+ <li>NHS and public health bodies evaluating community health programmes</li>
+ </ul>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div class="org-name">NCVO</div><div class="org-desc">Resources on impact measurement in the voluntary sector</div></div>
-      <div class="org-card"><div class="org-name">NPC (New Philanthropy Capital)</div><div class="org-desc">Think tank focused on charity effectiveness and impact</div></div>
-      <div class="org-card"><div class="org-name">Market Research Society</div><div class="org-desc">Professional body covering social and programme research</div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div class="org-name"><a href="https://www.ncvo.org.uk" target="_blank" rel="noopener">NCVO</a></div><div class="org-desc">Resources on impact measurement in the voluntary sector</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.thinknpc.org" target="_blank" rel="noopener">NPC (New Philanthropy Capital)</a></div><div class="org-desc">Think tank focused on charity effectiveness and impact</div></div>
+ <div class="org-card"><div class="org-name"><a href="https://www.mrs.org.uk" target="_blank" rel="noopener">Market Research Society</a></div><div class="org-desc">Professional body covering social and programme research</div></div>
+ </div>
+ </div>
 
 </div>
 <script>
 function showPage(id) {
-  document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  window.scrollTo(0, 0);
+ document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
+ document.getElementById(id).classList.add('active');
+ window.scrollTo(0, 0);
 }
 </script>
 </body>

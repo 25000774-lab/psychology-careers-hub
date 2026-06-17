@@ -5,58 +5,58 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Digital, Technology and Human-Centred Design — Psychology Careers | Liverpool Hope University</title>
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
-  .site-header { background: #1a3a5c; color: white; padding: 1rem 2rem; display: flex; align-items: center; gap: 12px; }
-  .site-header-text { font-size: 14px; opacity: 0.85; }
-  .site-header-title { font-size: 16px; font-weight: 500; }
-  .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
-  .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
-  .breadcrumb a { color: #1a5fa8; text-decoration: none; }
-  .breadcrumb a:hover { text-decoration: underline; }
-  .theme-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
-  .theme-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
-  .subtheme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-bottom: 2rem; }
-  .subtheme-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; text-align: left; width: 100%; }
-  .subtheme-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.1); }
-  .subtheme-icon { font-size: 24px; margin-bottom: 10px; }
-  .subtheme-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
-  .subtheme-desc { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
-  .explore-link { font-size: 13px; color: #1a5fa8; }
-  .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
-  .now-box { background: #e8f0fb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .now-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 8px; }
-  .now-list { padding-left: 1.2rem; }
-  .now-list li { font-size: 14px; color: #1a3a5c; line-height: 1.7; }
-  .why-box { background: #f0f7f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .why-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1e6e35; margin-bottom: 8px; }
-  .why-list { padding-left: 1.2rem; }
-  .why-list li { font-size: 14px; color: #1a3a1a; line-height: 1.7; }
-  .employers-box { background: #faf8f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
-  .employers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #a05a00; margin-bottom: 8px; }
-  .employers-list { padding-left: 1.2rem; }
-  .employers-list li { font-size: 14px; color: #3a2a00; line-height: 1.7; }
-  .divider { border: none; border-top: 1px solid #e8e8e8; margin: 1.5rem 0; }
-  .orgs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
-  .org-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.85rem 1rem; display: flex; align-items: flex-start; gap: 10px; }
-  .org-name { font-size: 13px; font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
-  .org-desc { font-size: 12px; color: #666; }
-  .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
-  .role-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1.25rem; }
-  .role-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
-  .role-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
-  .role-badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
-  .badge-grad { background: #e6f4ea; color: #1e6e35; }
-  .badge-further { background: #fff3e0; color: #a05a00; }
-  .skills-box { background: #f5f5f3; border-radius: 8px; padding: 0.85rem 1rem; margin-bottom: 1rem; }
-  .skills-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-  .skill-chip { font-size: 12px; background: white; border: 1px solid #ddd; border-radius: 20px; padding: 3px 10px; color: #555; }
-  .page-view { display: none; }
-  .page-view.active { display: block; }
-  .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #1a5fa8; cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 1.5rem; font-family: inherit; }
-  .back-btn:hover { text-decoration: underline; }
-  .subtheme-page-title { font-size: 24px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
-  .subtheme-page-intro { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
+ .site-header { background: #1a3a5c; color: white; padding: 1rem 2rem; display: flex; align-items: center; gap: 12px; }
+ .site-header-text { font-size: 14px; opacity: 0.85; }
+ .site-header-title { font-size: 16px; font-weight: 500; }
+ .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+ .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+ .breadcrumb a { color: #1a5fa8; text-decoration: none; }
+ .breadcrumb a:hover { text-decoration: underline; }
+ .theme-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+ .theme-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
+ .subtheme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-bottom: 2rem; }
+ .subtheme-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; text-align: left; width: 100%; }
+ .subtheme-card:hover { border-color: #1a5fa8; box-shadow: 0 2px 8px rgba(26,95,168,0.1); }
+ .subtheme-icon { font-size: 24px; margin-bottom: 10px; }
+ .subtheme-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+ .subtheme-desc { font-size: 13px; color: #666; line-height: 1.5; margin-bottom: 12px; }
+ .explore-link { font-size: 13px; color: #1a5fa8; }
+ .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 10px; }
+ .now-box { background: #e8f0fb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .now-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1a5fa8; margin-bottom: 8px; }
+ .now-list { padding-left: 1.2rem; }
+ .now-list li { font-size: 14px; color: #1a3a5c; line-height: 1.7; }
+ .why-box { background: #f0f7f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .why-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #1e6e35; margin-bottom: 8px; }
+ .why-list { padding-left: 1.2rem; }
+ .why-list li { font-size: 14px; color: #1a3a1a; line-height: 1.7; }
+ .employers-box { background: #faf8f0; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+ .employers-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #a05a00; margin-bottom: 8px; }
+ .employers-list { padding-left: 1.2rem; }
+ .employers-list li { font-size: 14px; color: #3a2a00; line-height: 1.7; }
+ .divider { border: none; border-top: 1px solid #e8e8e8; margin: 1.5rem 0; }
+ .orgs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+ .org-card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.85rem 1rem; display: flex; align-items: flex-start; gap: 10px; }
+ .org-name { font-size: 13px; font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
+ .org-desc { font-size: 12px; color: #666; }
+ .roles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
+ .role-card { background: white; border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.1rem 1.25rem; }
+ .role-name { font-size: 15px; font-weight: 600; color: #1a3a5c; margin-bottom: 6px; }
+ .role-desc { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 12px; }
+ .role-badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
+ .badge-grad { background: #e6f4ea; color: #1e6e35; }
+ .badge-further { background: #fff3e0; color: #a05a00; }
+ .skills-box { background: #f5f5f3; border-radius: 8px; padding: 0.85rem 1rem; margin-bottom: 1rem; }
+ .skills-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+ .skill-chip { font-size: 12px; background: white; border: 1px solid #ddd; border-radius: 20px; padding: 3px 10px; color: #555; }
+ .page-view { display: none; }
+ .page-view.active { display: block; }
+ .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: #1a5fa8; cursor: pointer; background: none; border: none; padding: 0; margin-bottom: 1.5rem; font-family: inherit; }
+ .back-btn:hover { text-decoration: underline; }
+ .subtheme-page-title { font-size: 24px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
+ .subtheme-page-intro { font-size: 15px; color: #444; line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
 
 .site-nav { background: #1a3a5c; padding: 0 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
 .site-nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; gap: 0; height: 48px; }
@@ -69,341 +69,345 @@
 .site-nav-menu a:hover { background: #f0f4ff; }
 .site-nav-dropdown:hover .site-nav-menu { display: block; }
 
+
+  .org-name a { color: #1a3a5c; text-decoration: none; font-weight: 600; }
+  .org-name a:hover { color: #1a5fa8; text-decoration: underline; }
+
 </style>
 </head>
 <body>
 <div class="site-nav">
-  <div class="site-nav-inner">
-    <a class="site-nav-home" href="index.html">&#127968; Psychology Careers Hub</a>
-    <a class="site-nav-link" href="index.html">All Pathways</a>
-    <a class="site-nav-link" href="roadmap.html">Roadmap</a>
-    <a class="site-nav-link" href="employer-trends.html">Employer Trends</a>
-    <a class="site-nav-link" href="alumni.html">Alumni</a>
-    <div class="site-nav-dropdown">
-      <span class="site-nav-link">Themes &#9662;</span>
-      <div class="site-nav-menu">
-        <a href="poc.html">People, Organisations &amp; Consultancy</a>
-        <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
-        <a href="education.html">Education</a>
-        <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
-        <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
-        <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
-        <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
-        <a href="sport-exercise.html">Sport &amp; Exercise</a>
-        <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
-        <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
-        <a href="mental-health.html">Mental Health</a>
-      </div>
-    </div>
-  </div>
+ <div class="site-nav-inner">
+ <a class="site-nav-home" href="index.html">Psychology Careers Hub</a>
+ <a class="site-nav-link" href="index.html">All Pathways</a>
+ <a class="site-nav-link" href="roadmap.html">Roadmap</a>
+ <a class="site-nav-link" href="employer-trends.html">Employer Trends</a>
+ <a class="site-nav-link" href="alumni.html">Alumni</a>
+ <div class="site-nav-dropdown">
+ <span class="site-nav-link">Themes &#9662;</span>
+ <div class="site-nav-menu">
+ <a href="poc.html">People, Organisations &amp; Consultancy</a>
+ <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
+ <a href="education.html">Education</a>
+ <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
+ <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
+ <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
+ <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
+ <a href="sport-exercise.html">Sport &amp; Exercise</a>
+ <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
+ <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
+ <a href="mental-health.html">Mental Health</a>
+ </div>
+ </div>
+ </div>
 </div>
-  </div>
+ </div>
 </div>
 
 <div class="site-header">
-  <div>
-    <div class="site-header-title">Liverpool Hope University</div>
-    <div class="site-header-text">School of Psychology — Psychology Careers</div>
-  </div>
+ <div>
+ <div class="site-header-title">Liverpool Hope University</div>
+ <div class="site-header-text">School of Psychology — Psychology Careers</div>
+ </div>
 </div>
 
 <div class="container">
 
-  <!-- OVERVIEW PAGE -->
-  <div id="overview" class="page-view active">
-    <div class="breadcrumb">
-      <a href="#">Career Pathways</a>
-      <span>›</span>
-      <span>Digital, Technology and Human-Centred Design</span>
-    </div>
+ <!-- OVERVIEW PAGE -->
+ <div id="overview" class="page-view active">
+ <div class="breadcrumb">
+ <a href="#">Career Pathways</a>
+ <span>›</span>
+ <span>Digital, Technology and Human-Centred Design</span>
+ </div>
 
-    <h1 class="theme-title">Digital, Technology and Human-Centred Design</h1>
-    <p class="theme-intro">Psychology graduates bring a deep understanding of how people think, behave, and interact with technology — making them well suited to careers in UX research, human factors, and digital health. These roles sit at the intersection of psychology and technology, and are increasingly in demand as digital products and services become central to everyday life.</p>
+ <h1 class="theme-title">Digital, Technology and Human-Centred Design</h1>
+ <p class="theme-intro">Psychology graduates bring a deep understanding of how people think, behave, and interact with technology — making them well suited to careers in UX research, human factors, and digital health. These roles sit at the intersection of psychology and technology, and are increasingly in demand as digital products and services become central to everyday life.</p>
 
-    <div class="section-label">Sub-themes</div>
-    <div class="subtheme-grid">
-      <button class="subtheme-card" onclick="showPage('ux')">
-        <div class="subtheme-icon">🔍</div>
-        <div class="subtheme-name">UX and User Research</div>
-        <div class="subtheme-desc">Researching how people use products and services to inform better design decisions.</div>
-        <div class="explore-link">Explore roles →</div>
-      </button>
-      <button class="subtheme-card" onclick="showPage('hf')">
-        <div class="subtheme-icon">⚙️</div>
-        <div class="subtheme-name">Human Factors and Ergonomics</div>
-        <div class="subtheme-desc">Designing systems, environments and equipment around human capability and behaviour.</div>
-        <div class="explore-link">Explore roles →</div>
-      </button>
-      <button class="subtheme-card" onclick="showPage('dh')">
-        <div class="subtheme-icon">💻</div>
-        <div class="subtheme-name">Digital Health and Assistive Technology</div>
-        <div class="subtheme-desc">Developing and evaluating digital tools that support health, wellbeing and accessibility.</div>
-        <div class="explore-link">Explore roles →</div>
-      </button>
-    </div>
+ <div class="section-label">Sub-themes</div>
+ <div class="subtheme-grid">
+ <button class="subtheme-card" onclick="showPage('ux')">
+ <div class="subtheme-icon"></div>
+ <div class="subtheme-name">UX and User Research</div>
+ <div class="subtheme-desc">Researching how people use products and services to inform better design decisions.</div>
+ <div class="explore-link">Explore roles →</div>
+ </button>
+ <button class="subtheme-card" onclick="showPage('hf')">
+ <div class="subtheme-icon">⚙️</div>
+ <div class="subtheme-name">Human Factors and Ergonomics</div>
+ <div class="subtheme-desc">Designing systems, environments and equipment around human capability and behaviour.</div>
+ <div class="explore-link">Explore roles →</div>
+ </button>
+ <button class="subtheme-card" onclick="showPage('dh')">
+ <div class="subtheme-icon"></div>
+ <div class="subtheme-name">Digital Health and Assistive Technology</div>
+ <div class="subtheme-desc">Developing and evaluating digital tools that support health, wellbeing and accessibility.</div>
+ <div class="explore-link">Explore roles →</div>
+ </button>
+ </div>
 
-    <div class="now-box">
-      <div class="now-label">What you could do right now</div>
-      <ul class="now-list">
-        <li>Complete a free UX or human-computer interaction course (Google UX Design on Coursera, or Nielsen Norman Group resources)</li>
-        <li>Build a basic portfolio — document a small usability test or redesign of a student app</li>
-        <li>Volunteer for psychology research studies to understand participant experience from the inside</li>
-        <li>Follow the British Computer Society and CIEHF for student membership and events</li>
-        <li>Explore graduate programmes at NHS Digital, GCHQ, and major tech firms targeting psychology graduates</li>
-      </ul>
-    </div>
+ <div class="now-box">
+ <div class="now-label">What you could do right now</div>
+ <ul class="now-list">
+ <li>Complete a free UX or human-computer interaction course (Google UX Design on Coursera, or Nielsen Norman Group resources)</li>
+ <li>Build a basic portfolio — document a small usability test or redesign of a student app</li>
+ <li>Volunteer for psychology research studies to understand participant experience from the inside</li>
+ <li>Follow the British Computer Society and CIEHF for student membership and events</li>
+ <li>Explore graduate programmes at NHS Digital, GCHQ, and major tech firms targeting psychology graduates</li>
+ </ul>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card">
-        <div>
-          <div class="org-name">British Computer Society (BCS)</div>
-          <div class="org-desc">Professional body for computing and IT — student membership available</div>
-        </div>
-      </div>
-      <div class="org-card">
-        <div>
-          <div class="org-name">CIEHF</div>
-          <div class="org-desc">Chartered Institute of Ergonomics and Human Factors — professional home for human factors practitioners</div>
-        </div>
-      </div>
-      <div class="org-card">
-        <div>
-          <div class="org-name">UX UK</div>
-          <div class="org-desc">Community of UX and design professionals with events and resources for those entering the field</div>
-        </div>
-      </div>
-      <div class="org-card">
-        <div>
-          <div class="org-name">NHS Digital / NHSX</div>
-          <div class="org-desc">Careers pages for those interested in digital health and health technology roles</div>
-        </div>
-      </div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card">
+ <div>
+ <div class="org-name"><a href="https://www.bcs.org" target="_blank" rel="noopener">British Computer Society (BCS)</a></div>
+ <div class="org-desc">Professional body for computing and IT — student membership available</div>
+ </div>
+ </div>
+ <div class="org-card">
+ <div>
+ <div class="org-name"><a href="https://www.ciehf.ac.uk" target="_blank" rel="noopener">CIEHF</a></div>
+ <div class="org-desc">Chartered Institute of Ergonomics and Human Factors — professional home for human factors practitioners</div>
+ </div>
+ </div>
+ <div class="org-card">
+ <div>
+ <div class="org-name"><a href="https://www.uxuk.org" target="_blank" rel="noopener">UX UK</a></div>
+ <div class="org-desc">Community of UX and design professionals with events and resources for those entering the field</div>
+ </div>
+ </div>
+ <div class="org-card">
+ <div>
+ <div class="org-name"><a href="https://digital.nhs.uk" target="_blank" rel="noopener">NHS Digital / NHSX</a></div>
+ <div class="org-desc">Careers pages for those interested in digital health and health technology roles</div>
+ </div>
+ </div>
+ </div>
+ </div>
 
-  <!-- UX AND USER RESEARCH -->
-  <div id="ux" class="page-view">
-    <button class="back-btn" onclick="showPage('overview')">← Back to Digital, Technology and Human-Centred Design</button>
-    <div class="breadcrumb">
-      <a href="#" onclick="showPage('overview'); return false;">Digital, Technology and Human-Centred Design</a>
-      <span>›</span>
-      <span>UX and User Research</span>
-    </div>
-    <h2 class="subtheme-page-title">UX and User Research</h2>
-    <p class="subtheme-page-intro">UX (user experience) researchers study how people interact with products, services and systems to help designers make better decisions. Psychology graduates are well suited to this field because their training in research methods, cognitive processes, and human behaviour directly applies to understanding user needs.</p>
+ <!-- UX AND USER RESEARCH -->
+ <div id="ux" class="page-view">
+ <button class="back-btn" onclick="showPage('overview')">← Back to Digital, Technology and Human-Centred Design</button>
+ <div class="breadcrumb">
+ <a href="#" onclick="showPage('overview'); return false;">Digital, Technology and Human-Centred Design</a>
+ <span>›</span>
+ <span>UX and User Research</span>
+ </div>
+ <h2 class="subtheme-page-title">UX and User Research</h2>
+ <p class="subtheme-page-intro">UX (user experience) researchers study how people interact with products, services and systems to help designers make better decisions. Psychology graduates are well suited to this field because their training in research methods, cognitive processes, and human behaviour directly applies to understanding user needs.</p>
 
-    <div class="why-box">
-      <div class="why-label">Why psychology?</div>
-      <ul class="why-list">
-        <li>Research methods training — surveys, interviews, observations — maps directly to UX research techniques</li>
-        <li>Understanding of cognitive load, attention, memory and decision-making informs usability evaluation</li>
-        <li>Psychological theories of motivation and behaviour inform design for engagement and accessibility</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why psychology?</div>
+ <ul class="why-list">
+ <li>Research methods training — surveys, interviews, observations — maps directly to UX research techniques</li>
+ <li>Understanding of cognitive load, attention, memory and decision-making informs usability evaluation</li>
+ <li>Psychological theories of motivation and behaviour inform design for engagement and accessibility</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Roles in UX and User Research</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">UX Researcher</div>
-        <div class="role-desc">Plans and conducts user interviews, usability tests and surveys to understand how people experience products and identify design improvements.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Junior UX Designer</div>
-        <div class="role-desc">Uses research insights to prototype and iterate on product designs, working closely with developers and product managers.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Insight Analyst</div>
-        <div class="role-desc">Analyses user data, feedback and behavioural metrics to surface patterns and recommendations for product teams.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-    </div>
+ <div class="section-label">Roles in UX and User Research</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">UX Researcher</div>
+ <div class="role-desc">Plans and conducts user interviews, usability tests and surveys to understand how people experience products and identify design improvements.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Junior UX Designer</div>
+ <div class="role-desc">Uses research insights to prototype and iterate on product designs, working closely with developers and product managers.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Insight Analyst</div>
+ <div class="role-desc">Analyses user data, feedback and behavioural metrics to surface patterns and recommendations for product teams.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Research design</span>
-        <span class="skill-chip">Interviewing</span>
-        <span class="skill-chip">Analytical thinking</span>
-        <span class="skill-chip">Communication</span>
-        <span class="skill-chip">Empathy</span>
-        <span class="skill-chip">Data synthesis</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Research design</span>
+ <span class="skill-chip">Interviewing</span>
+ <span class="skill-chip">Analytical thinking</span>
+ <span class="skill-chip">Communication</span>
+ <span class="skill-chip">Empathy</span>
+ <span class="skill-chip">Data synthesis</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>Tech companies and software firms (Google, Microsoft, Amazon, and smaller startups)</li>
-        <li>NHS Digital and public sector digital teams</li>
-        <li>Government Digital Service (GDS)</li>
-        <li>UX and design consultancies</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>Tech companies and software firms (Google, Microsoft, Amazon, and smaller startups)</li>
+ <li>NHS Digital and public sector digital teams</li>
+ <li>Government Digital Service (GDS)</li>
+ <li>UX and design consultancies</li>
+ </ul>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div><div class="org-name">British Computer Society (BCS)</div></div></div>
-      <div class="org-card"><div><div class="org-name">UX UK</div></div></div>
-      <div class="org-card"><div><div class="org-name">Nielsen Norman Group</div><div class="org-desc">Leading UX research and training organisation with free resources</div></div></div>
-      <div class="org-card"><div><div class="org-name">Interaction Design Foundation</div><div class="org-desc">Affordable online UX and design courses widely recognised in the industry</div></div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div><div class="org-name"><a href="https://www.bcs.org" target="_blank" rel="noopener">British Computer Society (BCS)</a></div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.uxuk.org" target="_blank" rel="noopener">UX UK</a></div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.nngroup.com" target="_blank" rel="noopener">Nielsen Norman Group</a></div><div class="org-desc">Leading UX research and training organisation with free resources</div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.interaction-design.org" target="_blank" rel="noopener">Interaction Design Foundation</a></div><div class="org-desc">Affordable online UX and design courses widely recognised in the industry</div></div></div>
+ </div>
+ </div>
 
-  <!-- HUMAN FACTORS AND ERGONOMICS -->
-  <div id="hf" class="page-view">
-    <button class="back-btn" onclick="showPage('overview')">← Back to Digital, Technology and Human-Centred Design</button>
-    <div class="breadcrumb">
-      <a href="#" onclick="showPage('overview'); return false;">Digital, Technology and Human-Centred Design</a>
-      <span>›</span>
-      <span>Human Factors and Ergonomics</span>
-    </div>
-    <h2 class="subtheme-page-title">Human Factors and Ergonomics</h2>
-    <p class="subtheme-page-intro">Human factors specialists design systems, environments and equipment to fit human capability, reducing error and improving performance and safety. This field draws heavily on cognitive and occupational psychology and operates across aviation, healthcare, defence, transport and consumer technology.</p>
+ <!-- HUMAN FACTORS AND ERGONOMICS -->
+ <div id="hf" class="page-view">
+ <button class="back-btn" onclick="showPage('overview')">← Back to Digital, Technology and Human-Centred Design</button>
+ <div class="breadcrumb">
+ <a href="#" onclick="showPage('overview'); return false;">Digital, Technology and Human-Centred Design</a>
+ <span>›</span>
+ <span>Human Factors and Ergonomics</span>
+ </div>
+ <h2 class="subtheme-page-title">Human Factors and Ergonomics</h2>
+ <p class="subtheme-page-intro">Human factors specialists design systems, environments and equipment to fit human capability, reducing error and improving performance and safety. This field draws heavily on cognitive and occupational psychology and operates across aviation, healthcare, defence, transport and consumer technology.</p>
 
-    <div class="why-box">
-      <div class="why-label">Why psychology?</div>
-      <ul class="why-list">
-        <li>Cognitive psychology — how people process information, make decisions, and make errors — is central to human factors work</li>
-        <li>Understanding workload, stress, and fatigue informs the design of safer working environments</li>
-        <li>Research and evaluation skills support evidence-based system design and incident analysis</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why psychology?</div>
+ <ul class="why-list">
+ <li>Cognitive psychology — how people process information, make decisions, and make errors — is central to human factors work</li>
+ <li>Understanding workload, stress, and fatigue informs the design of safer working environments</li>
+ <li>Research and evaluation skills support evidence-based system design and incident analysis</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Roles in Human Factors and Ergonomics</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">Human Factors Specialist</div>
-        <div class="role-desc">Evaluates how people interact with equipment, interfaces and procedures, and recommends design changes to reduce risk and improve performance.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Ergonomics Consultant</div>
-        <div class="role-desc">Advises organisations on workspace design, equipment layout and working practices to minimise physical and cognitive strain.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Safety and Human Performance Analyst</div>
-        <div class="role-desc">Investigates incidents and near-misses in safety-critical industries, identifying human error contributions and systemic improvements.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-    </div>
+ <div class="section-label">Roles in Human Factors and Ergonomics</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">Human Factors Specialist</div>
+ <div class="role-desc">Evaluates how people interact with equipment, interfaces and procedures, and recommends design changes to reduce risk and improve performance.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Ergonomics Consultant</div>
+ <div class="role-desc">Advises organisations on workspace design, equipment layout and working practices to minimise physical and cognitive strain.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Safety and Human Performance Analyst</div>
+ <div class="role-desc">Investigates incidents and near-misses in safety-critical industries, identifying human error contributions and systemic improvements.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Cognitive psychology</span>
-        <span class="skill-chip">Research and evaluation</span>
-        <span class="skill-chip">Attention to detail</span>
-        <span class="skill-chip">Risk analysis</span>
-        <span class="skill-chip">Report writing</span>
-        <span class="skill-chip">Systems thinking</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Cognitive psychology</span>
+ <span class="skill-chip">Research and evaluation</span>
+ <span class="skill-chip">Attention to detail</span>
+ <span class="skill-chip">Risk analysis</span>
+ <span class="skill-chip">Report writing</span>
+ <span class="skill-chip">Systems thinking</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>NHS and healthcare organisations</li>
-        <li>Aviation and transport authorities (CAA, Network Rail, DfT)</li>
-        <li>Defence and security organisations (MOD, Dstl)</li>
-        <li>Nuclear and energy sector (EDF, Sellafield)</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>NHS and healthcare organisations</li>
+ <li>Aviation and transport authorities (CAA, Network Rail, DfT)</li>
+ <li>Defence and security organisations (MOD, Dstl)</li>
+ <li>Nuclear and energy sector (EDF, Sellafield)</li>
+ </ul>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div><div class="org-name">CIEHF</div><div class="org-desc">Chartered Institute of Ergonomics and Human Factors — routes to Chartered Ergonomist status</div></div></div>
-      <div class="org-card"><div><div class="org-name">British Computer Society (BCS)</div></div></div>
-      <div class="org-card"><div><div class="org-name">Human Factors and Ergonomics Society (HFES)</div><div class="org-desc">International professional body with student membership available</div></div></div>
-      <div class="org-card"><div><div class="org-name">British Psychological Society</div></div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div><div class="org-name"><a href="https://www.ciehf.ac.uk" target="_blank" rel="noopener">CIEHF</a></div><div class="org-desc">Chartered Institute of Ergonomics and Human Factors — routes to Chartered Ergonomist status</div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.bcs.org" target="_blank" rel="noopener">British Computer Society (BCS)</a></div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.hfes.org" target="_blank" rel="noopener">Human Factors and Ergonomics Society (HFES)</a></div><div class="org-desc">International professional body with student membership available</div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.bps.org.uk" target="_blank" rel="noopener">British Psychological Society</a></div></div></div>
+ </div>
+ </div>
 
-  <!-- DIGITAL HEALTH AND ASSISTIVE TECHNOLOGY -->
-  <div id="dh" class="page-view">
-    <button class="back-btn" onclick="showPage('overview')">← Back to Digital, Technology and Human-Centred Design</button>
-    <div class="breadcrumb">
-      <a href="#" onclick="showPage('overview'); return false;">Digital, Technology and Human-Centred Design</a>
-      <span>›</span>
-      <span>Digital Health and Assistive Technology</span>
-    </div>
-    <h2 class="subtheme-page-title">Digital Health and Assistive Technology</h2>
-    <p class="subtheme-page-intro">Digital health roles involve developing, evaluating and implementing technology that supports people's health, wellbeing and independence. This includes mental health apps, assistive devices, telehealth platforms, and digital therapeutics. Psychology graduates bring behaviour change expertise and a person-centred perspective essential to this sector.</p>
+ <!-- DIGITAL HEALTH AND ASSISTIVE TECHNOLOGY -->
+ <div id="dh" class="page-view">
+ <button class="back-btn" onclick="showPage('overview')">← Back to Digital, Technology and Human-Centred Design</button>
+ <div class="breadcrumb">
+ <a href="#" onclick="showPage('overview'); return false;">Digital, Technology and Human-Centred Design</a>
+ <span>›</span>
+ <span>Digital Health and Assistive Technology</span>
+ </div>
+ <h2 class="subtheme-page-title">Digital Health and Assistive Technology</h2>
+ <p class="subtheme-page-intro">Digital health roles involve developing, evaluating and implementing technology that supports people's health, wellbeing and independence. This includes mental health apps, assistive devices, telehealth platforms, and digital therapeutics. Psychology graduates bring behaviour change expertise and a person-centred perspective essential to this sector.</p>
 
-    <div class="why-box">
-      <div class="why-label">Why psychology?</div>
-      <ul class="why-list">
-        <li>Behaviour change models and psychological theory underpin effective health technology design</li>
-        <li>Understanding user needs, barriers and motivations is essential to digital health product development</li>
-        <li>Evaluation and research skills are needed to assess whether digital tools actually improve outcomes</li>
-      </ul>
-    </div>
+ <div class="why-box">
+ <div class="why-label">Why psychology?</div>
+ <ul class="why-list">
+ <li>Behaviour change models and psychological theory underpin effective health technology design</li>
+ <li>Understanding user needs, barriers and motivations is essential to digital health product development</li>
+ <li>Evaluation and research skills are needed to assess whether digital tools actually improve outcomes</li>
+ </ul>
+ </div>
 
-    <div class="section-label">Roles in Digital Health and Assistive Technology</div>
-    <div class="roles-grid">
-      <div class="role-card">
-        <div class="role-name">Digital Health Coordinator</div>
-        <div class="role-desc">Supports the implementation and evaluation of digital health programmes within NHS trusts or public health organisations.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Assistive Technology Specialist</div>
-        <div class="role-desc">Assesses individuals' needs and recommends or trains them to use technology that supports their independence and daily functioning.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-      <div class="role-card">
-        <div class="role-name">Digital Therapeutics Research Associate</div>
-        <div class="role-desc">Supports clinical trials and evaluation studies testing whether digital health interventions produce genuine behavioural and health outcomes.</div>
-        <span class="role-badge badge-grad">Graduate entry</span>
-      </div>
-    </div>
+ <div class="section-label">Roles in Digital Health and Assistive Technology</div>
+ <div class="roles-grid">
+ <div class="role-card">
+ <div class="role-name">Digital Health Coordinator</div>
+ <div class="role-desc">Supports the implementation and evaluation of digital health programmes within NHS trusts or public health organisations.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Assistive Technology Specialist</div>
+ <div class="role-desc">Assesses individuals' needs and recommends or trains them to use technology that supports their independence and daily functioning.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ <div class="role-card">
+ <div class="role-name">Digital Therapeutics Research Associate</div>
+ <div class="role-desc">Supports clinical trials and evaluation studies testing whether digital health interventions produce genuine behavioural and health outcomes.</div>
+ <span class="role-badge badge-grad">Graduate entry</span>
+ </div>
+ </div>
 
-    <div class="skills-box">
-      <div class="section-label">Skills that may be useful</div>
-      <div class="skills-list">
-        <span class="skill-chip">Behaviour change</span>
-        <span class="skill-chip">Person-centred approach</span>
-        <span class="skill-chip">Evaluation methods</span>
-        <span class="skill-chip">Communication</span>
-        <span class="skill-chip">Health literacy</span>
-        <span class="skill-chip">Digital confidence</span>
-      </div>
-    </div>
+ <div class="skills-box">
+ <div class="section-label">Skills that may be useful</div>
+ <div class="skills-list">
+ <span class="skill-chip">Behaviour change</span>
+ <span class="skill-chip">Person-centred approach</span>
+ <span class="skill-chip">Evaluation methods</span>
+ <span class="skill-chip">Communication</span>
+ <span class="skill-chip">Health literacy</span>
+ <span class="skill-chip">Digital confidence</span>
+ </div>
+ </div>
 
-    <div class="employers-box">
-      <div class="employers-label">Example employers</div>
-      <ul class="employers-list">
-        <li>NHS Digital and NHS trusts</li>
-        <li>Digital health startups and health tech companies</li>
-        <li>Local authorities and social care providers</li>
-        <li>Charities focused on disability, mental health and ageing</li>
-      </ul>
-    </div>
+ <div class="employers-box">
+ <div class="employers-label">Example employers</div>
+ <ul class="employers-list">
+ <li>NHS Digital and NHS trusts</li>
+ <li>Digital health startups and health tech companies</li>
+ <li>Local authorities and social care providers</li>
+ <li>Charities focused on disability, mental health and ageing</li>
+ </ul>
+ </div>
 
-    <hr class="divider">
-    <div class="section-label">Relevant professional organisations</div>
-    <div class="orgs-grid">
-      <div class="org-card"><div><div class="org-name">NHS Digital / NHSX</div><div class="org-desc">Graduate and entry-level roles in digital health</div></div></div>
-      <div class="org-card"><div><div class="org-name">British Computer Society (BCS)</div></div></div>
-      <div class="org-card"><div><div class="org-name">CIEHF</div></div></div>
-      <div class="org-card"><div><div class="org-name">British Psychological Society</div></div></div>
-    </div>
-  </div>
+ <hr class="divider">
+ <div class="section-label">Relevant professional organisations</div>
+ <div class="orgs-grid">
+ <div class="org-card"><div><div class="org-name"><a href="https://digital.nhs.uk" target="_blank" rel="noopener">NHS Digital / NHSX</a></div><div class="org-desc">Graduate and entry-level roles in digital health</div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.bcs.org" target="_blank" rel="noopener">British Computer Society (BCS)</a></div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.ciehf.ac.uk" target="_blank" rel="noopener">CIEHF</a></div></div></div>
+ <div class="org-card"><div><div class="org-name"><a href="https://www.bps.org.uk" target="_blank" rel="noopener">British Psychological Society</a></div></div></div>
+ </div>
+ </div>
 
 </div>
 
 <script>
-  function showPage(id) {
-    document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-    window.scrollTo(0, 0);
-  }
+ function showPage(id) {
+ document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
+ document.getElementById(id).classList.add('active');
+ window.scrollTo(0, 0);
+ }
 </script>
 </body>
 </html>
