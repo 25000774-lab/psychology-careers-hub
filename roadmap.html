@@ -3,281 +3,533 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Employability Roadmap —Psychology Careers Hub | Liverpool Hope University</title>
+<title>Build Your Employability — Psychology Careers Hub | Liverpool Hope University</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
- *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f8f6; color: #1a1a1a; font-size: 16px; line-height: 1.6; }
- .site-nav { background: #1a3a5c; padding: 0 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
- .site-nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; height: 48px; }
- .site-nav-home { color: white; text-decoration: none; font-weight: 600; font-size: 15px; margin-right: auto; }
- .site-nav-link { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 14px; padding: 0 14px; height: 48px; display: flex; align-items: center; transition: background 0.15s; }
- .site-nav-link:hover { background: rgba(255,255,255,0.1); color: white; }
- .site-nav-dropdown { position: relative; }
- .site-nav-menu { display: none; position: absolute; right: 0; top: 48px; background: white; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); min-width: 280px; padding: 6px 0; z-index: 1001; }
- .site-nav-menu a { display: block; padding: 9px 16px; font-size: 14px; color: #1a3a5c; text-decoration: none; }
- .site-nav-menu a:hover { background: #f0f4ff; }
- .site-nav-dropdown:hover .site-nav-menu { display: block; }
- .container { max-width: 1000px; margin: 0 auto; padding: 2rem 1.5rem; }
- .breadcrumb { font-size: 13px; color: #666; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 6px; }
- .breadcrumb a { color: #1a5fa8; text-decoration: none; }
- .page-title { font-size: 28px; font-weight: 600; color: #1a3a5c; margin-bottom: 0.5rem; }
- .page-intro { font-size: 16px; color: #444; line-height: 1.75; margin-bottom: 2rem; max-width: 720px; }
- .note-box { background: #e8f0fb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 2rem; font-size: 14px; color: #1a3a5c; line-height: 1.6; }
- .table-wrapper { overflow-x: auto; margin-bottom: 2rem; border-radius: 12px; border: 1px solid #e0e0e0; }
- table { width: 100%; border-collapse: collapse; background: white; font-size: 13px; min-width: 700px; }
- thead th { background: #1a3a5c; color: white; padding: 10px 12px; text-align: center; font-weight: 600; font-size: 12px; line-height: 1.3; vertical-align: bottom; }
- thead th:first-child { text-align: left; min-width: 200px; }
- tbody tr:nth-child(even) { background: #f8f8f6; }
- tbody tr:hover { background: #f0f4ff; }
- tbody td { padding: 10px 12px; border-bottom: 1px solid #eee; vertical-align: middle; }
- tbody td:first-child { font-weight: 500; color: #1a3a5c; font-size: 13px; }
- tbody td:not(:first-child) { text-align: center; }
- .tick { color: #1e6e35; font-size: 16px; font-weight: 700; }
- .skill-legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-bottom: 2rem; }
- .skill-legend-item { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 0.75rem 1rem; font-size: 13px; }
- .skill-legend-name { font-weight: 600; color: #1a3a5c; margin-bottom: 2px; }
- .skill-legend-desc { font-size: 12px; color: #666; line-height: 1.4; }
- .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #888; margin-bottom: 12px; }
- .divider { border: none; border-top: 1px solid #e8e8e8; margin: 2rem 0; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', -apple-system, sans-serif; background: #f8fafc; color: #0f172a; font-size: 16px; line-height: 1.6; }
 
-  .org-name a { color: #1a3a5c; text-decoration: none; font-weight: 600; }
-  .org-name a:hover { color: #1a5fa8; text-decoration: underline; }
+  /* Nav */
+  .site-nav { background: #142845; padding: 0 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 12px rgba(0,0,0,0.2); }
+  .site-nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; height: 52px; }
+  .site-nav-home { color: white; text-decoration: none; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 15px; margin-right: auto; }
+  .site-nav-home span { color: #38BDF8; }
+  .site-nav-link { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 14px; font-weight: 500; padding: 0 14px; height: 52px; display: flex; align-items: center; transition: background 0.15s; white-space: nowrap; }
+  .site-nav-link:hover { background: rgba(255,255,255,0.08); color: white; }
+  .site-nav-dropdown { position: relative; }
+  .site-nav-menu { display: none; position: absolute; right: 0; top: 52px; background: white; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); min-width: 300px; padding: 6px 0; z-index: 1001; border: 1px solid #e2e8f0; }
+  .site-nav-menu a { display: block; padding: 9px 18px; font-size: 14px; font-weight: 500; color: #1e3a5f; text-decoration: none; }
+  .site-nav-menu a:hover { background: #eef2ff; }
+  .site-nav-dropdown:hover .site-nav-menu { display: block; }
 
+  /* Hero */
+  .page-hero { background: linear-gradient(135deg, #1e3a5f 0%, #1a4a6a 100%); padding: 3.5rem 2rem 3rem; }
+  .page-hero-inner { max-width: 960px; margin: 0 auto; }
+  .page-hero-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(56,189,248,0.9); margin-bottom: 12px; }
+  .page-hero h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(26px, 3.5vw, 36px); font-weight: 800; color: white; letter-spacing: -0.02em; margin-bottom: 12px; line-height: 1.2; }
+  .page-hero p { font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.75; max-width: 600px; }
+
+  /* Layout */
+  .container { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+  .section { margin-bottom: 3rem; }
+  .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #0891B2; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+  .eyebrow::after { content: ''; flex: 1; max-width: 36px; height: 2px; background: #0891B2; border-radius: 1px; }
+  .section-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(20px, 2.5vw, 24px); font-weight: 800; color: #1e3a5f; letter-spacing: -0.02em; margin-bottom: 0.6rem; }
+  .section-sub { font-size: 15px; color: #64748b; line-height: 1.75; margin-bottom: 1.75rem; max-width: 680px; }
+  .divider { border: none; border-top: 1px solid #e2e8f0; margin: 2.5rem 0; }
+
+  /* Stat callout */
+  .stat-callout { background: #1e3a5f; border-radius: 12px; padding: 1.25rem 1.75rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+  .stat-callout-number { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 42px; font-weight: 800; color: #38BDF8; line-height: 1; flex-shrink: 0; }
+  .stat-callout-text { font-size: 15px; color: rgba(255,255,255,0.85); line-height: 1.65; }
+  .stat-callout-text strong { color: white; }
+
+  /* Experience cards */
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .card { background: white; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 1.4rem; transition: box-shadow 0.2s, transform 0.2s; }
+  .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-1px); }
+  .card-accent { width: 40px; height: 4px; border-radius: 2px; margin-bottom: 12px; }
+  .card h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; font-weight: 700; color: #1e3a5f; margin-bottom: 8px; }
+  .card p { font-size: 13px; color: #64748b; line-height: 1.65; }
+  .card ul { padding-left: 1.1rem; margin-top: 8px; font-size: 13px; color: #64748b; }
+  .card li { margin-bottom: 4px; line-height: 1.55; }
+  .card-link { display: inline-flex; align-items: center; gap: 5px; margin-top: 14px; font-size: 12px; font-weight: 700; color: #0891B2; text-decoration: none; transition: gap 0.15s; }
+  .card-link:hover { gap: 8px; }
+
+  /* CTA strip */
+  .cta-strip { background: linear-gradient(90deg, #0891B2, #0e7490); border-radius: 12px; padding: 1.25rem 1.75rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; text-decoration: none; }
+  .cta-strip-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; font-weight: 700; color: white; }
+  .cta-strip-sub { font-size: 13px; color: rgba(255,255,255,0.8); margin-top: 2px; }
+  .cta-strip-btn { background: white; color: #0891B2; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 13px; padding: 10px 20px; border-radius: 8px; white-space: nowrap; }
+
+  /* Highlight box */
+  .highlight-box { background: #e0f2fe; border-radius: 10px; padding: 1.25rem 1.5rem; margin-bottom: 1.5rem; }
+  .highlight-box p { font-size: 15px; color: #0c4a6e; line-height: 1.75; }
+  .highlight-box strong { font-weight: 600; color: #0c4a6e; }
+
+  /* Activities and skills table */
+  .table-wrapper { overflow-x: auto; border-radius: 12px; border: 1.5px solid #e2e8f0; background: white; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  thead { background: #1e3a5f; }
+  thead th { color: white; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 12px; padding: 12px 14px; text-align: left; letter-spacing: 0.02em; white-space: nowrap; }
+  thead th:first-child { border-radius: 10px 0 0 0; }
+  thead th:last-child { border-radius: 0 10px 0 0; }
+  tbody tr:nth-child(even) { background: #f8fafc; }
+  tbody tr:hover { background: #e0f2fe; }
+  tbody td { padding: 10px 14px; color: #334155; vertical-align: middle; border-bottom: 1px solid #f1f5f9; line-height: 1.4; }
+  tbody td:first-child { font-weight: 600; color: #1e3a5f; }
+  .check { color: #059669; font-size: 14px; font-weight: 700; }
+  .partial { color: #d97706; font-size: 13px; }
+
+  /* Org link styles */
+  .org-name a { color: #1e3a5f; text-decoration: none; font-weight: 600; }
+  .org-name a:hover { color: #0891B2; text-decoration: underline; }
+
+  @media (max-width: 640px) {
+    .stat-callout { flex-direction: column; gap: 0.75rem; }
+    .cta-strip { flex-direction: column; }
+  }
 </style>
 </head>
 <body>
+
 <div class="site-nav">
- <div class="site-nav-inner">
- <a class="site-nav-home" href="index.html">Psychology Careers Hub</a>
- <a class="site-nav-link" href="index.html">All Pathways</a>
- <a class="site-nav-link" href="roadmap.html">Roadmap</a>
- <a class="site-nav-link" href="employer-trends.html">Graduate Outcomes</a>
- <a class="site-nav-link" href="alumni.html">Alumni</a>
- <div class="site-nav-dropdown">
- <span class="site-nav-link">Themes &#9662;</span>
- <div class="site-nav-menu">
- <a href="poc.html">People, Organisations &amp; Consultancy</a>
- <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
- <a href="education.html">Education</a>
- <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
- <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
- <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
- <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
- <a href="sport-exercise.html">Sport &amp; Exercise</a>
- <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
- <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
- <a href="mental-health.html">Mental Health</a>
- </div>
- </div>
- </div>
+  <div class="site-nav-inner">
+    <a class="site-nav-home" href="index.html">Psychology Careers Hub</a>
+    <a class="site-nav-link" href="employer-trends.html">Graduate Outcomes</a>
+    <div class="site-nav-dropdown">
+      <span class="site-nav-link">Career Pathways &#9660;</span>
+      <div class="site-nav-menu">
+        <a href="poc.html">People, Organisations &amp; Consultancy</a>
+        <a href="research-data-evaluation.html">Research, Data &amp; Evaluation</a>
+        <a href="education.html">Education</a>
+        <a href="marketing-consumer-behavioural.html">Marketing, Consumer &amp; Behavioural Insight</a>
+        <a href="behavioural-science.html">Behavioural Science &amp; Behaviour Change</a>
+        <a href="public-services-policy-justice.html">Public Services, Policy &amp; Justice</a>
+        <a href="charity-third-sector.html">Charity &amp; Third Sector</a>
+        <a href="sport-exercise.html">Sport &amp; Exercise</a>
+        <a href="forensic-legal.html">Forensic &amp; Legal Psychology</a>
+        <a href="digital-technology-hcd.html">Digital, Technology &amp; HCD</a>
+        <a href="mental-health.html">Mental Health</a>
+      </div>
+    </div>
+    <a class="site-nav-link" href="roadmap.html">Build Your Employability</a>
+    <a class="site-nav-link" href="alumni.html">Alumni</a>
+  </div>
+  </div>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-label">Liverpool Hope University — School of Psychology</div>
+    <h1>Build Your Employability</h1>
+    <p>Everything you can do during your degree to build the experience, skills and confidence employers look for — alongside the careers support available to you at Liverpool Hope.</p>
+  </div>
 </div>
 
 <div class="container">
- <div class="breadcrumb"><a href="index.html">Psychology Careers Hub</a><span>›</span><span>Employability Roadmap</span></div>
- <h1 class="page-title"> Employability Roadmap</h1>
- <p class="page-intro">The table below maps activities you can do during your degree to the employability skills they build. Use it to identify gaps in your experience and find ways to develop the skills employers value most.</p>
 
- <div class="note-box">&#9432; You do not need to do everything on this list. Pick activities that suit your interests and circumstances — even a few will make a significant difference to your employability.</div>
+  <!-- WHY IT MATTERS -->
+  <div class="section">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:1.75rem;">
+      <div style="background:#1e3a5f;border-radius:12px;padding:1.5rem;">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#38BDF8;margin-bottom:10px;">Wider than you think</div>
+        <p style="font-size:14px;color:rgba(255,255,255,0.85);line-height:1.7;">Psychology graduates work across a far broader range of careers than most students realise — from HR, behavioural science and research to marketing, public services, digital and education. The career pathways on this site map where graduates actually go, not just the obvious routes.</p>
+      </div>
+      <div style="background:#1e3a5f;border-radius:12px;padding:1.5rem;">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#38BDF8;margin-bottom:10px;">The gap employers identify</div>
+        <p style="font-size:14px;color:rgba(255,255,255,0.85);line-height:1.7;">Employers consistently say the gap in graduate CVs is not academic knowledge — it is practical work readiness and relevant experience. The activities on this page are how you start closing that gap during your degree, regardless of which career direction you are heading in.</p>
+      </div>
+    </div>
+    <p class="section-sub">You do not need to have your career planned out to start building employability. The activities below develop skills that employers value across all psychology career pathways.</p>
+  </div>
 
- <div class="section-label">Skills key</div>
- <div class="skill-legend">
- <div class="skill-legend-item"><div class="skill-legend-name">Research Skills</div><div class="skill-legend-desc">Designing, conducting and reporting research</div></div>
- <div class="skill-legend-item"><div class="skill-legend-name">Data &amp; Analysis</div><div class="skill-legend-desc">Quantitative and qualitative data analysis</div></div>
- <div class="skill-legend-item"><div class="skill-legend-name">Communication</div><div class="skill-legend-desc">Written, verbal and presentation skills</div></div>
- <div class="skill-legend-item"><div class="skill-legend-name">Leadership &amp; Teamwork</div><div class="skill-legend-desc">Leading, collaborating and motivating others</div></div>
- <div class="skill-legend-item"><div class="skill-legend-name">Commercial Awareness</div><div class="skill-legend-desc">Understanding of organisations and industries</div></div>
- <div class="skill-legend-item"><div class="skill-legend-name">Helping &amp; Support</div><div class="skill-legend-desc">Working with and supporting other people</div></div>
- <div class="skill-legend-item"><div class="skill-legend-name">Digital Skills</div><div class="skill-legend-desc">Digital tools, platforms and data literacy</div></div>
- <div class="skill-legend-item"><div class="skill-legend-name">Professional Experience</div><div class="skill-legend-desc">Work-based learning and professional contexts</div></div>
- </div>
+  <hr class="divider">
 
- <hr class="divider">
- <div class="section-label">Activity skills map</div>
+  <!-- BUILD EXPERIENCE -->
+  <div class="section">
+    <div class="eyebrow">Getting experience as a psychology student</div>
+    <h2 class="section-title">Build Experience While You Study</h2>
+    <p class="section-sub">Experience does not need to be perfectly matched to your plans to be valuable. The key is developing the skills employers look for — communication, research, empathy, analytical thinking, professionalism — through whatever is available to you.</p>
 
- <div class="table-wrapper">
- <table>
- <thead>
- <tr>
- <th>Activity</th>
- <th>Research Skills</th>
- <th>Data &amp; Analysis</th>
- <th>Communication</th>
- <th>Leadership &amp; Teamwork</th>
- <th>Commercial Awareness</th>
- <th>Helping &amp; Support</th>
- <th>Digital Skills</th>
- <th>Professional Experience</th>
- </tr>
- </thead>
- <tbody>
- <tr>
- <td>Work Placement Module</td>
- <td><span class="tick"></span></td>
- <td></td>
- <td><span class="tick"></span></td>
- <td><span class="tick"></span></td>
- <td><span class="tick"></span></td>
- <td></td>
- <td></td>
- <td><span class="tick"></span></td>
- </tr>
- <tr>
- <td>Research Assistant</td>
- <td><span class="tick"></span></td>
- <td><span class="tick"></span></td>
- <td><span class="tick"></span></td>
- <td></td>
- <td></td>
- <td></td>
- <td></td>
- <td><span class="tick"></span></td>
- </tr>
- <tr>
- <td>Part-time work (any sector)</td>
- <td></td>
- <td></td>
- <td><span class="tick"></span></td>
- <td><span class="tick"></span></td>
- <td><span class="tick"></span></td>
- <td></td>
- <td></td>
- <td><span class="tick"></span></td>
- </tr>
- <tr>
- <td>Participate in staff-led research projects</td>
- <td><span class="tick"></span></td>
- <td><span class="tick"></span></td>
- <td><span class="tick"></span></td>
- <td></td>
- <td></td>
- <td></td>
- <td></td>
- <td><span class="tick"></span></td>
- </tr>
- <tr>
- <td>Student Ambassador</td>
- <td></td>
- <td></td>
- <td><span class="tick"></span></td>
- <td><span class="tick"></span></td>
- <td></td>
- <td></td>
- <td></td>
- <td><span class="tick"></span></td>
- </tr>
- <tr>
- <td>Student Society Committee Member</td>
- <td></td>
- <td></td>
- <td><span class="tick"></span></td>
- <td><span class="tick"></span></td>
- <td><span class="tick"></span></td>
- <td></td>
- <td></td>
- <td></td>
- </tr>
- <tr>
- <td>Volunteering (community / charity)</td>
- <td></td>
- <td></td>
- <td><span class="tick"></span></td>
- <td><span class="tick"></span></td>
- <td></td>
- <td><span class="tick"></span></td>
- <td></td>
- <td></td>
- </tr>
- <tr>
- <td>LinkedIn profile and networking</td>
- <td></td>
- <td></td>
- <td><span class="tick"></span></td>
- <td></td>
- <td><span class="tick"></span></td>
- <td></td>
- <td><span class="tick"></span></td>
- <td></td>
- </tr>
- <tr>
- <td>Peer Mentor</td>
- <td></td>
- <td></td>
- <td><span class="tick"></span></td>
- <td><span class="tick"></span></td>
- <td></td>
- <td><span class="tick"></span></td>
- <td></td>
- <td></td>
- </tr>
- <tr>
- <td>Dissertation (applied topic)</td>
- <td><span class="tick"></span></td>
- <td><span class="tick"></span></td>
- <td><span class="tick"></span></td>
- <td></td>
- <td></td>
- <td></td>
- <td></td>
- <td></td>
- </tr>
- <tr>
- <td>Active involvement in Psychology Society</td>
- <td></td>
- <td></td>
- <td><span class="tick"></span></td>
- <td><span class="tick"></span></td>
- <td></td>
- <td></td>
- <td></td>
- <td><span class="tick"></span></td>
- </tr>
- <tr>
- <td>Student Representative</td>
- <td></td>
- <td></td>
- <td><span class="tick"></span></td>
- <td><span class="tick"></span></td>
- <td></td>
- <td></td>
- <td></td>
- <td></td>
- </tr>
- <tr>
- <td>BPS Student Membership</td>
- <td></td>
- <td></td>
- <td></td>
- <td></td>
- <td><span class="tick"></span></td>
- <td></td>
- <td></td>
- <td><span class="tick"></span></td>
- </tr>
- <tr>
- <td>Online courses (e.g. data, digital skills)</td>
- <td></td>
- <td><span class="tick"></span></td>
- <td></td>
- <td></td>
- <td></td>
- <td></td>
- <td><span class="tick"></span></td>
- <td></td>
- </tr>
- <tr>
- <td>Attend careers events and employer talks</td>
- <td></td>
- <td></td>
- <td></td>
- <td></td>
- <td><span class="tick"></span></td>
- <td></td>
- <td></td>
- <td></td>
- </tr>
- </tbody>
- </table>
- </div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-accent" style="background:#0891B2;"></div>
+        <h3>Research Experience</h3>
+        <p>Research skills are one of psychology's strongest selling points with employers — and they are easy to underestimate.</p>
+        <ul>
+          <li>Undergraduate research assistant roles within the School of Psychology</li>
+          <li>Staff-led research projects — ask your lecturers directly</li>
+          <li>Choose an applied dissertation topic relevant to your career interests</li>
+          <li>Build data skills through SPSS, R, or Excel online courses</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-accent" style="background:#4F46E5;"></div>
+        <h3>People-Facing Experience</h3>
+        <p>Demonstrates the empathy, communication and professional boundaries employers expect from psychology graduates.</p>
+        <ul>
+          <li>Peer mentoring within Liverpool Hope</li>
+          <li>Volunteering with community or charity organisations</li>
+          <li>Support worker or care roles (part-time)</li>
+          <li>Coaching, tutoring, or youth work</li>
+        </ul>
+        <a class="card-link" href="https://www.hope.ac.uk/careers/part-timework/" target="_blank">Part-time work support &rarr;</a>
+      </div>
+      <div class="card">
+        <div class="card-accent" style="background:#059669;"></div>
+        <h3>Leadership and Professional Experience</h3>
+        <p>Taking on responsibility within university life builds skills employers consistently rate as most important.</p>
+        <ul>
+          <li>Student Ambassador Scheme</li>
+          <li>Student Representative roles</li>
+          <li>Psychology Society committee membership</li>
+          <li>BPS Student Membership — builds professional identity early</li>
+        </ul>
+        <a class="card-link" href="https://www.hope.ac.uk/careers/serviceandleadershipaward/" target="_blank">Service and Leadership Award &rarr;</a>
+      </div>
+      <div class="card">
+        <div class="card-accent" style="background:#F59E0B;"></div>
+        <h3>Work Placements</h3>
+        <p>A placement year gives you a significant advantage — employers consistently rate work experience as a top factor in hiring decisions.</p>
+        <ul>
+          <li>Liverpool Hope offers an optional placement year module</li>
+          <li>Placements available across psychology-relevant sectors</li>
+          <li>Even shorter summer internships make a real difference</li>
+        </ul>
+        <a class="card-link" href="https://www.hope.ac.uk/careers/placementyear/" target="_blank">Placement year information &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CAREERS SUPPORT -->
+  <div class="section">
+    <div class="eyebrow">Support available to you</div>
+    <h2 class="section-title">Liverpool Hope Careers Support</h2>
+    <p class="section-sub">Liverpool Hope's careers service offers one-to-one appointments, employer events, and funded opportunities throughout your degree — and for up to four years after graduation.</p>
+
+    <div class="highlight-box">
+      <p><strong>Psychology students have direct access to careers advisers with experience of psychology-specific routes.</strong> Whether you are interested in clinical training, HR, research, or something you have not yet considered, a careers appointment is the best starting point. Free, confidential, and available throughout your degree and beyond.</p>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>One-to-One Careers Appointments</h3>
+        <p>Book a session to discuss your options, get CV feedback, or prepare for applications and interviews.</p>
+        <ul>
+          <li>Non-clinical careers your degree suits</li>
+          <li>Graduate schemes recruiting from psychology</li>
+          <li>Routes into further training if you are considering clinical, forensic or occupational psychology</li>
+        </ul>
+        <a class="card-link" href="https://www.hope.ac.uk/careers/careersadvice/" target="_blank">Book careers advice &rarr;</a>
+      </div>
+      <div class="card">
+        <h3>Campus Events and Employer Talks</h3>
+        <p>Liverpool Hope hosts careers events, employer panels, and networking opportunities throughout the year.</p>
+        <ul>
+          <li>Health and social care employer panels</li>
+          <li>Graduate scheme information sessions</li>
+          <li>Alumni networking events</li>
+          <li>CV and applications workshops</li>
+        </ul>
+        <a class="card-link" href="https://www.hope.ac.uk/careers/campusevents/" target="_blank">View campus events &rarr;</a>
+      </div>
+      <div class="card">
+        <h3>Reach Your Full Potential</h3>
+        <p>Liverpool Hope's employability programme builds skills and confidence beyond your academic work.</p>
+        <ul>
+          <li>Leadership and communication development</li>
+          <li>Volunteering and community engagement</li>
+          <li>Digital and data skills programmes</li>
+        </ul>
+        <a class="card-link" href="https://www.hope.ac.uk/careers/reachyourfullpotential/" target="_blank">Find out more &rarr;</a>
+      </div>
+      <div class="card">
+        <h3>Student Futures Internship</h3>
+        <p>Paid internship opportunities for students through the Student Futures programme — excellent for building professional experience in a supported context across a range of sectors relevant to psychology graduates.</p>
+        <a class="card-link" href="https://www.hope.ac.uk/careers/studentfuturesinternship/" target="_blank">Student Futures Internship &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- PRACTICAL TOOLS -->
+  <div class="section">
+    <div class="eyebrow">Standing out to employers</div>
+    <h2 class="section-title">Four Things That Make a Real Difference</h2>
+    <p class="section-sub">These are the most consistently impactful things psychology students can do to improve their employment outcomes — practical, actionable, and possible to start now.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>Using LinkedIn</h3>
+        <p>LinkedIn is one of the most useful tools for exploring career pathways, connecting with alumni and building a professional profile early.</p>
+        <ul>
+          <li>Set up a profile with your degree, university and a short summary of your interests</li>
+          <li>Follow Liverpool Hope University and relevant employers</li>
+          <li>Connect with psychology graduates to learn about their career paths</li>
+          <li>Use the Jobs section to explore what graduate roles actually look like</li>
+          <li>Engage with content from employers and the BPS</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>CV Guidance</h3>
+        <p>Your degree builds skills employers value — the challenge is describing them clearly and evidencing them with specific examples.</p>
+        <ul>
+          <li>Frame research methods as data collection, analysis and report writing</li>
+          <li>Describe presentations and group projects as communication and teamwork evidence</li>
+          <li>Include part-time work, volunteering and student roles — they all count</li>
+          <li>Tailor your personal statement to each role you apply for</li>
+          <li>Book a one-to-one session with a careers adviser for feedback</li>
+        </ul>
+        <a class="card-link" href="https://www.hope.ac.uk/careers/careersadvice/" target="_blank">Book CV support &rarr;</a>
+      </div>
+      <div class="card">
+        <h3>Volunteering and Community Involvement</h3>
+        <p>Any role involving working with people or gathering information builds relevant skills for a psychology career.</p>
+        <ul>
+          <li>Support, care and welfare roles in community settings</li>
+          <li>Charities working with mental health, youth, or social issues</li>
+          <li>School or educational volunteering</li>
+          <li>Research or data work for community organisations</li>
+        </ul>
+        <a class="card-link" href="https://www.hope.ac.uk/careers/reachyourfullpotential/" target="_blank">Volunteering opportunities &rarr;</a>
+      </div>
+      <div class="card">
+        <h3>Get Involved at University</h3>
+        <p>Activities within university life build leadership, communication and teamwork skills that employers consistently rank as most important — and they are easy to start.</p>
+        <ul>
+          <li>Student Ambassador Scheme — builds professional communication</li>
+          <li>Student Representative roles — demonstrates initiative and leadership</li>
+          <li>Psychology Society committee — teamwork and event management</li>
+          <li>BPS Student Membership — begins building your professional identity</li>
+          <li>Peer mentoring — people skills and professional boundaries</li>
+        </ul>
+        <p style="font-size:12px;color:#94a3b8;margin-top:10px;">See the table below for a full breakdown of what each activity develops.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ACTIVITIES AND SKILLS TABLE -->
+  <div class="section">
+    <div class="eyebrow">Activities and the skills they build</div>
+    <h2 class="section-title">What Different Activities Develop</h2>
+    <p class="section-sub">This table maps common activities available to psychology students at Liverpool Hope against the skills employers consistently look for. Use it to identify which activities would strengthen your profile most.</p>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Activity</th>
+            <th>Research &amp; Analysis</th>
+            <th>Communication</th>
+            <th>Working with People</th>
+            <th>Leadership</th>
+            <th>Professional Awareness</th>
+            <th>Digital Skills</th>
+            <th>Ethical Practice</th>
+            <th>Commercial Awareness</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dissertation / research project</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Undergraduate research assistant role</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="partial">~</td>
+            <td></td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Part-time support / care work</td>
+            <td></td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td></td>
+            <td class="check">✓</td>
+            <td></td>
+            <td class="check">✓</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Peer mentoring</td>
+            <td></td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="partial">~</td>
+            <td class="partial">~</td>
+            <td></td>
+            <td class="check">✓</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Student Ambassador Scheme</td>
+            <td></td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="partial">~</td>
+            <td class="check">✓</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Student Representative role</td>
+            <td></td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Psychology Society committee</td>
+            <td></td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="partial">~</td>
+            <td></td>
+            <td></td>
+            <td class="partial">~</td>
+          </tr>
+          <tr>
+            <td>Volunteering (charity / community)</td>
+            <td></td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="partial">~</td>
+            <td class="partial">~</td>
+            <td></td>
+            <td class="check">✓</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Service and Leadership Award</td>
+            <td></td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Placement year</td>
+            <td class="partial">~</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="partial">~</td>
+            <td class="check">✓</td>
+            <td class="partial">~</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+          </tr>
+          <tr>
+            <td>Student Futures Internship</td>
+            <td class="partial">~</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="partial">~</td>
+            <td class="check">✓</td>
+            <td class="partial">~</td>
+            <td class="partial">~</td>
+            <td class="check">✓</td>
+          </tr>
+          <tr>
+            <td>Part-time retail / hospitality work</td>
+            <td></td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="check">✓</td>
+          </tr>
+          <tr>
+            <td>Online data / skills courses (SPSS, R etc.)</td>
+            <td class="check">✓</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="partial">~</td>
+            <td class="check">✓</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>BPS Student Membership</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="check">✓</td>
+            <td></td>
+            <td class="check">✓</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Tutoring or coaching</td>
+            <td></td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="partial">~</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="partial">~</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:12px;color:#94a3b8;margin-top:10px;">✓ Directly develops this skill &nbsp;&nbsp; ~ Partially develops this skill depending on role</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CONTACT -->
+  <div class="section">
+    <div class="eyebrow">Get in touch</div>
+    <h2 class="section-title">Contact the Careers Team</h2>
+    <p class="section-sub">Liverpool Hope's careers contacts are available throughout your degree and for up to four years after graduation.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <div style="background:#e0f2fe;border-radius:10px;padding:1rem 1.25rem;min-width:180px;">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#0891B2;margin-bottom:5px;">Careers Adviser</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;color:#1e3a5f;margin-bottom:3px;">Ali Wood</div>
+        <a style="font-size:12px;color:#0891B2;text-decoration:none;" href="mailto:wooda@hope.ac.uk">wooda@hope.ac.uk</a>
+      </div>
+      <div style="background:#e0f2fe;border-radius:10px;padding:1rem 1.25rem;min-width:180px;">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#0891B2;margin-bottom:5px;">Employer Engagement</div>
+        <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;color:#1e3a5f;margin-bottom:3px;">Melissa Grindon</div>
+        <a style="font-size:12px;color:#0891B2;text-decoration:none;" href="mailto:grinm@hope.ac.uk">grinm@hope.ac.uk</a>
+      </div>
+    </div>
+  </div>
+
 </div>
 </body>
 </html>
