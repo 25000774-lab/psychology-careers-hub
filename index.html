@@ -62,16 +62,69 @@ img { max-width: 100%; display: block; }
 /* ============================================================
    NAV
    ============================================================ */
-  .site-nav { background: #1a3a5c; padding: 0 2rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
-  .site-nav-inner { max-width: 960px; margin: 0 auto; display: flex; align-items: center; height: 48px; }
-  .site-nav-home { color: white; text-decoration: none; font-weight: 600; font-size: 14px; margin-right: auto; }
-  .site-nav-link { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 13px; padding: 0 14px; height: 48px; display: flex; align-items: center; transition: background 0.15s; }
-  .site-nav-link:hover { background: rgba(255,255,255,0.1); color: white; }
-  .site-nav-dropdown { position: relative; }
-  .site-nav-menu { display: none; position: absolute; right: 0; top: 48px; background: white; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); min-width: 280px; padding: 6px 0; z-index: 1001; }
-  .site-nav-menu a { display: block; padding: 9px 16px; font-size: 13px; color: #1a3a5c; text-decoration: none; }
-  .site-nav-menu a:hover { background: #f0f4ff; }
-  .site-nav-dropdown:hover .site-nav-menu { display: block; }
+.site-nav {
+  background: var(--navy-deep);
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+.site-nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 52px;
+  gap: 0;
+}
+.site-nav-home {
+  color: white;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16px;
+  margin-right: auto;
+  letter-spacing: -0.01em;
+}
+.site-nav-home span {
+  color: var(--teal-mid);
+}
+.site-nav-link {
+  color: rgba(255,255,255,0.75);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 14px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  transition: color 0.15s, background 0.15s;
+  white-space: nowrap;
+}
+.site-nav-link:hover { color: white; background: rgba(255,255,255,0.07); }
+.site-nav-dropdown { position: relative; }
+.site-nav-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 52px;
+  background: white;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  min-width: 300px;
+  padding: 8px 0;
+  z-index: 1001;
+  border: 1px solid var(--border);
+}
+.site-nav-menu a {
+  display: block;
+  padding: 9px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--navy);
+  transition: background 0.1s;
+}
+.site-nav-menu a:hover { background: var(--periwinkle); }
+.site-nav-dropdown:hover .site-nav-menu { display: block; }
 .nav-caret { opacity: 0.6; font-size: 10px; margin-left: 3px; }
 
 /* ============================================================
@@ -682,11 +735,6 @@ img { max-width: 100%; display: block; }
   </div>
 </div>
 
-      <div style="font-size:15px;color:rgba(255,255,255,0.85);margin-top:4px;">School of Psychology</div>
-    </div>
-  </div>
-</div>
-
 <!-- NAV -->
 <div class="site-nav">
   <div class="site-nav-inner">
@@ -711,8 +759,24 @@ img { max-width: 100%; display: block; }
     <a class="site-nav-link" href="roadmap.html">Build Your Employability</a>
     <a class="site-nav-link" href="alumni.html">Alumni</a>
   </div>
+  </div>
 </div>
 
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-label">Liverpool Hope University &mdash; School of Psychology</div>
+      <h1>Your psychology degree opens <em>far more doors</em> than you think</h1>
+      <p class="hero-sub">Explore the career pathways open to psychology graduates, understand what employers are looking for, and take practical steps during your degree to build the experience and skills that matter.</p>
+      <div class="hero-actions">
+        <a href="#pathways" class="btn-primary">Explore career pathways &rarr;</a>
+        <a href="#support" class="btn-outline">Get careers support</a>
+        <a href="alumni.html" class="btn-outline">Meet our alumni</a>
+        <a href="roadmap.html" class="btn-outline">Build Your Employability</a>
+      </div>
+    </div>
     <div class="hero-themes" aria-hidden="true">
       <a href="poc.html" class="theme-pill"><span class="theme-pill-dot" style="background:#38BDF8"></span>People &amp; Organisations</a>
       <a href="research-data-evaluation.html" class="theme-pill"><span class="theme-pill-dot" style="background:#818CF8"></span>Research &amp; Data</a>
